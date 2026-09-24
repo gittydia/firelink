@@ -18,7 +18,7 @@
 - [x] [prisma/schema.prisma] Product (id, sku unique, name, slug unique, brand, modelNumber, categoryId FK, shortDescription, description, availabilityStatus, active, timestamps, basic indexes)
 - [x] [prisma/schema.prisma] ProductImage (id, productId FK, imageUrl, altText, displayOrder)
 - [x] [prisma/schema.prisma] ProductSpecification (id, productId FK, specName/specificationName, specValue/specificationValue, unit, displayOrder)
-- [x] [prisma] db:generate + first migration (sqlite; production targets PostgreSQL)
+- [x] [prisma] db:generate + first migration (sqlite; later switched to PostgreSQL via Docker for local dev + hosted Postgres for production)
 - [x] [lib/db] src/lib/prisma.ts singleton
 - [x] [lib/validation] Zod: login, product create/update, inventory update (minimal)
 - [x] [lib/auth+permissions] NextAuth Credentials + bcrypt, role in session, server-side requireAuth/requireRole

@@ -1,0 +1,24 @@
+# FireLink - local PostgreSQL for development
+# Usage: docker compose up -d
+# Then set DATABASE_URL in .env to the value in .env.example
+services:
+  postgres:
+    image: postgres:18-alpine
+    container_name: firelink-postgres
+    restart: unless-stopped
+    environment:
+      POSTGRES_USER: firelink
+      POSTGRES_PASSWORD: firelink
+      POSTGRES_DB: firelink
+    ports:
+      - "5433:5432"
+    volumes:
+      - firelink-pgdata:/var/lib/postgresql
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U firelink -d firelink"]
+      interval: 5s
+      timeout: 5s
+      retries: 10
+
+volumes:
+  firelink-pgdata:

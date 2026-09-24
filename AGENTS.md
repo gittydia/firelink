@@ -1,6 +1,6 @@
 # FireLink - AI Agent Guide
 
-**Stack:** Next.js (App Router), TypeScript, Tailwind CSS, Prisma, PostgreSQL/SQLite, Zod, React Hook Form, NextAuth v5 (Auth.js).
+**Stack:** Next.js (App Router), TypeScript, Tailwind CSS, Prisma, PostgreSQL, Zod, React Hook Form, NextAuth v5 (Auth.js).
 
 ## Structure
 

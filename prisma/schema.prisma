@@ -1,12 +1,12 @@
 // FireLink - Prisma schema
-// Prototype: SQLite. Production target: PostgreSQL (switch provider + DATABASE_URL).
+// PostgreSQL. Local dev via Docker (docker-compose.yml); production via hosted Postgres (Vercel/Neon/Supabase).
 
 generator client {
   provider = "prisma-client-js"
 }
 
 datasource db {
-  provider = "sqlite"
+  provider = "postgresql"
   url      = env("DATABASE_URL")
 }
 

@@ -16,7 +16,7 @@ A minimal prototype web app for centralizing fire protection product information
 
 - Next.js 16 (App Router) + TypeScript
 - Tailwind CSS
-- Prisma ORM + SQLite (prototype) / PostgreSQL
+- Prisma ORM + PostgreSQL
 - NextAuth v5 (Auth.js) with Credentials
 - React Hook Form + Zod
 - bcryptjs
@@ -40,11 +40,14 @@ openssl rand -base64 32
 Update `AUTH_SECRET` and `NEXTAUTH_URL`.
 
 ### 3. Database setup
+Local dev uses PostgreSQL in Docker (port 5433, avoids conflicts with a native local install on 5432). Start it, then generate the client, apply migrations, and seed:
 ```bash
+docker compose up -d
 pnpm db:generate
 pnpm db:migrate
 pnpm db:seed
 ```
+For production (e.g. Vercel), point `DATABASE_URL` at a hosted PostgreSQL instance (Neon / Supabase / Vercel Postgres) and run `pnpm db:deploy` to apply migrations.
 
 ### 4. Run dev server
 ```bash

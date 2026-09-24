@@ -4,9 +4,9 @@
 
 Follows `templates-prompt/repo_temp.md`: one Next.js deployable with no shared packages yet. Added - if a web/API/mobile split or shared `packages/contracts` becomes real, evolve to workspaces then.
 
-## ADR-002: Prototype uses SQLite via Prisma
+## ADR-002: PostgreSQL via Prisma (local dev on Docker, hosted Postgres in production)
 
-`DATABASE_URL="file:./dev.db"` for zero-setup demonstration. The schema is PostgreSQL-compatible (Prisma enums); switching to Postgres only requires changing `DATABASE_URL` in `.env` and re-running migrate.
+`DATABASE_URL` points at PostgreSQL. Local development uses `docker-compose.yml` (Postgres on port 5433, avoiding conflicts with a native PostgreSQL install on 5432). Production targets a hosted Postgres instance (Neon / Supabase / Vercel Postgres). Supersedes the original prototype choice of SQLite (`file:./dev.db`) — SQLite cannot run on Vercel's serverless filesystem, so the schema was switched in September 2026 before first deploy.
 
 ## ADR-003: NextAuth v5 (Auth.js beta) with Credentials + JWT
 
