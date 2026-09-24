@@ -19,6 +19,8 @@
   },
   "dependencies": {
     "@hookform/resolvers": "^3.9.1",
+    "@neon/config": "^1.7.3",
+    "@neon/env": "^1.4.4",
     "@prisma/client": "^6.19.3",
     "bcryptjs": "^2.4.3",
     "clsx": "^2.1.1",
