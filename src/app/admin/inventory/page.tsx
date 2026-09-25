@@ -5,6 +5,7 @@ import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
 import { Select } from "@/components/ui/select";
 import { availabilityLabels } from "@/lib/availability";
+import { formatInventoryUpdatedAt, formatInventoryUpdatedBy } from "@/lib/inventory-audit";
 import { prisma } from "@/lib/prisma";
 import { requireRole } from "@/lib/permissions";
 import { updateAvailability } from "./actions";
@@ -21,7 +22,7 @@ export default async function InventoryPage() {
 
   const products = await prisma.product.findMany({
     where: { active: true },
-    include: { category: true },
+    include: { category: true, inventoryUpdatedBy: { select: { name: true } } },
     orderBy: { name: "asc" },
   });
 
@@ -49,6 +50,7 @@ export default async function InventoryPage() {
             <tr className="border-b border-neutral-200 text-left text-xs uppercase tracking-wide text-neutral-500">
               <th scope="col" className="px-4 py-3 font-medium">Product</th>
               <th scope="col" className="hidden px-4 py-3 font-medium md:table-cell">Category</th>
+              <th scope="col" className="px-4 py-3 font-medium">Last Updated</th>
               <th scope="col" className="px-4 py-3 font-medium">Current</th>
               <th scope="col" className="px-4 py-3 font-medium">Update to</th>
             </tr>
@@ -61,6 +63,10 @@ export default async function InventoryPage() {
                   <p className="text-xs text-neutral-500">{product.sku}</p>
                 </td>
                 <td className="hidden px-4 py-3 text-neutral-600 md:table-cell">{product.category.name}</td>
+                <td className="px-4 py-3 text-xs text-neutral-500">
+                  <p>{formatInventoryUpdatedAt(product.inventoryUpdatedAt)}</p>
+                  <p>{formatInventoryUpdatedBy(product.inventoryUpdatedBy?.name)}</p>
+                </td>
                 <td className="px-4 py-3">
                   <AvailabilityBadge status={product.availabilityStatus} />
                 </td>

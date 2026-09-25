@@ -3,6 +3,7 @@
 import { revalidatePath } from "next/cache";
 import { redirect } from "next/navigation";
 import { Prisma } from "@prisma/client";
+import { buildInventoryAuditStamp } from "@/lib/inventory-audit";
 import { requireRole } from "@/lib/permissions";
 import { prisma } from "@/lib/prisma";
 import { slugify } from "@/lib/utils";
@@ -88,7 +89,7 @@ export async function createProduct(input: ProductCreateInput) {
 }
 
 export async function updateProduct(id: string, input: ProductUpdateInput) {
-  await requireRole(["ADMIN", "SALES"]);
+  const session = await requireRole(["ADMIN", "SALES"]);
 
   const parsed = productUpdateSchema.safeParse(input);
   if (!parsed.success) {
@@ -113,6 +114,27 @@ export async function updateProduct(id: string, input: ProductUpdateInput) {
     availabilityStatus: data.availabilityStatus,
     active: data.active,
   };
+
+  const current = await prisma.product.findUnique({
+    where: { id },
+    select: { availabilityStatus: true },
+  });
+
+  // Prisma reads an omitted availabilityStatus as "leave unchanged"; without this
+  // guard a non-null assertion would fabricate a stamp for a change that never happened.
+  const stamp =
+    current && data.availabilityStatus !== undefined
+      ? buildInventoryAuditStamp({
+          currentStatus: current.availabilityStatus,
+          nextStatus: data.availabilityStatus,
+          userId: session.user.id,
+        })
+      : null;
+
+  if (stamp) {
+    updateData.inventoryUpdatedAt = stamp.inventoryUpdatedAt;
+    updateData.inventoryUpdatedById = stamp.inventoryUpdatedById;
+  }
 
   try {
     await prisma.$transaction([
