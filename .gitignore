@@ -79,3 +79,6 @@ logs
 # Tooling
 .omo
 .neon
+
+.vercel
+.env*

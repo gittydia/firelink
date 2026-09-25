@@ -7,8 +7,8 @@ generator client {
 
 datasource db {
   provider  = "postgresql"
-  url       = env("DATABASE_URL")
-  directUrl = env("DATABASE_URL_UNPOOLED")
+  url       = env("FIRELINK_DATABASE_URL")
+  directUrl = env("FIRELINK_DATABASE_URL_UNPOOLED")
 }
 
 enum UserRole {
@@ -31,6 +31,10 @@ model User {
   active       Boolean  @default(true)
   createdAt    DateTime @default(now())
   updatedAt    DateTime @updatedAt
+
+  // Set to NULL rather than cascading, so a removed staff account never
+  // deletes product rows and historical attribution degrades to "unknown".
+  inventoryUpdates Product[] @relation("ProductInventoryUpdater")
 
   @@index([role])
   @@index([active])
@@ -66,12 +70,20 @@ model Product {
   createdAt          DateTime           @default(now())
   updatedAt          DateTime           @updatedAt
 
+  // Inventory audit: stamped only when availabilityStatus actually changes.
+  // Both stay NULL for products whose availability was never changed after
+  // this feature shipped, and for rows created through the admin UI.
+  inventoryUpdatedAt   DateTime?
+  inventoryUpdatedById String?
+  inventoryUpdatedBy   User?   @relation("ProductInventoryUpdater", fields: [inventoryUpdatedById], references: [id], onDelete: SetNull, onUpdate: NoAction)
+
   images         ProductImage[]
   specifications ProductSpecification[]
 
   @@index([categoryId])
   @@index([availabilityStatus])
   @@index([active])
+  @@index([inventoryUpdatedById])
 }
 
 model ProductImage {
