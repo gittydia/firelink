@@ -1,6 +1,6 @@
 # FireLink - local PostgreSQL for development
 # Usage: docker compose up -d
-# Then set DATABASE_URL in .env to the value in .env.example
+# Then set FIRELINK_DATABASE_URL in .env to the value in .env.example
 services:
   postgres:
     image: postgres:18-alpine
