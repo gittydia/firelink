@@ -24,6 +24,9 @@ Catalog grouping (e.g., Fire Extinguishers). `name` unique. `active` = soft deac
 ### Product
 Core catalog entity. `sku` and `slug` unique. `availabilityStatus` is one of the enum values. `active` = soft archive (inactive products are hidden from public catalog).
 
+#### Inventory audit
+`inventoryUpdatedAt` + `inventoryUpdatedById` record when availability last genuinely changed and which staff account made it. Written only on a real `availabilityStatus` change, so re-submitting the same status leaves the stamp untouched. Both stay `NULL` for products created through the admin UI and for rows that predate this feature; the admin UI renders those as "Not recorded".
+
 ### ProductImage
 Gallery images for a product, ordered by `displayOrder`.
 
@@ -35,3 +38,4 @@ Flexible key/value + unit for technical specs (e.g., Working Pressure = 175 PSI)
 - Category 1—N Product (a product belongs to one category; a category has many products)
 - Product 1—N ProductImage
 - Product 1—N ProductSpecification
+- Product N—1 User (`inventoryUpdatedBy`; set to `NULL` if the account is deleted)

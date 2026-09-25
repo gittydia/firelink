@@ -27,3 +27,5 @@
 - Never rely on hiding UI for security.
 - Do not expose `passwordHash` or internal fields to the client.
 - Deactivated users (`active = false`) cannot sign in.
+- Audit trails (e.g. `Product.inventoryUpdatedById`) take the actor from the server session, never from submitted form data. The relation is `SetNull`, so deactivating or deleting an account preserves historical attribution as "Not recorded" rather than erasing it.
+- Audit data is admin-only; do not surface staff names on public pages.

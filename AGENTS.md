@@ -32,6 +32,7 @@
 - `pnpm build` - Build app
 - `pnpm start` - Run production server
 - `pnpm typecheck` - TypeScript check
+- `pnpm test` - Unit tests (Vitest)
 - `pnpm lint` - Lint
 - `pnpm format` / `pnpm format:fix` - Prettier
 - `pnpm db:generate` - Prisma generate

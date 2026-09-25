@@ -47,7 +47,7 @@ pnpm db:generate
 pnpm db:migrate
 pnpm db:seed
 ```
-For production (e.g. Vercel), point `DATABASE_URL` at a hosted PostgreSQL instance (Neon / Supabase / Vercel Postgres) and run `pnpm db:deploy` to apply migrations.
+For production (e.g. Vercel), set `FIRELINK_DATABASE_URL` (pooled connection) and `FIRELINK_DATABASE_URL_UNPOOLED` (direct connection) to your hosted PostgreSQL instance (Neon / Supabase / Vercel Postgres), then run `pnpm db:deploy` to apply migrations. The names intentionally differ from `DATABASE_URL` so hosting integrations cannot override them.
 
 ### 4. Run dev server
 ```bash
@@ -65,6 +65,7 @@ App: http://localhost:3000
 - `pnpm dev` – dev server
 - `pnpm build` / `pnpm start` – build/run
 - `pnpm typecheck` – TS check
+- `pnpm test` – unit tests (Vitest)
 - `pnpm lint` – lint
 - `pnpm format` / `pnpm format:fix` – Prettier
 - `pnpm db:generate` – Prisma generate
