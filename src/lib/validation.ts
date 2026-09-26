@@ -72,3 +72,42 @@ export const inventoryUpdateSchema = z.object({
 });
 
 export type InventoryUpdateInput = z.infer<typeof inventoryUpdateSchema>;
+
+// ---------- Staff ----------
+
+// bcrypt truncates anything past 72 bytes, so reject longer input rather than
+// silently accept a password that is not the one the admin typed.
+const STAFF_PASSWORD_MAX = 72;
+
+export const staffCreateSchema = z
+  .object({
+    name: z.string().trim().min(1, "Full name is required").max(200, "Full name is too long"),
+    email: z.string().trim().email("Enter a valid email address").max(200, "Email is too long"),
+    password: z
+      .string()
+      .min(6, "Password must be at least 6 characters")
+      .max(STAFF_PASSWORD_MAX, `Password must be ${STAFF_PASSWORD_MAX} characters or fewer`),
+    confirmPassword: z.string().min(1, "Confirm the password"),
+  })
+  .refine((values) => values.password === values.confirmPassword, {
+    message: "Passwords do not match",
+    path: ["confirmPassword"],
+  });
+
+export type StaffCreateInput = z.infer<typeof staffCreateSchema>;
+
+/**
+ * Editing details never changes role or status, so neither appears in the input.
+ * Status changes go through the explicit `staffStatusSchema` action.
+ */
+export const staffUpdateSchema = z.object({
+  name: z.string().trim().min(1, "Full name is required").max(200, "Full name is too long"),
+  email: z.string().trim().email("Enter a valid email address").max(200, "Email is too long"),
+});
+
+export type StaffUpdateInput = z.infer<typeof staffUpdateSchema>;
+
+export const staffStatusSchema = z.object({
+  id: z.string().min(1, "Missing account"),
+  active: z.boolean(),
+});
