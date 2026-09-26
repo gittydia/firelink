@@ -22,6 +22,16 @@
 - Middleware protects `/admin` and `/api/admin` routes as defense-in-depth; the source of truth is always the server-side check.
 - Public queries only ever return `active` public products with no internal fields.
 
+## Sales Staff management (`/admin/staff`)
+
+- ADMIN-only. Every page and every server action calls `requireRole('ADMIN')` independently; the nav link is hidden from SALES for usability only.
+- Accounts are **never hard-deleted**. Deactivation sets `active = false` and can be reversed, which preserves inventory audit attribution.
+- Creation forces `role = 'SALES'` and `active = true` server-side, so a crafted form cannot mint an ADMIN or a pre-deactivated account.
+- Editing details accepts only name and email. Role and status are intentionally absent from `staffUpdateSchema` so a detail save cannot change them.
+- Status changes go through one explicit action, require confirmation, and reactivation is always offered.
+- Email is normalized with `trim().toLowerCase()` because it is the login identifier; duplicate emails are rejected before write and on Prisma `P2002`.
+- The list uses an explicit field `select` so `passwordHash` can never reach the client.
+
 ## Rules
 
 - Never rely on hiding UI for security.

@@ -18,6 +18,8 @@
 ### User
 Staff account. `passwordHash` is bcrypt; never store plaintext. `active` = soft deactivate (cannot log in when false).
 
+`role` separates ADMIN from SALES. SALES accounts are managed from `/admin/staff` and are never hard-deleted — deactivation flips `active` and is reversible, so `inventoryUpdatedBy` attribution survives. `email` is unique and stored lowercased and trimmed, since it is the login identifier.
+
 ### Category
 Catalog grouping (e.g., Fire Extinguishers). `name` unique. `active` = soft deactivate.
 
