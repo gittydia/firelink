@@ -8,10 +8,15 @@ export interface InputProps extends InputHTMLAttributes<HTMLInputElement> {
 }
 
 export const Input = forwardRef<HTMLInputElement, InputProps>(function Input(
-  { className, label, error, id, ...props },
+  { className, label, error, id, "aria-describedby": ariaDescribedBy, ...props },
   ref
 ) {
   const inputId = id ?? props.name;
+  // Ties the field error to the input so screen readers announce *why* it is
+  // invalid, not just that it is. Any caller-supplied description is kept.
+  const errorId = inputId ? `${inputId}-error` : undefined;
+  const describedBy =
+    [ariaDescribedBy, error ? errorId : undefined].filter(Boolean).join(" ") || undefined;
   return (
     <div className="space-y-1">
       {label ? (
@@ -23,6 +28,7 @@ export const Input = forwardRef<HTMLInputElement, InputProps>(function Input(
         ref={ref}
         id={inputId}
         aria-invalid={error ? true : undefined}
+        aria-describedby={describedBy}
         className={cn(
           "w-full rounded-md border border-neutral-300 bg-white px-3 py-2 text-sm shadow-sm placeholder:text-neutral-400 focus:border-fire focus:outline-none focus:ring-1 focus:ring-fire",
           error && "border-red-500 focus:border-red-500 focus:ring-red-500",
@@ -30,7 +36,11 @@ export const Input = forwardRef<HTMLInputElement, InputProps>(function Input(
         )}
         {...props}
       />
-      {error ? <p className="text-sm text-red-600">{error}</p> : null}
+      {error ? (
+        <p id={errorId} className="text-sm text-red-600">
+          {error}
+        </p>
+      ) : null}
     </div>
   );
 });

@@ -38,7 +38,7 @@ export default async function AdminLayout({ children }: { children: ReactNode })
         </div>
       </header>
       <div className="mx-auto grid w-full max-w-6xl flex-1 gap-8 px-4 py-8 md:grid-cols-[200px_1fr]">
-        <AdminNav />
+        <AdminNav role={session.user.role} />
         <main className="min-w-0">{children}</main>
       </div>
     </div>

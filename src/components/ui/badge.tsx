@@ -1,5 +1,6 @@
 import type { AvailabilityStatus } from "@prisma/client";
 import { availabilityLabels } from "@/lib/availability";
+import { staffStatusLabel } from "@/lib/staff";
 import { cn } from "@/lib/utils";
 
 /** Always renders the status as text; color is decorative, never the only cue. */
@@ -37,6 +38,20 @@ export function ActiveBadge({ active }: { active: boolean }) {
       )}
     >
       {active ? "Active" : "Archived"}
+    </span>
+  );
+}
+
+/** "Archived" is product vocabulary; accounts are "Inactive", never removed. */
+export function AccountStatusBadge({ active }: { active: boolean }) {
+  return (
+    <span
+      className={cn(
+        "inline-flex items-center rounded-full px-2.5 py-0.5 text-xs font-medium",
+        active ? "bg-emerald-100 text-emerald-800" : "bg-neutral-200 text-neutral-600"
+      )}
+    >
+      {staffStatusLabel(active)}
     </span>
   );
 }
