@@ -6,13 +6,18 @@ import { Card } from "@/components/ui/card";
 import { Input } from "@/components/ui/input";
 import { prisma } from "@/lib/prisma";
 import { requireRole } from "@/lib/permissions";
+import { ProductImageThumbnail } from "./product-image-thumbnail";
 import { toggleProductActive } from "./actions";
 
 export const metadata: Metadata = { title: "Products" };
 
 type SearchParams = Promise<{ q?: string }>;
 
-export default async function AdminProductsPage({ searchParams }: { searchParams: SearchParams }) {
+export default async function AdminProductsPage({
+  searchParams,
+}: {
+  searchParams: SearchParams;
+}) {
   await requireRole(["ADMIN", "SALES"]);
 
   const { q = "" } = await searchParams;
@@ -29,7 +34,10 @@ export default async function AdminProductsPage({ searchParams }: { searchParams
           ],
         }
       : undefined,
-    include: { category: true },
+    include: {
+      category: true,
+      images: { orderBy: { displayOrder: "asc" } },
+    },
     orderBy: { createdAt: "desc" },
   });
 
@@ -37,7 +45,9 @@ export default async function AdminProductsPage({ searchParams }: { searchParams
     <div className="space-y-6">
       <div className="flex flex-wrap items-end justify-between gap-4">
         <div>
-          <h1 className="text-2xl font-bold tracking-tight text-neutral-900">Products</h1>
+          <h1 className="text-2xl font-bold tracking-tight text-neutral-900">
+            Products
+          </h1>
           <p className="mt-1 text-sm text-neutral-600">
             {products.length} product{products.length === 1 ? "" : "s"}
           </p>
@@ -67,11 +77,27 @@ export default async function AdminProductsPage({ searchParams }: { searchParams
           <table className="w-full border-collapse text-sm">
             <thead>
               <tr className="border-b border-neutral-200 text-left text-xs uppercase tracking-wide text-neutral-500">
-                <th scope="col" className="px-4 py-3 font-medium">Product</th>
-                <th scope="col" className="hidden px-4 py-3 font-medium md:table-cell">Category</th>
-                <th scope="col" className="px-4 py-3 font-medium">Availability</th>
-                <th scope="col" className="px-4 py-3 font-medium">Status</th>
-                <th scope="col" className="px-4 py-3 text-right font-medium">Actions</th>
+                <th scope="col" className="px-4 py-3 font-medium">
+                  Product
+                </th>
+                <th scope="col" className="px-4 py-3 font-medium">
+                  Image
+                </th>
+                <th
+                  scope="col"
+                  className="hidden px-4 py-3 font-medium md:table-cell"
+                >
+                  Category
+                </th>
+                <th scope="col" className="px-4 py-3 font-medium">
+                  Availability
+                </th>
+                <th scope="col" className="px-4 py-3 font-medium">
+                  Status
+                </th>
+                <th scope="col" className="px-4 py-3 text-right font-medium">
+                  Actions
+                </th>
               </tr>
             </thead>
             <tbody className="divide-y divide-neutral-200">
@@ -86,8 +112,16 @@ export default async function AdminProductsPage({ searchParams }: { searchParams
                     </Link>
                     <p className="text-xs text-neutral-500">
                       {product.brand}
-                      {product.modelNumber ? ` · ${product.modelNumber}` : ""} · {product.sku}
+                      {product.modelNumber
+                        ? ` · ${product.modelNumber}`
+                        : ""} · {product.sku}
                     </p>
+                  </td>
+                  <td className="px-4 py-3">
+                    <ProductImageThumbnail
+                      productName={product.name}
+                      images={product.images}
+                    />
                   </td>
                   <td className="hidden px-4 py-3 text-neutral-600 md:table-cell">
                     {product.category.name}

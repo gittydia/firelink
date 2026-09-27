@@ -1,5 +1,6 @@
 import { z } from "zod";
 import { AvailabilityStatus } from "@prisma/client";
+import { classifyImageUrl } from "@/lib/product-image";
 
 // ---------- Auth ----------
 
@@ -24,7 +25,22 @@ export const productSpecificationInputSchema = z.object({
 });
 
 export const productImageInputSchema = z.object({
-  imageUrl: z.string().url("Enter a valid image URL"),
+  // z.string().url() accepts any scheme and cannot tell an image from a PDF, so
+  // classifyImageUrl adds both checks; unknown extensions stay allowed.
+  imageUrl: z
+    .string()
+    .url("Enter a valid image URL")
+    .superRefine((value, ctx) => {
+      const result = classifyImageUrl(value);
+      if (result.kind === "unsupported") {
+        ctx.addIssue({ code: z.ZodIssueCode.custom, message: result.message });
+      } else if (result.kind === "invalid") {
+        ctx.addIssue({
+          code: z.ZodIssueCode.custom,
+          message: "Image URL must start with http:// or https://",
+        });
+      }
+    }),
   altText: z.string().trim().max(200).optional().nullable(),
   displayOrder: z.coerce.number().int().min(0).max(100).default(0),
 });
@@ -37,7 +53,10 @@ const productBaseSchema = z.object({
     .trim()
     .min(1)
     .max(200)
-    .regex(/^[a-z0-9]+(?:-[a-z0-9]+)*$/, "Slug must be lowercase with hyphens only"),
+    .regex(
+      /^[a-z0-9]+(?:-[a-z0-9]+)*$/,
+      "Slug must be lowercase with hyphens only",
+    ),
   brand: z.string().trim().min(1, "Brand is required").max(100),
   modelNumber: z.string().trim().max(100).optional().nullable(),
   categoryId: z.string().min(1, "Category is required"),
@@ -56,12 +75,10 @@ export const productCreateSchema = productBaseSchema.extend({
 
 export type ProductCreateInput = z.infer<typeof productCreateSchema>;
 
-export const productUpdateSchema = productBaseSchema
-  .partial()
-  .extend({
-    images: z.array(productImageInputSchema).max(4).optional(),
-    specifications: z.array(productSpecificationInputSchema).max(10).optional(),
-  });
+export const productUpdateSchema = productBaseSchema.partial().extend({
+  images: z.array(productImageInputSchema).max(4).optional(),
+  specifications: z.array(productSpecificationInputSchema).max(10).optional(),
+});
 
 export type ProductUpdateInput = z.infer<typeof productUpdateSchema>;
 
@@ -81,12 +98,23 @@ const STAFF_PASSWORD_MAX = 72;
 
 export const staffCreateSchema = z
   .object({
-    name: z.string().trim().min(1, "Full name is required").max(200, "Full name is too long"),
-    email: z.string().trim().email("Enter a valid email address").max(200, "Email is too long"),
+    name: z
+      .string()
+      .trim()
+      .min(1, "Full name is required")
+      .max(200, "Full name is too long"),
+    email: z
+      .string()
+      .trim()
+      .email("Enter a valid email address")
+      .max(200, "Email is too long"),
     password: z
       .string()
       .min(6, "Password must be at least 6 characters")
-      .max(STAFF_PASSWORD_MAX, `Password must be ${STAFF_PASSWORD_MAX} characters or fewer`),
+      .max(
+        STAFF_PASSWORD_MAX,
+        `Password must be ${STAFF_PASSWORD_MAX} characters or fewer`,
+      ),
     confirmPassword: z.string().min(1, "Confirm the password"),
   })
   .refine((values) => values.password === values.confirmPassword, {
@@ -101,8 +129,16 @@ export type StaffCreateInput = z.infer<typeof staffCreateSchema>;
  * Status changes go through the explicit `staffStatusSchema` action.
  */
 export const staffUpdateSchema = z.object({
-  name: z.string().trim().min(1, "Full name is required").max(200, "Full name is too long"),
-  email: z.string().trim().email("Enter a valid email address").max(200, "Email is too long"),
+  name: z
+    .string()
+    .trim()
+    .min(1, "Full name is required")
+    .max(200, "Full name is too long"),
+  email: z
+    .string()
+    .trim()
+    .email("Enter a valid email address")
+    .max(200, "Email is too long"),
 });
 
 export type StaffUpdateInput = z.infer<typeof staffUpdateSchema>;

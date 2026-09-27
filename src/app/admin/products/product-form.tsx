@@ -1,22 +1,25 @@
 "use client";
 
-import { useEffect, useRef, useState, useTransition } from "react";
+import { useEffect, useMemo, useRef, useState, useTransition } from "react";
 import { useRouter } from "next/navigation";
 import { useFieldArray, useForm, useWatch } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
 import type { AvailabilityStatus } from "@prisma/client";
+import { ProductImageFrame } from "@/components/product-image-frame";
 import { Button } from "@/components/ui/button";
+import { Dialog } from "@/components/ui/dialog";
 import { Input } from "@/components/ui/input";
 import { Select, type SelectOption } from "@/components/ui/select";
 import { Textarea } from "@/components/ui/textarea";
 import { availabilityLabels } from "@/lib/availability";
+import { isUsableImageUrl, resolveImageAlt } from "@/lib/product-image";
 import { slugify } from "@/lib/utils";
 import { productCreateSchema, type ProductCreateInput } from "@/lib/validation";
 import { createProduct, updateProduct } from "./actions";
 
-const availabilityOptions: SelectOption[] = (Object.keys(availabilityLabels) as AvailabilityStatus[]).map(
-  (value) => ({ value, label: availabilityLabels[value] })
-);
+const availabilityOptions: SelectOption[] = (
+  Object.keys(availabilityLabels) as AvailabilityStatus[]
+).map((value) => ({ value, label: availabilityLabels[value] }));
 
 interface ProductFormProps {
   categories: SelectOption[];
@@ -41,7 +44,75 @@ function emptyProduct(): ProductCreateInput {
   };
 }
 
-export function ProductForm({ categories, productId, initial }: ProductFormProps) {
+function ImageFieldPreview({
+  imageUrl,
+  altText,
+  productName,
+  isSaved,
+}: {
+  imageUrl: string;
+  altText: string;
+  productName: string;
+  isSaved: boolean;
+}) {
+  const [isOpen, setIsOpen] = useState(false);
+  const canPreview = isUsableImageUrl(imageUrl);
+
+  return (
+    <div className="flex flex-col items-start gap-1">
+      <button
+        type="button"
+        onClick={() => setIsOpen(true)}
+        disabled={!canPreview}
+        aria-label={
+          canPreview
+            ? "Enlarge image preview"
+            : "Enter a valid image URL to preview it"
+        }
+        className="rounded-md disabled:cursor-not-allowed focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-fire"
+      >
+        <ProductImageFrame
+          src={imageUrl}
+          alt=""
+          emptyLabel="No image"
+          errorLabel="Broken"
+          className="size-20"
+        />
+      </button>
+      {canPreview ? (
+        <span
+          className={
+            isSaved
+              ? "text-[10px] text-neutral-500"
+              : "text-[10px] text-amber-600"
+          }
+        >
+          {isSaved ? "Saved" : "Unsaved"}
+        </span>
+      ) : null}
+      <Dialog
+        open={isOpen}
+        onClose={() => setIsOpen(false)}
+        title={productName || "Image preview"}
+        description={imageUrl}
+        closeLabel="Close image preview"
+      >
+        <ProductImageFrame
+          src={imageUrl}
+          alt={resolveImageAlt(altText, productName)}
+          size="preview"
+          errorLabel="This image could not be loaded. Check the URL, then try again."
+        />
+      </Dialog>
+    </div>
+  );
+}
+
+export function ProductForm({
+  categories,
+  productId,
+  initial,
+}: ProductFormProps) {
   const router = useRouter();
   const [isPending, startTransition] = useTransition();
   const [submitError, setSubmitError] = useState<string | null>(null);
@@ -74,6 +145,17 @@ export function ProductForm({ categories, productId, initial }: ProductFormProps
     prevName.current = name;
   }, [name, getValues, setValue]);
 
+  const watchedImages = useWatch({ control, name: "images" }) ?? [];
+  const savedImageUrls = useMemo(
+    () =>
+      new Set(
+        (initial?.images ?? [])
+          .map((image) => image.imageUrl.trim())
+          .filter((url) => url !== ""),
+      ),
+    [initial],
+  );
+
   function onSubmit(values: ProductCreateInput) {
     setSubmitError(null);
 
@@ -87,7 +169,9 @@ export function ProductForm({ categories, productId, initial }: ProductFormProps
           displayOrder: index,
         })),
       specifications: values.specifications
-        .filter((spec) => spec.specName.trim() !== "" && spec.specValue.trim() !== "")
+        .filter(
+          (spec) => spec.specName.trim() !== "" && spec.specValue.trim() !== "",
+        )
         .map((spec, index) => ({
           specName: spec.specName.trim(),
           specValue: spec.specValue.trim(),
@@ -105,7 +189,11 @@ export function ProductForm({ categories, productId, initial }: ProductFormProps
         }
         router.refresh();
       } catch (error) {
-        setSubmitError(error instanceof Error ? error.message : "Something went wrong. Please try again.");
+        setSubmitError(
+          error instanceof Error
+            ? error.message
+            : "Something went wrong. Please try again.",
+        );
       }
     });
   }
@@ -113,7 +201,10 @@ export function ProductForm({ categories, productId, initial }: ProductFormProps
   return (
     <form onSubmit={handleSubmit(onSubmit)} noValidate className="space-y-8">
       {submitError ? (
-        <p role="alert" className="rounded-md bg-red-50 px-3 py-2 text-sm text-red-700">
+        <p
+          role="alert"
+          className="rounded-md bg-red-50 px-3 py-2 text-sm text-red-700"
+        >
           {submitError}
         </p>
       ) : null}
@@ -134,9 +225,23 @@ export function ProductForm({ categories, productId, initial }: ProductFormProps
             {...register("slug")}
             error={errors.slug?.message}
           />
-          <Input label="SKU" placeholder="e.g. EXT-ABC-050" {...register("sku")} error={errors.sku?.message} />
-          <Input label="Brand" placeholder="e.g. FireGuard" {...register("brand")} error={errors.brand?.message} />
-          <Input label="Model number" {...register("modelNumber")} error={errors.modelNumber?.message} />
+          <Input
+            label="SKU"
+            placeholder="e.g. EXT-ABC-050"
+            {...register("sku")}
+            error={errors.sku?.message}
+          />
+          <Input
+            label="Brand"
+            placeholder="e.g. FireGuard"
+            {...register("brand")}
+            error={errors.brand?.message}
+          />
+          <Input
+            label="Model number"
+            {...register("modelNumber")}
+            error={errors.modelNumber?.message}
+          />
           <Select
             label="Category"
             placeholder="Select a category"
@@ -169,7 +274,11 @@ export function ProductForm({ categories, productId, initial }: ProductFormProps
             error={errors.availabilityStatus?.message}
           />
           <label className="flex h-full items-center gap-2 text-sm font-medium text-neutral-700">
-            <input type="checkbox" className="h-4 w-4 accent-fire" {...register("active")} />
+            <input
+              type="checkbox"
+              className="h-4 w-4 accent-fire"
+              {...register("active")}
+            />
             Active (visible on the public site)
           </label>
         </div>
@@ -182,48 +291,80 @@ export function ProductForm({ categories, productId, initial }: ProductFormProps
           <Button
             type="button"
             variant="secondary"
-            onClick={() => images.append({ imageUrl: "", altText: "", displayOrder: 0 })}
+            onClick={() =>
+              images.append({ imageUrl: "", altText: "", displayOrder: 0 })
+            }
             disabled={images.fields.length >= 4}
           >
             Add image
           </Button>
         </div>
         {images.fields.length === 0 ? (
-          <p className="text-sm text-neutral-500">No images. Add one to show a photo on the product page.</p>
+          <p className="text-sm text-neutral-500">
+            No images. Add one to show a photo on the product page.
+          </p>
         ) : null}
         <div className="space-y-3">
-          {images.fields.map((field, index) => (
-            <div key={field.id} className="grid gap-3 rounded-md border border-neutral-200 bg-white p-3 sm:grid-cols-[1fr_1fr_auto]">
-              <Input
-                label={`Image URL ${index + 1}`}
-                placeholder="https://…"
-                {...register(`images.${index}.imageUrl` as const)}
-                error={errors.images?.[index]?.imageUrl?.message}
-              />
-              <Input
-                label="Alt text"
-                placeholder="Describe the image"
-                {...register(`images.${index}.altText` as const)}
-                error={errors.images?.[index]?.altText?.message}
-              />
-              <div className="flex items-end">
-                <Button type="button" variant="ghost" onClick={() => images.remove(index)}>
-                  Remove
-                </Button>
+          {images.fields.map((field, index) => {
+            const fieldImage = watchedImages[index];
+            const imageUrl = fieldImage?.imageUrl ?? "";
+            const altText = fieldImage?.altText ?? "";
+
+            return (
+              <div
+                key={field.id}
+                className="grid gap-3 rounded-md border border-neutral-200 bg-white p-3 sm:grid-cols-[auto_1fr_1fr_auto]"
+              >
+                <ImageFieldPreview
+                  imageUrl={imageUrl}
+                  altText={altText}
+                  productName={name}
+                  isSaved={savedImageUrls.has(imageUrl.trim())}
+                />
+                <Input
+                  label={`Image URL ${index + 1}`}
+                  placeholder="https://…"
+                  {...register(`images.${index}.imageUrl` as const)}
+                  error={errors.images?.[index]?.imageUrl?.message}
+                />
+                <Input
+                  label="Alt text"
+                  placeholder="Describe the image"
+                  {...register(`images.${index}.altText` as const)}
+                  error={errors.images?.[index]?.altText?.message}
+                />
+                <div className="flex items-end">
+                  <Button
+                    type="button"
+                    variant="ghost"
+                    onClick={() => images.remove(index)}
+                  >
+                    Remove
+                  </Button>
+                </div>
               </div>
-            </div>
-          ))}
+            );
+          })}
         </div>
       </section>
 
       {/* Specifications */}
       <section className="space-y-4">
         <div className="flex items-center justify-between">
-          <h2 className="text-lg font-semibold text-neutral-900">Specifications</h2>
+          <h2 className="text-lg font-semibold text-neutral-900">
+            Specifications
+          </h2>
           <Button
             type="button"
             variant="secondary"
-            onClick={() => specifications.append({ specName: "", specValue: "", unit: "", displayOrder: 0 })}
+            onClick={() =>
+              specifications.append({
+                specName: "",
+                specValue: "",
+                unit: "",
+                displayOrder: 0,
+              })
+            }
             disabled={specifications.fields.length >= 10}
           >
             Add specification
@@ -254,7 +395,11 @@ export function ProductForm({ categories, productId, initial }: ProductFormProps
                 error={errors.specifications?.[index]?.unit?.message}
               />
               <div className="flex items-end">
-                <Button type="button" variant="ghost" onClick={() => specifications.remove(index)}>
+                <Button
+                  type="button"
+                  variant="ghost"
+                  onClick={() => specifications.remove(index)}
+                >
                   Remove
                 </Button>
               </div>
@@ -265,9 +410,17 @@ export function ProductForm({ categories, productId, initial }: ProductFormProps
 
       <div className="flex items-center gap-3 border-t border-neutral-200 pt-4">
         <Button type="submit" disabled={isPending}>
-          {isPending ? "Saving…" : productId ? "Save changes" : "Create product"}
+          {isPending
+            ? "Saving…"
+            : productId
+              ? "Save changes"
+              : "Create product"}
         </Button>
-        <Button type="button" variant="ghost" onClick={() => router.push("/admin/products")}>
+        <Button
+          type="button"
+          variant="ghost"
+          onClick={() => router.push("/admin/products")}
+        >
           Cancel
         </Button>
       </div>
