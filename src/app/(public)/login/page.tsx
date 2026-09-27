@@ -2,13 +2,17 @@ import type { Metadata } from "next";
 import { redirect } from "next/navigation";
 import { Card } from "@/components/ui/card";
 import { auth } from "@/lib/auth";
+import { findCurrentAccount } from "@/lib/current-account";
 import { LoginForm } from "./login-form";
 
 export const metadata: Metadata = { title: "Sign in" };
 
 export default async function LoginPage() {
   const session = await auth();
-  if (session?.user) redirect("/admin");
+  // A deactivated account still holds a valid cookie, so auth() alone would send
+  // it back to /admin, where requireAuth sends it straight back here.
+  const account = session?.user ? await findCurrentAccount(session.user.id) : null;
+  if (account?.active) redirect("/admin");
 
   return (
     <div className="mx-auto max-w-md space-y-4">

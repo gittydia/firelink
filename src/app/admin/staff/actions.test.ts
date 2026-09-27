@@ -8,6 +8,7 @@ const mocks = vi.hoisted(() => ({
       findUnique: vi.fn(),
       create: vi.fn(),
       updateMany: vi.fn(),
+      delete: vi.fn(),
     },
   },
   requireRole: vi.fn(),
@@ -119,6 +120,28 @@ describe("setSalesStaffActive", () => {
 
     expect(result).toEqual({ status: "success", message: "Account status is already up to date." });
     expect(mocks.prisma.user.updateMany).not.toHaveBeenCalled();
+  });
+
+  it("writes only the status flag, so deactivation cannot disturb audit attribution", async () => {
+    await setSalesStaffActive({ id: "u1", active: false });
+
+    const [args] = mocks.prisma.user.updateMany.mock.calls[0];
+    expect(args.data).toEqual({ active: false });
+    expect(mocks.prisma.user.delete).not.toHaveBeenCalled();
+  });
+
+  it("reactivates the same row instead of creating a replacement account", async () => {
+    mocks.prisma.user.findUnique.mockResolvedValue({ id: "u1", role: "SALES", active: false });
+
+    const result = await setSalesStaffActive({ id: "u1", active: true });
+
+    expect(result).toEqual({ status: "success", message: "Account reactivated." });
+    expect(mocks.prisma.user.updateMany).toHaveBeenCalledWith({
+      where: { id: "u1", role: "SALES" },
+      data: { active: true },
+    });
+    expect(mocks.prisma.user.create).not.toHaveBeenCalled();
+    expect(mocks.prisma.user.delete).not.toHaveBeenCalled();
   });
 
   it("never writes when the pre-check finds a non-Sales account", async () => {
