@@ -18,7 +18,8 @@ export function EnquiryAddButton({
   withQuantity = false,
   className = "",
 }: EnquiryAddButtonProps) {
-  const { has, add, remove, setQuantity, ready, atCapacity } = useInquirySelection();
+  const { has, add, remove, setQuantity, ready, atCapacity } =
+    useInquirySelection();
   const [quantity, setLocalQuantity] = useState(1);
 
   const selected = ready && has(productId);
@@ -36,7 +37,9 @@ export function EnquiryAddButton({
     <div className={className}>
       {withQuantity ? (
         <label className="mb-2 block">
-          <span className="mb-1 block text-xs font-semibold text-brand-ink">Quantity</span>
+          <span className="mb-1 block text-xs font-semibold text-brand-ink">
+            Quantity
+          </span>
           <input
             type="number"
             inputMode="numeric"

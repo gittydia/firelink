@@ -10,11 +10,16 @@ import { Input } from "@/components/ui/input";
 import { Notice } from "@/components/ui/notice";
 import { Textarea } from "@/components/ui/textarea";
 import { useInquirySelection } from "@/components/use-inquiry-selection";
-import { contactInquirySchema, type ContactInquiryInput } from "@/lib/validation";
+import {
+  contactInquirySchema,
+  type ContactInquiryInput,
+} from "@/lib/validation";
 
-type Feedback =
-  | { tone: "success" | "error"; message: string; reference?: string }
-  | null;
+type Feedback = {
+  tone: "success" | "error";
+  message: string;
+  reference?: string;
+} | null;
 
 export function ContactForm() {
   const { lines, ready, count, totalQuantity, clear, setQuantity, remove } =
@@ -59,7 +64,11 @@ export function ContactForm() {
       clear();
       reset();
       setHoneypot("");
-      setFeedback({ tone: "success", message: result.message, reference: result.reference });
+      setFeedback({
+        tone: "success",
+        message: result.message,
+        reference: result.reference,
+      });
     });
   }
 
@@ -116,9 +125,15 @@ export function ContactForm() {
         errorClassName="text-ember-dark"
       />
 
-      <section aria-labelledby="selection-heading" className="rounded-xl border border-brand-mist bg-brand-canvas p-4">
+      <section
+        aria-labelledby="selection-heading"
+        className="rounded-xl border border-brand-mist bg-brand-canvas p-4"
+      >
         <div className="flex flex-wrap items-baseline justify-between gap-2">
-          <h2 id="selection-heading" className="text-sm font-semibold text-brand-ink">
+          <h2
+            id="selection-heading"
+            className="text-sm font-semibold text-brand-ink"
+          >
             Products in this enquiry {count > 0 ? `(${count})` : ""}
           </h2>
           {count > 0 ? (
@@ -133,11 +148,16 @@ export function ContactForm() {
         </div>
 
         {!ready ? (
-          <p className="mt-2 text-sm text-brand-slate">Loading your selection…</p>
+          <p className="mt-2 text-sm text-brand-slate">
+            Loading your selection…
+          </p>
         ) : count === 0 ? (
           <p className="mt-2 text-sm text-brand-slate">
             No products selected. This form is fine as a general enquiry, or{" "}
-            <Link href="/products" className="font-semibold text-ember-dark underline">
+            <Link
+              href="/products"
+              className="font-semibold text-ember-dark underline"
+            >
               browse the catalogue
             </Link>{" "}
             to add items.
@@ -150,7 +170,9 @@ export function ContactForm() {
                   key={line.productId}
                   className="flex flex-wrap items-center justify-between gap-2 rounded-lg border border-brand-mist bg-brand-paper px-3 py-2"
                 >
-                  <span className="text-sm text-brand-ink">Item {index + 1}</span>
+                  <span className="text-sm text-brand-ink">
+                    Item {index + 1}
+                  </span>
                   <span className="flex items-center gap-2">
                     <label className="flex items-center gap-2 text-sm text-brand-slate">
                       <span>Qty</span>
@@ -163,7 +185,10 @@ export function ContactForm() {
                         aria-label={`Quantity for item ${index + 1}`}
                         onChange={(event) => {
                           const next = Number.parseInt(event.target.value, 10);
-                          setQuantity(line.productId, Number.isFinite(next) ? next : 1);
+                          setQuantity(
+                            line.productId,
+                            Number.isFinite(next) ? next : 1,
+                          );
                         }}
                         className="min-h-9 w-20 rounded-md border border-brand-mist bg-brand-paper px-2 text-sm tabular-nums outline-none focus:border-brand-ink focus:ring-2 focus:ring-brand-mist"
                       />
@@ -180,8 +205,9 @@ export function ContactForm() {
               ))}
             </ul>
             <p className="mt-2 text-xs text-brand-slate">
-              {count} {count === 1 ? "line" : "lines"} · {totalQuantity} total units. Names, SKUs and
-              current availability are confirmed by our team when they reply.
+              {count} {count === 1 ? "line" : "lines"} · {totalQuantity} total
+              units. Names, SKUs and current availability are confirmed by our
+              team when they reply.
             </p>
           </>
         )}
@@ -195,25 +221,36 @@ export function ContactForm() {
             {...register("privacyAccepted")}
             required
             aria-invalid={errors.privacyAccepted ? true : undefined}
-            aria-describedby={errors.privacyAccepted ? "privacyAccepted-error" : undefined}
+            aria-describedby={
+              errors.privacyAccepted ? "privacyAccepted-error" : undefined
+            }
           />
           <span>
             I have read and accept the{" "}
-            <Link href="/privacy" className="font-semibold text-ember-dark underline">
+            <Link
+              href="/privacy"
+              className="font-semibold text-ember-dark underline"
+            >
               Privacy Policy
             </Link>
             .
           </span>
         </label>
         {errors.privacyAccepted ? (
-          <p id="privacyAccepted-error" className="mt-1 text-sm text-ember-dark">
+          <p
+            id="privacyAccepted-error"
+            className="mt-1 text-sm text-ember-dark"
+          >
             {errors.privacyAccepted.message}
           </p>
         ) : null}
       </div>
 
       {/* Bots fill every field; kept out of the tab order and the accessibility tree. */}
-      <div aria-hidden="true" className="absolute left-[-9999px] top-auto size-px overflow-hidden">
+      <div
+        aria-hidden="true"
+        className="absolute left-[-9999px] top-auto size-px overflow-hidden"
+      >
         <label htmlFor="website">Website</label>
         <input
           id="website"

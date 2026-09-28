@@ -9,7 +9,11 @@ const navLinks = [
   { href: "/contact", label: "Contact" },
 ];
 
-export default async function PublicLayout({ children }: { children: ReactNode }) {
+export default async function PublicLayout({
+  children,
+}: {
+  children: ReactNode;
+}) {
   const session = await auth();
 
   return (
@@ -24,7 +28,11 @@ export default async function PublicLayout({ children }: { children: ReactNode }
             className="flex flex-wrap items-center gap-x-6 gap-y-2 text-sm font-medium text-neutral-700"
           >
             {navLinks.map((link) => (
-              <Link key={link.href} href={link.href} className="transition-colors hover:text-fire">
+              <Link
+                key={link.href}
+                href={link.href}
+                className="transition-colors hover:text-fire"
+              >
                 {link.label}
               </Link>
             ))}
@@ -46,14 +54,19 @@ export default async function PublicLayout({ children }: { children: ReactNode }
           )}
         </div>
       </header>
-      <main className="mx-auto w-full max-w-6xl flex-1 px-4 py-8">{children}</main>
+      <main className="mx-auto w-full max-w-6xl flex-1 px-4 py-8">
+        {children}
+      </main>
       <footer className="border-t border-neutral-200 bg-neutral-50">
         <div className="mx-auto flex max-w-6xl flex-wrap items-center justify-between gap-x-6 gap-y-2 px-4 py-6 text-sm text-neutral-500">
           <p>
-            &copy; {new Date().getFullYear()} FireLink. Product information &amp; inventory
-            visibility for fire protection equipment.
+            &copy; {new Date().getFullYear()} FireLink. Product information
+            &amp; inventory visibility for fire protection equipment.
           </p>
-          <Link href="/privacy" className="font-medium transition-colors hover:text-fire">
+          <Link
+            href="/privacy"
+            className="font-medium transition-colors hover:text-fire"
+          >
             Privacy Policy
           </Link>
         </div>

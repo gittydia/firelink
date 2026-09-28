@@ -17,9 +17,10 @@ export function StaffRowActions({ id, name, active }: StaffRowActionsProps) {
   const router = useRouter();
   const [isPending, startTransition] = useTransition();
   const [isConfirming, setIsConfirming] = useState(false);
-  const [feedback, setFeedback] = useState<{ status: "success" | "error"; message: string } | null>(
-    null
-  );
+  const [feedback, setFeedback] = useState<{
+    status: "success" | "error";
+    message: string;
+  } | null>(null);
   const triggerRef = useRef<HTMLButtonElement>(null);
   const dialogRef = useRef<HTMLDivElement>(null);
   const confirmRef = useRef<HTMLButtonElement>(null);
@@ -41,7 +42,7 @@ export function StaffRowActions({ id, name, active }: StaffRowActionsProps) {
       if (event.key !== "Tab") return;
 
       const focusable = dialogRef.current?.querySelectorAll<HTMLElement>(
-        'a[href], button:not([disabled]), input, select, textarea, [tabindex]:not([tabindex="-1"])'
+        'a[href], button:not([disabled]), input, select, textarea, [tabindex]:not([tabindex="-1"])',
       );
       if (!focusable || focusable.length === 0) return;
 
@@ -98,7 +99,9 @@ export function StaffRowActions({ id, name, active }: StaffRowActionsProps) {
         </Button>
       </div>
 
-      {feedback ? <Notice tone={feedback.status}>{feedback.message}</Notice> : null}
+      {feedback ? (
+        <Notice tone={feedback.status}>{feedback.message}</Notice>
+      ) : null}
 
       {isConfirming ? (
         <div className="fixed inset-0 z-50 flex items-center justify-center bg-neutral-900/50 p-4">
@@ -116,7 +119,10 @@ export function StaffRowActions({ id, name, active }: StaffRowActionsProps) {
             >
               {active ? "Deactivate account?" : "Reactivate account?"}
             </h2>
-            <p id={`staff-status-desc-${id}`} className="mt-2 text-sm text-neutral-600">
+            <p
+              id={`staff-status-desc-${id}`}
+              className="mt-2 text-sm text-neutral-600"
+            >
               {active
                 ? `${name} will no longer be able to sign in. Their inventory history is kept.`
                 : `${name} will be able to sign in again.`}

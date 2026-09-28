@@ -36,7 +36,9 @@ function buildTextBody(inquiry: InquiryNotification): string {
       `- ${product.name} (${product.sku}) x${product.quantity} [${product.availability}]`,
   );
   const selection =
-    lines.length > 0 ? lines.join("\n") : "No products selected (general enquiry)";
+    lines.length > 0
+      ? lines.join("\n")
+      : "No products selected (general enquiry)";
 
   return [
     `Reference: ${inquiry.reference}`,

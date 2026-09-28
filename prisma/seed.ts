@@ -29,12 +29,30 @@ type SeedProduct = {
 };
 
 const categories = [
-  { name: "Fire Extinguishers", description: "Portable extinguishing units for Class A/B/C fires." },
-  { name: "Fire Hoses & Reels", description: "Hose reels, hoses, and nozzles for water supply points." },
-  { name: "Fire Alarms & Detectors", description: "Detection and alarm devices for early warning." },
-  { name: "Emergency Lighting", description: "Exit signs and emergency illumination for evacuation." },
-  { name: "Fire Blankets", description: "Blankets for smothering small fires and personal protection." },
-  { name: "Hydrants & Accessories", description: "Fire hydrants, standpipes, and connection accessories." },
+  {
+    name: "Fire Extinguishers",
+    description: "Portable extinguishing units for Class A/B/C fires.",
+  },
+  {
+    name: "Fire Hoses & Reels",
+    description: "Hose reels, hoses, and nozzles for water supply points.",
+  },
+  {
+    name: "Fire Alarms & Detectors",
+    description: "Detection and alarm devices for early warning.",
+  },
+  {
+    name: "Emergency Lighting",
+    description: "Exit signs and emergency illumination for evacuation.",
+  },
+  {
+    name: "Fire Blankets",
+    description: "Blankets for smothering small fires and personal protection.",
+  },
+  {
+    name: "Hydrants & Accessories",
+    description: "Fire hydrants, standpipes, and connection accessories.",
+  },
 ];
 
 const products: SeedProduct[] = [
@@ -44,11 +62,17 @@ const products: SeedProduct[] = [
     brand: "FireGuard",
     modelNumber: "FG-ABC5",
     category: "Fire Extinguishers",
-    shortDescription: "5kg multipurpose dry chemical extinguisher for general-use fire points.",
+    shortDescription:
+      "5kg multipurpose dry chemical extinguisher for general-use fire points.",
     description:
       "A 5kg dry chemical extinguisher for in-plant and building fire points. Includes a wall-mount bracket. Agent: monoammonium phosphate-based dry chemical.",
     availability: "IN_STOCK",
-    images: [{ url: "https://images.unsplash.com/photo-1666518837279-fad286ce75fb?q=80&w=600&h=400&fit=crop&auto=format&fm=jpg", alt: "ABC dry chemical fire extinguisher 5kg" }],
+    images: [
+      {
+        url: "https://images.unsplash.com/photo-1666518837279-fad286ce75fb?q=80&w=600&h=400&fit=crop&auto=format&fm=jpg",
+        alt: "ABC dry chemical fire extinguisher 5kg",
+      },
+    ],
     specs: [
       { name: "Capacity", value: "5", unit: "kg" },
       { name: "Working Pressure", value: "1.2", unit: "MPa" },
@@ -65,7 +89,12 @@ const products: SeedProduct[] = [
     description:
       "A 9kg dry chemical extinguisher suited to larger floor areas and workshops. Includes a wall-mount bracket and pressure gauge.",
     availability: "IN_STOCK",
-    images: [{ url: "https://images.unsplash.com/photo-1595740041673-6a525c7be994?q=80&w=600&h=400&fit=crop&auto=format&fm=jpg", alt: "ABC dry chemical fire extinguisher 9kg" }],
+    images: [
+      {
+        url: "https://images.unsplash.com/photo-1595740041673-6a525c7be994?q=80&w=600&h=400&fit=crop&auto=format&fm=jpg",
+        alt: "ABC dry chemical fire extinguisher 9kg",
+      },
+    ],
     specs: [
       { name: "Capacity", value: "9", unit: "kg" },
       { name: "Working Pressure", value: "1.2", unit: "MPa" },
@@ -78,11 +107,17 @@ const products: SeedProduct[] = [
     brand: "FireGuard",
     modelNumber: "FG-CO25",
     category: "Fire Extinguishers",
-    shortDescription: "5kg carbon dioxide extinguisher for electrical and Class B risks.",
+    shortDescription:
+      "5kg carbon dioxide extinguisher for electrical and Class B risks.",
     description:
       "A 5kg carbon dioxide extinguisher intended for electrical equipment and flammable liquid hazards. Discharges as gas to leave no residue.",
     availability: "LOCAL",
-    images: [{ url: "https://images.unsplash.com/photo-1625958936686-a9343dc35b5b?q=80&w=600&h=400&fit=crop&auto=format&fm=jpg", alt: "CO2 fire extinguisher 5kg" }],
+    images: [
+      {
+        url: "https://images.unsplash.com/photo-1625958936686-a9343dc35b5b?q=80&w=600&h=400&fit=crop&auto=format&fm=jpg",
+        alt: "CO2 fire extinguisher 5kg",
+      },
+    ],
     specs: [
       { name: "Capacity", value: "5", unit: "kg" },
       { name: "Charge Pressure", value: "5.7", unit: "MPa" },
@@ -99,7 +134,12 @@ const products: SeedProduct[] = [
     description:
       "A 9-litre water extinguisher for Class A fires involving wood, paper, and textiles. Not intended for electrical or flammable liquid fires.",
     availability: "INDENT",
-    images: [{ url: "https://images.unsplash.com/photo-1604656329788-e66ad1dfe01b?q=80&w=600&h=400&fit=crop&auto=format&fm=jpg", alt: "Water fire extinguisher 9L" }],
+    images: [
+      {
+        url: "https://images.unsplash.com/photo-1604656329788-e66ad1dfe01b?q=80&w=600&h=400&fit=crop&auto=format&fm=jpg",
+        alt: "Water fire extinguisher 9L",
+      },
+    ],
     specs: [
       { name: "Capacity", value: "9", unit: "L" },
       { name: "Working Pressure", value: "1.0", unit: "MPa" },
@@ -112,11 +152,17 @@ const products: SeedProduct[] = [
     brand: "AquaFlow",
     modelNumber: "AF-HR25",
     category: "Fire Hoses & Reels",
-    shortDescription: "Wall-mounted 25m semi-rigid hose reel for interior water supply.",
+    shortDescription:
+      "Wall-mounted 25m semi-rigid hose reel for interior water supply.",
     description:
       "Wall-mounted fire hose reel with 25m of semi-rigid hose and a pressurised water supply connection. Includes nozzle and manual valve.",
     availability: "IN_STOCK",
-    images: [{ url: "https://images.unsplash.com/photo-1766152249662-c7774b68bd72?q=80&w=600&h=400&fit=crop&auto=format&fm=jpg", alt: "Fire hose reel 25m" }],
+    images: [
+      {
+        url: "https://images.unsplash.com/photo-1766152249662-c7774b68bd72?q=80&w=600&h=400&fit=crop&auto=format&fm=jpg",
+        alt: "Fire hose reel 25m",
+      },
+    ],
     specs: [
       { name: "Hose Length", value: "25", unit: "m" },
       { name: "Hose Bore", value: "25", unit: "mm" },
@@ -129,11 +175,17 @@ const products: SeedProduct[] = [
     brand: "AquaFlow",
     modelNumber: "AF-H150",
     category: "Fire Hoses & Reels",
-    shortDescription: "15m delivery hose with couplings for hydrant connections.",
+    shortDescription:
+      "15m delivery hose with couplings for hydrant connections.",
     description:
       "A 15m double-jacketed delivery hose with 1.5-inch couplings. Used to connect hydrants or standpipes to the fire point.",
     availability: "LOCAL",
-    images: [{ url: "https://images.unsplash.com/photo-1700356848746-5f2dd76c237b?q=80&w=600&h=400&fit=crop&auto=format&fm=jpg", alt: "Fire hose 1.5in x 15m" }],
+    images: [
+      {
+        url: "https://images.unsplash.com/photo-1700356848746-5f2dd76c237b?q=80&w=600&h=400&fit=crop&auto=format&fm=jpg",
+        alt: "Fire hose 1.5in x 15m",
+      },
+    ],
     specs: [
       { name: "Length", value: "15", unit: "m" },
       { name: "Diameter", value: "1.5", unit: "in" },
@@ -150,7 +202,12 @@ const products: SeedProduct[] = [
     description:
       "A photoelectric smoke detector for ceiling installation in offices and corridors. Operates on a 9V battery and includes a test button.",
     availability: "IN_STOCK",
-    images: [{ url: "https://images.unsplash.com/photo-1767672857994-73a27b723506?q=80&w=600&h=400&fit=crop&auto=format&fm=jpg", alt: "Photoelectric smoke detector" }],
+    images: [
+      {
+        url: "https://images.unsplash.com/photo-1767672857994-73a27b723506?q=80&w=600&h=400&fit=crop&auto=format&fm=jpg",
+        alt: "Photoelectric smoke detector",
+      },
+    ],
     specs: [
       { name: "Sensor", value: "Photoelectric" },
       { name: "Power", value: "9V DC battery" },
@@ -167,7 +224,12 @@ const products: SeedProduct[] = [
     description:
       "An 8-zone conventional fire alarm control panel with manual test functions and battery backing. Configured for smoke/heat detector circuits plus call points.",
     availability: "INDENT",
-    images: [{ url: "https://images.unsplash.com/photo-1697952438910-b22a06a75501?q=80&w=600&h=400&fit=crop&auto=format&fm=jpg", alt: "Fire alarm control panel 8-zone" }],
+    images: [
+      {
+        url: "https://images.unsplash.com/photo-1697952438910-b22a06a75501?q=80&w=600&h=400&fit=crop&auto=format&fm=jpg",
+        alt: "Fire alarm control panel 8-zone",
+      },
+    ],
     specs: [
       { name: "Zones", value: "8" },
       { name: "Input Voltage", value: "220", unit: "V AC" },
@@ -184,7 +246,12 @@ const products: SeedProduct[] = [
     description:
       "A self-contained LED exit sign with internal battery backup for power-out conditions. Green pictogram, ceiling or wall mount.",
     availability: "IN_STOCK",
-    images: [{ url: "https://images.unsplash.com/photo-1732812837481-3ff6c4235995?q=80&w=600&h=400&fit=crop&auto=format&fm=jpg", alt: "LED emergency exit sign" }],
+    images: [
+      {
+        url: "https://images.unsplash.com/photo-1732812837481-3ff6c4235995?q=80&w=600&h=400&fit=crop&auto=format&fm=jpg",
+        alt: "LED emergency exit sign",
+      },
+    ],
     specs: [
       { name: "Light Source", value: "LED" },
       { name: "Backup Time", value: "90", unit: "min" },
@@ -201,7 +268,12 @@ const products: SeedProduct[] = [
     description:
       "A 1.2 x 1.8m fire blanket in a quick-release wall case. Suitable for smothering small fires or wrapping around a person during evacuation.",
     availability: "LOCAL",
-    images: [{ url: "https://images.unsplash.com/photo-1618607779902-5e491bf83477?q=80&w=600&h=400&fit=crop&auto=format&fm=jpg", alt: "Fire blanket 1.2m x 1.8m" }],
+    images: [
+      {
+        url: "https://images.unsplash.com/photo-1618607779902-5e491bf83477?q=80&w=600&h=400&fit=crop&auto=format&fm=jpg",
+        alt: "Fire blanket 1.2m x 1.8m",
+      },
+    ],
     specs: [
       { name: "Size", value: "1.2 x 1.8", unit: "m" },
       { name: "Material", value: "Fiberglass" },
@@ -230,7 +302,12 @@ async function main() {
   for (const user of users) {
     await prisma.user.upsert({
       where: { email: user.email },
-      update: { name: user.name, passwordHash: user.passwordHash, role: user.role, active: true },
+      update: {
+        name: user.name,
+        passwordHash: user.passwordHash,
+        role: user.role,
+        active: true,
+      },
       create: user,
     });
   }
@@ -279,7 +356,9 @@ async function main() {
     });
 
     await prisma.productImage.deleteMany({ where: { productId: product.id } });
-    await prisma.productSpecification.deleteMany({ where: { productId: product.id } });
+    await prisma.productSpecification.deleteMany({
+      where: { productId: product.id },
+    });
 
     await prisma.productImage.createMany({
       data: p.images.map((img, i) => ({
@@ -301,16 +380,17 @@ async function main() {
     });
   }
 
-  const [usersCount, categoriesCount, productsCount, imagesCount, specsCount] = await Promise.all([
-    prisma.user.count(),
-    prisma.category.count(),
-    prisma.product.count(),
-    prisma.productImage.count(),
-    prisma.productSpecification.count(),
-  ]);
+  const [usersCount, categoriesCount, productsCount, imagesCount, specsCount] =
+    await Promise.all([
+      prisma.user.count(),
+      prisma.category.count(),
+      prisma.product.count(),
+      prisma.productImage.count(),
+      prisma.productSpecification.count(),
+    ]);
 
   console.log(
-    `Seeded: ${usersCount} users, ${categoriesCount} categories, ${productsCount} products, ${imagesCount} images, ${specsCount} specs.`
+    `Seeded: ${usersCount} users, ${categoriesCount} categories, ${productsCount} products, ${imagesCount} images, ${specsCount} specs.`,
   );
 }
 

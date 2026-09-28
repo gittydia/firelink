@@ -12,7 +12,11 @@ import {
   normalizeStaffEmail,
   resolveStaffStatusChange,
 } from "@/lib/staff";
-import { staffCreateSchema, staffStatusSchema, staffUpdateSchema } from "@/lib/validation";
+import {
+  staffCreateSchema,
+  staffStatusSchema,
+  staffUpdateSchema,
+} from "@/lib/validation";
 
 /**
  * These actions return a result instead of throwing, because Next.js redacts
@@ -20,8 +24,7 @@ import { staffCreateSchema, staffStatusSchema, staffUpdateSchema } from "@/lib/v
  * The messages below are the ones the UI is specified to show.
  */
 export type StaffActionResult =
-  | { status: "success"; message: string }
-  | { status: "error"; message: string };
+  { status: "success"; message: string } | { status: "error"; message: string };
 
 const DUPLICATE_EMAIL = "An account with this email already exists.";
 const NOT_FOUND = "Sales Staff account not found.";
@@ -38,7 +41,10 @@ function failure(message: string): StaffActionResult {
 }
 
 function isUniqueEmailViolation(error: unknown): boolean {
-  return error instanceof Prisma.PrismaClientKnownRequestError && error.code === "P2002";
+  return (
+    error instanceof Prisma.PrismaClientKnownRequestError &&
+    error.code === "P2002"
+  );
 }
 
 function validationMessage(error: { issues: { message: string }[] }): string {
@@ -49,7 +55,9 @@ function revalidateStaffPaths() {
   revalidatePath("/admin/staff");
 }
 
-export async function createSalesStaff(input: unknown): Promise<StaffActionResult> {
+export async function createSalesStaff(
+  input: unknown,
+): Promise<StaffActionResult> {
   await requireRole(["ADMIN"]);
 
   const parsed = staffCreateSchema.safeParse(input);
@@ -68,7 +76,11 @@ export async function createSalesStaff(input: unknown): Promise<StaffActionResul
 
   try {
     await prisma.user.create({
-      data: buildStaffCreateData({ name, email: normalizedEmail, passwordHash }),
+      data: buildStaffCreateData({
+        name,
+        email: normalizedEmail,
+        passwordHash,
+      }),
     });
   } catch (error) {
     if (isUniqueEmailViolation(error)) return failure(DUPLICATE_EMAIL);
@@ -80,7 +92,10 @@ export async function createSalesStaff(input: unknown): Promise<StaffActionResul
   return success("Sales Staff account created.");
 }
 
-export async function updateSalesStaff(id: string, input: unknown): Promise<StaffActionResult> {
+export async function updateSalesStaff(
+  id: string,
+  input: unknown,
+): Promise<StaffActionResult> {
   await requireRole(["ADMIN"]);
 
   const parsed = staffUpdateSchema.safeParse(input);
@@ -120,7 +135,9 @@ export async function updateSalesStaff(id: string, input: unknown): Promise<Staf
   return success("Account details updated.");
 }
 
-export async function setSalesStaffActive(input: unknown): Promise<StaffActionResult> {
+export async function setSalesStaffActive(
+  input: unknown,
+): Promise<StaffActionResult> {
   await requireRole(["ADMIN"]);
 
   const parsed = staffStatusSchema.safeParse(input);
@@ -134,7 +151,8 @@ export async function setSalesStaffActive(input: unknown): Promise<StaffActionRe
   if (!current || current.role !== STAFF_ROLE) return failure(NOT_FOUND);
 
   const nextActive = resolveStaffStatusChange(current.active, active);
-  if (nextActive === null) return success("Account status is already up to date.");
+  if (nextActive === null)
+    return success("Account status is already up to date.");
 
   try {
     const { count } = await prisma.user.updateMany({

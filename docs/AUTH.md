@@ -9,11 +9,11 @@
 
 ## Roles
 
-| Role | Can do |
-|---|---|
-| Public (unauthenticated) | Browse catalog, search, filter, view product details |
-| `SALES` | Log in; create/edit products; update inventory availability |
-| `ADMIN` | Everything SALES can do, plus manage categories and staff users |
+| Role                     | Can do                                                          |
+| ------------------------ | --------------------------------------------------------------- |
+| Public (unauthenticated) | Browse catalog, search, filter, view product details            |
+| `SALES`                  | Log in; create/edit products; update inventory availability     |
+| `ADMIN`                  | Everything SALES can do, plus manage categories and staff users |
 
 ## Authorization boundaries (server-side only)
 

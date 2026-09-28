@@ -2,10 +2,10 @@
 
 ## Enums
 
-| Enum                 | Values                        | Notes                               |
-| -------------------- | ----------------------------- | ----------------------------------- |
-| `UserRole`           | `ADMIN`, `SALES`              | Role-based access control           |
-| `AvailabilityStatus` | `LOCAL`, `IN_STOCK`, `INDENT` | Product availability classification |
+| Enum                        | Values                                 | Notes                                         |
+| --------------------------- | -------------------------------------- | --------------------------------------------- |
+| `UserRole`                  | `ADMIN`, `SALES`                       | Role-based access control                     |
+| `AvailabilityStatus`        | `LOCAL`, `IN_STOCK`, `INDENT`          | Product availability classification           |
 | `InquiryNotificationStatus` | `PENDING`, `SENT`, `FAILED`, `SKIPPED` | Outcome of the best-effort sales notification |
 
 ### Availability semantics

@@ -81,17 +81,22 @@ describe("normalizeInquiryLines", () => {
   });
 
   it("caps the number of lines", () => {
-    const many = Array.from({ length: MAX_SELECTION_LINES + 10 }, (_, index) => ({
-      productId: `p${index}`,
-      quantity: 1,
-    }));
+    const many = Array.from(
+      { length: MAX_SELECTION_LINES + 10 },
+      (_, index) => ({
+        productId: `p${index}`,
+        quantity: 1,
+      }),
+    );
     expect(normalizeInquiryLines(many)).toHaveLength(MAX_SELECTION_LINES);
   });
 
   it("returns nothing for a non-array input", () => {
     expect(normalizeInquiryLines(null)).toEqual([]);
     expect(normalizeInquiryLines(undefined)).toEqual([]);
-    expect(normalizeInquiryLines("abc" as unknown as readonly unknown[])).toEqual([]);
+    expect(
+      normalizeInquiryLines("abc" as unknown as readonly unknown[]),
+    ).toEqual([]);
   });
 });
 
@@ -107,9 +112,9 @@ describe("parseInquirySelection", () => {
   });
 
   it("reads the array form", () => {
-    expect(
-      parseInquirySelection('[{"productId":"abc","quantity":4}]'),
-    ).toEqual([{ productId: "abc", quantity: 4 }]);
+    expect(parseInquirySelection('[{"productId":"abc","quantity":4}]')).toEqual(
+      [{ productId: "abc", quantity: 4 }],
+    );
   });
 
   it("accepts a bare object from the earlier single-line storage shape", () => {
@@ -125,7 +130,9 @@ describe("serializeInquirySelection", () => {
       { productId: "abc", quantity: 2 },
       { productId: "def", quantity: 1 },
     ];
-    expect(parseInquirySelection(serializeInquirySelection(lines))).toEqual(lines);
+    expect(parseInquirySelection(serializeInquirySelection(lines))).toEqual(
+      lines,
+    );
   });
 
   it("normalizes before writing so storage never holds duplicate ids", () => {

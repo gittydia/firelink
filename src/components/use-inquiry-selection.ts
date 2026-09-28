@@ -28,7 +28,11 @@ export interface InquirySelection {
 }
 
 export function useInquirySelection(): InquirySelection {
-  const { lines, ready } = useSyncExternalStore(subscribe, getSnapshot, getServerSnapshot);
+  const { lines, ready } = useSyncExternalStore(
+    subscribe,
+    getSnapshot,
+    getServerSnapshot,
+  );
 
   // Storage is read after mount rather than during render: reading it inline
   // would make the server HTML disagree with the first client render.

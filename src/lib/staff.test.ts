@@ -27,7 +27,9 @@ describe("canManageStaff", () => {
 
 describe("normalizeStaffEmail", () => {
   it("trims and lowercases so lookups match the stored value", () => {
-    expect(normalizeStaffEmail("  Ana.Reyes@FireLink.Local  ")).toBe("ana.reyes@firelink.local");
+    expect(normalizeStaffEmail("  Ana.Reyes@FireLink.Local  ")).toBe(
+      "ana.reyes@firelink.local",
+    );
   });
 });
 
@@ -62,7 +64,10 @@ describe("buildStaffUpdateData", () => {
       email: "  Ana.Reyes@FireLink.Local ",
     });
 
-    expect(data).toEqual({ name: "Ana Reyes", email: "ana.reyes@firelink.local" });
+    expect(data).toEqual({
+      name: "Ana Reyes",
+      email: "ana.reyes@firelink.local",
+    });
     expect(data).not.toHaveProperty("role");
     expect(data).not.toHaveProperty("active");
     expect(data).not.toHaveProperty("passwordHash");

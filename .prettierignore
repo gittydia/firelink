@@ -1,0 +1,24 @@
+# Dependencies and build output
+node_modules/
+.next/
+out/
+build/
+dist/
+coverage/
+
+# Generated code and lockfiles
+pnpm-lock.yaml
+src/generated/
+next-env.d.ts
+
+# Migrations are historical records; do not rewrite them
+prisma/migrations/
+
+# Static assets
+public/
+
+# Vendored agent skills and agent instruction files are not project-owned
+# source. Formatting them creates churn in files we do not author, and
+# Prettier reformats embedded code blocks inside markdown.
+.agents/
+AGENTS.md

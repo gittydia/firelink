@@ -12,7 +12,9 @@ export type CurrentAccount = {
  * not trust the token. Returns null when the row is gone, so a deleted account
  * is treated exactly like a deactivated one.
  */
-export async function findCurrentAccount(userId: string): Promise<CurrentAccount | null> {
+export async function findCurrentAccount(
+  userId: string,
+): Promise<CurrentAccount | null> {
   return prisma.user.findUnique({
     where: { id: userId },
     select: { id: true, active: true, role: true },

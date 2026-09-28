@@ -15,7 +15,9 @@ const links: { href: string; label: string; adminOnly?: boolean }[] = [
 
 export function AdminNav({ role }: { role: UserRole }) {
   const pathname = usePathname();
-  const visibleLinks = links.filter((link) => !link.adminOnly || canManageStaff(role));
+  const visibleLinks = links.filter(
+    (link) => !link.adminOnly || canManageStaff(role),
+  );
 
   return (
     <nav aria-label="Admin" className="flex gap-2 md:flex-col">
@@ -30,7 +32,9 @@ export function AdminNav({ role }: { role: UserRole }) {
             aria-current={active ? "page" : undefined}
             className={cn(
               "rounded-md px-3 py-2 text-sm font-medium transition-colors",
-              active ? "bg-fire text-white" : "text-neutral-700 hover:bg-neutral-100"
+              active
+                ? "bg-fire text-white"
+                : "text-neutral-700 hover:bg-neutral-100",
             )}
           >
             {link.label}

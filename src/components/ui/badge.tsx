@@ -21,7 +21,7 @@ export function AvailabilityBadge({
       className={cn(
         "inline-flex items-center rounded-full px-2.5 py-0.5 text-xs font-medium",
         tone[status],
-        className
+        className,
       )}
     >
       {availabilityLabels[status]}
@@ -34,7 +34,9 @@ export function ActiveBadge({ active }: { active: boolean }) {
     <span
       className={cn(
         "inline-flex items-center rounded-full px-2.5 py-0.5 text-xs font-medium",
-        active ? "bg-neutral-100 text-neutral-700" : "bg-neutral-200 text-neutral-500"
+        active
+          ? "bg-neutral-100 text-neutral-700"
+          : "bg-neutral-200 text-neutral-500",
       )}
     >
       {active ? "Active" : "Archived"}
@@ -48,7 +50,9 @@ export function AccountStatusBadge({ active }: { active: boolean }) {
     <span
       className={cn(
         "inline-flex items-center rounded-full px-2.5 py-0.5 text-xs font-medium",
-        active ? "bg-emerald-100 text-emerald-800" : "bg-neutral-200 text-neutral-600"
+        active
+          ? "bg-emerald-100 text-emerald-800"
+          : "bg-neutral-200 text-neutral-600",
       )}
     >
       {staffStatusLabel(active)}

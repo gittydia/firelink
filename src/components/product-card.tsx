@@ -42,14 +42,19 @@ export function ProductCard({ product }: { product: ProductCardData }) {
             <h3 className="font-semibold leading-snug text-brand-ink group-hover:text-ember-dark">
               {product.name}
             </h3>
-            <AvailabilityBadge status={product.availabilityStatus} className="shrink-0" />
+            <AvailabilityBadge
+              status={product.availabilityStatus}
+              className="shrink-0"
+            />
           </div>
           <p className="text-xs font-medium text-brand-slate">
             {product.brand}
             {product.modelNumber ? ` · ${product.modelNumber}` : ""}
           </p>
           {product.shortDescription ? (
-            <p className="mt-1 line-clamp-2 text-sm leading-6 text-brand-slate">{product.shortDescription}</p>
+            <p className="mt-1 line-clamp-2 text-sm leading-6 text-brand-slate">
+              {product.shortDescription}
+            </p>
           ) : null}
         </div>
       </Link>

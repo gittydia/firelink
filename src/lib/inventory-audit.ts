@@ -55,7 +55,9 @@ export function formatInventoryUpdatedAt(value: Date | null): string {
 }
 
 /** The actor is nullable: the relation is cleared when a staff account is deleted. */
-export function formatInventoryUpdatedBy(name: string | null | undefined): string {
+export function formatInventoryUpdatedBy(
+  name: string | null | undefined,
+): string {
   if (!name) return INVENTORY_AUDIT_MISSING_LABEL;
 
   return `by ${name}`;

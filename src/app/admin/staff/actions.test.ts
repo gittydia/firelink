@@ -1,6 +1,10 @@
 import { Prisma } from "@prisma/client";
 import { beforeEach, describe, expect, it, vi } from "vitest";
-import { createSalesStaff, setSalesStaffActive, updateSalesStaff } from "./actions";
+import {
+  createSalesStaff,
+  setSalesStaffActive,
+  updateSalesStaff,
+} from "./actions";
 
 const mocks = vi.hoisted(() => ({
   prisma: {
@@ -41,9 +45,15 @@ describe("updateSalesStaff", () => {
   });
 
   it("scopes the write by role so a check-then-write race cannot touch another role", async () => {
-    const result = await updateSalesStaff("u1", { name: "Ana", email: "ana@x.com" });
+    const result = await updateSalesStaff("u1", {
+      name: "Ana",
+      email: "ana@x.com",
+    });
 
-    expect(result).toEqual({ status: "success", message: "Account details updated." });
+    expect(result).toEqual({
+      status: "success",
+      message: "Account details updated.",
+    });
     expect(mocks.prisma.user.updateMany).toHaveBeenCalledWith({
       where: { id: "u1", role: "SALES" },
       data: { name: "Ana", email: "ana@x.com" },
@@ -53,7 +63,10 @@ describe("updateSalesStaff", () => {
   it("reports not found when the role-scoped write matches no row", async () => {
     mocks.prisma.user.updateMany.mockResolvedValue({ count: 0 });
 
-    const result = await updateSalesStaff("u1", { name: "Ana", email: "ana@x.com" });
+    const result = await updateSalesStaff("u1", {
+      name: "Ana",
+      email: "ana@x.com",
+    });
 
     expect(result).toEqual({ status: "error", message: NOT_FOUND });
     expect(mocks.revalidatePath).not.toHaveBeenCalled();
@@ -62,7 +75,10 @@ describe("updateSalesStaff", () => {
   it("never writes when the pre-check finds a non-Sales account", async () => {
     mocks.prisma.user.findUnique.mockResolvedValue({ id: "a1", role: "ADMIN" });
 
-    const result = await updateSalesStaff("a1", { name: "Admin", email: "admin@x.com" });
+    const result = await updateSalesStaff("a1", {
+      name: "Admin",
+      email: "admin@x.com",
+    });
 
     expect(result).toEqual({ status: "error", message: NOT_FOUND });
     expect(mocks.prisma.user.updateMany).not.toHaveBeenCalled();
@@ -82,10 +98,16 @@ describe("updateSalesStaff", () => {
 
   it("surfaces a duplicate-email violation raised by the write as the duplicate message", async () => {
     mocks.prisma.user.updateMany.mockRejectedValue(
-      new Prisma.PrismaClientKnownRequestError("unique", { code: "P2002", clientVersion: "test" })
+      new Prisma.PrismaClientKnownRequestError("unique", {
+        code: "P2002",
+        clientVersion: "test",
+      }),
     );
 
-    const result = await updateSalesStaff("u1", { name: "Ana", email: "ana@x.com" });
+    const result = await updateSalesStaff("u1", {
+      name: "Ana",
+      email: "ana@x.com",
+    });
 
     expect(result).toEqual({ status: "error", message: DUPLICATE_EMAIL });
   });
@@ -100,7 +122,10 @@ describe("setSalesStaffActive", () => {
   it("scopes the status write by role", async () => {
     const result = await setSalesStaffActive({ id: "u1", active: false });
 
-    expect(result).toEqual({ status: "success", message: "Account deactivated." });
+    expect(result).toEqual({
+      status: "success",
+      message: "Account deactivated.",
+    });
     expect(mocks.prisma.user.updateMany).toHaveBeenCalledWith({
       where: { id: "u1", role: "SALES" },
       data: { active: false },
@@ -118,7 +143,10 @@ describe("setSalesStaffActive", () => {
   it("does not write when the requested status already matches", async () => {
     const result = await setSalesStaffActive({ id: "u1", active: true });
 
-    expect(result).toEqual({ status: "success", message: "Account status is already up to date." });
+    expect(result).toEqual({
+      status: "success",
+      message: "Account status is already up to date.",
+    });
     expect(mocks.prisma.user.updateMany).not.toHaveBeenCalled();
   });
 
@@ -131,11 +159,18 @@ describe("setSalesStaffActive", () => {
   });
 
   it("reactivates the same row instead of creating a replacement account", async () => {
-    mocks.prisma.user.findUnique.mockResolvedValue({ id: "u1", role: "SALES", active: false });
+    mocks.prisma.user.findUnique.mockResolvedValue({
+      id: "u1",
+      role: "SALES",
+      active: false,
+    });
 
     const result = await setSalesStaffActive({ id: "u1", active: true });
 
-    expect(result).toEqual({ status: "success", message: "Account reactivated." });
+    expect(result).toEqual({
+      status: "success",
+      message: "Account reactivated.",
+    });
     expect(mocks.prisma.user.updateMany).toHaveBeenCalledWith({
       where: { id: "u1", role: "SALES" },
       data: { active: true },
@@ -145,7 +180,11 @@ describe("setSalesStaffActive", () => {
   });
 
   it("never writes when the pre-check finds a non-Sales account", async () => {
-    mocks.prisma.user.findUnique.mockResolvedValue({ id: "a1", role: "ADMIN", active: true });
+    mocks.prisma.user.findUnique.mockResolvedValue({
+      id: "a1",
+      role: "ADMIN",
+      active: true,
+    });
 
     const result = await setSalesStaffActive({ id: "a1", active: false });
 
@@ -168,9 +207,16 @@ describe("createSalesStaff", () => {
   });
 
   it("forces role and active on create even when the payload claims otherwise", async () => {
-    const result = await createSalesStaff({ ...validInput, role: "ADMIN", active: false });
+    const result = await createSalesStaff({
+      ...validInput,
+      role: "ADMIN",
+      active: false,
+    });
 
-    expect(result).toEqual({ status: "success", message: "Sales Staff account created." });
+    expect(result).toEqual({
+      status: "success",
+      message: "Sales Staff account created.",
+    });
     const [args] = mocks.prisma.user.create.mock.calls[0];
     expect(args.data.role).toBe("SALES");
     expect(args.data.active).toBe(true);
@@ -189,7 +235,10 @@ describe("createSalesStaff", () => {
 
   it("maps a unique-email violation raised after the check to the duplicate message", async () => {
     mocks.prisma.user.create.mockRejectedValue(
-      new Prisma.PrismaClientKnownRequestError("unique", { code: "P2002", clientVersion: "test" })
+      new Prisma.PrismaClientKnownRequestError("unique", {
+        code: "P2002",
+        clientVersion: "test",
+      }),
     );
 
     const result = await createSalesStaff(validInput);

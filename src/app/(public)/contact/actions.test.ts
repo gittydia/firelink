@@ -16,7 +16,9 @@ const mocks = vi.hoisted(() => ({
 }));
 
 vi.mock("@/lib/prisma", () => ({ prisma: mocks.prisma }));
-vi.mock("@/lib/email", () => ({ notifySalesOfInquiry: mocks.notifySalesOfInquiry }));
+vi.mock("@/lib/email", () => ({
+  notifySalesOfInquiry: mocks.notifySalesOfInquiry,
+}));
 
 const GENERIC_FAILURE = "Could not send your enquiry. Please try again.";
 
@@ -82,7 +84,10 @@ describe("submitInquiry: guards before any write", () => {
   it("returns the validation message and never queries the database", async () => {
     const result = await submitInquiry(validInput({ email: "not-an-email" }));
 
-    expect(result).toEqual({ status: "error", message: "Enter a valid email address" });
+    expect(result).toEqual({
+      status: "error",
+      message: "Enter a valid email address",
+    });
     expect(mocks.prisma.inquiry.create).not.toHaveBeenCalled();
   });
 
@@ -97,7 +102,9 @@ describe("submitInquiry: guards before any write", () => {
   });
 
   it("rejects a filled honeypot with the generic message and no database access", async () => {
-    const result = await submitInquiry(validInput({ website: "http://spam.example" }));
+    const result = await submitInquiry(
+      validInput({ website: "http://spam.example" }),
+    );
 
     expect(result).toEqual({ status: "error", message: GENERIC_FAILURE });
     expect(mocks.prisma.inquiry.create).not.toHaveBeenCalled();
@@ -121,8 +128,10 @@ describe("submitInquiry: catalog is resolved server-side", () => {
     await submitInquiry(
       validInput({
         // A tampered payload trying to pass off names and stock levels.
-        products: [{ productId: "p1", quantity: 3, name: "Fake", sku: "FAKE-1" }],
-      })
+        products: [
+          { productId: "p1", quantity: 3, name: "Fake", sku: "FAKE-1" },
+        ],
+      }),
     );
 
     expect(mocks.prisma.product.findMany).toHaveBeenCalledWith({
@@ -144,7 +153,7 @@ describe("submitInquiry: catalog is resolved server-side", () => {
             ],
           },
         }),
-      })
+      }),
     );
   });
 
@@ -154,12 +163,14 @@ describe("submitInquiry: catalog is resolved server-side", () => {
     mocks.prisma.product.findMany.mockResolvedValue([]);
 
     const result = await submitInquiry(
-      validInput({ products: [{ productId: "p1", quantity: 2 }] })
+      validInput({ products: [{ productId: "p1", quantity: 2 }] }),
     );
 
     expect(result.status).toBe("success");
     expect(mocks.prisma.inquiry.create).toHaveBeenCalledWith(
-      expect.objectContaining({ data: expect.objectContaining({ products: { create: [] } }) })
+      expect.objectContaining({
+        data: expect.objectContaining({ products: { create: [] } }),
+      }),
     );
   });
 
@@ -201,7 +212,8 @@ describe("submitInquiry: persistence", () => {
     expect(result).toEqual({
       status: "success",
       reference: "FLQ-20260928-RETRY2",
-      message: "Thanks - your enquiry is in. Our sales team will reply shortly.",
+      message:
+        "Thanks - your enquiry is in. Our sales team will reply shortly.",
     });
   });
 
@@ -216,7 +228,10 @@ describe("submitInquiry: persistence", () => {
 
   it("does not retry a non-unique database error", async () => {
     mocks.prisma.inquiry.create.mockRejectedValue(
-      new Prisma.PrismaClientKnownRequestError("boom", { code: "P1001", clientVersion: "test" })
+      new Prisma.PrismaClientKnownRequestError("boom", {
+        code: "P1001",
+        clientVersion: "test",
+      }),
     );
 
     const result = await submitInquiry(validInput());
@@ -261,14 +276,19 @@ describe("submitInquiry: notification is best-effort", () => {
 
     expect(mocks.prisma.inquiry.update).toHaveBeenCalledWith({
       where: { id: "inq1" },
-      data: { notificationStatus: "FAILED", notificationError: "Resend returned 502" },
+      data: {
+        notificationStatus: "FAILED",
+        notificationError: "Resend returned 502",
+      },
     });
     expect(result.status).toBe("success");
   });
 
   it("still reports success when the read-back itself fails, so no duplicate is invited", async () => {
     arrangeDurableInsert();
-    mocks.prisma.inquiry.findUniqueOrThrow.mockRejectedValue(new Error("row vanished"));
+    mocks.prisma.inquiry.findUniqueOrThrow.mockRejectedValue(
+      new Error("row vanished"),
+    );
 
     const result = await submitInquiry(validInput());
 
@@ -285,7 +305,7 @@ describe("submitInquiry: notification is best-effort", () => {
     expect(result.status).toBe("success");
     expect(console.error).toHaveBeenCalledWith(
       "[inquiry] notification finalization failed",
-      expect.any(Error)
+      expect.any(Error),
     );
   });
 });

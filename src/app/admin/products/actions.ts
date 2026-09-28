@@ -17,15 +17,22 @@ import {
 async function ensureUniqueSlug(base: string): Promise<string> {
   for (let i = 1; i <= 1000; i += 1) {
     const candidate = i === 1 ? base : `${base}-${i}`;
-    const taken = await prisma.product.findUnique({ where: { slug: candidate } });
+    const taken = await prisma.product.findUnique({
+      where: { slug: candidate },
+    });
     if (!taken) return candidate;
   }
   return `${base}-${Date.now()}`;
 }
 
 function friendlyUniqueError(error: unknown): never {
-  if (error instanceof Prisma.PrismaClientKnownRequestError && error.code === "P2002") {
-    const target = Array.isArray(error.meta?.target) ? error.meta.target.join(", ") : "field";
+  if (
+    error instanceof Prisma.PrismaClientKnownRequestError &&
+    error.code === "P2002"
+  ) {
+    const target = Array.isArray(error.meta?.target)
+      ? error.meta.target.join(", ")
+      : "field";
     throw new Error(`A product with this ${target} already exists.`);
   }
   throw error;
@@ -43,7 +50,8 @@ export async function createProduct(input: ProductCreateInput) {
   const parsed = productCreateSchema.safeParse(input);
   if (!parsed.success) {
     throw new Error(
-      "Invalid product data: " + parsed.error.issues.map((issue) => issue.message).join("; ")
+      "Invalid product data: " +
+        parsed.error.issues.map((issue) => issue.message).join("; "),
     );
   }
 
@@ -94,7 +102,8 @@ export async function updateProduct(id: string, input: ProductUpdateInput) {
   const parsed = productUpdateSchema.safeParse(input);
   if (!parsed.success) {
     throw new Error(
-      "Invalid product data: " + parsed.error.issues.map((issue) => issue.message).join("; ")
+      "Invalid product data: " +
+        parsed.error.issues.map((issue) => issue.message).join("; "),
     );
   }
 
@@ -173,9 +182,15 @@ export async function toggleProductActive(formData: FormData) {
   const id = formData.get("id");
   if (typeof id !== "string" || !id) return;
 
-  const product = await prisma.product.findUnique({ where: { id }, select: { active: true } });
+  const product = await prisma.product.findUnique({
+    where: { id },
+    select: { active: true },
+  });
   if (!product) return;
 
-  await prisma.product.update({ where: { id }, data: { active: !product.active } });
+  await prisma.product.update({
+    where: { id },
+    data: { active: !product.active },
+  });
   revalidateProductPaths();
 }

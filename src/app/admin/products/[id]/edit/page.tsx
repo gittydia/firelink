@@ -55,13 +55,18 @@ export default async function EditProductPage({ params }: Props) {
   return (
     <div className="space-y-6">
       <div>
-        <h1 className="text-2xl font-bold tracking-tight text-neutral-900">Edit product</h1>
+        <h1 className="text-2xl font-bold tracking-tight text-neutral-900">
+          Edit product
+        </h1>
         <p className="mt-1 text-sm text-neutral-600">
           {product.name} · {product.sku}
         </p>
       </div>
       <ProductForm
-        categories={categories.map((category) => ({ value: category.id, label: category.name }))}
+        categories={categories.map((category) => ({
+          value: category.id,
+          label: category.name,
+        }))}
         productId={product.id}
         initial={initial}
       />

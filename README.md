@@ -26,37 +26,48 @@ A minimal prototype web app for centralizing fire protection product information
 ## Quick Start
 
 ### 1. Install dependencies
+
 ```bash
 pnpm i
 ```
 
 ### 2. Setup environment
+
 Copy `.env.example` to `.env` and adjust as needed:
+
 ```bash
 cp .env.example .env
 ```
+
 Generate `AUTH_SECRET` (recommended):
+
 ```bash
 openssl rand -base64 32
 ```
+
 Update `AUTH_SECRET` and `NEXTAUTH_URL`.
 
 Inquiry notifications are optional. Leave `RESEND_API_KEY` unset to run locally: enquiries are still persisted, the notification is recorded as `SKIPPED`, and no email is attempted.
 
 ### 3. Database setup
+
 Local dev uses PostgreSQL in Docker (port 5433, avoids conflicts with a native local install on 5432). Start it, then generate the client, apply migrations, and seed:
+
 ```bash
 docker compose up -d
 pnpm db:generate
 pnpm db:migrate
 pnpm db:seed
 ```
+
 For production (e.g. Vercel), set `FIRELINK_DATABASE_URL` (pooled connection) and `FIRELINK_DATABASE_URL_UNPOOLED` (direct connection) to your hosted PostgreSQL instance (Neon / Supabase / Vercel Postgres), then run `pnpm db:deploy` to apply migrations. The names intentionally differ from `DATABASE_URL` so hosting integrations cannot override them.
 
 ### 4. Run dev server
+
 ```bash
 pnpm dev
 ```
+
 App: http://localhost:3000
 
 ## Demo Credentials (seeded)

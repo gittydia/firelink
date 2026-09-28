@@ -55,7 +55,9 @@ function persist(lines: InquirySelectionLine[]): void {
 
 function readStorage(): InquirySelectionLine[] {
   try {
-    return parseInquirySelection(window.localStorage.getItem(INQUIRY_SELECTION_STORAGE_KEY));
+    return parseInquirySelection(
+      window.localStorage.getItem(INQUIRY_SELECTION_STORAGE_KEY),
+    );
   } catch {
     return [];
   }
@@ -92,23 +94,37 @@ function getServerSnapshot(): Snapshot {
 
 export function addInquiryLine(productId: string, quantity = 1): void {
   const { lines } = snapshot;
-  if (lines.length >= MAX_SELECTION_LINES && !lines.some((line) => line.productId === productId)) return;
+  if (
+    lines.length >= MAX_SELECTION_LINES &&
+    !lines.some((line) => line.productId === productId)
+  )
+    return;
   const existing = lines.find((line) => line.productId === productId);
   persist(
     existing
       ? lines.map((line) =>
           line.productId === productId
-            ? { ...line, quantity: clampQuantity(line.quantity + clampQuantity(quantity)) }
+            ? {
+                ...line,
+                quantity: clampQuantity(
+                  line.quantity + clampQuantity(quantity),
+                ),
+              }
             : line,
         )
       : [...lines, { productId, quantity: clampQuantity(quantity) }],
   );
 }
 
-export function setInquiryLineQuantity(productId: string, quantity: number): void {
+export function setInquiryLineQuantity(
+  productId: string,
+  quantity: number,
+): void {
   persist(
     snapshot.lines.map((line) =>
-      line.productId === productId ? { ...line, quantity: clampQuantity(quantity) } : line,
+      line.productId === productId
+        ? { ...line, quantity: clampQuantity(quantity) }
+        : line,
     ),
   );
 }

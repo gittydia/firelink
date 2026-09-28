@@ -154,12 +154,7 @@ export const staffStatusSchema = z.object({
 /** A single requested line. Only IDs cross the boundary; names are resolved server-side. */
 export const inquiryLineSchema = z.object({
   productId: z.string().trim().min(1, "Missing product"),
-  quantity: z.coerce
-    .number()
-    .int()
-    .min(1)
-    .max(MAX_LINE_QUANTITY)
-    .default(1),
+  quantity: z.coerce.number().int().min(1).max(MAX_LINE_QUANTITY).default(1),
 });
 
 export const contactInquirySchema = z.object({
@@ -188,7 +183,10 @@ export const contactInquirySchema = z.object({
   // refine() rather than literal() so the failure carries a message the UI can show.
   privacyAccepted: z
     .boolean()
-    .refine((accepted) => accepted === true, "Accept the Privacy Policy to continue"),
+    .refine(
+      (accepted) => accepted === true,
+      "Accept the Privacy Policy to continue",
+    ),
   // Product selection is optional: a general enquiry with no lines is valid.
   products: z.array(inquiryLineSchema).max(MAX_SELECTION_LINES).default([]),
 });

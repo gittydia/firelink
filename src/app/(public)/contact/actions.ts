@@ -40,10 +40,15 @@ function validationMessage(error: { issues: { message: string }[] }): string {
 }
 
 function isUniqueReferenceViolation(error: unknown): boolean {
-  return error instanceof Prisma.PrismaClientKnownRequestError && error.code === "P2002";
+  return (
+    error instanceof Prisma.PrismaClientKnownRequestError &&
+    error.code === "P2002"
+  );
 }
 
-export async function submitInquiry(input: unknown): Promise<InquiryActionResult> {
+export async function submitInquiry(
+  input: unknown,
+): Promise<InquiryActionResult> {
   const parsed = contactInquirySchema.safeParse(input);
   if (!parsed.success) return failure(validationMessage(parsed.error));
   if (honeypotTripped(input)) return failure(GENERIC_FAILURE);
@@ -55,7 +60,10 @@ export async function submitInquiry(input: unknown): Promise<InquiryActionResult
   // so a tampered payload cannot misrepresent the catalog.
   const catalog = requested.length
     ? await prisma.product.findMany({
-        where: { id: { in: requested.map((line) => line.productId) }, active: true },
+        where: {
+          id: { in: requested.map((line) => line.productId) },
+          active: true,
+        },
         select: { id: true, name: true, sku: true, availabilityStatus: true },
       })
     : [];
@@ -165,7 +173,11 @@ async function finalizeInquiry(
     });
 
     const status =
-      result.status === "sent" ? "SENT" : result.status === "skipped" ? "SKIPPED" : "FAILED";
+      result.status === "sent"
+        ? "SENT"
+        : result.status === "skipped"
+          ? "SKIPPED"
+          : "FAILED";
 
     await prisma.inquiry.update({
       where: { id },

@@ -8,7 +8,11 @@ import { StaffEditForm } from "../../staff-form";
 
 export const metadata: Metadata = { title: "Edit Sales Staff" };
 
-export default async function EditStaffPage({ params }: { params: Promise<{ id: string }> }) {
+export default async function EditStaffPage({
+  params,
+}: {
+  params: Promise<{ id: string }>;
+}) {
   await requireRole(["ADMIN"]);
   const { id } = await params;
 
@@ -23,14 +27,19 @@ export default async function EditStaffPage({ params }: { params: Promise<{ id: 
   return (
     <div className="space-y-6">
       <div>
-        <h1 className="text-2xl font-bold tracking-tight text-neutral-900">Edit Sales Staff</h1>
+        <h1 className="text-2xl font-bold tracking-tight text-neutral-900">
+          Edit Sales Staff
+        </h1>
         <div className="mt-2 flex flex-wrap items-center gap-3">
           <span className="text-sm text-neutral-600">
             Status: <AccountStatusBadge active={staff.active} />
           </span>
         </div>
       </div>
-      <StaffEditForm staffId={staff.id} initial={{ name: staff.name, email: staff.email }} />
+      <StaffEditForm
+        staffId={staff.id}
+        initial={{ name: staff.name, email: staff.email }}
+      />
     </div>
   );
 }

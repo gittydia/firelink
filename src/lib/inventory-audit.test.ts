@@ -43,7 +43,11 @@ describe("buildInventoryAuditStamp", () => {
 
     for (const [currentStatus, nextStatus] of pairs) {
       expect(
-        buildInventoryAuditStamp({ currentStatus, nextStatus, userId: "user-1" })
+        buildInventoryAuditStamp({
+          currentStatus,
+          nextStatus,
+          userId: "user-1",
+        }),
       ).not.toBeNull();
     }
   });
@@ -71,6 +75,8 @@ describe("formatInventoryUpdatedBy", () => {
 
   it("falls back to the missing label for a deleted or absent account", () => {
     expect(formatInventoryUpdatedBy(null)).toBe(INVENTORY_AUDIT_MISSING_LABEL);
-    expect(formatInventoryUpdatedBy(undefined)).toBe(INVENTORY_AUDIT_MISSING_LABEL);
+    expect(formatInventoryUpdatedBy(undefined)).toBe(
+      INVENTORY_AUDIT_MISSING_LABEL,
+    );
   });
 });

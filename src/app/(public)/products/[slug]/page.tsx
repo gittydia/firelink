@@ -18,7 +18,10 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     select: { name: true, shortDescription: true },
   });
   if (!product) return { title: "Product not found" };
-  return { title: product.name, description: product.shortDescription ?? undefined };
+  return {
+    title: product.name,
+    description: product.shortDescription ?? undefined,
+  };
 }
 
 export default async function ProductPage({ params }: Props) {
@@ -42,7 +45,10 @@ export default async function ProductPage({ params }: Props) {
           Products
         </Link>
         {" / "}
-        <Link href={`/products?categoryId=${product.categoryId}`} className="hover:text-fire">
+        <Link
+          href={`/products?categoryId=${product.categoryId}`}
+          className="hover:text-fire"
+        >
           {product.category.name}
         </Link>
         {" / "}
@@ -93,27 +99,37 @@ export default async function ProductPage({ params }: Props) {
           <div>
             <p className="text-sm text-neutral-500">
               {product.brand}
-              {product.modelNumber ? ` · Model ${product.modelNumber}` : ""} · SKU {product.sku}
+              {product.modelNumber ? ` · Model ${product.modelNumber}` : ""} ·
+              SKU {product.sku}
             </p>
-            <h1 className="mt-1 text-3xl font-bold tracking-tight text-neutral-900">{product.name}</h1>
+            <h1 className="mt-1 text-3xl font-bold tracking-tight text-neutral-900">
+              {product.name}
+            </h1>
           </div>
 
           {/* Availability — text always shown, color is extra */}
           <Card className="border-l-4 border-l-fire p-4">
             <div className="flex flex-wrap items-center gap-3">
               <AvailabilityBadge status={product.availabilityStatus} />
-              <p className="text-sm text-neutral-600">{availabilityDescriptions[product.availabilityStatus]}</p>
+              <p className="text-sm text-neutral-600">
+                {availabilityDescriptions[product.availabilityStatus]}
+              </p>
             </div>
           </Card>
 
           {product.description ? (
-            <p className="leading-relaxed text-neutral-700">{product.description}</p>
+            <p className="leading-relaxed text-neutral-700">
+              {product.description}
+            </p>
           ) : null}
 
           <div className="rounded-xl border border-brand-mist bg-brand-paper p-4 shadow-[0_18px_45px_-32px_rgba(15,23,42,0.55)]">
-            <h2 className="text-base font-semibold text-brand-ink">Enquire about this item</h2>
+            <h2 className="text-base font-semibold text-brand-ink">
+              Enquire about this item
+            </h2>
             <p className="mt-1 text-sm leading-6 text-brand-slate">
-              Add it to your enquiry list, then send the whole list to our sales team in one message.
+              Add it to your enquiry list, then send the whole list to our sales
+              team in one message.
             </p>
             <EnquiryAddButton
               productId={product.id}
@@ -134,7 +150,9 @@ export default async function ProductPage({ params }: Props) {
           <div className="flex flex-wrap gap-3">
             <Link
               href="/products"
-              className={buttonLinkClass("border border-neutral-300 bg-white text-neutral-800 hover:bg-neutral-50")}
+              className={buttonLinkClass(
+                "border border-neutral-300 bg-white text-neutral-800 hover:bg-neutral-50",
+              )}
             >
               Back to products
             </Link>
@@ -142,11 +160,16 @@ export default async function ProductPage({ params }: Props) {
 
           {product.specifications.length > 0 ? (
             <div>
-              <h2 className="text-lg font-semibold text-neutral-900">Specifications</h2>
+              <h2 className="text-lg font-semibold text-neutral-900">
+                Specifications
+              </h2>
               <table className="mt-2 w-full border-collapse text-sm">
                 <tbody>
                   {product.specifications.map((spec) => (
-                    <tr key={spec.id} className="border-b border-neutral-200 last:border-b-0">
+                    <tr
+                      key={spec.id}
+                      className="border-b border-neutral-200 last:border-b-0"
+                    >
                       <th
                         scope="row"
                         className="w-1/3 py-2 pr-4 text-left align-top font-medium text-neutral-500"

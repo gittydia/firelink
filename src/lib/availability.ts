@@ -14,7 +14,9 @@ export const availabilityDescriptions: Record<AvailabilityStatus, string> = {
   INDENT: "Sourced on order. Lead time applies.",
 };
 
-export function parseAvailability(value: string | undefined): AvailabilityStatus | undefined {
+export function parseAvailability(
+  value: string | undefined,
+): AvailabilityStatus | undefined {
   if (value === "LOCAL" || value === "IN_STOCK" || value === "INDENT") {
     return value;
   }

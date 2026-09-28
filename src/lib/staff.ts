@@ -41,7 +41,9 @@ export interface StaffCreateFields {
  * `role` and `active` are set here, never taken from the request, so a crafted
  * form cannot mint an ADMIN or a pre-deactivated account through this path.
  */
-export function buildStaffCreateData(fields: StaffCreateFields): Prisma.UserUncheckedCreateInput {
+export function buildStaffCreateData(
+  fields: StaffCreateFields,
+): Prisma.UserUncheckedCreateInput {
   return {
     name: fields.name.trim(),
     email: normalizeStaffEmail(fields.email),
@@ -61,7 +63,9 @@ export interface StaffUpdateFields {
  * account's role or status. Status changes go through the explicit
  * `setSalesStaffActive` action instead.
  */
-export function buildStaffUpdateData(fields: StaffUpdateFields): Prisma.UserUncheckedUpdateInput {
+export function buildStaffUpdateData(
+  fields: StaffUpdateFields,
+): Prisma.UserUncheckedUpdateInput {
   return {
     name: fields.name.trim(),
     email: normalizeStaffEmail(fields.email),
@@ -74,7 +78,7 @@ export function buildStaffUpdateData(fields: StaffUpdateFields): Prisma.UserUnch
  */
 export function resolveStaffStatusChange(
   currentActive: boolean,
-  requestedActive: boolean
+  requestedActive: boolean,
 ): boolean | null {
   return currentActive === requestedActive ? null : requestedActive;
 }

@@ -32,7 +32,9 @@ export function buildInquiryReference(
 
 function toQuantity(value: unknown): number {
   const parsed =
-    typeof value === "number" ? value : Number.parseInt(String(value ?? ""), 10);
+    typeof value === "number"
+      ? value
+      : Number.parseInt(String(value ?? ""), 10);
   if (!Number.isFinite(parsed)) return 1;
   return Math.min(Math.max(Math.trunc(parsed), 1), MAX_LINE_QUANTITY);
 }
@@ -50,10 +52,12 @@ export function normalizeInquiryLines(
   for (const line of lines) {
     if (typeof line !== "object" || line === null) continue;
     const candidate = line as { productId?: unknown; quantity?: unknown };
-    const productId = typeof candidate.productId === "string" ? candidate.productId.trim() : "";
+    const productId =
+      typeof candidate.productId === "string" ? candidate.productId.trim() : "";
     if (!productId) continue;
 
-    const merged = (quantities.get(productId) ?? 0) + toQuantity(candidate.quantity);
+    const merged =
+      (quantities.get(productId) ?? 0) + toQuantity(candidate.quantity);
     quantities.set(productId, Math.min(merged, MAX_LINE_QUANTITY));
   }
 
@@ -62,7 +66,9 @@ export function normalizeInquiryLines(
     .map(([productId, quantity]) => ({ productId, quantity }));
 }
 
-export function serializeInquirySelection(lines: InquirySelectionLine[]): string {
+export function serializeInquirySelection(
+  lines: InquirySelectionLine[],
+): string {
   return JSON.stringify(normalizeInquiryLines(lines));
 }
 
@@ -71,7 +77,9 @@ export function serializeInquirySelection(lines: InquirySelectionLine[]): string
  * lines. Also accepts a bare object, because the first iteration of this flow
  * stored a single line rather than an array.
  */
-export function parseInquirySelection(raw: string | null | undefined): InquirySelectionLine[] {
+export function parseInquirySelection(
+  raw: string | null | undefined,
+): InquirySelectionLine[] {
   if (!raw) return [];
 
   let decoded: unknown;

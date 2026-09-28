@@ -21,7 +21,13 @@ export default async function AdminStaffPage() {
   const staff = await prisma.user.findMany({
     where: staffListWhere(),
     // Explicit field list so passwordHash can never reach the client.
-    select: { id: true, name: true, email: true, active: true, createdAt: true },
+    select: {
+      id: true,
+      name: true,
+      email: true,
+      active: true,
+      createdAt: true,
+    },
     orderBy: [{ active: "desc" }, { name: "asc" }],
   });
 
@@ -31,10 +37,12 @@ export default async function AdminStaffPage() {
     <div className="space-y-6">
       <div className="flex flex-wrap items-start justify-between gap-4">
         <div>
-          <h1 className="text-2xl font-bold tracking-tight text-neutral-900">Sales Staff</h1>
+          <h1 className="text-2xl font-bold tracking-tight text-neutral-900">
+            Sales Staff
+          </h1>
           <p className="mt-1 text-sm text-neutral-600">
-            {activeCount} active of {staff.length} total. Deactivated accounts keep their history
-            and can be reactivated.
+            {activeCount} active of {staff.length} total. Deactivated accounts
+            keep their history and can be reactivated.
           </p>
         </div>
         <Link
@@ -60,18 +68,35 @@ export default async function AdminStaffPage() {
                 }
               >
                 <tr>
-                  <th scope="col" className="px-4 py-3 font-medium">Name</th>
-                  <th scope="col" className="px-4 py-3 font-medium">Email</th>
-                  <th scope="col" className="px-4 py-3 font-medium">Status</th>
-                  <th scope="col" className="px-4 py-3 font-medium">Created</th>
-                  <th scope="col" className="px-4 py-3 text-right font-medium">Actions</th>
+                  <th scope="col" className="px-4 py-3 font-medium">
+                    Name
+                  </th>
+                  <th scope="col" className="px-4 py-3 font-medium">
+                    Email
+                  </th>
+                  <th scope="col" className="px-4 py-3 font-medium">
+                    Status
+                  </th>
+                  <th scope="col" className="px-4 py-3 font-medium">
+                    Created
+                  </th>
+                  <th scope="col" className="px-4 py-3 text-right font-medium">
+                    Actions
+                  </th>
                 </tr>
               </thead>
               <tbody className="divide-y divide-neutral-100">
                 {staff.map((member) => (
-                  <tr key={member.id} className={member.active ? undefined : "bg-neutral-50/60"}>
-                    <td className="px-4 py-3 font-medium text-neutral-900">{member.name}</td>
-                    <td className="px-4 py-3 text-neutral-600">{member.email}</td>
+                  <tr
+                    key={member.id}
+                    className={member.active ? undefined : "bg-neutral-50/60"}
+                  >
+                    <td className="px-4 py-3 font-medium text-neutral-900">
+                      {member.name}
+                    </td>
+                    <td className="px-4 py-3 text-neutral-600">
+                      {member.email}
+                    </td>
                     <td className="px-4 py-3">
                       <AccountStatusBadge active={member.active} />
                     </td>

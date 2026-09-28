@@ -17,11 +17,18 @@ export default async function NewProductPage() {
   return (
     <div className="space-y-6">
       <div>
-        <h1 className="text-2xl font-bold tracking-tight text-neutral-900">Add product</h1>
-        <p className="mt-1 text-sm text-neutral-600">Create a new product with details, images, and specifications.</p>
+        <h1 className="text-2xl font-bold tracking-tight text-neutral-900">
+          Add product
+        </h1>
+        <p className="mt-1 text-sm text-neutral-600">
+          Create a new product with details, images, and specifications.
+        </p>
       </div>
       <ProductForm
-        categories={categories.map((category) => ({ value: category.id, label: category.name }))}
+        categories={categories.map((category) => ({
+          value: category.id,
+          label: category.name,
+        }))}
       />
     </div>
   );
