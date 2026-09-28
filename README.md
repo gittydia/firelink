@@ -7,6 +7,8 @@ A minimal prototype web app for centralizing fire protection product information
 - Public product catalog with search, category and availability filters, sorting
 - Product detail pages with availability (prominently shown as Local / In Stock / Indent), specs
 - Category browsing
+- Guest enquiry flow: optional "add to enquiry" selection that persists across pages, submitted to a durable `Inquiry` row with an `FLQ-YYYYMMDD-XXXXXX` reference
+- Privacy Policy page with a versioned consent record on every enquiry
 - Role-based access (ADMIN, SALES) for product/inventory management
 - Server-side authorization (RBAC) only
 - Soft-deletes via `active` flags
@@ -38,6 +40,8 @@ Generate `AUTH_SECRET` (recommended):
 openssl rand -base64 32
 ```
 Update `AUTH_SECRET` and `NEXTAUTH_URL`.
+
+Inquiry notifications are optional. Leave `RESEND_API_KEY` unset to run locally: enquiries are still persisted, the notification is recorded as `SKIPPED`, and no email is attempted.
 
 ### 3. Database setup
 Local dev uses PostgreSQL in Docker (port 5433, avoids conflicts with a native local install on 5432). Start it, then generate the client, apply migrations, and seed:
@@ -80,3 +84,7 @@ App: http://localhost:3000
 - Soft-deletes: products/categories use `active` (false = archived)
 - Server-side RBAC enforced; UI hiding is not sufficient
 - Prototype scope: information + inventory visibility only (no payments/checkout/shipping)
+- Enquiries are captured, not transacted — there is no cart, quote, or order
+- An enquiry is durable once written; a failed sales email never fails the submission (see `docs/DECISIONS.md` ADR-010)
+- Product selection sends IDs only; names, SKUs, and availability are resolved server-side (ADR-011)
+- Spam defence is a honeypot field only — no rate limiting yet
