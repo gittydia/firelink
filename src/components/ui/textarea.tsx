@@ -5,10 +5,12 @@ import { cn } from "@/lib/utils";
 export interface TextareaProps extends TextareaHTMLAttributes<HTMLTextAreaElement> {
   label?: string;
   error?: string;
+  /** Error message class; defaults to the shared red. Override for a form-local error palette. */
+  errorClassName?: string;
 }
 
 export const Textarea = forwardRef<HTMLTextAreaElement, TextareaProps>(function Textarea(
-  { className, label, error, id, ...props },
+  { className, label, error, errorClassName = "text-red-600", id, ...props },
   ref
 ) {
   const textareaId = id ?? props.name;
@@ -30,7 +32,7 @@ export const Textarea = forwardRef<HTMLTextAreaElement, TextareaProps>(function 
         )}
         {...props}
       />
-      {error ? <p className="text-sm text-red-600">{error}</p> : null}
+      {error ? <p className={cn("text-sm", errorClassName)}>{error}</p> : null}
     </div>
   );
 });

@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
 import { notFound } from "next/navigation";
+import { EnquiryAddButton } from "@/components/enquiry-add-button";
 import { AvailabilityBadge } from "@/components/ui/badge";
 import { buttonLinkClass } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
@@ -109,10 +110,28 @@ export default async function ProductPage({ params }: Props) {
             <p className="leading-relaxed text-neutral-700">{product.description}</p>
           ) : null}
 
-          <div className="flex flex-wrap gap-3">
-            <Link href="/contact" className={buttonLinkClass("bg-fire text-white hover:bg-fire-dark")}>
-              Request a quote
+          <div className="rounded-xl border border-brand-mist bg-brand-paper p-4 shadow-[0_18px_45px_-32px_rgba(15,23,42,0.55)]">
+            <h2 className="text-base font-semibold text-brand-ink">Enquire about this item</h2>
+            <p className="mt-1 text-sm leading-6 text-brand-slate">
+              Add it to your enquiry list, then send the whole list to our sales team in one message.
+            </p>
+            <EnquiryAddButton
+              productId={product.id}
+              productName={product.name}
+              withQuantity
+              className="mt-3"
+            />
+            <Link
+              href="/contact"
+              className={buttonLinkClass(
+                "mt-3 w-full border border-brand-mist bg-brand-paper text-brand-ink hover:bg-brand-canvas",
+              )}
+            >
+              Go to enquiry form
             </Link>
+          </div>
+
+          <div className="flex flex-wrap gap-3">
             <Link
               href="/products"
               className={buttonLinkClass("border border-neutral-300 bg-white text-neutral-800 hover:bg-neutral-50")}

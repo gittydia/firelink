@@ -16,6 +16,13 @@ const config: Config = {
           DEFAULT: "#0F172A",
           dark: "#020617",
         },
+        // Enquiry CTAs only. Reserved for actions that start a sales conversation,
+        // so a conversion action never looks like ordinary navigation.
+        ember: {
+          DEFAULT: "#C2410C",
+          light: "#EA580C",
+          dark: "#9A3412",
+        },
       },
     },
   },

@@ -1,5 +1,6 @@
 import { z } from "zod";
 import { AvailabilityStatus } from "@prisma/client";
+import { MAX_LINE_QUANTITY, MAX_SELECTION_LINES } from "@/lib/inquiry";
 import { classifyImageUrl } from "@/lib/product-image";
 
 // ---------- Auth ----------
@@ -147,3 +148,50 @@ export const staffStatusSchema = z.object({
   id: z.string().min(1, "Missing account"),
   active: z.boolean(),
 });
+
+// ---------- Inquiry (public Contact form) ----------
+
+/** A single requested line. Only IDs cross the boundary; names are resolved server-side. */
+export const inquiryLineSchema = z.object({
+  productId: z.string().trim().min(1, "Missing product"),
+  quantity: z.coerce
+    .number()
+    .int()
+    .min(1)
+    .max(MAX_LINE_QUANTITY)
+    .default(1),
+});
+
+export const contactInquirySchema = z.object({
+  name: z
+    .string()
+    .trim()
+    .min(1, "Full name is required")
+    .max(200, "Full name is too long"),
+  company: z
+    .string()
+    .trim()
+    .min(1, "Company is required")
+    .max(200, "Company is too long"),
+  // Any deliverable address is accepted. Blocking free-mail domains is a
+  // hostile rule for legitimate small contractors and goes stale constantly.
+  email: z
+    .string()
+    .trim()
+    .email("Enter a valid email address")
+    .max(200, "Email is too long"),
+  message: z
+    .string()
+    .trim()
+    .min(1, "Tell us what you need")
+    .max(5000, "Message is too long"),
+  // refine() rather than literal() so the failure carries a message the UI can show.
+  privacyAccepted: z
+    .boolean()
+    .refine((accepted) => accepted === true, "Accept the Privacy Policy to continue"),
+  // Product selection is optional: a general enquiry with no lines is valid.
+  products: z.array(inquiryLineSchema).max(MAX_SELECTION_LINES).default([]),
+});
+
+export type ContactInquiryInput = z.infer<typeof contactInquirySchema>;
+export type InquiryLineInput = z.infer<typeof inquiryLineSchema>;

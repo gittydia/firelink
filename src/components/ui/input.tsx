@@ -5,10 +5,15 @@ import { cn } from "@/lib/utils";
 export interface InputProps extends InputHTMLAttributes<HTMLInputElement> {
   label?: string;
   error?: string;
+  /**
+   * Class for the error message text. Defaults to the shared red so existing
+   * callers are unchanged; override only where a form has its own error palette.
+   */
+  errorClassName?: string;
 }
 
 export const Input = forwardRef<HTMLInputElement, InputProps>(function Input(
-  { className, label, error, id, "aria-describedby": ariaDescribedBy, ...props },
+  { className, label, error, errorClassName = "text-red-600", id, "aria-describedby": ariaDescribedBy, ...props },
   ref
 ) {
   const inputId = id ?? props.name;
@@ -37,7 +42,7 @@ export const Input = forwardRef<HTMLInputElement, InputProps>(function Input(
         {...props}
       />
       {error ? (
-        <p id={errorId} className="text-sm text-red-600">
+        <p id={errorId} className={cn("text-sm", errorClassName)}>
           {error}
         </p>
       ) : null}

@@ -1,10 +1,12 @@
 import Image from "next/image";
 import Link from "next/link";
 import type { AvailabilityStatus } from "@prisma/client";
+import { EnquiryAddButton } from "@/components/enquiry-add-button";
 import { AvailabilityBadge } from "@/components/ui/badge";
 import { Card } from "@/components/ui/card";
 
 export interface ProductCardData {
+  id: string;
   slug: string;
   categoryId: string | null;
   name: string;
@@ -19,7 +21,7 @@ export function ProductCard({ product }: { product: ProductCardData }) {
   const image = product.images[0];
   return (
     <Card className="overflow-hidden border-brand-mist shadow-[0_16px_34px_-28px_rgba(15,23,42,0.7)] transition-shadow duration-200 hover:shadow-[0_22px_42px_-26px_rgba(15,23,42,0.5)]">
-      <Link href={`/products/${product.slug}`} className="group flex h-full flex-col">
+      <Link href={`/products/${product.slug}`} className="group block">
         <div className="relative aspect-[3/2] w-full overflow-hidden bg-brand-canvas">
           {image ? (
             <Image
@@ -35,9 +37,9 @@ export function ProductCard({ product }: { product: ProductCardData }) {
             </div>
           )}
         </div>
-        <div className="flex flex-1 flex-col gap-1.5 p-4">
+        <div className="flex flex-col gap-1.5 p-4">
           <div className="flex items-start justify-between gap-3">
-            <h3 className="font-semibold leading-snug text-brand-ink group-hover:text-fire-dark">
+            <h3 className="font-semibold leading-snug text-brand-ink group-hover:text-ember-dark">
               {product.name}
             </h3>
             <AvailabilityBadge status={product.availabilityStatus} className="shrink-0" />
@@ -51,6 +53,10 @@ export function ProductCard({ product }: { product: ProductCardData }) {
           ) : null}
         </div>
       </Link>
+      {/* Sits outside the card link so the button is not nested inside another control. */}
+      <div className="border-t border-brand-mist p-4">
+        <EnquiryAddButton productId={product.id} productName={product.name} />
+      </div>
     </Card>
   );
 }
