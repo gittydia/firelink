@@ -6,6 +6,7 @@
 | -------------------- | ----------------------------- | ----------------------------------- |
 | `UserRole`           | `ADMIN`, `SALES`              | Role-based access control           |
 | `AvailabilityStatus` | `LOCAL`, `IN_STOCK`, `INDENT` | Product availability classification |
+| `InquiryNotificationStatus` | `PENDING`, `SENT`, `FAILED`, `SKIPPED` | Outcome of the best-effort sales notification |
 
 ### Availability semantics
 
@@ -51,9 +52,29 @@ Because admin URLs come from arbitrary hosts that cannot be whitelisted in `next
 
 Flexible key/value + unit for technical specs (e.g., Working Pressure = 175 PSI). Ordered by `displayOrder`.
 
+### Inquiry
+
+A guest enquiry submitted through the public Contact form. Anonymous by design: there is **no** `userId`, because an enquiry comes from an unauthenticated visitor, so there is no account to attribute, revoke, or cascade from.
+
+- `reference` is unique, generated server-side as `FLQ-YYYYMMDD-XXXXXX`, and is the identifier the visitor is shown. It is read back from the insert and never re-derived, so a retry notifies with the value that actually persisted.
+- `privacyPolicyVersion` + `privacyAcceptedAt` are a **point-in-time record of consent**, not a boolean: the policy text can change, and we need to know which version the sender actually agreed to.
+- `notificationStatus` tracks the best-effort sales email and `notificationError` retains the failure reason, so a failed send stays visible on the row instead of being lost. The inquiry is durable regardless — see ADR-010.
+
+`message` is capped at 5000 characters and `name`/`company`/`email` at 200 by the Zod schema in `src/lib/validation.ts`.
+
+### InquiryProduct
+
+Join row attaching a requested product to an enquiry, `@@unique([inquiryId, productId])` so a duplicate submission cannot create two lines for one product.
+
+`productName`, `productSku` and `availabilityStatus` are **snapshotted at submission** from the resolved `Product`, so the enquiry stays readable after a rename or archive. `productId` remains the authority and the relation is still the live source of truth. `onDelete: Restrict` on the product side means archiving a product (the supported path, via `active = false`) can never destroy enquiry history; `onDelete: Cascade` on the inquiry side means deleting an enquiry takes its lines with it.
+
+A product that is archived between selection and submission is **dropped from the enquiry** rather than failing the whole submission.
+
 ## Relations
 
 - Category 1—N Product (a product belongs to one category; a category has many products)
 - Product 1—N ProductImage
 - Product 1—N ProductSpecification
 - Product N—1 User (`inventoryUpdatedBy`; set to `NULL` if the account is deleted)
+- Product 1—N InquiryProduct
+- Inquiry 1—N InquiryProduct (cascading delete)
