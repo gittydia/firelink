@@ -35,3 +35,21 @@ Sign-in rejects inactive users (`active = false`), but the JWT embeds only `{ id
 ## ADR-009: The status-confirmation dialog traps focus at the boundaries only (known limitation)
 
 `StaffRowActions` traps focus by intercepting Tab only when focus is already on the dialog's first or last focusable element, so if focus ever lands outside the dialog it is not pulled back in. Clicking the backdrop is the reachable path: the overlay is a plain non-focusable `div`, so the click blurs the active element to `<body>` and the next Tab escapes to the page rather than re-entering the dialog. Keyboard-only use is correct — initial focus moves to Confirm, Tab and Shift+Tab wrap at the boundaries, and Escape closes and restores focus to the trigger — and this is the only dialog in the prototype, so the gap is narrow. Accepted deliberately for the prototype: redirect Tab whenever `document.activeElement` sits outside `dialogRef`, and prefer a native `<dialog>` element, which delegates focus containment to the browser. Note that this behaviour was verified by static trace and build only, never in a real browser — Chrome could not start on the host used for this build (side-by-side configuration error), so focus *movement* is unproven and should be confirmed once a working browser is available.
+
+## ADR-010: A notification failure never fails the enquiry
+
+`submitInquiry` returns `InquiryActionResult` rather than throwing, and treats the insert as the commit point. Everything after the insert — reading the row back, calling Resend, recording `notificationStatus` — runs inside a `try`/`catch` in `finalizeInquiry` that logs and swallows, because the row is already durable. Rethrowing there would show the visitor a failure for an enquiry that *was* recorded, and the natural response is to press submit again, leaving sales two copies of one enquiry.
+
+`notificationStatus` (`PENDING`/`SENT`/`FAILED`/`SKIPPED`) and `notificationError` exist so that failure stays visible and reconcilable on the row instead of being lost. `SKIPPED` is a real state, not a failure: it records that no transport was configured, so the attempt was deliberately not made.
+
+Also note `notifySalesOfInquiry` never throws by construction — it catches its own `fetch` errors and returns a result — so the only throw sources in that block are the two Prisma calls.
+
+Delivery is best-effort in a second sense: with `RESEND_API_KEY`/`INQUIRY_TO_EMAIL` unset, `submitInquiry` still returns `success`. Revisit if enquiries ever need guaranteed delivery, which would mean an outbox/queue and a retry job rather than inline sending.
+
+## ADR-011: The enquiry payload carries product IDs only, and free-mail domains are allowed
+
+The browser submits only `productId` and `quantity`; `productName`, `productSku` and `availabilityStatus` are resolved server-side from the catalog at insert time. A tampered payload therefore cannot misreport the catalog to sales — the names in the email and on the row are always the ones the database holds. Stored snapshots are for readability after a later rename, not for trust (see `DOMAIN-MODEL.md`).
+
+`InquiryProduct` is `@@unique([inquiryId, productId])`, which also deduplicates a client that sends the same product twice.
+
+Product selection is **optional**: a general enquiry with zero lines is valid, so `products` defaults to `[]` and the limit is 50 lines / 9999 per line. Work-email domains are not filtered — blocking free-mail providers is a hostile rule for legitimate small contractors and a list that goes stale constantly. Rate limiting and abuse handling are not implemented; the form's only bot defence is a `website` honeypot field, and it should be treated as a speed bump rather than a control. Revisit with a real IP/email rate limiter before production.
