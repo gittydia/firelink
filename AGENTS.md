@@ -46,6 +46,7 @@
 | File | Read when |
 |---|---|
 | `README.md` | Setup or architecture changes |
+| `PRD.md` | Historical capstone requirements baseline. Read when tracing a public catalog or availability behavior to a requirement ID (R-01–R-05), or confirming the three required availability labels. Where it disagrees with `docs/DECISIONS.md` or the code, they are current. |
 | `docs/DOMAIN-MODEL.md` | Changing data/business rules |
 | `docs/AUTH.md` | Changing auth/permissions |
 | `docs/TESTING.md` | Adding/repairing tests |
