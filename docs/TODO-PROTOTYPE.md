@@ -50,3 +50,31 @@
 - [x] [a11y] Basic checks (labels, alt text, no color-only)
 - [x] [typecheck/lint/build] Run checks, fix diagnostics until clean
 - [x] [docs] README reflects prototype setup
+
+## Phase 6 - Guest enquiry flow (redesign, Sep 2026)
+
+Leads convert instead of only phoning. Still no cart or checkout: an enquiry is captured, not transacted.
+
+- [x] [prisma/schema.prisma] `Inquiry` + `InquiryProduct` (join row, `@@unique([inquiryId, productId])`), `InquiryNotificationStatus` enum
+- [x] [prisma] Migration applied to Neon; local `5433` instance still needs `db:deploy`
+- [x] [lib/inquiry] Selection normalization, 50-line cap, `9999` per line, `FLQ-YYYYMMDD-XXXXXX` reference, storage key
+- [x] [lib/inquiry] 18 unit tests
+- [x] [lib/validation] `contactInquirySchema` + `inquiryLineSchema`; product selection optional, free-mail domains allowed
+- [x] [lib/email] `notifySalesOfInquiry` via Resend `fetch`, no SDK; `sent`/`skipped`/`failed` result
+- [x] [app/(public)/contact/actions] `submitInquiry` returning a result rather than throwing; ids-only payload, catalog resolved server-side, archived products dropped, one `P2002` retry
+- [x] [app/(public)/contact/actions] Notification finalization is best-effort and never fails a committed enquiry (ADR-010)
+- [x] [app/(public)/contact/actions] 16 unit tests, including the reference-retry and swallow paths
+- [x] [components] `use-inquiry-selection` — hydration-safe, tolerates corrupt storage
+- [x] [app/(public)/contact] Form + redesigned page
+- [x] [app/(public)/privacy] Privacy Policy page; `PRIVACY_POLICY_VERSION = "2026-09-28"` in `src/lib/privacy.ts`
+- [x] [app/(public)/products] Optional "add to enquiry" on card and detail page
+- [x] [tailwind.config] `ember` CTA token
+- [x] [docs] DOMAIN-MODEL + DECISIONS updated for the flow (ADR-010, ADR-011)
+
+### Known gaps (deliberate, documented in ADR-010/011)
+
+- No rate limiting; the `website` honeypot is a speed bump, not a control.
+- No admin UI for inquiries yet — rows are read via the database only.
+- No guaranteed delivery. Needs an outbox plus retry job before production.
+- The four UI checkboxes above are closed on build/typecheck/lint/unit-test **and** browser evidence. A headless Chromium pass over `/contact` at 1440x900 and 390x844 confirmed: no horizontal overflow at either width, all five enquiry controls expose a real `<label>` and now a native `required`, every focusable element has a visible focus ring, the honeypot stays out of the tab order and the accessibility tree, and the add-to-enquiry selection survives navigation to `/contact` (`productInquirySelection`, 1 line rendered). Hero body/heading contrast measured 12.02:1 and 17.85:1 on `bg-brand-ink`. Scripts live outside the repo; this is a one-time manual pass, not a CI gate.
+- [x] [ui] Enquiry error text is locally consistent: `Input`/`Textarea` accept an optional `errorClassName` (default `text-red-600`, so login/admin are unchanged) and `contact-form.tsx` passes `text-ember-dark`, so all five enquiry error messages render ember-dark at 7.31:1 on white. Invalid-field borders stay red; the mix was reviewed at both viewports and reads clearly. `Select` and other shared components were deliberately left alone to keep the ember CTA-only contract in `tailwind.config.ts`.
