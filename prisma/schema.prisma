@@ -22,6 +22,14 @@ enum AvailabilityStatus {
   INDENT
 }
 
+enum InquiryNotificationStatus {
+  PENDING
+  SENT
+  FAILED
+  // No transport configured, so notification was deliberately not attempted.
+  SKIPPED
+}
+
 model User {
   id           String   @id @default(cuid())
   name         String
@@ -79,6 +87,7 @@ model Product {
 
   images         ProductImage[]
   specifications ProductSpecification[]
+  inquiryProducts InquiryProduct[]
 
   @@index([categoryId])
   @@index([availabilityStatus])
@@ -106,5 +115,51 @@ model ProductSpecification {
   unit         String?
   displayOrder Int     @default(0)
 
+  @@index([productId])
+}
+
+// A guest inquiry submitted from the public Contact page. Carries no User
+// relation on purpose: inquiries are anonymous, so there is no account to
+// attribute, revoke, or cascade from.
+model Inquiry {
+  id        String   @id @default(cuid())
+  reference String   @unique
+  name      String
+  company   String
+  email     String
+  message   String
+  // Point-in-time record of consent rather than a boolean: the policy text can
+  // change, and we need to know which version the sender actually agreed to.
+  privacyPolicyVersion String
+  privacyAcceptedAt    DateTime @default(now())
+  // Tracked so a failed notification stays visible on the row instead of
+  // being lost. The inquiry is durable either way; the email is best-effort.
+  notificationStatus InquiryNotificationStatus @default(PENDING)
+  notificationError  String?
+  createdAt         DateTime                    @default(now())
+  updatedAt         DateTime                    @updatedAt
+
+  products InquiryProduct[]
+
+  @@index([createdAt])
+  @@index([notificationStatus])
+}
+
+model InquiryProduct {
+  id        String  @id @default(cuid())
+  inquiryId String
+  inquiry   Inquiry @relation(fields: [inquiryId], references: [id], onDelete: Cascade)
+  productId String
+  product   Product @relation(fields: [productId], references: [id], onDelete: Restrict)
+  quantity  Int     @default(1)
+  // Snapshotted at submission from the resolved Product so the inquiry stays
+  // readable after a rename or archive. productId remains the authority and
+  // the relation is still the live source of truth.
+  productName        String
+  productSku         String
+  availabilityStatus AvailabilityStatus
+  createdAt          DateTime @default(now())
+
+  @@unique([inquiryId, productId])
   @@index([productId])
 }
