@@ -4,27 +4,44 @@ import { useEffect, useMemo, useRef, useState, useTransition } from "react";
 import { useRouter } from "next/navigation";
 import { useFieldArray, useForm, useWatch } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
-import type { AvailabilityStatus } from "@prisma/client";
+import type { AvailabilityStatus, VariantReviewStatus } from "@prisma/client";
 import { ProductImageFrame } from "@/components/product-image-frame";
+import { ActiveBadge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { Dialog } from "@/components/ui/dialog";
 import { Input } from "@/components/ui/input";
 import { Select, type SelectOption } from "@/components/ui/select";
 import { Textarea } from "@/components/ui/textarea";
 import { availabilityLabels } from "@/lib/availability";
+import { formatPrice } from "@/lib/format";
 import { isUsableImageUrl, resolveImageAlt } from "@/lib/product-image";
 import { slugify } from "@/lib/utils";
 import { productCreateSchema, type ProductCreateInput } from "@/lib/validation";
-import { createProduct, updateProduct } from "./actions";
+import { createProduct, createVariant, toggleVariantActive, updateProduct } from "./actions";
 
 const availabilityOptions: SelectOption[] = (
   Object.keys(availabilityLabels) as AvailabilityStatus[]
 ).map((value) => ({ value, label: availabilityLabels[value] }));
 
+export interface ProductVariantFormRow {
+  id: string;
+  sku: string;
+  size: string;
+  series: string;
+  unit: string | null;
+  unitPrice: string | null;
+  priceHigh: string | null;
+  active: boolean;
+  reviewStatus: VariantReviewStatus;
+  ambiguityNote: string | null;
+  sourceSlide: string | null;
+}
+
 interface ProductFormProps {
   categories: SelectOption[];
   productId?: string;
   initial?: ProductCreateInput;
+  variants?: ProductVariantFormRow[];
 }
 
 function emptyProduct(): ProductCreateInput {
@@ -112,10 +129,13 @@ export function ProductForm({
   categories,
   productId,
   initial,
+  variants,
 }: ProductFormProps) {
   const router = useRouter();
   const [isPending, startTransition] = useTransition();
   const [submitError, setSubmitError] = useState<string | null>(null);
+  const [variantPendingId, setVariantPendingId] = useState<string | null>(null);
+  const [variantError, setVariantError] = useState<string | null>(null);
 
   const {
     register,
@@ -194,6 +214,25 @@ export function ProductForm({
             ? error.message
             : "Something went wrong. Please try again.",
         );
+      }
+    });
+  }
+
+  function handleToggleVariant(variant: ProductVariantFormRow) {
+    setVariantError(null);
+    setVariantPendingId(variant.id);
+    startTransition(async () => {
+      try {
+        await toggleVariantActive(variant.id);
+        router.refresh();
+      } catch (error) {
+        setVariantError(
+          error instanceof Error
+            ? error.message
+            : "Could not update the variant.",
+        );
+      } finally {
+        setVariantPendingId(null);
       }
     });
   }
@@ -408,6 +447,65 @@ export function ProductForm({
         </div>
       </section>
 
+      {/* Variants */}
+      <section className="space-y-4">
+        <h2 className="text-lg font-semibold text-neutral-900">Variants</h2>
+        {productId ? (
+          <>
+            <VariantAddForm productId={productId} />
+            {variants && variants.length > 0 ? (
+              <div className="space-y-3">
+                {variants.map((variant) => (
+                  <div
+                    key={variant.id}
+                    className="grid items-center gap-3 rounded-md border border-neutral-200 bg-white p-3 sm:grid-cols-[1fr_1fr_auto]"
+                  >
+                    <div>
+                      <p className="text-sm font-medium text-neutral-900">
+                        {variant.size || "—"}
+                        {variant.series ? ` · ${variant.series}` : ""}
+                      </p>
+                      <p className="text-xs text-neutral-500">{variant.sku}</p>
+                    </div>
+                    <p className="text-sm text-neutral-700">
+                      {variant.unitPrice
+                        ? formatPrice(variant.unitPrice)
+                        : "—"}
+                      {variant.unit ? ` / ${variant.unit}` : ""}
+                    </p>
+                    <div className="flex items-center justify-end gap-2">
+                      <ActiveBadge active={variant.active} />
+                      <Button
+                        type="button"
+                        variant="ghost"
+                        disabled={variantPendingId === variant.id}
+                        onClick={() => handleToggleVariant(variant)}
+                      >
+                        {variant.active ? "Archive" : "Restore"}
+                      </Button>
+                    </div>
+                  </div>
+                ))}
+              </div>
+            ) : (
+              <p className="text-sm text-neutral-500">No variants yet.</p>
+            )}
+          </>
+        ) : (
+          <p className="text-sm text-neutral-500">
+            Save the product first, then add variants here.
+          </p>
+        )}
+        {variantError ? (
+          <p
+            role="alert"
+            className="rounded-md bg-red-50 px-3 py-2 text-sm text-red-700"
+          >
+            {variantError}
+          </p>
+        ) : null}
+      </section>
+
       <div className="flex items-center gap-3 border-t border-neutral-200 pt-4">
         <Button type="submit" disabled={isPending}>
           {isPending
@@ -425,5 +523,91 @@ export function ProductForm({
         </Button>
       </div>
     </form>
+  );
+}
+
+function VariantAddForm({ productId }: { productId: string }) {
+  const router = useRouter();
+  const [isPending, startTransition] = useTransition();
+  const [error, setError] = useState<string | null>(null);
+  const [size, setSize] = useState("");
+  const [series, setSeries] = useState("");
+  const [unit, setUnit] = useState("");
+  const [unitPrice, setUnitPrice] = useState("");
+
+  function onSubmitAdd() {
+    setError(null);
+    startTransition(async () => {
+      try {
+        await createVariant(productId, {
+          size,
+          series,
+          unit: unit === "" ? null : unit,
+          unitPrice,
+          priceHigh: "",
+          active: true,
+        });
+        setSize("");
+        setSeries("");
+        setUnit("");
+        setUnitPrice("");
+        router.refresh();
+      } catch (err) {
+        setError(
+          err instanceof Error ? err.message : "Could not add the variant.",
+        );
+      }
+    });
+  }
+
+  return (
+    <div className="space-y-3 rounded-md border border-neutral-200 bg-white p-3">
+      <p className="text-sm font-medium text-neutral-700">Add variant</p>
+      <div className="grid gap-3 sm:grid-cols-[1fr_1fr_1fr_1fr_auto]">
+        <Input
+          label="Size"
+          placeholder="e.g. 5kg"
+          value={size}
+          onChange={(event) => setSize(event.target.value)}
+        />
+        <Input
+          label="Series"
+          placeholder="e.g. ABC"
+          value={series}
+          onChange={(event) => setSeries(event.target.value)}
+        />
+        <Input
+          label="Unit"
+          placeholder="e.g. pc"
+          value={unit}
+          onChange={(event) => setUnit(event.target.value)}
+        />
+        <Input
+          label="Price"
+          placeholder="₱ 0.00"
+          value={unitPrice}
+          onChange={(event) => setUnitPrice(event.target.value)}
+        />
+        <div className="flex items-end">
+          <Button
+            type="button"
+            variant="secondary"
+            disabled={isPending}
+            onClick={onSubmitAdd}
+          >
+            {isPending ? "Adding…" : "Add variant"}
+          </Button>
+        </div>
+      </div>
+      <p className="text-xs text-neutral-500">
+        Enter a size, series, or both. Prices are in PHP with up to 2 decimal
+        places.
+      </p>
+      {error ? (
+        <p role="alert" className="text-sm text-red-600">
+          {error}
+        </p>
+      ) : null}
+    </div>
   );
 }

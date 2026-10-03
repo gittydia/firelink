@@ -30,6 +30,11 @@ enum InquiryNotificationStatus {
   SKIPPED
 }
 
+enum VariantReviewStatus {
+  PENDING
+  NEEDS_REVIEW
+}
+
 model User {
   id           String   @id @default(cuid())
   name         String
@@ -87,6 +92,7 @@ model Product {
 
   images         ProductImage[]
   specifications ProductSpecification[]
+  variants       ProductVariant[]
   inquiryProducts InquiryProduct[]
 
   @@index([categoryId])
@@ -116,6 +122,47 @@ model ProductSpecification {
   displayOrder Int     @default(0)
 
   @@index([productId])
+}
+
+// A priced variant of a product, sourced from the normalized pricelist
+// pipeline (pricelist_cleaned/normalized/pricelist_entries.csv). Unique on
+// (productId, size, series) — the keycheck identity — with empty size/series
+// normalized to '' so a missing value never collapses the key.
+// See docs/DECISIONS.md ADR-019 for the import policy.
+model ProductVariant {
+  id        String  @id @default(cuid())
+  productId String
+  product   Product @relation(fields: [productId], references: [id], onDelete: Cascade)
+
+  sku    String @unique
+  size   String @default("")
+  series String @default("")
+  unit   String?
+
+  // Pricing. priceHigh stays null unless the source itself prints a range
+  // (ADR-014); the pricelist never does.
+  unitPrice Decimal?  @db.Decimal(12, 2)
+  priceHigh Decimal?  @db.Decimal(12, 2)
+  active    Boolean   @default(true)
+
+  // Provenance from the pricelist staging pipeline. PENDING rows import
+  // active; NEEDS_REVIEW rows import archived (active = false) so ambiguity
+  // is queryable but never public. A variant forced to NEEDS_REVIEW by a
+  // price conflict carries the colliding prices in ambiguityNote.
+  reviewStatus    VariantReviewStatus @default(NEEDS_REVIEW)
+  ambiguityNote   String?
+  sourceSlide     Int?
+  sourceTable     Int?
+  sourceRow       Int?
+  sourceColumn    Int?
+
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+
+  @@unique([productId, size, series])
+  @@index([productId])
+  @@index([active])
+  @@index([reviewStatus])
 }
 
 // A guest inquiry submitted from the public Contact page. Carries no User

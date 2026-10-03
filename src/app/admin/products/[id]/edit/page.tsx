@@ -18,6 +18,7 @@ export default async function EditProductPage({ params }: Props) {
     include: {
       images: { orderBy: { displayOrder: "asc" } },
       specifications: { orderBy: { displayOrder: "asc" } },
+      variants: { orderBy: [{ size: "asc" }, { series: "asc" }] },
     },
   });
   if (!product) notFound();
@@ -69,6 +70,19 @@ export default async function EditProductPage({ params }: Props) {
         }))}
         productId={product.id}
         initial={initial}
+        variants={product.variants.map((variant) => ({
+          id: variant.id,
+          sku: variant.sku,
+          size: variant.size,
+          series: variant.series,
+          unit: variant.unit,
+          unitPrice: variant.unitPrice?.toString() ?? null,
+          priceHigh: variant.priceHigh?.toString() ?? null,
+          active: variant.active,
+          reviewStatus: variant.reviewStatus,
+          ambiguityNote: variant.ambiguityNote,
+          sourceSlide: variant.sourceSlide?.toString() ?? null,
+        }))}
       />
     </div>
   );

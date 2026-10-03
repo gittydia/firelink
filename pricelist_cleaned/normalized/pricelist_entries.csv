@@ -1,0 +1,1208 @@
+source_slide,source_table,source_row,category,product,product_source,brand,size,series,source_column,unit,unit_price,price_high,review_status,ambiguity_note,raw_text
+1,1,3,Pipes & Fittings,BLACK IRON,own-label,,"1""",ERW – Sch. 40 Standard,1,,1188.00,,NEEDS_REVIEW,price column 1 (ERW – Sch. 40 Standard),"1"" | 1,188.00 | 1,435.00"
+1,1,3,Pipes & Fittings,BLACK IRON,own-label,,"1""",SEAMLESS Sch. 40,2,,1435.00,,NEEDS_REVIEW,price column 2 (SEAMLESS Sch. 40),"1"" | 1,188.00 | 1,435.00"
+1,1,4,Pipes & Fittings,BLACK IRON,own-label,,1 ¼,ERW – Sch. 40 Standard,1,,1512.00,,NEEDS_REVIEW,price column 1 (ERW – Sch. 40 Standard),"1 ¼ | 1512.00 | 1,900.00"
+1,1,4,Pipes & Fittings,BLACK IRON,own-label,,1 ¼,SEAMLESS Sch. 40,2,,1900.00,,NEEDS_REVIEW,price column 2 (SEAMLESS Sch. 40),"1 ¼ | 1512.00 | 1,900.00"
+1,1,5,Pipes & Fittings,BLACK IRON,own-label,,1 ½,ERW – Sch. 40 Standard,1,,1920.00,,NEEDS_REVIEW,price column 1 (ERW – Sch. 40 Standard),"1 ½ | 1,920.00 | 2,273.00"
+1,1,5,Pipes & Fittings,BLACK IRON,own-label,,1 ½,SEAMLESS Sch. 40,2,,2273.00,,NEEDS_REVIEW,price column 2 (SEAMLESS Sch. 40),"1 ½ | 1,920.00 | 2,273.00"
+1,1,6,Pipes & Fittings,BLACK IRON,own-label,,"2""",ERW – Sch. 40 Standard,1,,2487.00,,NEEDS_REVIEW,price column 1 (ERW – Sch. 40 Standard),"2"" | 2,487.00 | 2,945.00"
+1,1,6,Pipes & Fittings,BLACK IRON,own-label,,"2""",SEAMLESS Sch. 40,2,,2945.00,,NEEDS_REVIEW,price column 2 (SEAMLESS Sch. 40),"2"" | 2,487.00 | 2,945.00"
+1,1,7,Pipes & Fittings,BLACK IRON,own-label,,2 ½,ERW – Sch. 40 Standard,1,,4088.00,,NEEDS_REVIEW,price column 1 (ERW – Sch. 40 Standard),"2 ½ | 4,088.00 | 4670.00"
+1,1,7,Pipes & Fittings,BLACK IRON,own-label,,2 ½,SEAMLESS Sch. 40,2,,4670.00,,NEEDS_REVIEW,price column 2 (SEAMLESS Sch. 40),"2 ½ | 4,088.00 | 4670.00"
+1,1,8,Pipes & Fittings,BLACK IRON,own-label,,"3""",ERW – Sch. 40 Standard,1,,5287.00,,NEEDS_REVIEW,price column 1 (ERW – Sch. 40 Standard),"3"" | 5,287.00 | 6,180.00"
+1,1,8,Pipes & Fittings,BLACK IRON,own-label,,"3""",SEAMLESS Sch. 40,2,,6180.00,,NEEDS_REVIEW,price column 2 (SEAMLESS Sch. 40),"3"" | 5,287.00 | 6,180.00"
+1,1,9,Pipes & Fittings,BLACK IRON,own-label,,"4""",ERW – Sch. 40 Standard,1,,8064.00,,NEEDS_REVIEW,price column 1 (ERW – Sch. 40 Standard),"4"" | 8,064.00 | 8,895.00"
+1,1,9,Pipes & Fittings,BLACK IRON,own-label,,"4""",SEAMLESS Sch. 40,2,,8895.00,,NEEDS_REVIEW,price column 2 (SEAMLESS Sch. 40),"4"" | 8,064.00 | 8,895.00"
+1,1,10,Pipes & Fittings,BLACK IRON,own-label,,"5""",ERW – Sch. 40 Standard,1,,11573.00,,NEEDS_REVIEW,price column 1 (ERW – Sch. 40 Standard),"5"" | 11,573.00 | 12,520.00"
+1,1,10,Pipes & Fittings,BLACK IRON,own-label,,"5""",SEAMLESS Sch. 40,2,,12520.00,,NEEDS_REVIEW,price column 2 (SEAMLESS Sch. 40),"5"" | 11,573.00 | 12,520.00"
+1,1,11,Pipes & Fittings,BLACK IRON,own-label,,"6""",ERW – Sch. 40 Standard,1,,14560.00,,NEEDS_REVIEW,price column 1 (ERW – Sch. 40 Standard),"6"" | 14,560.00 | 15,780.00"
+1,1,11,Pipes & Fittings,BLACK IRON,own-label,,"6""",SEAMLESS Sch. 40,2,,15780.00,,NEEDS_REVIEW,price column 2 (SEAMLESS Sch. 40),"6"" | 14,560.00 | 15,780.00"
+1,2,3,Pipes & Fittings,ERW –Light Gauge,own-label,,,ERW –Light Gauge,0,,995.00,,NEEDS_REVIEW,no size column,995.00
+1,2,4,Pipes & Fittings,ERW –Light Gauge,own-label,,,ERW –Light Gauge,0,,1362.00,,NEEDS_REVIEW,no size column,"1,362.00"
+1,2,5,Pipes & Fittings,ERW –Light Gauge,own-label,,,ERW –Light Gauge,0,,1586.00,,NEEDS_REVIEW,no size column,"1,586.00"
+1,2,6,Pipes & Fittings,ERW –Light Gauge,own-label,,,ERW –Light Gauge,0,,2145.00,,NEEDS_REVIEW,no size column,"2,145.00"
+1,2,7,Pipes & Fittings,ERW –Light Gauge,own-label,,,ERW –Light Gauge,0,,2875.00,,NEEDS_REVIEW,no size column,"2,875.00"
+1,2,8,Pipes & Fittings,ERW –Light Gauge,own-label,,,ERW –Light Gauge,0,,3825.00,,NEEDS_REVIEW,no size column,"3,825.00"
+1,2,9,Pipes & Fittings,ERW –Light Gauge,own-label,,,ERW –Light Gauge,0,,5630.00,,NEEDS_REVIEW,no size column,"5,630.00"
+1,2,10,Pipes & Fittings,ERW –Light Gauge,own-label,,,ERW –Light Gauge,0,,9075.00,,NEEDS_REVIEW,no size column,"9,075.00"
+1,2,11,Pipes & Fittings,ERW –Light Gauge,own-label,,,ERW –Light Gauge,0,,12960.00,,NEEDS_REVIEW,no size column,"12,960.00"
+1,3,1,Pipes & Fittings,ERW –Light Gauge,inherited-label,,8'',,2,,23500.00,,NEEDS_REVIEW,"earlier numeric cell(s) ignored, not price columns: 19,500.00; product from inherited-label","8'' | 19,500.00 | 23,500.00"
+1,3,2,Pipes & Fittings,ERW –Light Gauge,inherited-label,,10'',,1,,32000.00,,NEEDS_REVIEW,product from inherited-label,"10'' | 32,000.00"
+1,3,3,Pipes & Fittings,ERW –Light Gauge,inherited-label,,12'',,1,,41250.00,,NEEDS_REVIEW,product from inherited-label,"12'' | 41,250.00"
+1,3,4,Pipes & Fittings,ERW –Light Gauge,inherited-label,,½,,1,,780.00,,NEEDS_REVIEW,product from inherited-label,½ | 780.00
+1,3,5,Pipes & Fittings,ERW –Light Gauge,inherited-label,,¾,,1,,945.00,,NEEDS_REVIEW,product from inherited-label,¾ | 945.00
+2,1,2,Valves,HYFLO or MECH UL/FM,own-label,Hyflo,8'',KENNEDY,2,,19000,,NEEDS_REVIEW,price column 2 (KENNEDY),"8'' | 19,000 | 30,470"
+2,1,2,Valves,HYFLO or MECH UL/FM,own-label,Hyflo,8'',HYFLO or MECH UL/FM,3,,30470,,NEEDS_REVIEW,price column 3 (HYFLO or MECH UL/FM),"8'' | 19,000 | 30,470"
+2,1,3,Valves,HYFLO or MECH UL/FM,own-label,Hyflo,6'',KENNEDY,2,,9800,,NEEDS_REVIEW,price column 2 (KENNEDY),"6'' | 9,800 | 18,715"
+2,1,3,Valves,HYFLO or MECH UL/FM,own-label,Hyflo,6'',HYFLO or MECH UL/FM,3,,18715,,NEEDS_REVIEW,price column 3 (HYFLO or MECH UL/FM),"6'' | 9,800 | 18,715"
+2,1,4,Valves,HYFLO or MECH UL/FM,own-label,Hyflo,4'',KENNEDY,2,,5800,,NEEDS_REVIEW,price column 2 (KENNEDY),"4'' | 5,800 | 12,000"
+2,1,4,Valves,HYFLO or MECH UL/FM,own-label,Hyflo,4'',HYFLO or MECH UL/FM,3,,12000,,NEEDS_REVIEW,price column 3 (HYFLO or MECH UL/FM),"4'' | 5,800 | 12,000"
+2,1,5,Valves,HYFLO or MECH UL/FM,own-label,Hyflo,3'',KENNEDY,2,,4800,,NEEDS_REVIEW,price column 2 (KENNEDY),"3'' | 4,800 | 9,000"
+2,1,5,Valves,HYFLO or MECH UL/FM,own-label,Hyflo,3'',HYFLO or MECH UL/FM,3,,9000,,NEEDS_REVIEW,price column 3 (HYFLO or MECH UL/FM),"3'' | 4,800 | 9,000"
+2,1,6,Valves,HYFLO or MECH UL/FM,own-label,Hyflo,2 ½'',KENNEDY,2,,3700,,NEEDS_REVIEW,price column 2 (KENNEDY),"2 ½'' | 3,700 | 7,000"
+2,1,6,Valves,HYFLO or MECH UL/FM,own-label,Hyflo,2 ½'',HYFLO or MECH UL/FM,3,,7000,,NEEDS_REVIEW,price column 3 (HYFLO or MECH UL/FM),"2 ½'' | 3,700 | 7,000"
+2,1,7,Valves,HYFLO or MECH UL/FM,own-label,Hyflo,2'',KENNEDY,2,,3200,,NEEDS_REVIEW,price column 2 (KENNEDY),"2'' | 3,200 | 6,500"
+2,1,7,Valves,HYFLO or MECH UL/FM,own-label,Hyflo,2'',HYFLO or MECH UL/FM,3,,6500,,NEEDS_REVIEW,price column 3 (HYFLO or MECH UL/FM),"2'' | 3,200 | 6,500"
+2,2,2,Valves,CLINTON Non- UL,own-label,Clinton,8'',CLINTON Non- UL,1,,16700,,NEEDS_REVIEW,price column 1 (CLINTON Non- UL),"8'' | 16,700 | 30,500"
+2,2,2,Valves,CLINTON Non- UL,own-label,Clinton,8'',HYFLO UL/FM,3,,30500,,NEEDS_REVIEW,price column 3 (HYFLO UL/FM),"8'' | 16,700 | 30,500"
+2,2,3,Valves,CLINTON Non- UL,own-label,Clinton,6'',CLINTON Non- UL,1,,9200,,NEEDS_REVIEW,price column 1 (CLINTON Non- UL),"6'' | 9,200 | 18,500"
+2,2,3,Valves,CLINTON Non- UL,own-label,Clinton,6'',HYFLO UL/FM,3,,18500,,NEEDS_REVIEW,price column 3 (HYFLO UL/FM),"6'' | 9,200 | 18,500"
+2,2,4,Valves,CLINTON Non- UL,own-label,Clinton,4'',CLINTON Non- UL,1,,6800,,NEEDS_REVIEW,price column 1 (CLINTON Non- UL),"4'' | 6,800 | 12,000"
+2,2,4,Valves,CLINTON Non- UL,own-label,Clinton,4'',HYFLO UL/FM,3,,12000,,NEEDS_REVIEW,price column 3 (HYFLO UL/FM),"4'' | 6,800 | 12,000"
+2,2,5,Valves,CLINTON Non- UL,own-label,Clinton,3'',CLINTON Non- UL,1,,4500,,NEEDS_REVIEW,price column 1 (CLINTON Non- UL),"3'' | 4,500 | 9,500"
+2,2,5,Valves,CLINTON Non- UL,own-label,Clinton,3'',HYFLO UL/FM,3,,9500,,NEEDS_REVIEW,price column 3 (HYFLO UL/FM),"3'' | 4,500 | 9,500"
+2,2,6,Valves,CLINTON Non- UL,own-label,Clinton,2 ½'',CLINTON Non- UL,1,,3700,,NEEDS_REVIEW,price column 1 (CLINTON Non- UL),"2 ½'' | 3,700 | 8,000"
+2,2,6,Valves,CLINTON Non- UL,own-label,Clinton,2 ½'',HYFLO UL/FM,3,,8000,,NEEDS_REVIEW,price column 3 (HYFLO UL/FM),"2 ½'' | 3,700 | 8,000"
+2,2,7,Valves,CLINTON Non- UL,own-label,Clinton,2'',CLINTON Non- UL,1,,3150,,NEEDS_REVIEW,price column 1 (CLINTON Non- UL),"2'' | 3,150 | 7,500"
+2,2,7,Valves,CLINTON Non- UL,own-label,Clinton,2'',HYFLO UL/FM,3,,7500,,NEEDS_REVIEW,price column 3 (HYFLO UL/FM),"2'' | 3,150 | 7,500"
+2,3,2,Valves,CLINTON Non- UL,inherited-label,Clinton,8'',HK & QL Non- UL,1,,85000,,NEEDS_REVIEW,price column 1 (HK & QL Non- UL); product from inherited-label,"8'' | 85,000 | 180,000 | 180,000"
+2,3,2,Valves,CLINTON Non- UL,inherited-label,Clinton,8'',MECH 300 psi,2,,180000,,NEEDS_REVIEW,price column 2 (MECH 300 psi); product from inherited-label,"8'' | 85,000 | 180,000 | 180,000"
+2,3,2,Valves,CLINTON Non- UL,inherited-label,Clinton,8'',HYFLO 300 psi,3,,180000,,NEEDS_REVIEW,price column 3 (HYFLO 300 psi); product from inherited-label,"8'' | 85,000 | 180,000 | 180,000"
+2,3,3,Valves,CLINTON Non- UL,inherited-label,Clinton,6'',HK & QL Non- UL,1,,60000,,NEEDS_REVIEW,price column 1 (HK & QL Non- UL); product from inherited-label,"6'' | 60,000 | 71,500 | 72,000"
+2,3,3,Valves,CLINTON Non- UL,inherited-label,Clinton,6'',MECH 300 psi,2,,71500,,NEEDS_REVIEW,price column 2 (MECH 300 psi); product from inherited-label,"6'' | 60,000 | 71,500 | 72,000"
+2,3,3,Valves,CLINTON Non- UL,inherited-label,Clinton,6'',HYFLO 300 psi,3,,72000,,NEEDS_REVIEW,price column 3 (HYFLO 300 psi); product from inherited-label,"6'' | 60,000 | 71,500 | 72,000"
+2,3,4,Valves,CLINTON Non- UL,inherited-label,Clinton,4'',HK & QL Non- UL,1,,28000,,NEEDS_REVIEW,price column 1 (HK & QL Non- UL); product from inherited-label,"4'' | 28,000 | 62,000 | 62,000"
+2,3,4,Valves,CLINTON Non- UL,inherited-label,Clinton,4'',MECH 300 psi,2,,62000,,NEEDS_REVIEW,price column 2 (MECH 300 psi); product from inherited-label,"4'' | 28,000 | 62,000 | 62,000"
+2,3,4,Valves,CLINTON Non- UL,inherited-label,Clinton,4'',HYFLO 300 psi,3,,62000,,NEEDS_REVIEW,price column 3 (HYFLO 300 psi); product from inherited-label,"4'' | 28,000 | 62,000 | 62,000"
+2,3,5,Valves,CLINTON Non- UL,inherited-label,Clinton,3'',HK & QL Non- UL,1,,21000,,NEEDS_REVIEW,price column 1 (HK & QL Non- UL); product from inherited-label,"3'' | 21,000 | 52,000 | 49,500"
+2,3,5,Valves,CLINTON Non- UL,inherited-label,Clinton,3'',MECH 300 psi,2,,52000,,NEEDS_REVIEW,price column 2 (MECH 300 psi); product from inherited-label,"3'' | 21,000 | 52,000 | 49,500"
+2,3,5,Valves,CLINTON Non- UL,inherited-label,Clinton,3'',HYFLO 300 psi,3,,49500,,NEEDS_REVIEW,price column 3 (HYFLO 300 psi); product from inherited-label,"3'' | 21,000 | 52,000 | 49,500"
+2,3,6,Valves,CLINTON Non- UL,inherited-label,Clinton,2 ½'',HK & QL Non- UL,1,,16500,,NEEDS_REVIEW,price column 1 (HK & QL Non- UL); product from inherited-label,"2 ½'' | 16,500"
+2,3,7,Valves,CLINTON Non- UL,inherited-label,Clinton,2'',HK & QL Non- UL,1,,12500,,NEEDS_REVIEW,price column 1 (HK & QL Non- UL); product from inherited-label,"2'' | 12,500"
+3,1,2,Valves,CLINTON Non- UL,own-label,Clinton,8'',CLINTON Non- UL,1,,85000,,NEEDS_REVIEW,price column 1 (CLINTON Non- UL),"8'' | 85,000 | 188,000 | 180,000"
+3,1,2,Valves,CLINTON Non- UL,own-label,Clinton,8'',MECH 300 psi,2,,188000,,NEEDS_REVIEW,price column 2 (MECH 300 psi),"8'' | 85,000 | 188,000 | 180,000"
+3,1,2,Valves,CLINTON Non- UL,own-label,Clinton,8'',HYFLO UL/FM,3,,180000,,NEEDS_REVIEW,price column 3 (HYFLO UL/FM),"8'' | 85,000 | 188,000 | 180,000"
+3,1,3,Valves,CLINTON Non- UL,own-label,Clinton,6'',CLINTON Non- UL,1,,60000,,NEEDS_REVIEW,price column 1 (CLINTON Non- UL),"6'' | 60,000 | 75,000 | 75,000"
+3,1,3,Valves,CLINTON Non- UL,own-label,Clinton,6'',MECH 300 psi,2,,75000,,NEEDS_REVIEW,price column 2 (MECH 300 psi),"6'' | 60,000 | 75,000 | 75,000"
+3,1,3,Valves,CLINTON Non- UL,own-label,Clinton,6'',HYFLO UL/FM,3,,75000,,NEEDS_REVIEW,price column 3 (HYFLO UL/FM),"6'' | 60,000 | 75,000 | 75,000"
+3,1,4,Valves,CLINTON Non- UL,own-label,Clinton,4'',CLINTON Non- UL,1,,28000,,NEEDS_REVIEW,price column 1 (CLINTON Non- UL),"4'' | 28,000 | 65,000 | 65,000"
+3,1,4,Valves,CLINTON Non- UL,own-label,Clinton,4'',MECH 300 psi,2,,65000,,NEEDS_REVIEW,price column 2 (MECH 300 psi),"4'' | 28,000 | 65,000 | 65,000"
+3,1,4,Valves,CLINTON Non- UL,own-label,Clinton,4'',HYFLO UL/FM,3,,65000,,NEEDS_REVIEW,price column 3 (HYFLO UL/FM),"4'' | 28,000 | 65,000 | 65,000"
+3,1,5,Valves,CLINTON Non- UL,own-label,Clinton,3'',CLINTON Non- UL,1,,21000,,NEEDS_REVIEW,price column 1 (CLINTON Non- UL),"3'' | 21,000 | 52,000 | 52,000"
+3,1,5,Valves,CLINTON Non- UL,own-label,Clinton,3'',MECH 300 psi,2,,52000,,NEEDS_REVIEW,price column 2 (MECH 300 psi),"3'' | 21,000 | 52,000 | 52,000"
+3,1,5,Valves,CLINTON Non- UL,own-label,Clinton,3'',HYFLO UL/FM,3,,52000,,NEEDS_REVIEW,price column 3 (HYFLO UL/FM),"3'' | 21,000 | 52,000 | 52,000"
+3,1,6,Valves,CLINTON Non- UL,own-label,Clinton,2 ½'',CLINTON Non- UL,1,,16500,,NEEDS_REVIEW,price column 1 (CLINTON Non- UL),"2 ½'' | 16,500"
+3,1,7,Valves,CLINTON Non- UL,own-label,Clinton,2'',CLINTON Non- UL,1,,12500,,NEEDS_REVIEW,price column 1 (CLINTON Non- UL),"2'' | 12,500"
+3,2,2,Valves,ZJST Non- UL,own-label,,8'',CLINTON Non- UL,2,,45000,,NEEDS_REVIEW,price column 2 (CLINTON Non- UL),"8'' | 45,000 | 70,000"
+3,2,2,Valves,ZJST Non- UL,own-label,,8'',HYFLO UL/FM,3,,70000,,NEEDS_REVIEW,price column 3 (HYFLO UL/FM),"8'' | 45,000 | 70,000"
+3,2,3,Valves,ZJST Non- UL,own-label,,6'',ZJST Non- UL,1,,35000,,NEEDS_REVIEW,price column 1 (ZJST Non- UL),"6'' | 35,000 | 37,000 | 48,000"
+3,2,3,Valves,ZJST Non- UL,own-label,,6'',CLINTON Non- UL,2,,37000,,NEEDS_REVIEW,price column 2 (CLINTON Non- UL),"6'' | 35,000 | 37,000 | 48,000"
+3,2,3,Valves,ZJST Non- UL,own-label,,6'',HYFLO UL/FM,3,,48000,,NEEDS_REVIEW,price column 3 (HYFLO UL/FM),"6'' | 35,000 | 37,000 | 48,000"
+3,2,4,Valves,ZJST Non- UL,own-label,,4'',ZJST Non- UL,1,,24500,,NEEDS_REVIEW,price column 1 (ZJST Non- UL),"4'' | 24,500 | 25,000 | 32,000"
+3,2,4,Valves,ZJST Non- UL,own-label,,4'',CLINTON Non- UL,2,,25000,,NEEDS_REVIEW,price column 2 (CLINTON Non- UL),"4'' | 24,500 | 25,000 | 32,000"
+3,2,4,Valves,ZJST Non- UL,own-label,,4'',HYFLO UL/FM,3,,32000,,NEEDS_REVIEW,price column 3 (HYFLO UL/FM),"4'' | 24,500 | 25,000 | 32,000"
+3,2,5,Valves,ZJST Non- UL,own-label,,3'',ZJST Non- UL,1,,21500,,NEEDS_REVIEW,price column 1 (ZJST Non- UL),"3'' | 21,500 | 22,000 | 28,000"
+3,2,5,Valves,ZJST Non- UL,own-label,,3'',CLINTON Non- UL,2,,22000,,NEEDS_REVIEW,price column 2 (CLINTON Non- UL),"3'' | 21,500 | 22,000 | 28,000"
+3,2,5,Valves,ZJST Non- UL,own-label,,3'',HYFLO UL/FM,3,,28000,,NEEDS_REVIEW,price column 3 (HYFLO UL/FM),"3'' | 21,500 | 22,000 | 28,000"
+3,2,6,Valves,ZJST Non- UL,own-label,,10'',HYFLO UL/FM,3,,95000,,NEEDS_REVIEW,price column 3 (HYFLO UL/FM),"10'' | 95,000"
+3,2,7,Valves,ZJST Non- UL,own-label,,12'',HYFLO UL/FM,3,,180000,,NEEDS_REVIEW,price column 3 (HYFLO UL/FM),"12'' | 180,000"
+3,3,3,Valves,KENNEDY NON/UL,own-label,Kennedy,6'',MECH UL/FM,1,,12500,,NEEDS_REVIEW,price column 1 (MECH UL/FM),"6'' | 12,500 | 9,500 | 12,800"
+3,3,3,Valves,KENNEDY NON/UL,own-label,Kennedy,6'',KENNEDY NON/UL,2,,9500,,NEEDS_REVIEW,price column 2 (KENNEDY NON/UL),"6'' | 12,500 | 9,500 | 12,800"
+3,3,3,Valves,KENNEDY NON/UL,own-label,Kennedy,6'',HYFLO UL/FM,3,,12800,,NEEDS_REVIEW,price column 3 (HYFLO UL/FM),"6'' | 12,500 | 9,500 | 12,800"
+3,3,4,Valves,KENNEDY NON/UL,own-label,Kennedy,4'',MECH UL/FM,1,,9500,,NEEDS_REVIEW,price column 1 (MECH UL/FM),"4'' | 9,500 | 8,400 | 10,000"
+3,3,4,Valves,KENNEDY NON/UL,own-label,Kennedy,4'',KENNEDY NON/UL,2,,8400,,NEEDS_REVIEW,price column 2 (KENNEDY NON/UL),"4'' | 9,500 | 8,400 | 10,000"
+3,3,4,Valves,KENNEDY NON/UL,own-label,Kennedy,4'',HYFLO UL/FM,3,,10000,,NEEDS_REVIEW,price column 3 (HYFLO UL/FM),"4'' | 9,500 | 8,400 | 10,000"
+3,3,5,Valves,KENNEDY NON/UL,own-label,Kennedy,3'',MECH UL/FM,1,,7900,,NEEDS_REVIEW,price column 1 (MECH UL/FM),"3'' | 7,900 | 6,700 | 8,500"
+3,3,5,Valves,KENNEDY NON/UL,own-label,Kennedy,3'',KENNEDY NON/UL,2,,6700,,NEEDS_REVIEW,price column 2 (KENNEDY NON/UL),"3'' | 7,900 | 6,700 | 8,500"
+3,3,5,Valves,KENNEDY NON/UL,own-label,Kennedy,3'',HYFLO UL/FM,3,,8500,,NEEDS_REVIEW,price column 3 (HYFLO UL/FM),"3'' | 7,900 | 6,700 | 8,500"
+3,3,6,Valves,KENNEDY NON/UL,own-label,Kennedy,2 ½'',MECH UL/FM,1,,7200,,NEEDS_REVIEW,price column 1 (MECH UL/FM),"2 ½'' | 7,200 | 6,000 | 8,000"
+3,3,6,Valves,KENNEDY NON/UL,own-label,Kennedy,2 ½'',KENNEDY NON/UL,2,,6000,,NEEDS_REVIEW,price column 2 (KENNEDY NON/UL),"2 ½'' | 7,200 | 6,000 | 8,000"
+3,3,6,Valves,KENNEDY NON/UL,own-label,Kennedy,2 ½'',HYFLO UL/FM,3,,8000,,NEEDS_REVIEW,price column 3 (HYFLO UL/FM),"2 ½'' | 7,200 | 6,000 | 8,000"
+4,1,2,Valves,KENNEDY Grooved Alarm Check,own-label,Kennedy,8'',KENNEDY Grooved Alarm Check,1,,48000,,PENDING,,"8'' | 48,000"
+4,1,3,Valves,KENNEDY Grooved Alarm Check,own-label,Kennedy,6'',KENNEDY Grooved Alarm Check,1,,39000,,PENDING,,"6'' | 39,000"
+4,1,4,Valves,KENNEDY Grooved Alarm Check,own-label,Kennedy,4'',KENNEDY Grooved Alarm Check,1,,27000,,PENDING,,"4'' | 27,000"
+4,2,2,Valves,HYFLO Grooved Alarm Check,own-label,Hyflo,8'',HYFLO Grooved Alarm Check,1,,70000,,PENDING,,"8'' | 70,000"
+4,2,3,Valves,HYFLO Grooved Alarm Check,own-label,Hyflo,6'',HYFLO Grooved Alarm Check,1,,48000,,PENDING,,"6'' | 48,000"
+4,2,4,Valves,HYFLO Grooved Alarm Check,own-label,Hyflo,4'',HYFLO Grooved Alarm Check,1,,33000,,PENDING,,"4'' | 33,000"
+4,3,2,Fire Alarm & Detection,Exit Sign,own-label,,,,1,,580,,NEEDS_REVIEW,"earlier numeric cell(s) ignored, not price columns: 600; no size column",600 | 580
+4,4,2,Valves,Exit Sign,inherited-label,,6'',PN-25 360 PSI,1,,83250,,NEEDS_REVIEW,product from inherited-label,"6'' | 83,250"
+4,4,3,Valves,Exit Sign,inherited-label,,4'',PN-25 360 PSI,1,,50200,,NEEDS_REVIEW,product from inherited-label,"4'' | 50,200"
+4,4,4,Valves,Exit Sign,inherited-label,,3'',PN-25 360 PSI,1,,34500,,NEEDS_REVIEW,product from inherited-label,"3'' | 34,500"
+4,4,5,Valves,Exit Sign,inherited-label,,2 ½'',PN-25 360 PSI,1,,28500,,NEEDS_REVIEW,product from inherited-label,"2 ½'' | 28,500"
+4,4,6,Valves,Exit Sign,inherited-label,,2'',PN-25 360 PSI,1,,26000,,NEEDS_REVIEW,product from inherited-label,"2'' | 26,000"
+4,5,2,Valves,Exit Sign,inherited-label,,6'',PN-40 580 PSI,1,,102675,,NEEDS_REVIEW,product from inherited-label,"6'' | 102,675"
+4,5,3,Valves,Exit Sign,inherited-label,,4'',PN-40 580 PSI,1,,69580,,NEEDS_REVIEW,product from inherited-label,"4'' | 69,580"
+4,5,4,Valves,Exit Sign,inherited-label,,3'',PN-40 580 PSI,1,,46000,,NEEDS_REVIEW,product from inherited-label,"3'' | 46,000"
+4,5,5,Valves,Exit Sign,inherited-label,,2 ½'',PN-40 580 PSI,1,,38500,,NEEDS_REVIEW,product from inherited-label,"2 ½'' | 38,500"
+4,5,6,Valves,Exit Sign,inherited-label,,2'',PN-40 580 PSI,1,,34000,,NEEDS_REVIEW,product from inherited-label,"2'' | 34,000"
+4,6,2,Fire Extinguishers & Agents,Exit Sign,inherited-label,,10 LBS,ABC,1,,1250,,NEEDS_REVIEW,product from inherited-label,"10 LBS | 1,250"
+4,6,3,Fire Extinguishers & Agents,Exit Sign,inherited-label,,20 LBS,ABC,1,,2400,,NEEDS_REVIEW,product from inherited-label,"20 LBS | 2,400"
+4,6,4,Fire Extinguishers & Agents,Exit Sign,inherited-label,,50 LBS,ABC,1,,8500,,NEEDS_REVIEW,product from inherited-label,"50 LBS | 8,500"
+4,7,2,Fire Extinguishers & Agents,Exit Sign,inherited-label,,10 LBS,HCFC 123,1,,5200,,NEEDS_REVIEW,product from inherited-label,"10 LBS | 5,200"
+4,7,3,Fire Extinguishers & Agents,Exit Sign,inherited-label,,20 LBS,HCFC 123,1,,9900,,NEEDS_REVIEW,product from inherited-label,"20 LBS | 9,900"
+4,7,4,Fire Extinguishers & Agents,Exit Sign,inherited-label,,50 LBS,HCFC 123,1,,24000,,NEEDS_REVIEW,product from inherited-label,"50 LBS | 24,000"
+4,8,2,Fire Extinguishers & Agents,Exit Sign,inherited-label,,10 LBS,HCFC 123,1,,6500,,NEEDS_REVIEW,product from inherited-label,"10 LBS | 6,500"
+4,8,3,Fire Extinguishers & Agents,Exit Sign,inherited-label,,20 LBS,HCFC 123,1,,12800,,NEEDS_REVIEW,product from inherited-label,"20 LBS | 12,800"
+5,1,1,Valves,Butterfly Valve with Tamper Switch,slide-title,,6'',,1,,12500,,NEEDS_REVIEW,product from slide-title,"6'' | 12,500"
+5,1,2,Valves,Butterfly Valve with Tamper Switch,slide-title,,4'',,1,,9000,,NEEDS_REVIEW,product from slide-title,"4'' | 9,000"
+5,1,3,Valves,Butterfly Valve with Tamper Switch,slide-title,,3'',,1,,7500,,NEEDS_REVIEW,product from slide-title,"3'' | 7,500"
+5,2,1,Valves,Butterfly Valve with Tamper Switch,slide-title,,6'',,1,,18500,,NEEDS_REVIEW,product from slide-title,"6'' | 18,500"
+5,2,2,Valves,Butterfly Valve with Tamper Switch,slide-title,,4'',,1,,12000,,NEEDS_REVIEW,product from slide-title,"4'' | 12,000"
+5,2,3,Valves,Butterfly Valve with Tamper Switch,slide-title,,3'',,1,,10800,,NEEDS_REVIEW,product from slide-title,"3'' | 10,800"
+5,3,1,Valves,Butterfly Valve with Tamper Switch,slide-title,,8'',,1,,38000,,NEEDS_REVIEW,product from slide-title,"8'' | 38,000"
+5,3,2,Valves,Butterfly Valve with Tamper Switch,slide-title,,6'',,1,,24300,,NEEDS_REVIEW,product from slide-title,"6'' | 24,300"
+5,3,3,Valves,Butterfly Valve with Tamper Switch,slide-title,,4'',,1,,14700,,NEEDS_REVIEW,product from slide-title,"4'' | 14,700"
+5,3,4,Valves,Butterfly Valve with Tamper Switch,slide-title,,3'',,1,,11000,,NEEDS_REVIEW,product from slide-title,"3'' | 11,000"
+5,4,1,Valves,Butterfly Valve with Tamper Switch,slide-title,,8'',,1,,16500,,NEEDS_REVIEW,product from slide-title,"8'' | 16,500"
+5,4,2,Valves,Butterfly Valve with Tamper Switch,slide-title,,6'',,1,,11330,,NEEDS_REVIEW,product from slide-title,"6'' | 11,330"
+5,4,3,Valves,Butterfly Valve with Tamper Switch,slide-title,,4'',,1,,6500,,NEEDS_REVIEW,product from slide-title,"4'' | 6,500"
+5,4,4,Valves,Butterfly Valve with Tamper Switch,slide-title,,3'',,1,,5200,,NEEDS_REVIEW,product from slide-title,"3'' | 5,200"
+5,5,1,Valves,Butterfly Valve with Tamper Switch,slide-title,,8'',,1,,45000,,NEEDS_REVIEW,product from slide-title,"8'' | 45,000"
+5,5,2,Valves,Butterfly Valve with Tamper Switch,slide-title,,6'',,1,,24000,,NEEDS_REVIEW,product from slide-title,"6'' | 24,000"
+5,5,3,Valves,Butterfly Valve with Tamper Switch,slide-title,,4'',,1,,17000,,NEEDS_REVIEW,product from slide-title,"4'' | 17,000"
+5,5,4,Valves,Butterfly Valve with Tamper Switch,slide-title,,3'',,1,,12000,,NEEDS_REVIEW,product from slide-title,"3'' | 12,000"
+5,6,1,Valves,Butterfly Valve with Tamper Switch,slide-title,,8'',,1,,16800,,NEEDS_REVIEW,product from slide-title,"8'' | 16,800"
+5,7,1,Valves,Butterfly Valve with Tamper Switch,slide-title,,8'',,1,,108000,,NEEDS_REVIEW,product from slide-title,"8'' | 108,000"
+5,7,2,Valves,Butterfly Valve with Tamper Switch,slide-title,,6'',,1,,95000,,NEEDS_REVIEW,product from slide-title,"6'' | 95,000"
+5,7,3,Valves,Butterfly Valve with Tamper Switch,slide-title,,4'',,1,,75000,,NEEDS_REVIEW,product from slide-title,"4'' | 75,000"
+5,7,4,Valves,Butterfly Valve with Tamper Switch,slide-title,,3'',,1,,65000,,NEEDS_REVIEW,product from slide-title,"3'' | 65,000"
+5,8,1,Fire Hydrants,Butterfly Valve with Tamper Switch,slide-title,,2 ½,,1,,6800,,NEEDS_REVIEW,product from slide-title,"2 ½ | 6,800"
+5,9,1,Fire Hydrants,Butterfly Valve with Tamper Switch,slide-title,,21/2,,1,,8800,,NEEDS_REVIEW,product from slide-title,"21/2 | 8,800"
+5,10,1,Fire Hydrants,Butterfly Valve with Tamper Switch,slide-title,,5'',,1,,85000,,NEEDS_REVIEW,product from slide-title,"5'' | 85,000"
+6,1,1,Valves,UNRESOLVED-S6-T1,unresolved,,6'',,1,,18500,,NEEDS_REVIEW,product from unresolved,"6'' | 18,500"
+6,1,2,Valves,UNRESOLVED-S6-T1,unresolved,,4'',,1,,12000,,NEEDS_REVIEW,product from unresolved,"4'' | 12,000"
+6,1,3,Valves,UNRESOLVED-S6-T1,unresolved,,3'',,1,,10800,,NEEDS_REVIEW,product from unresolved,"3'' | 10,800"
+6,2,1,Valves,UNRESOLVED-S6-T2,unresolved,,8'',,1,,260400,,NEEDS_REVIEW,product from unresolved,"8'' | 260,400"
+6,2,2,Valves,UNRESOLVED-S6-T2,unresolved,,6'',,1,,215250,,NEEDS_REVIEW,product from unresolved,"6'' | 215,250"
+6,2,3,Valves,UNRESOLVED-S6-T2,unresolved,,4'',,1,,173250,,NEEDS_REVIEW,product from unresolved,"4'' | 173,250"
+6,2,4,Valves,UNRESOLVED-S6-T2,unresolved,,3'',,1,,149100,,NEEDS_REVIEW,product from unresolved,"3'' | 149,100"
+6,3,1,Valves,UNRESOLVED-S6-T3,unresolved,,21/2,,1,,139400,,NEEDS_REVIEW,product from unresolved,"21/2 | 139,400"
+6,4,1,Valves,UNRESOLVED-S6-T4,unresolved,,5'',,1,,195400,,NEEDS_REVIEW,product from unresolved,"5'' | 195,400"
+7,1,1,Valves,Butterfly Valve with Tamper Switch,slide-title,,6'',,1,,12500,,NEEDS_REVIEW,product from slide-title,"6'' | 12,500"
+7,1,2,Valves,Butterfly Valve with Tamper Switch,slide-title,,4'',,1,,9500,,NEEDS_REVIEW,product from slide-title,"4'' | 9,500"
+7,1,3,Valves,Butterfly Valve with Tamper Switch,slide-title,,3'',,1,,7800,,NEEDS_REVIEW,product from slide-title,"3'' | 7,800"
+7,3,1,Valves,Butterfly Valve with Tamper Switch,slide-title,,8'',,1,,32075,,NEEDS_REVIEW,product from slide-title,"8'' | 32,075"
+7,3,2,Valves,Butterfly Valve with Tamper Switch,slide-title,,6'',,1,,19700,,NEEDS_REVIEW,product from slide-title,"6'' | 19,700"
+7,3,3,Valves,Butterfly Valve with Tamper Switch,slide-title,,4'',,1,,12700,,NEEDS_REVIEW,product from slide-title,"4'' | 12,700"
+7,3,4,Valves,Butterfly Valve with Tamper Switch,slide-title,,3'',,1,,8700,,NEEDS_REVIEW,product from slide-title,"3'' | 8,700"
+7,4,1,Valves,Butterfly Valve with Tamper Switch,slide-title,,8'',,1,,18000,,NEEDS_REVIEW,product from slide-title,"8'' | 18,000"
+7,4,2,Valves,Butterfly Valve with Tamper Switch,slide-title,,6'',,1,,12400,,NEEDS_REVIEW,product from slide-title,"6'' | 12,400"
+7,4,3,Valves,Butterfly Valve with Tamper Switch,slide-title,,4'',,1,,6500,,NEEDS_REVIEW,product from slide-title,"4'' | 6,500"
+7,4,4,Valves,Butterfly Valve with Tamper Switch,slide-title,,3'',,1,,5600,,NEEDS_REVIEW,product from slide-title,"3'' | 5,600"
+7,5,1,Valves,Butterfly Valve with Tamper Switch,slide-title,,8'',,1,,30000,,NEEDS_REVIEW,product from slide-title,"8'' | 30,000"
+7,5,2,Valves,Butterfly Valve with Tamper Switch,slide-title,,6'',,1,,18900,,NEEDS_REVIEW,product from slide-title,"6'' | 18,900"
+7,5,3,Valves,Butterfly Valve with Tamper Switch,slide-title,,4'',,1,,12000,,NEEDS_REVIEW,product from slide-title,"4'' | 12,000"
+7,5,4,Valves,Butterfly Valve with Tamper Switch,slide-title,,3'',,1,,9000,,NEEDS_REVIEW,product from slide-title,"3'' | 9,000"
+7,6,1,Valves,Butterfly Valve with Tamper Switch,slide-title,,8'',,1,,18000,,NEEDS_REVIEW,product from slide-title,"8'' | 18,000"
+7,6,2,Valves,Butterfly Valve with Tamper Switch,slide-title,,6'',,1,,12400,,NEEDS_REVIEW,product from slide-title,"6'' | 12,400"
+7,6,3,Valves,Butterfly Valve with Tamper Switch,slide-title,,4'',,1,,6500,,NEEDS_REVIEW,product from slide-title,"4'' | 6,500"
+7,6,4,Valves,Butterfly Valve with Tamper Switch,slide-title,,3'',,1,,5600,,NEEDS_REVIEW,product from slide-title,"3'' | 5,600"
+7,7,1,Valves,Butterfly Valve with Tamper Switch,slide-title,,8'',,1,,16800,,NEEDS_REVIEW,product from slide-title,"8'' | 16,800"
+8,1,2,Valves,CLINTON Non- Rising Gate Valve,own-label,Clinton,8'',CLINTON Non- Rising Gate Valve,1,,19800,,PENDING,,"8'' | 19,800"
+8,1,3,Valves,CLINTON Non- Rising Gate Valve,own-label,Clinton,6'',CLINTON Non- Rising Gate Valve,1,,10500,,PENDING,,"6'' | 10,500"
+8,1,4,Valves,CLINTON Non- Rising Gate Valve,own-label,Clinton,4'',CLINTON Non- Rising Gate Valve,1,,5800,,PENDING,,"4'' | 5,800"
+8,1,5,Valves,CLINTON Non- Rising Gate Valve,own-label,Clinton,3'',CLINTON Non- Rising Gate Valve,1,,4800,,PENDING,,"3'' | 4,800"
+8,1,6,Valves,CLINTON Non- Rising Gate Valve,own-label,Clinton,2 ½'',CLINTON Non- Rising Gate Valve,1,,3900,,PENDING,,"2 ½'' | 3,900"
+8,1,7,Valves,CLINTON Non- Rising Gate Valve,own-label,Clinton,2'',CLINTON Non- Rising Gate Valve,1,,3200,,PENDING,,"2'' | 3,200"
+8,2,2,Valves,CLINTON Rising Gate Valve,own-label,Clinton,8'',CLINTON Rising Gate Valve,1,,19800,,PENDING,,"8'' | 19,800"
+8,2,3,Valves,CLINTON Rising Gate Valve,own-label,Clinton,6'',CLINTON Rising Gate Valve,1,,10500,,PENDING,,"6'' | 10,500"
+8,2,4,Valves,CLINTON Rising Gate Valve,own-label,Clinton,4'',CLINTON Rising Gate Valve,1,,5800,,PENDING,,"4'' | 5,800"
+8,2,5,Valves,CLINTON Rising Gate Valve,own-label,Clinton,3'',CLINTON Rising Gate Valve,1,,4800,,PENDING,,"3'' | 4,800"
+8,2,6,Valves,CLINTON Rising Gate Valve,own-label,Clinton,2 ½'',CLINTON Rising Gate Valve,1,,3900,,PENDING,,"2 ½'' | 3,900"
+8,2,7,Valves,CLINTON Rising Gate Valve,own-label,Clinton,2'',CLINTON Rising Gate Valve,1,,3200,,PENDING,,"2'' | 3,200"
+8,3,2,Valves,CLINTON Rising Gate Valve,inherited-label,Clinton,12'',Rising,1,,37915,,NEEDS_REVIEW,product from inherited-label,"12'' | 37,915"
+8,3,3,Valves,CLINTON Rising Gate Valve,inherited-label,Clinton,10'',Rising,1,,29315,,NEEDS_REVIEW,product from inherited-label,"10'' | 29,315"
+8,3,5,Valves,CLINTON Rising Gate Valve,inherited-label,Clinton,12'',Rising,1,,35335,,NEEDS_REVIEW,product from inherited-label,"12'' | 35,335"
+8,3,6,Valves,CLINTON Rising Gate Valve,inherited-label,Clinton,10'',Rising,1,,27849,,NEEDS_REVIEW,product from inherited-label,"10'' | 27,849"
+8,4,4,Instruments & Gauges,AIR GUAGE,own-label,,4'',CRAFT & KENNEDY,1,,550,,PENDING,,4'' | 550
+8,4,5,Instruments & Gauges,AIR GUAGE,own-label,,3'',CRAFT & KENNEDY,1,,450,,PENDING,,3'' | 450
+8,4,6,Instruments & Gauges,AIR GUAGE,own-label,,2 ½'',CRAFT & KENNEDY,1,,315,,PENDING,,2 ½'' | 315
+8,4,7,Instruments & Gauges,AIR GUAGE,own-label,,2'',CRAFT & KENNEDY,1,,200,,PENDING,,2'' | 200
+8,5,2,Water Meters & Tank Fittings,WATER METER,own-label,,8'',CLINTON WOLTMAN,1,,61500,,PENDING,,"8'' | 61,500"
+8,5,3,Water Meters & Tank Fittings,WATER METER,own-label,,6'',CLINTON WOLTMAN,1,,47500,,PENDING,,"6'' | 47,500"
+8,5,4,Water Meters & Tank Fittings,WATER METER,own-label,,4'',CLINTON WOLTMAN,1,,23500,,PENDING,,"4'' | 23,500"
+8,6,2,Water Meters & Tank Fittings,CLINTON GIBAULT,own-label,Clinton,6'',CLINTON GIBAULT,1,,4800,,PENDING,,6'' | 4800
+8,6,3,Water Meters & Tank Fittings,CLINTON GIBAULT,own-label,Clinton,4'',CLINTON GIBAULT,1,,3260,,PENDING,,4'' | 3260
+8,6,4,Water Meters & Tank Fittings,CLINTON GIBAULT,own-label,Clinton,3'',CLINTON GIBAULT,1,,2400,,PENDING,,3'' | 2400
+8,6,5,Water Meters & Tank Fittings,CLINTON GIBAULT,own-label,Clinton,2 ½'',CLINTON GIBAULT,1,,2100,,PENDING,,2 ½'' | 2100
+8,6,6,Water Meters & Tank Fittings,CLINTON GIBAULT,own-label,Clinton,2'',CLINTON GIBAULT,1,,1800,,PENDING,,2'' | 1800
+9,1,2,Valves,Kennedy Vertical Check Valve,own-label,Kennedy,8'',Kennedy Vertical Check Valve,1,,18370,,PENDING,,"8'' | 18,370"
+9,1,3,Valves,Kennedy Vertical Check Valve,own-label,Kennedy,6'',Kennedy Vertical Check Valve,1,,10200,,PENDING,,"6'' | 10,200"
+9,1,4,Valves,Kennedy Vertical Check Valve,own-label,Kennedy,4'',Kennedy Vertical Check Valve,1,,7150,,PENDING,,"4'' | 7,150"
+9,1,5,Valves,Kennedy Vertical Check Valve,own-label,Kennedy,3'',Kennedy Vertical Check Valve,1,,4620,,PENDING,,"3'' | 4,620"
+9,1,6,Valves,Kennedy Vertical Check Valve,own-label,Kennedy,2 ½'',Kennedy Vertical Check Valve,1,,3850,,PENDING,,"2 ½'' | 3,850"
+9,1,7,Valves,Kennedy Vertical Check Valve,own-label,Kennedy,2'',Kennedy Vertical Check Valve,1,,3245,,PENDING,,"2'' | 3,245"
+9,2,2,Pipes & Fittings,Universal Flange Adaptor,own-label,,8'',Universal Flange Adaptor,1,,8600,,PENDING,,"8'' | 8,600"
+9,2,3,Pipes & Fittings,Universal Flange Adaptor,own-label,,6'',Universal Flange Adaptor,1,,4950,,PENDING,,"6'' | 4,950"
+9,2,4,Pipes & Fittings,Universal Flange Adaptor,own-label,,4'',Universal Flange Adaptor,1,,3900,,PENDING,,"4'' | 3,900"
+9,2,5,Pipes & Fittings,Universal Flange Adaptor,own-label,,3'',Universal Flange Adaptor,1,,3400,,PENDING,,"3'' | 3,400"
+9,2,6,Pipes & Fittings,Universal Flange Adaptor,own-label,,2 ½'',Universal Flange Adaptor,1,,2950,,PENDING,,"2 ½'' | 2,950"
+9,2,7,Pipes & Fittings,Universal Flange Adaptor,own-label,,2'',Universal Flange Adaptor,1,,2600,,PENDING,,"2'' | 2,600"
+9,3,1,Valves,Universal Flange Adaptor,inherited-label,,10'',,1,,14585,,NEEDS_REVIEW,product from inherited-label,"10'' | 14,585"
+9,4,2,Fire Hydrants,HYDRANT KENNEDY,own-label,Kennedy,,,1,,28000,,NEEDS_REVIEW,no size column,"4 X 2 ½ X 2 ½ | 28,000"
+9,4,3,Fire Hydrants,HYDRANT KENNEDY,own-label,Kennedy,,,1,,35000,,NEEDS_REVIEW,no size column,"6 X 2 ½ X 2 ½ | 35,000"
+9,5,2,"Couplings, Nozzles & Monitors",FIRE WATER MONITOR,own-label,,3'' 20-40 LPM,,1,,35000,,NEEDS_REVIEW,multiline cell in source row,"3'' 20-40 LPM | 35,000"
+9,6,1,Valves,FIRE WATER MONITOR,inherited-label,,4'',,1,,4500,,NEEDS_REVIEW,product from inherited-label,"4'' | 4,500"
+9,6,2,Valves,FIRE WATER MONITOR,inherited-label,,6'',,1,,7500,,NEEDS_REVIEW,product from inherited-label,"6'' | 7,500"
+9,7,2,Fire Hydrants,FIRE HYDRANT HYFLO,own-label,Hyflo,,,1,,28000,,NEEDS_REVIEW,no size column,"4 X 2 ½ X 2 ½ | 28,000"
+9,7,3,Fire Hydrants,FIRE HYDRANT HYFLO,own-label,Hyflo,,,1,,35000,,NEEDS_REVIEW,no size column,"6 X 2 ½ X 2 ½ | 35,000"
+9,8,2,Pipes & Fittings,FLANGE TYPE,own-label,,6'',Kennedy AIR RELEASE VALVE,1,,13200,,PENDING,,"6'' | 13,200"
+9,8,3,Pipes & Fittings,FLANGE TYPE,own-label,,4'',Kennedy AIR RELEASE VALVE,1,,9550,,PENDING,,"4'' | 9,550"
+9,8,4,Pipes & Fittings,FLANGE TYPE,own-label,,3'',Kennedy AIR RELEASE VALVE,1,,7820,,PENDING,,"3'' | 7,820"
+9,8,5,Pipes & Fittings,FLANGE TYPE,own-label,,2 ½'',Kennedy AIR RELEASE VALVE,1,,6850,,PENDING,,"2 ½'' | 6,850"
+9,8,6,Pipes & Fittings,FLANGE TYPE,own-label,,2'',Kennedy AIR RELEASE VALVE,1,,5665,,PENDING,,"2'' | 5,665"
+10,1,2,Fire Hydrants,UNRESOLVED-S10-T1,unresolved,,,,1,,19000,,NEEDS_REVIEW,no size column; product from unresolved,"4 X 2 ½ | 19,000"
+10,1,3,Fire Hydrants,UNRESOLVED-S10-T1,unresolved,,,,1,,17000,,NEEDS_REVIEW,no size column; product from unresolved,"3 X 2 ½ | 17,000"
+10,2,2,Valves,CLA-VAL Relief Valve,own-label,,3'',ul/fm,1,,190000,,PENDING,,"3'' | 190,000"
+10,2,3,Valves,CLA-VAL Relief Valve,own-label,,4'',ul/fm,1,,220000,,PENDING,,"4'' | 220,000"
+10,3,1,Valves,CLA-VAL Relief Valve,inherited-label,,6'',,1,,280000,,NEEDS_REVIEW,product from inherited-label,"6'' | 280,000"
+10,4,1,Valves,CLA-VAL Relief Valve,inherited-label,,8'',,1,,410000,,NEEDS_REVIEW,product from inherited-label,"8'' | 410,000"
+10,5,2,Valves,1.2 meters,own-label,,1'' x ½,,2,,1380.00,,PENDING,,"1'' x ½ | 1.2 meters | 1,380.00"
+10,5,3,Valves,1.2 meters,own-label,,1'' x ¾,,2,,1650.00,,PENDING,,"1'' x ¾ | 1.5 meters | 1,650.00"
+10,5,4,Valves,1.2 meters,own-label,,1'' x 1,,2,,1800.00,,PENDING,,"1'' x 1 | 1.8 meters | 1,800.00"
+11,1,2,Valves,BUTTERFLY VALVE,slide-title,,10'',MECH,2,,10500,,NEEDS_REVIEW,product from slide-title,"10'' | 10,500"
+11,1,3,Valves,BUTTERFLY VALVE,slide-title,,12'',MECH,2,,16500,,NEEDS_REVIEW,product from slide-title,"12'' | 16,500"
+11,2,2,Valves,BUTTERFLY VALVE,slide-title,,10'',KENNEDY,1,,47500,,NEEDS_REVIEW,price column 1 (KENNEDY); product from slide-title,"10'' | 47,500 | 60,000"
+11,2,2,Valves,BUTTERFLY VALVE,slide-title,,10'',MECH,2,,60000,,NEEDS_REVIEW,price column 2 (MECH); product from slide-title,"10'' | 47,500 | 60,000"
+11,2,3,Valves,BUTTERFLY VALVE,slide-title,,12'',KENNEDY,1,,65000,,NEEDS_REVIEW,price column 1 (KENNEDY); product from slide-title,"12'' | 65,000 | 79,000"
+11,2,3,Valves,BUTTERFLY VALVE,slide-title,,12'',MECH,2,,79000,,NEEDS_REVIEW,price column 2 (MECH); product from slide-title,"12'' | 65,000 | 79,000"
+11,3,2,Valves,BUTTERFLY VALVE,slide-title,,10'',KENNEDY,1,,220000,,NEEDS_REVIEW,price column 1 (KENNEDY); product from slide-title,"10'' | 220,000 | 260,000"
+11,3,2,Valves,BUTTERFLY VALVE,slide-title,,10'',MECH,2,,260000,,NEEDS_REVIEW,price column 2 (MECH); product from slide-title,"10'' | 220,000 | 260,000"
+11,3,3,Valves,BUTTERFLY VALVE,slide-title,,12'',KENNEDY,1,,285000,,NEEDS_REVIEW,price column 1 (KENNEDY); product from slide-title,"12'' | 285,000 | 330,000"
+11,3,3,Valves,BUTTERFLY VALVE,slide-title,,12'',MECH,2,,330000,,NEEDS_REVIEW,price column 2 (MECH); product from slide-title,"12'' | 285,000 | 330,000"
+11,4,2,Valves,BUTTERFLY VALVE,slide-title,,2 ½ '',KENNEDY,1,,25500,,NEEDS_REVIEW,price column 1 (KENNEDY); product from slide-title,"2 ½ '' | 25,500 | 139,400"
+11,4,2,Valves,BUTTERFLY VALVE,slide-title,,2 ½ '',APC,2,,139400,,NEEDS_REVIEW,price column 2 (APC); product from slide-title,"2 ½ '' | 25,500 | 139,400"
+11,4,3,Valves,BUTTERFLY VALVE,slide-title,,3'',KENNEDY,1,,28000,,NEEDS_REVIEW,price column 1 (KENNEDY); product from slide-title,"3'' | 28,000 | 149,100"
+11,4,3,Valves,BUTTERFLY VALVE,slide-title,,3'',APC,2,,149100,,NEEDS_REVIEW,price column 2 (APC); product from slide-title,"3'' | 28,000 | 149,100"
+11,5,1,Valves,BUTTERFLY VALVE,slide-title,,4'',,1,,35500,,NEEDS_REVIEW,price column 1 (no header); product from slide-title,"4'' | 35,500 | 173,250"
+11,5,1,Valves,BUTTERFLY VALVE,slide-title,,4'',,2,,173250,,NEEDS_REVIEW,price column 2 (no header); product from slide-title,"4'' | 35,500 | 173,250"
+11,5,2,Valves,BUTTERFLY VALVE,slide-title,,6'',,1,,48000,,NEEDS_REVIEW,price column 1 (no header); product from slide-title,"6'' | 48,000 | 215,250"
+11,5,2,Valves,BUTTERFLY VALVE,slide-title,,6'',,2,,215250,,NEEDS_REVIEW,price column 2 (no header); product from slide-title,"6'' | 48,000 | 215,250"
+11,6,2,Valves,BUTTERFLY VALVE,slide-title,,10'',HYFLO,1,,59500,,NEEDS_REVIEW,product from slide-title,"10'' | 59,500"
+11,6,3,Valves,BUTTERFLY VALVE,slide-title,,12'',HYFLO,1,,92000,,NEEDS_REVIEW,product from slide-title,"12'' | 92,000"
+11,7,1,Valves,BUTTERFLY VALVE,slide-title,,8'',,2,,260400,,NEEDS_REVIEW,"earlier numeric cell(s) ignored, not price columns: 68,250; product from slide-title","8'' | 68,250 | 260,400"
+11,8,2,Valves,VALMATIC Air Release Valve,own-label,,1'',,1,,6800,,PENDING,,"1'' | 6,800"
+12,1,2,Fire Extinguishers & Agents,Empty Tank,slide-title,,10 LBS,ABC,1,,310,,NEEDS_REVIEW,product from slide-title,10 LBS | 310
+12,1,3,Fire Extinguishers & Agents,Empty Tank,slide-title,,20 LBS,ABC,1,,480,,NEEDS_REVIEW,product from slide-title,20 LBS | 480
+12,2,2,Fire Extinguishers & Agents,Empty Tank,slide-title,,10 LBS,HCFC 123,1,,430,,NEEDS_REVIEW,product from slide-title,10 LBS | 430
+12,2,3,Fire Extinguishers & Agents,Empty Tank,slide-title,,20 LBS,HCFC 123,1,,640,,NEEDS_REVIEW,product from slide-title,20 LBS | 640
+12,4,1,Fire Hoses & Reels,Empty Tank,slide-title,,12'',,1,,65000,,NEEDS_REVIEW,product from slide-title,"12'' | 65,000"
+12,5,2,Fire Hoses & Reels,Empty Tank,slide-title,,8'',HYFLO,1,,34000,,NEEDS_REVIEW,product from slide-title,"8'' | 34,000"
+12,5,3,Fire Hoses & Reels,Empty Tank,slide-title,,6'',HYFLO,1,,18500,,NEEDS_REVIEW,product from slide-title,"6'' | 18,500"
+12,5,4,Fire Hoses & Reels,Empty Tank,slide-title,,4'',HYFLO,1,,14500,,NEEDS_REVIEW,product from slide-title,"4'' | 14,500"
+12,5,5,Fire Hoses & Reels,Empty Tank,slide-title,,3'',HYFLO,1,,11500,,NEEDS_REVIEW,product from slide-title,"3'' | 11,500"
+12,5,6,Fire Hoses & Reels,Empty Tank,slide-title,,2 ½'',HYFLO,1,,9500,,NEEDS_REVIEW,product from slide-title,"2 ½'' | 9,500"
+12,5,7,Fire Hoses & Reels,Empty Tank,slide-title,,10'',HYFLO,1,,46200,,NEEDS_REVIEW,product from slide-title,"10'' | 46,200"
+12,6,2,Fire Hoses & Reels,Empty Tank,slide-title,,8'',HYFLO,1,,64000,,NEEDS_REVIEW,product from slide-title,"8'' | 64,000"
+12,6,3,Fire Hoses & Reels,Empty Tank,slide-title,,6'',HYFLO,1,,48500,,NEEDS_REVIEW,product from slide-title,"6'' | 48,500"
+12,6,4,Fire Hoses & Reels,Empty Tank,slide-title,,4'',HYFLO,1,,35000,,NEEDS_REVIEW,product from slide-title,"4'' | 35,000"
+12,6,5,Fire Hoses & Reels,Empty Tank,slide-title,,3'',HYFLO,1,,24500,,NEEDS_REVIEW,product from slide-title,"3'' | 24,500"
+12,6,6,Fire Hoses & Reels,Empty Tank,slide-title,,2 ½'',HYFLO,1,,17500,,NEEDS_REVIEW,product from slide-title,"2 ½'' | 17,500"
+12,6,7,Fire Hoses & Reels,Empty Tank,slide-title,,10'',HYFLO,1,,76200,,NEEDS_REVIEW,product from slide-title,"10'' | 76,200"
+12,7,1,Fire Hoses & Reels,Empty Tank,slide-title,,12'',,1,,95000,,NEEDS_REVIEW,product from slide-title,"12'' | 95,000"
+12,8,2,Fire Hoses & Reels,Empty Tank,slide-title,,8'',HYFLO,1,,32000,,NEEDS_REVIEW,product from slide-title,"8'' | 32,000"
+12,8,3,Fire Hoses & Reels,Empty Tank,slide-title,,6'',HYFLO,1,,19500,,NEEDS_REVIEW,product from slide-title,"6'' | 19,500"
+12,8,4,Fire Hoses & Reels,Empty Tank,slide-title,,4'',HYFLO,1,,14500,,NEEDS_REVIEW,product from slide-title,"4'' | 14,500"
+12,8,5,Fire Hoses & Reels,Empty Tank,slide-title,,3'',HYFLO,1,,10500,,NEEDS_REVIEW,product from slide-title,"3'' | 10,500"
+12,8,6,Fire Hoses & Reels,Empty Tank,slide-title,,2 ½'',HYFLO,1,,9500,,NEEDS_REVIEW,product from slide-title,"2 ½'' | 9,500"
+12,8,7,Fire Hoses & Reels,Empty Tank,slide-title,,10'',HYFLO,1,,43000,,NEEDS_REVIEW,product from slide-title,"10'' | 43,000"
+12,9,2,Fire Extinguishers & Agents,Empty Tank,slide-title,,10 LBS,CO2,1,,5500,,NEEDS_REVIEW,product from slide-title,"10 LBS | 5,500"
+12,9,3,Fire Extinguishers & Agents,Empty Tank,slide-title,,20 LBS,CO2,1,,8450,,NEEDS_REVIEW,product from slide-title,"20 LBS | 8,450"
+12,9,4,Fire Extinguishers & Agents,Empty Tank,slide-title,,,CO2,1,,49400,,NEEDS_REVIEW,no size column; product from slide-title,"100 LBS | 49,400"
+12,10,1,Fire Extinguishers & Agents,Empty Tank,slide-title,,50 LBS,,1,,42000,,NEEDS_REVIEW,product from slide-title,"50 LBS | 42,000"
+12,11,2,Water Meters & Tank Fittings,WATER METER,own-label,,2'',WATER METER,1,,7800,,PENDING,,"2'' | 7,800"
+12,11,3,Water Meters & Tank Fittings,WATER METER,own-label,,1 ½,WATER METER,1,,5200,,PENDING,,"1 ½ | 5,200"
+12,11,4,Water Meters & Tank Fittings,WATER METER,own-label,,1 ¼,WATER METER,1,,3500,,PENDING,,"1 ¼ | 3,500"
+12,11,5,Water Meters & Tank Fittings,WATER METER,own-label,,1'',WATER METER,1,,1600,,PENDING,,"1'' | 1,600"
+12,11,6,Water Meters & Tank Fittings,WATER METER,own-label,,¾,WATER METER,1,,1400,,PENDING,,"¾ | 1,400"
+12,11,7,Water Meters & Tank Fittings,WATER METER,own-label,,½,WATER METER,1,,1100,,PENDING,,"½ | 1,100"
+13,1,2,Sprinkler Heads & Nozzles,PENDENT GLOBE,own-label,,½,PENDENT GLOBE,1,,140,,NEEDS_REVIEW,price column 1 (PENDENT GLOBE),½ | 140 | 130 | 180
+13,1,2,Sprinkler Heads & Nozzles,PENDENT GLOBE,own-label,,½,UPRIGHT GLOBE,2,,130,,NEEDS_REVIEW,price column 2 (UPRIGHT GLOBE),½ | 140 | 130 | 180
+13,1,2,Sprinkler Heads & Nozzles,PENDENT GLOBE,own-label,,½,SIDEWALL GLOBE,3,,180,,NEEDS_REVIEW,price column 3 (SIDEWALL GLOBE),½ | 140 | 130 | 180
+13,1,3,Sprinkler Heads & Nozzles,PENDENT GLOBE,own-label,,¾,PENDENT GLOBE,1,,340,,NEEDS_REVIEW,price column 1 (PENDENT GLOBE),¾ | 340 | 325 | 385
+13,1,3,Sprinkler Heads & Nozzles,PENDENT GLOBE,own-label,,¾,UPRIGHT GLOBE,2,,325,,NEEDS_REVIEW,price column 2 (UPRIGHT GLOBE),¾ | 340 | 325 | 385
+13,1,3,Sprinkler Heads & Nozzles,PENDENT GLOBE,own-label,,¾,SIDEWALL GLOBE,3,,385,,NEEDS_REVIEW,price column 3 (SIDEWALL GLOBE),¾ | 340 | 325 | 385
+13,1,5,Sprinkler Heads & Nozzles,PENDENT GLOBE,own-label,,½,PENDENT GLOBE,1,,410,,NEEDS_REVIEW,price column 1 (PENDENT GLOBE),½ | 410 | 385 | 455
+13,1,5,Sprinkler Heads & Nozzles,PENDENT GLOBE,own-label,,½,UPRIGHT GLOBE,2,,385,,NEEDS_REVIEW,price column 2 (UPRIGHT GLOBE),½ | 410 | 385 | 455
+13,1,5,Sprinkler Heads & Nozzles,PENDENT GLOBE,own-label,,½,SIDEWALL GLOBE,3,,455,,NEEDS_REVIEW,price column 3 (SIDEWALL GLOBE),½ | 410 | 385 | 455
+13,1,6,Sprinkler Heads & Nozzles,PENDENT GLOBE,own-label,,¾,PENDENT GLOBE,1,,645,,NEEDS_REVIEW,price column 1 (PENDENT GLOBE),¾ | 645 | 620 | 670
+13,1,6,Sprinkler Heads & Nozzles,PENDENT GLOBE,own-label,,¾,UPRIGHT GLOBE,2,,620,,NEEDS_REVIEW,price column 2 (UPRIGHT GLOBE),¾ | 645 | 620 | 670
+13,1,6,Sprinkler Heads & Nozzles,PENDENT GLOBE,own-label,,¾,SIDEWALL GLOBE,3,,670,,NEEDS_REVIEW,price column 3 (SIDEWALL GLOBE),¾ | 645 | 620 | 670
+13,2,2,Sprinkler Heads & Nozzles,PENDENT GLOBE,inherited-label,,½,Standard,1,,215,,NEEDS_REVIEW,price column 1 (Standard); product from inherited-label,½ | 215 | 195 | 250
+13,2,2,Sprinkler Heads & Nozzles,PENDENT GLOBE,inherited-label,,½,155 F,2,,195,,NEEDS_REVIEW,price column 2 (155 F); product from inherited-label,½ | 215 | 195 | 250
+13,2,2,Sprinkler Heads & Nozzles,PENDENT GLOBE,inherited-label,,½,,3,,250,,NEEDS_REVIEW,price column 3 (no header); product from inherited-label,½ | 215 | 195 | 250
+13,2,3,Sprinkler Heads & Nozzles,PENDENT GLOBE,inherited-label,,¾,Standard,1,,395,,NEEDS_REVIEW,price column 1 (Standard); product from inherited-label,¾ | 395 | 370 | 420
+13,2,3,Sprinkler Heads & Nozzles,PENDENT GLOBE,inherited-label,,¾,155 F,2,,370,,NEEDS_REVIEW,price column 2 (155 F); product from inherited-label,¾ | 395 | 370 | 420
+13,2,3,Sprinkler Heads & Nozzles,PENDENT GLOBE,inherited-label,,¾,,3,,420,,NEEDS_REVIEW,price column 3 (no header); product from inherited-label,¾ | 395 | 370 | 420
+13,3,2,Sprinkler Heads & Nozzles,PENDENT NON-UL,own-label,,½,PENDENT NON-UL,1,,120,,NEEDS_REVIEW,price column 1 (PENDENT NON-UL),½ | 120 | 95 | 145
+13,3,2,Sprinkler Heads & Nozzles,PENDENT NON-UL,own-label,,½,UPRIGHT NON-UL,2,,95,,NEEDS_REVIEW,price column 2 (UPRIGHT NON-UL),½ | 120 | 95 | 145
+13,3,2,Sprinkler Heads & Nozzles,PENDENT NON-UL,own-label,,½,SIDEWALL NON-UL,3,,145,,NEEDS_REVIEW,price column 3 (SIDEWALL NON-UL),½ | 120 | 95 | 145
+13,3,3,Sprinkler Heads & Nozzles,PENDENT NON-UL,own-label,,¾,PENDENT NON-UL,1,,280,,NEEDS_REVIEW,price column 1 (PENDENT NON-UL),¾ | 280 | 260 | 310
+13,3,3,Sprinkler Heads & Nozzles,PENDENT NON-UL,own-label,,¾,UPRIGHT NON-UL,2,,260,,NEEDS_REVIEW,price column 2 (UPRIGHT NON-UL),¾ | 280 | 260 | 310
+13,3,3,Sprinkler Heads & Nozzles,PENDENT NON-UL,own-label,,¾,SIDEWALL NON-UL,3,,310,,NEEDS_REVIEW,price column 3 (SIDEWALL NON-UL),¾ | 280 | 260 | 310
+13,4,2,Sprinkler Heads & Nozzles,PENDENT GLOBE,own-label,,½,,2,,530,,NEEDS_REVIEW,"earlier numeric cell(s) ignored, not price columns: 720",½ | 720 | 530
+13,5,2,Sprinkler Heads & Nozzles,PLATE ONLY,own-label,,½,PENDENT,1,,30,,NEEDS_REVIEW,price column 1 (PENDENT),½ | 30 | 30
+13,5,2,Sprinkler Heads & Nozzles,PLATE ONLY,own-label,,½,SIDEWALL,2,,30,,NEEDS_REVIEW,price column 2 (SIDEWALL),½ | 30 | 30
+13,5,3,Sprinkler Heads & Nozzles,PLATE ONLY,own-label,,¾,PENDENT,1,,35,,NEEDS_REVIEW,price column 1 (PENDENT),¾ | 35 | 35
+13,5,3,Sprinkler Heads & Nozzles,PLATE ONLY,own-label,,¾,SIDEWALL,2,,35,,NEEDS_REVIEW,price column 2 (SIDEWALL),¾ | 35 | 35
+13,6,2,Sprinkler Heads & Nozzles,PENDENT VIC,own-label,,½,PENDENT VIC,1,,170,,NEEDS_REVIEW,price column 1 (PENDENT VIC),½ | 170 | 160 | 210
+13,6,2,Sprinkler Heads & Nozzles,PENDENT VIC,own-label,,½,UPRIGHT VIC,2,,160,,NEEDS_REVIEW,price column 2 (UPRIGHT VIC),½ | 170 | 160 | 210
+13,6,2,Sprinkler Heads & Nozzles,PENDENT VIC,own-label,,½,SIDEWALL VIC,3,,210,,NEEDS_REVIEW,price column 3 (SIDEWALL VIC),½ | 170 | 160 | 210
+13,6,3,Sprinkler Heads & Nozzles,PENDENT VIC,own-label,,¾,PENDENT VIC,1,,365,,NEEDS_REVIEW,price column 1 (PENDENT VIC),¾ | 365 | 350 | 410
+13,6,3,Sprinkler Heads & Nozzles,PENDENT VIC,own-label,,¾,UPRIGHT VIC,2,,350,,NEEDS_REVIEW,price column 2 (UPRIGHT VIC),¾ | 365 | 350 | 410
+13,6,3,Sprinkler Heads & Nozzles,PENDENT VIC,own-label,,¾,SIDEWALL VIC,3,,410,,NEEDS_REVIEW,price column 3 (SIDEWALL VIC),¾ | 365 | 350 | 410
+13,6,5,Sprinkler Heads & Nozzles,PENDENT VIC,own-label,,½,PENDENT VIC,1,,180,,NEEDS_REVIEW,price column 1 (PENDENT VIC),½ | 180 | 170 | 220
+13,6,5,Sprinkler Heads & Nozzles,PENDENT VIC,own-label,,½,UPRIGHT VIC,2,,170,,NEEDS_REVIEW,price column 2 (UPRIGHT VIC),½ | 180 | 170 | 220
+13,6,5,Sprinkler Heads & Nozzles,PENDENT VIC,own-label,,½,SIDEWALL VIC,3,,220,,NEEDS_REVIEW,price column 3 (SIDEWALL VIC),½ | 180 | 170 | 220
+13,6,6,Sprinkler Heads & Nozzles,PENDENT VIC,own-label,,¾,PENDENT VIC,1,,365,,NEEDS_REVIEW,price column 1 (PENDENT VIC),¾ | 365 | 350 | 410
+13,6,6,Sprinkler Heads & Nozzles,PENDENT VIC,own-label,,¾,UPRIGHT VIC,2,,350,,NEEDS_REVIEW,price column 2 (UPRIGHT VIC),¾ | 365 | 350 | 410
+13,6,6,Sprinkler Heads & Nozzles,PENDENT VIC,own-label,,¾,SIDEWALL VIC,3,,410,,NEEDS_REVIEW,price column 3 (SIDEWALL VIC),¾ | 365 | 350 | 410
+13,7,2,Sprinkler Heads & Nozzles,PENDENT TYCO,own-label,Tyco,½,,1,,950,,PENDING,,½ | 950
+13,8,2,Sprinkler Heads & Nozzles,PENDENT TYCO,inherited-label,Tyco,¾,,3,,485,,NEEDS_REVIEW,"earlier numeric cell(s) ignored, not price columns: 475; product from inherited-label",¾ | 475 | 485
+14,1,2,Sprinkler Heads & Nozzles,CLINTON Non- UL,own-label,Clinton,8'',CLINTON Non- UL,1,,7800,,NEEDS_REVIEW,price column 1 (CLINTON Non- UL),"8'' | 7,800 | 9,600"
+14,1,2,Sprinkler Heads & Nozzles,CLINTON Non- UL,own-label,Clinton,8'',HYFLO/MECHUL/FM,3,,9600,,NEEDS_REVIEW,price column 3 (HYFLO/MECHUL/FM),"8'' | 7,800 | 9,600"
+14,1,3,Sprinkler Heads & Nozzles,CLINTON Non- UL,own-label,Clinton,6'',CLINTON Non- UL,1,,5000,,NEEDS_REVIEW,price column 1 (CLINTON Non- UL),"6'' | 5,000 | 5,565 | 6,075"
+14,1,3,Sprinkler Heads & Nozzles,CLINTON Non- UL,own-label,Clinton,6'',SMITH-USA NON-UL,2,,5565,,NEEDS_REVIEW,price column 2 (SMITH-USA NON-UL),"6'' | 5,000 | 5,565 | 6,075"
+14,1,3,Sprinkler Heads & Nozzles,CLINTON Non- UL,own-label,Clinton,6'',HYFLO/MECHUL/FM,3,,6075,,NEEDS_REVIEW,price column 3 (HYFLO/MECHUL/FM),"6'' | 5,000 | 5,565 | 6,075"
+14,1,4,Sprinkler Heads & Nozzles,CLINTON Non- UL,own-label,Clinton,4'',CLINTON Non- UL,1,,2900,,NEEDS_REVIEW,price column 1 (CLINTON Non- UL),"4'' | 2,900 | 3,700 | 4,400"
+14,1,4,Sprinkler Heads & Nozzles,CLINTON Non- UL,own-label,Clinton,4'',SMITH-USA NON-UL,2,,3700,,NEEDS_REVIEW,price column 2 (SMITH-USA NON-UL),"4'' | 2,900 | 3,700 | 4,400"
+14,1,4,Sprinkler Heads & Nozzles,CLINTON Non- UL,own-label,Clinton,4'',HYFLO/MECHUL/FM,3,,4400,,NEEDS_REVIEW,price column 3 (HYFLO/MECHUL/FM),"4'' | 2,900 | 3,700 | 4,400"
+14,1,5,Sprinkler Heads & Nozzles,CLINTON Non- UL,own-label,Clinton,3'',CLINTON Non- UL,1,,2550,,NEEDS_REVIEW,price column 1 (CLINTON Non- UL),"3'' | 2,550 | 3,400 | 3,900"
+14,1,5,Sprinkler Heads & Nozzles,CLINTON Non- UL,own-label,Clinton,3'',SMITH-USA NON-UL,2,,3400,,NEEDS_REVIEW,price column 2 (SMITH-USA NON-UL),"3'' | 2,550 | 3,400 | 3,900"
+14,1,5,Sprinkler Heads & Nozzles,CLINTON Non- UL,own-label,Clinton,3'',HYFLO/MECHUL/FM,3,,3900,,NEEDS_REVIEW,price column 3 (HYFLO/MECHUL/FM),"3'' | 2,550 | 3,400 | 3,900"
+14,1,6,Sprinkler Heads & Nozzles,CLINTON Non- UL,own-label,Clinton,2 ½'',CLINTON Non- UL,1,,2200,,NEEDS_REVIEW,price column 1 (CLINTON Non- UL),"2 ½'' | 2,200 | 2,950 | 3,300"
+14,1,6,Sprinkler Heads & Nozzles,CLINTON Non- UL,own-label,Clinton,2 ½'',SMITH-USA NON-UL,2,,2950,,NEEDS_REVIEW,price column 2 (SMITH-USA NON-UL),"2 ½'' | 2,200 | 2,950 | 3,300"
+14,1,6,Sprinkler Heads & Nozzles,CLINTON Non- UL,own-label,Clinton,2 ½'',HYFLO/MECHUL/FM,3,,3300,,NEEDS_REVIEW,price column 3 (HYFLO/MECHUL/FM),"2 ½'' | 2,200 | 2,950 | 3,300"
+14,1,7,Sprinkler Heads & Nozzles,CLINTON Non- UL,own-label,Clinton,2'',CLINTON Non- UL,1,,1900,,NEEDS_REVIEW,price column 1 (CLINTON Non- UL),"2'' | 1,900 | 2,700 | 3,100"
+14,1,7,Sprinkler Heads & Nozzles,CLINTON Non- UL,own-label,Clinton,2'',SMITH-USA NON-UL,2,,2700,,NEEDS_REVIEW,price column 2 (SMITH-USA NON-UL),"2'' | 1,900 | 2,700 | 3,100"
+14,1,7,Sprinkler Heads & Nozzles,CLINTON Non- UL,own-label,Clinton,2'',HYFLO/MECHUL/FM,3,,3100,,NEEDS_REVIEW,price column 3 (HYFLO/MECHUL/FM),"2'' | 1,900 | 2,700 | 3,100"
+14,2,3,Sprinkler Heads & Nozzles,CLINTON Non- UL,own-label,Clinton,6'',CLINTON Non- UL,1,,35000,,PENDING,,"6'' | 35,000"
+14,2,4,Sprinkler Heads & Nozzles,CLINTON Non- UL,own-label,Clinton,4'',CLINTON Non- UL,1,,28000,,PENDING,,"4'' | 28,000"
+14,2,5,Sprinkler Heads & Nozzles,CLINTON Non- UL,own-label,Clinton,3'',CLINTON Non- UL,1,,25000,,PENDING,,"3'' | 25,000"
+14,2,6,Sprinkler Heads & Nozzles,CLINTON Non- UL,own-label,Clinton,2 ½'',CLINTON Non- UL,1,,18500,,PENDING,,"2 ½'' | 18,500"
+14,2,7,Sprinkler Heads & Nozzles,CLINTON Non- UL,own-label,Clinton,2'',CLINTON Non- UL,1,,17000,,PENDING,,"2'' | 17,000"
+14,3,2,Sprinkler Heads & Nozzles,CLINTON Non- UL,own-label,Clinton,8'',CLINTON Non- UL,1,,28500,,PENDING,,"8'' | 28,500"
+14,3,3,Sprinkler Heads & Nozzles,CLINTON Non- UL,own-label,Clinton,6'',CLINTON Non- UL,1,,15000,,PENDING,,"6'' | 15,000"
+14,3,4,Sprinkler Heads & Nozzles,CLINTON Non- UL,own-label,Clinton,4'',CLINTON Non- UL,1,,9500,,PENDING,,"4'' | 9,500"
+14,3,5,Sprinkler Heads & Nozzles,CLINTON Non- UL,own-label,Clinton,3'',CLINTON Non- UL,1,,8000,,PENDING,,"3'' | 8,000"
+14,3,6,Sprinkler Heads & Nozzles,CLINTON Non- UL,own-label,Clinton,2 ½'',CLINTON Non- UL,1,,6500,,PENDING,,"2 ½'' | 6,500"
+14,3,7,Sprinkler Heads & Nozzles,CLINTON Non- UL,own-label,Clinton,10'',CLINTON Non- UL,1,,35000,,PENDING,,"10'' | 35,000"
+14,4,3,Sprinkler Heads & Nozzles,CRAFT Non- UL,own-label,Craft,6'',CRAFT Non- UL,1,,55500,,PENDING,,"6'' | 55,500"
+14,4,4,Sprinkler Heads & Nozzles,CRAFT Non- UL,own-label,Craft,4'',CRAFT Non- UL,1,,26800,,PENDING,,"4'' | 26,800"
+14,4,5,Sprinkler Heads & Nozzles,CRAFT Non- UL,own-label,Craft,3'',CRAFT Non- UL,1,,23000,,PENDING,,"3'' | 23,000"
+14,4,6,Sprinkler Heads & Nozzles,CRAFT Non- UL,own-label,Craft,2 ½'',CRAFT Non- UL,1,,18500,,PENDING,,"2 ½'' | 18,500"
+14,4,7,Sprinkler Heads & Nozzles,CRAFT Non- UL,own-label,Craft,2'',CRAFT Non- UL,1,,17000,,PENDING,,"2'' | 17,000"
+14,5,3,Sprinkler Heads & Nozzles,CLINTON / SMITH,own-label,Clinton,6'',CLINTON / SMITH,1,,7500,,PENDING,,"6'' | 7,500"
+14,5,4,Sprinkler Heads & Nozzles,CLINTON / SMITH,own-label,Clinton,4'',CLINTON / SMITH,1,,3700,,PENDING,,"4'' | 3,700"
+14,5,5,Sprinkler Heads & Nozzles,CLINTON / SMITH,own-label,Clinton,3'',CLINTON / SMITH,1,,3300,,PENDING,,"3'' | 3,300"
+14,5,6,Sprinkler Heads & Nozzles,CLINTON / SMITH,own-label,Clinton,2 ½'',CLINTON / SMITH,1,,2900,,PENDING,,"2 ½'' | 2,900"
+14,5,7,Sprinkler Heads & Nozzles,CLINTON / SMITH,own-label,Clinton,2'',CLINTON / SMITH,1,,2400,,PENDING,,"2'' | 2,400"
+15,1,2,Valves,CHECK VALVE,own-label,,4'',CHECK VALVE,1,,29700,,NEEDS_REVIEW,price column 1 (CHECK VALVE),"4'' | 29,700 | 31,240"
+15,1,2,Valves,CHECK VALVE,own-label,,4'',GATE VALVE,2,,31240,,NEEDS_REVIEW,price column 2 (GATE VALVE),"4'' | 29,700 | 31,240"
+15,1,3,Valves,CHECK VALVE,own-label,,3'',CHECK VALVE,1,,16300,,NEEDS_REVIEW,price column 1 (CHECK VALVE),"3'' | 16,300 | 12,600"
+15,1,3,Valves,CHECK VALVE,own-label,,3'',GATE VALVE,2,,12600,,NEEDS_REVIEW,price column 2 (GATE VALVE),"3'' | 16,300 | 12,600"
+15,1,4,Valves,CHECK VALVE,own-label,,2 ½ '',CHECK VALVE,1,,12600,,NEEDS_REVIEW,price column 1 (CHECK VALVE),"2 ½ '' | 12,600 | 7,500"
+15,1,4,Valves,CHECK VALVE,own-label,,2 ½ '',GATE VALVE,2,,7500,,NEEDS_REVIEW,price column 2 (GATE VALVE),"2 ½ '' | 12,600 | 7,500"
+15,1,5,Valves,CHECK VALVE,own-label,,2'',CHECK VALVE,1,,5900,,NEEDS_REVIEW,price column 1 (CHECK VALVE),"2'' | 5,900 | 4,000 | 9,840"
+15,1,5,Valves,CHECK VALVE,own-label,,2'',GATE VALVE,2,,4000,,NEEDS_REVIEW,price column 2 (GATE VALVE),"2'' | 5,900 | 4,000 | 9,840"
+15,1,5,Valves,CHECK VALVE,own-label,,2'',WYE-STRAINER,3,,9840,,NEEDS_REVIEW,price column 3 (WYE-STRAINER),"2'' | 5,900 | 4,000 | 9,840"
+15,1,6,Valves,CHECK VALVE,own-label,,1 ½'',CHECK VALVE,1,,4400,,NEEDS_REVIEW,price column 1 (CHECK VALVE),"1 ½'' | 4,400 | 2,750 | 6,500"
+15,1,6,Valves,CHECK VALVE,own-label,,1 ½'',GATE VALVE,2,,2750,,NEEDS_REVIEW,price column 2 (GATE VALVE),"1 ½'' | 4,400 | 2,750 | 6,500"
+15,1,6,Valves,CHECK VALVE,own-label,,1 ½'',WYE-STRAINER,3,,6500,,NEEDS_REVIEW,price column 3 (WYE-STRAINER),"1 ½'' | 4,400 | 2,750 | 6,500"
+15,1,7,Valves,CHECK VALVE,own-label,,1 ¼ '',CHECK VALVE,1,,3100,,NEEDS_REVIEW,price column 1 (CHECK VALVE),"1 ¼ '' | 3,100 | 2,200 | 4,800"
+15,1,7,Valves,CHECK VALVE,own-label,,1 ¼ '',GATE VALVE,2,,2200,,NEEDS_REVIEW,price column 2 (GATE VALVE),"1 ¼ '' | 3,100 | 2,200 | 4,800"
+15,1,7,Valves,CHECK VALVE,own-label,,1 ¼ '',WYE-STRAINER,3,,4800,,NEEDS_REVIEW,price column 3 (WYE-STRAINER),"1 ¼ '' | 3,100 | 2,200 | 4,800"
+15,2,2,Valves,BALL VALVE,own-label,,,BALL VALVE,0,,25920,,NEEDS_REVIEW,no size column,"25,920"
+15,2,3,Valves,BALL VALVE,own-label,,,BALL VALVE,0,,21700,,NEEDS_REVIEW,no size column,"21,700"
+15,2,4,Valves,BALL VALVE,own-label,,,BALL VALVE,0,,12700,,NEEDS_REVIEW,no size column,"12,700"
+15,2,5,Valves,BALL VALVE,own-label,,,BALL VALVE,0,,5100,,NEEDS_REVIEW,no size column,"5,100"
+15,2,6,Valves,BALL VALVE,own-label,,,BALL VALVE,0,,3450,,NEEDS_REVIEW,no size column,"3,450"
+15,2,7,Valves,BALL VALVE,own-label,,,BALL VALVE,0,,2860,,NEEDS_REVIEW,no size column,"2,860"
+15,3,1,Valves,BALL VALVE,inherited-label,,1'',,1,,2130,,NEEDS_REVIEW,price column 1 (no header); product from inherited-label,"1'' | 2,130 | 1,100 | 3,490 | 1,300"
+15,3,1,Valves,BALL VALVE,inherited-label,,1'',,2,,1100,,NEEDS_REVIEW,price column 2 (no header); product from inherited-label,"1'' | 2,130 | 1,100 | 3,490 | 1,300"
+15,3,1,Valves,BALL VALVE,inherited-label,,1'',,3,,3490,,NEEDS_REVIEW,price column 3 (no header); product from inherited-label,"1'' | 2,130 | 1,100 | 3,490 | 1,300"
+15,3,1,Valves,BALL VALVE,inherited-label,,1'',,4,,1300,,NEEDS_REVIEW,price column 4 (no header); product from inherited-label,"1'' | 2,130 | 1,100 | 3,490 | 1,300"
+15,3,2,Valves,BALL VALVE,inherited-label,,¾'',,1,,1280,,NEEDS_REVIEW,price column 1 (no header); product from inherited-label,"¾'' | 1,280 | 980 | 2,100 | 930"
+15,3,2,Valves,BALL VALVE,inherited-label,,¾'',,2,,980,,NEEDS_REVIEW,price column 2 (no header); product from inherited-label,"¾'' | 1,280 | 980 | 2,100 | 930"
+15,3,2,Valves,BALL VALVE,inherited-label,,¾'',,3,,2100,,NEEDS_REVIEW,price column 3 (no header); product from inherited-label,"¾'' | 1,280 | 980 | 2,100 | 930"
+15,3,2,Valves,BALL VALVE,inherited-label,,¾'',,4,,930,,NEEDS_REVIEW,price column 4 (no header); product from inherited-label,"¾'' | 1,280 | 980 | 2,100 | 930"
+15,3,3,Valves,BALL VALVE,inherited-label,,½'',,1,,880,,NEEDS_REVIEW,price column 1 (no header); product from inherited-label,"½'' | 880 | 815 | 1,584 | 785"
+15,3,3,Valves,BALL VALVE,inherited-label,,½'',,2,,815,,NEEDS_REVIEW,price column 2 (no header); product from inherited-label,"½'' | 880 | 815 | 1,584 | 785"
+15,3,3,Valves,BALL VALVE,inherited-label,,½'',,3,,1584,,NEEDS_REVIEW,price column 3 (no header); product from inherited-label,"½'' | 880 | 815 | 1,584 | 785"
+15,3,3,Valves,BALL VALVE,inherited-label,,½'',,4,,785,,NEEDS_REVIEW,price column 4 (no header); product from inherited-label,"½'' | 880 | 815 | 1,584 | 785"
+15,4,2,Valves,BALL VALVE,inherited-label,,4'',,1,,6380,,NEEDS_REVIEW,product from inherited-label,"4'' | 6,380"
+15,4,3,Valves,BALL VALVE,inherited-label,,3'',,1,,4200,,NEEDS_REVIEW,product from inherited-label,"3'' | 4,200"
+15,4,4,Valves,BALL VALVE,inherited-label,,2 ½ '',,1,,3900,,NEEDS_REVIEW,product from inherited-label,"2 ½ '' | 3,900"
+15,4,5,Valves,BALL VALVE,inherited-label,,2'',,1,,1900,,NEEDS_REVIEW,product from inherited-label,"2'' | 1,900"
+15,4,6,Valves,BALL VALVE,inherited-label,,1 ½'',,1,,1700,,NEEDS_REVIEW,product from inherited-label,"1 ½'' | 1,700"
+15,4,7,Valves,BALL VALVE,inherited-label,,1 ¼ '',,1,,1400,,NEEDS_REVIEW,product from inherited-label,"1 ¼ '' | 1,400"
+15,5,1,Valves,BALL VALVE,inherited-label,,1 '',,1,,1100,,NEEDS_REVIEW,product from inherited-label,"1 '' | 1,100"
+15,6,2,Valves,EASTOP Air Release,own-label,Eastop,1'',EASTOP Air Release,1,,3000,,PENDING,,"1'' | 3,000"
+15,6,3,Valves,EASTOP Air Release,own-label,Eastop,11/4'',EASTOP Air Release,1,,3750,,PENDING,,"11/4'' | 3,750"
+15,6,4,Valves,EASTOP Air Release,own-label,Eastop,11/2'',EASTOP Air Release,1,,3900,,PENDING,,"11/2'' | 3,900"
+15,6,5,Valves,EASTOP Air Release,own-label,Eastop,2'',EASTOP Air Release,1,,4000,,PENDING,,"2'' | 4,000"
+15,7,5,Valves,GLOBE VALVE,own-label,,,GLOBE VALVE,0,,4300,,NEEDS_REVIEW,no size column,"4,300"
+15,7,6,Valves,GLOBE VALVE,own-label,,,GLOBE VALVE,0,,2750,,NEEDS_REVIEW,no size column,"2,750"
+15,7,7,Valves,GLOBE VALVE,own-label,,,GLOBE VALVE,0,,1750,,NEEDS_REVIEW,no size column,"1,750"
+15,8,1,Valves,GLOBE VALVE,inherited-label,,,,0,,1550,,NEEDS_REVIEW,no size column; product from inherited-label,"1,550"
+16,1,2,"Couplings, Nozzles & Monitors",UL/FM GIACOMINI,slide-title,Giacomini,4'',DOUBLE LL,1,,12000,,NEEDS_REVIEW,product from slide-title,"4'' | 12,000"
+16,1,3,"Couplings, Nozzles & Monitors",UL/FM GIACOMINI,slide-title,Giacomini,3'',DOUBLE LL,1,,7000,,NEEDS_REVIEW,product from slide-title,"3'' | 7,000"
+16,1,4,"Couplings, Nozzles & Monitors",UL/FM GIACOMINI,slide-title,Giacomini,2 ½'',DOUBLE LL,1,,4990,,NEEDS_REVIEW,product from slide-title,"2 ½'' | 4,990"
+16,1,5,"Couplings, Nozzles & Monitors",UL/FM GIACOMINI,slide-title,Giacomini,2'',DOUBLE LL,1,,2080,,NEEDS_REVIEW,product from slide-title,"2'' | 2,080"
+16,2,2,"Couplings, Nozzles & Monitors",UL/FM GIACOMINI,slide-title,Giacomini,6'',UL/FM GIACOMINI,1,,14700,,NEEDS_REVIEW,product from slide-title,"6'' | 14,700"
+16,2,3,"Couplings, Nozzles & Monitors",UL/FM GIACOMINI,slide-title,Giacomini,4'',UL/FM GIACOMINI,1,,5500,,NEEDS_REVIEW,product from slide-title,"4'' | 5,500"
+16,2,4,"Couplings, Nozzles & Monitors",UL/FM GIACOMINI,slide-title,Giacomini,3'',UL/FM GIACOMINI,1,,5500,,NEEDS_REVIEW,product from slide-title,"3'' | 5,500"
+16,2,5,"Couplings, Nozzles & Monitors",UL/FM GIACOMINI,slide-title,Giacomini,2 ½'',UL/FM GIACOMINI,1,,5500,,NEEDS_REVIEW,product from slide-title,"2 ½'' | 5,500"
+16,3,2,"Couplings, Nozzles & Monitors",UL/FM GIACOMINI,slide-title,Giacomini,8'',CLINTON,1,,28000,,NEEDS_REVIEW,product from slide-title,"8'' | 28,000"
+16,3,3,"Couplings, Nozzles & Monitors",UL/FM GIACOMINI,slide-title,Giacomini,6'',CLINTON,1,,13500,,NEEDS_REVIEW,product from slide-title,"6'' | 13,500"
+16,3,4,"Couplings, Nozzles & Monitors",UL/FM GIACOMINI,slide-title,Giacomini,4'',CLINTON,1,,10500,,NEEDS_REVIEW,product from slide-title,"4'' | 10,500"
+16,3,5,"Couplings, Nozzles & Monitors",UL/FM GIACOMINI,slide-title,Giacomini,3'',CLINTON,1,,8500,,NEEDS_REVIEW,product from slide-title,"3'' | 8,500"
+16,3,6,"Couplings, Nozzles & Monitors",UL/FM GIACOMINI,slide-title,Giacomini,2 ½'',CLINTON,1,,6200,,NEEDS_REVIEW,product from slide-title,"2 ½'' | 6,200"
+16,3,7,"Couplings, Nozzles & Monitors",UL/FM GIACOMINI,slide-title,Giacomini,12'',CLINTON,1,,43213,,NEEDS_REVIEW,product from slide-title,"12'' | 43,213"
+16,4,2,"Couplings, Nozzles & Monitors",UL/FM GIACOMINI,slide-title,Giacomini,4'',DOUBLE LL,1,,10700,,NEEDS_REVIEW,product from slide-title,"4'' | 10,700"
+16,4,3,"Couplings, Nozzles & Monitors",UL/FM GIACOMINI,slide-title,Giacomini,3'',DOUBLE LL,1,,5650,,NEEDS_REVIEW,product from slide-title,"3'' | 5,650"
+16,4,4,"Couplings, Nozzles & Monitors",UL/FM GIACOMINI,slide-title,Giacomini,2 ½'',DOUBLE LL,1,,4600,,NEEDS_REVIEW,product from slide-title,"2 ½'' | 4,600"
+16,4,5,"Couplings, Nozzles & Monitors",UL/FM GIACOMINI,slide-title,Giacomini,2'',DOUBLE LL,1,,2400,,NEEDS_REVIEW,product from slide-title,"2'' | 2,400"
+16,5,2,"Couplings, Nozzles & Monitors",UL/FM GIACOMINI,slide-title,Giacomini,10'',CLINTON,1,,36000,,NEEDS_REVIEW,product from slide-title,"10'' | 36,000"
+16,5,3,"Couplings, Nozzles & Monitors",UL/FM GIACOMINI,slide-title,Giacomini,8'',CLINTON,1,,17000,,NEEDS_REVIEW,product from slide-title,"8'' | 17,000"
+16,5,4,"Couplings, Nozzles & Monitors",UL/FM GIACOMINI,slide-title,Giacomini,6'',CLINTON,1,,9000,,NEEDS_REVIEW,product from slide-title,"6'' | 9,000"
+16,5,5,"Couplings, Nozzles & Monitors",UL/FM GIACOMINI,slide-title,Giacomini,4'',CLINTON,1,,5300,,NEEDS_REVIEW,product from slide-title,"4'' | 5,300"
+16,5,6,"Couplings, Nozzles & Monitors",UL/FM GIACOMINI,slide-title,Giacomini,3'',CLINTON,1,,4400,,NEEDS_REVIEW,product from slide-title,"3'' | 4,400"
+16,5,7,"Couplings, Nozzles & Monitors",UL/FM GIACOMINI,slide-title,Giacomini,2 ½'',CLINTON,1,,3500,,NEEDS_REVIEW,product from slide-title,"2 ½'' | 3,500"
+16,6,1,"Couplings, Nozzles & Monitors",UL/FM GIACOMINI,slide-title,Giacomini,2'',,1,,3200,,NEEDS_REVIEW,product from slide-title,"2'' | 3,200"
+16,7,1,"Couplings, Nozzles & Monitors",UL/FM GIACOMINI,slide-title,Giacomini,10'',,1,,32000,,NEEDS_REVIEW,product from slide-title,"10'' | 32,000"
+16,8,1,"Couplings, Nozzles & Monitors",UL/FM GIACOMINI,slide-title,Giacomini,1 1/2,,1,,1250,,NEEDS_REVIEW,product from slide-title,"1 1/2 | 1,250"
+16,8,2,"Couplings, Nozzles & Monitors",UL/FM GIACOMINI,slide-title,Giacomini,1 ¼,,1,,920,,NEEDS_REVIEW,product from slide-title,1 ¼ | 920
+16,8,3,"Couplings, Nozzles & Monitors",UL/FM GIACOMINI,slide-title,Giacomini,1,,1,,595,,NEEDS_REVIEW,product from slide-title,1 | 595
+16,9,1,"Couplings, Nozzles & Monitors",UL/FM GIACOMINI,slide-title,Giacomini,1 1/2,,1,,1480,,NEEDS_REVIEW,product from slide-title,"1 1/2 | 1,480"
+16,9,2,"Couplings, Nozzles & Monitors",UL/FM GIACOMINI,slide-title,Giacomini,1 ¼,,1,,848,,NEEDS_REVIEW,product from slide-title,1 ¼ | 848
+16,10,1,"Couplings, Nozzles & Monitors",UL/FM GIACOMINI,slide-title,Giacomini,1 1/2,,1,,1460,,NEEDS_REVIEW,product from slide-title,"1 1/2 | 1,460"
+16,10,2,"Couplings, Nozzles & Monitors",UL/FM GIACOMINI,slide-title,Giacomini,1 ¼,,1,,850,,NEEDS_REVIEW,product from slide-title,1 ¼ | 850
+16,10,3,"Couplings, Nozzles & Monitors",UL/FM GIACOMINI,slide-title,Giacomini,1,,1,,650,,NEEDS_REVIEW,product from slide-title,1 | 650
+16,11,2,"Couplings, Nozzles & Monitors",UL/FM GIACOMINI,slide-title,Giacomini,4'',DOUBLE LL,1,,12000,,NEEDS_REVIEW,product from slide-title,"4'' | 12,000"
+16,11,3,"Couplings, Nozzles & Monitors",UL/FM GIACOMINI,slide-title,Giacomini,3'',DOUBLE LL,1,,7200,,NEEDS_REVIEW,product from slide-title,"3'' | 7,200"
+16,11,4,"Couplings, Nozzles & Monitors",UL/FM GIACOMINI,slide-title,Giacomini,2 ½'',DOUBLE LL,1,,4600,,NEEDS_REVIEW,product from slide-title,"2 ½'' | 4,600"
+16,12,1,"Couplings, Nozzles & Monitors",UL/FM GIACOMINI,slide-title,Giacomini,2'',,1,,1880,,NEEDS_REVIEW,product from slide-title,"2'' | 1,880"
+16,13,1,"Couplings, Nozzles & Monitors",UL/FM GIACOMINI,slide-title,Giacomini,3/4,,1,,540,,NEEDS_REVIEW,product from slide-title,3/4 | 540
+16,13,2,"Couplings, Nozzles & Monitors",UL/FM GIACOMINI,slide-title,Giacomini,1/2,,1,,475,,NEEDS_REVIEW,product from slide-title,1/2 | 475
+16,13,3,"Couplings, Nozzles & Monitors",UL/FM GIACOMINI,slide-title,Giacomini,1/4,,1,,400,,NEEDS_REVIEW,product from slide-title,1/4 | 400
+16,14,1,"Couplings, Nozzles & Monitors",UL/FM GIACOMINI,slide-title,Giacomini,3/4,,1,,580,,NEEDS_REVIEW,product from slide-title,3/4 | 580
+16,14,2,"Couplings, Nozzles & Monitors",UL/FM GIACOMINI,slide-title,Giacomini,1/2,,1,,490,,NEEDS_REVIEW,product from slide-title,1/2 | 490
+16,14,3,"Couplings, Nozzles & Monitors",UL/FM GIACOMINI,slide-title,Giacomini,1/4,,1,,430,,NEEDS_REVIEW,product from slide-title,1/4 | 430
+16,15,1,"Couplings, Nozzles & Monitors",UL/FM GIACOMINI,slide-title,Giacomini,3/4,,1,,540,,NEEDS_REVIEW,product from slide-title,3/4 | 540
+16,15,2,"Couplings, Nozzles & Monitors",UL/FM GIACOMINI,slide-title,Giacomini,1/2,,1,,475,,NEEDS_REVIEW,product from slide-title,1/2 | 475
+16,15,3,"Couplings, Nozzles & Monitors",UL/FM GIACOMINI,slide-title,Giacomini,1/4,,1,,440,,NEEDS_REVIEW,product from slide-title,1/4 | 440
+17,1,1,"Couplings, Nozzles & Monitors",PLASTIC NOZZLE 2 1/2,slide-title,,2'' usa,,1,,3830,,NEEDS_REVIEW,product from slide-title,"2'' usa | 3,830"
+17,2,1,"Couplings, Nozzles & Monitors",PLASTIC NOZZLE 2 1/2,slide-title,,1 1/2,,1,,1338,,NEEDS_REVIEW,product from slide-title,"1 1/2 | 1,338"
+17,2,2,"Couplings, Nozzles & Monitors",PLASTIC NOZZLE 2 1/2,slide-title,,1 ¼,,1,,940,,NEEDS_REVIEW,product from slide-title,1 ¼ | 940
+17,2,3,"Couplings, Nozzles & Monitors",PLASTIC NOZZLE 2 1/2,slide-title,,1,,1,,620,,NEEDS_REVIEW,product from slide-title,1 | 620
+17,3,1,"Couplings, Nozzles & Monitors",PLASTIC NOZZLE 2 1/2,slide-title,,2'',,1,,1830,,NEEDS_REVIEW,product from slide-title,"2'' | 1,830"
+17,4,2,"Couplings, Nozzles & Monitors",WYE STRAINER,own-label,,2'',WYE STRAINER,1,,1900,,PENDING,,"2'' | 1,900"
+17,4,3,"Couplings, Nozzles & Monitors",WYE STRAINER,own-label,,1 ½'',WYE STRAINER,1,,1100,,PENDING,,"1 ½'' | 1,100"
+17,4,4,"Couplings, Nozzles & Monitors",WYE STRAINER,own-label,,1 ¼'',WYE STRAINER,1,,880,,PENDING,,1 ¼'' | 880
+17,4,5,"Couplings, Nozzles & Monitors",WYE STRAINER,own-label,,1,WYE STRAINER,1,,580,,PENDING,,1 | 580
+17,5,2,"Couplings, Nozzles & Monitors",WYE STRAINER,inherited-label,,10'',CLINTON,1,,46420,,NEEDS_REVIEW,product from inherited-label,"10'' | 46,420"
+17,5,3,"Couplings, Nozzles & Monitors",WYE STRAINER,inherited-label,,8'',CLINTON,1,,26170,,NEEDS_REVIEW,product from inherited-label,"8'' | 26,170"
+17,5,4,"Couplings, Nozzles & Monitors",WYE STRAINER,inherited-label,,6'',CLINTON,1,,19300,,NEEDS_REVIEW,product from inherited-label,"6'' | 19,300"
+17,5,5,"Couplings, Nozzles & Monitors",WYE STRAINER,inherited-label,,4'',CLINTON,1,,10315,,NEEDS_REVIEW,product from inherited-label,"4'' | 10,315"
+17,5,6,"Couplings, Nozzles & Monitors",WYE STRAINER,inherited-label,,3'',CLINTON,1,,8000,,NEEDS_REVIEW,product from inherited-label,"3'' | 8,000"
+17,6,2,"Couplings, Nozzles & Monitors",Safety Valve,own-label,,2'',Safety Valve,1,,9500,,PENDING,,"2'' | 9,500"
+17,6,3,"Couplings, Nozzles & Monitors",Safety Valve,own-label,,1 ½'',Safety Valve,1,,7800,,PENDING,,"1 ½'' | 7,800"
+17,6,4,"Couplings, Nozzles & Monitors",Safety Valve,own-label,,1 ¼'',Safety Valve,1,,5900,,PENDING,,"1 ¼'' | 5,900"
+17,6,5,"Couplings, Nozzles & Monitors",Safety Valve,own-label,,1,Safety Valve,1,,4700,,PENDING,,"1 | 4,700"
+17,7,2,"Couplings, Nozzles & Monitors",PLASTIC NOZZLE 1 1/2,own-label,,,,1,,850,,NEEDS_REVIEW,no size column,850
+17,8,2,"Couplings, Nozzles & Monitors",PLASTIC NOZZLE 2 1/2,own-label,,,,1,,2120,,NEEDS_REVIEW,no size column,"2,120"
+17,9,2,"Couplings, Nozzles & Monitors",FIRE BALL,own-label,,,,1,,800,,NEEDS_REVIEW,no size column,800
+17,10,2,"Tools, Equipment & PPE",FIRE AXE,own-label,,,,1,,240,,NEEDS_REVIEW,no size column,240
+18,1,2,"Couplings, Nozzles & Monitors",WINTER UL/FM,slide-title,Winter,,,1,,4800,,NEEDS_REVIEW,no size column; product from slide-title,"4,800"
+18,2,2,"Couplings, Nozzles & Monitors",WINTER UL/FM,slide-title,Winter,,,1,,6200,,NEEDS_REVIEW,no size column; product from slide-title,"6,200"
+18,3,2,Valves,Giacomini FIRE HOSE VALVE 2 1/2,own-label,Giacomini,,,0,,4500,,NEEDS_REVIEW,no size column,"4,500"
+18,5,2,Valves,Giacomini GATE VALVE 1 1/2,own-label,Giacomini,,,0,,3600,,NEEDS_REVIEW,no size column,"3,600"
+18,6,2,"Couplings, Nozzles & Monitors",Giacomini GATE VALVE 1 1/2,inherited-label,Giacomini,1 ½,,1,,800,,NEEDS_REVIEW,product from inherited-label,1 ½ | 800
+18,7,2,"Couplings, Nozzles & Monitors",Giacomini NOZZLE,own-label,Giacomini,1 ½,,1,,1700,,PENDING,,"1 ½ | 1,700"
+18,8,2,"Couplings, Nozzles & Monitors",Giacomini NOZZLE,inherited-label,Giacomini,,,1,,1800,,NEEDS_REVIEW,no size column; product from inherited-label,"1,800"
+18,9,2,Valves,Giacomini Restricting ANGLE VALVE 1 1/2,own-label,Giacomini,,,0,,2900,,NEEDS_REVIEW,no size column,"2,900"
+18,11,1,Valves,Giacomini Restricting ANGLE VALVE 1 1/2,inherited-label,Giacomini,2 ½,,1,,5100,,NEEDS_REVIEW,product from inherited-label,"2 ½ | 5,100"
+18,12,1,Valves,Giacomini Restricting ANGLE VALVE 1 1/2,inherited-label,Giacomini,2 ½,,1,,2550,,NEEDS_REVIEW,product from inherited-label,"2 ½ | 2,550"
+18,13,2,Valves,Giacomini Restricting ANGLE VALVE 1 1/2,inherited-label,Giacomini,,,0,,3800,,NEEDS_REVIEW,no size column; product from inherited-label,"3,800"
+19,1,2,Sprinkler Heads & Nozzles,POTTER & TEWA SPRAY UL/FM,own-label,Potter,2''-16'',,3,,5500,,NEEDS_REVIEW,"earlier numeric cell(s) ignored, not price columns: 4,000","2''-16'' | 4,000 | 5500"
+19,2,2,Sprinkler Heads & Nozzles,CLINTON Non- UL,own-label,Clinton,6'',CLINTON Non- UL,1,,3200,,NEEDS_REVIEW,price column 1 (CLINTON Non- UL),6'' | 3200 | 3800 | 6435
+19,2,2,Sprinkler Heads & Nozzles,CLINTON Non- UL,own-label,Clinton,6'',MECH UL/ FM,2,,3800,,NEEDS_REVIEW,price column 2 (MECH UL/ FM),6'' | 3200 | 3800 | 6435
+19,2,2,Sprinkler Heads & Nozzles,CLINTON Non- UL,own-label,Clinton,6'',SYSTEM SENSOR UL/FM,3,,6435,,NEEDS_REVIEW,price column 3 (SYSTEM SENSOR UL/FM),6'' | 3200 | 3800 | 6435
+19,2,3,Sprinkler Heads & Nozzles,CLINTON Non- UL,own-label,Clinton,4'',CLINTON Non- UL,1,,2800,,NEEDS_REVIEW,price column 1 (CLINTON Non- UL),4'' | 2800 | 3300 | 4600
+19,2,3,Sprinkler Heads & Nozzles,CLINTON Non- UL,own-label,Clinton,4'',MECH UL/ FM,2,,3300,,NEEDS_REVIEW,price column 2 (MECH UL/ FM),4'' | 2800 | 3300 | 4600
+19,2,3,Sprinkler Heads & Nozzles,CLINTON Non- UL,own-label,Clinton,4'',SYSTEM SENSOR UL/FM,3,,4600,,NEEDS_REVIEW,price column 3 (SYSTEM SENSOR UL/FM),4'' | 2800 | 3300 | 4600
+19,2,4,Sprinkler Heads & Nozzles,CLINTON Non- UL,own-label,Clinton,3'',CLINTON Non- UL,1,,2200,,NEEDS_REVIEW,price column 1 (CLINTON Non- UL),3'' | 2200 | 2900 | 4250
+19,2,4,Sprinkler Heads & Nozzles,CLINTON Non- UL,own-label,Clinton,3'',MECH UL/ FM,2,,2900,,NEEDS_REVIEW,price column 2 (MECH UL/ FM),3'' | 2200 | 2900 | 4250
+19,2,4,Sprinkler Heads & Nozzles,CLINTON Non- UL,own-label,Clinton,3'',SYSTEM SENSOR UL/FM,3,,4250,,NEEDS_REVIEW,price column 3 (SYSTEM SENSOR UL/FM),3'' | 2200 | 2900 | 4250
+19,2,5,Sprinkler Heads & Nozzles,CLINTON Non- UL,own-label,Clinton,2 ½'',CLINTON Non- UL,1,,1800,,NEEDS_REVIEW,price column 1 (CLINTON Non- UL),"2 ½'' | 1800 | 2,600 | 3980"
+19,2,5,Sprinkler Heads & Nozzles,CLINTON Non- UL,own-label,Clinton,2 ½'',MECH UL/ FM,2,,2600,,NEEDS_REVIEW,price column 2 (MECH UL/ FM),"2 ½'' | 1800 | 2,600 | 3980"
+19,2,5,Sprinkler Heads & Nozzles,CLINTON Non- UL,own-label,Clinton,2 ½'',SYSTEM SENSOR UL/FM,3,,3980,,NEEDS_REVIEW,price column 3 (SYSTEM SENSOR UL/FM),"2 ½'' | 1800 | 2,600 | 3980"
+19,3,2,Valves,ANGLE VALVE- Non UL 1 1/2,own-label,,,,0,,1300,,NEEDS_REVIEW,no size column,"1,300"
+19,4,2,Valves,ANGLE VALVE- Non UL 2 1/2,own-label,,,,0,,6500,,NEEDS_REVIEW,no size column,"6,500"
+19,5,2,Fire Alarm & Detection,ANGLE VALVE- Non UL 2 1/2,inherited-label,,4'',,1,,10500,,NEEDS_REVIEW,product from inherited-label,"4'' | 10,500"
+19,6,1,Fire Alarm & Detection,ANGLE VALVE- Non UL 2 1/2,inherited-label,,6'',,1,,12500,,NEEDS_REVIEW,product from inherited-label,"6'' | 12,500"
+19,7,1,Fire Alarm & Detection,ANGLE VALVE- Non UL 2 1/2,inherited-label,,3'',,1,,10500,,NEEDS_REVIEW,product from inherited-label,"3'' | 10,500"
+19,8,1,Fire Alarm & Detection,ANGLE VALVE- Non UL 2 1/2,inherited-label,,Water Flow Switch Threaded 1'',,1,,2800,,NEEDS_REVIEW,multiline cell in source row; product from inherited-label,"Water Flow Switch Threaded 1'' | 2,800"
+20,1,3,Fire Hoses & Reels,FIRE HOSE- PUSH LOCK -CABINET 50 FT.,slide-title,,,,3,,9100,,NEEDS_REVIEW,"earlier numeric cell(s) ignored, not price columns: 8,300, 8,680, 8,680; no size column; product from slide-title","8,300 | 8,680 | 8,680 | 9,100"
+20,2,2,Fire Hoses & Reels,FIRE HOSE- PUSH LOCK -CABINET 50 FT.,slide-title,,,,3,,18200,,NEEDS_REVIEW,"earlier numeric cell(s) ignored, not price columns: 12,600, 14,500, 16,200; no size column; product from slide-title","12,600 | 14,500 | 16,200 | 18,200"
+20,3,3,Fire Hoses & Reels,FIRE HOSE- PUSH LOCK -CABINET 50 FT.,slide-title,,,,3,,12000,,NEEDS_REVIEW,"earlier numeric cell(s) ignored, not price columns: 10,000, 10,500, 11,500; no size column; product from slide-title","10,000 | 10,500 | 11,500 | 12,000"
+20,4,2,Fire Hoses & Reels,FIRE HOSE- PUSH LOCK -CABINET 50 FT.,slide-title,,,,3,,21000,,NEEDS_REVIEW,"earlier numeric cell(s) ignored, not price columns: 14,600, 18,500, 17,200; no size column; product from slide-title","14,600 | 18,500 | 17,200 | 21,000"
+20,5,2,Fire Hoses & Reels,FIRE HOSE- PUSH LOCK -CABINET 50 FT.,slide-title,,,,0,,2050,,NEEDS_REVIEW,no size column; product from slide-title,"2,050"
+20,6,2,Fire Hoses & Reels,FIRE HOSE- PUSH LOCK -CABINET 50 FT.,slide-title,,,,0,,1900,,NEEDS_REVIEW,no size column; product from slide-title,"1,900"
+20,7,2,Fire Hoses & Reels,FIRE HOSE- PUSH LOCK -CABINET 50 FT.,slide-title,,,,0,,1000,,NEEDS_REVIEW,no size column; product from slide-title,1000
+20,8,2,Fire Hoses & Reels,FIRE HOSE- PUSH LOCK -CABINET 50 FT.,slide-title,,,,0,,1100,,NEEDS_REVIEW,no size column; product from slide-title,1100
+20,9,2,Fire Hoses & Reels,FIRE HOSE- PUSH LOCK -CABINET 50 FT.,slide-title,,,,0,,2700,,NEEDS_REVIEW,no size column; product from slide-title,"2,700"
+20,10,2,Fire Hoses & Reels,FIRE HOSE- PUSH LOCK -CABINET 50 FT.,slide-title,,,,0,,2200,,NEEDS_REVIEW,no size column; product from slide-title,"2,200"
+20,11,2,Fire Hoses & Reels,FIRE HOSE- PUSH LOCK -CABINET 50 FT.,slide-title,,,,0,,2200,,NEEDS_REVIEW,no size column; product from slide-title,2200
+21,1,2,Fire Hoses & Reels,SINGLE JACKET 2 ½ HYFLO FIRE HOSE 50 FT.,slide-title,Hyflo,,,0,,1790,,NEEDS_REVIEW,no size column; product from slide-title,"1,790"
+21,2,2,Fire Hoses & Reels,SINGLE JACKET 2 ½ HYFLO FIRE HOSE 50 FT.,slide-title,Hyflo,,,0,,1950,,NEEDS_REVIEW,no size column; product from slide-title,"1,950"
+21,3,2,Fire Hoses & Reels,SINGLE JACKET 2 ½ HYFLO FIRE HOSE 50 FT.,slide-title,Hyflo,,,0,,2600,,NEEDS_REVIEW,no size column; product from slide-title,"2,600"
+21,4,2,Fire Hoses & Reels,SINGLE JACKET 2 ½ HYFLO FIRE HOSE 50 FT.,slide-title,Hyflo,,,0,,3050,,NEEDS_REVIEW,no size column; product from slide-title,"3,050"
+21,5,2,Fire Hoses & Reels,SINGLE JACKET 2 ½ HYFLO FIRE HOSE 50 FT.,slide-title,Hyflo,,,0,,5000,,NEEDS_REVIEW,no size column; product from slide-title,"5,000"
+21,6,2,Fire Hoses & Reels,SINGLE JACKET 2 ½ HYFLO FIRE HOSE 50 FT.,slide-title,Hyflo,,,0,,5800,,NEEDS_REVIEW,no size column; product from slide-title,"5,800"
+21,8,2,Fire Hoses & Reels,SINGLE JACKET 2 ½ HYFLO FIRE HOSE 50 FT.,slide-title,Hyflo,,,0,,6900,,NEEDS_REVIEW,no size column; product from slide-title,"6,900"
+21,9,2,Fire Hoses & Reels,SINGLE JACKET 2 ½ HYFLO FIRE HOSE 50 FT.,slide-title,Hyflo,,,0,,11500,,NEEDS_REVIEW,no size column; product from slide-title,"11,500"
+21,10,2,Fire Hoses & Reels,SINGLE JACKET 2 ½ HYFLO FIRE HOSE 50 FT.,slide-title,Hyflo,,,0,,9800,,NEEDS_REVIEW,no size column; product from slide-title,"9,800"
+21,11,2,Fire Hoses & Reels,SINGLE JACKET 2 ½ HYFLO FIRE HOSE 50 FT.,slide-title,Hyflo,,,0,,6100,,NEEDS_REVIEW,no size column; product from slide-title,"6,100"
+21,12,2,Fire Hoses & Reels,SINGLE JACKET 2 ½ HYFLO FIRE HOSE 50 FT.,slide-title,Hyflo,,,0,,4400,,NEEDS_REVIEW,no size column; product from slide-title,"4,400"
+21,13,2,Fire Hoses & Reels,SINGLE JACKET 2 ½ HYFLO FIRE HOSE 50 FT.,slide-title,Hyflo,,,0,,3465,,NEEDS_REVIEW,no size column; product from slide-title,"3,465"
+21,14,2,Fire Hoses & Reels,SINGLE JACKET 2 ½ HYFLO FIRE HOSE 50 FT.,slide-title,Hyflo,,,0,,3990,,NEEDS_REVIEW,no size column; product from slide-title,"3,990"
+21,15,2,Fire Hoses & Reels,SINGLE JACKET 2 ½ HYFLO FIRE HOSE 50 FT.,slide-title,Hyflo,,,0,,2050,,NEEDS_REVIEW,no size column; product from slide-title,"2,050"
+21,16,2,Fire Hoses & Reels,SINGLE JACKET 2 ½ HYFLO FIRE HOSE 50 FT.,slide-title,Hyflo,,,0,,2250,,NEEDS_REVIEW,no size column; product from slide-title,"2,250"
+21,17,2,Fire Hoses & Reels,SINGLE JACKET 2 ½ HYFLO FIRE HOSE 50 FT.,slide-title,Hyflo,,,0,,2900,,NEEDS_REVIEW,no size column; product from slide-title,"2,900"
+21,18,2,Fire Hoses & Reels,SINGLE JACKET 2 ½ HYFLO FIRE HOSE 50 FT.,slide-title,Hyflo,,,0,,3400,,NEEDS_REVIEW,no size column; product from slide-title,"3,400"
+21,19,2,Fire Hoses & Reels,SINGLE JACKET 2 ½ HYFLO FIRE HOSE 50 FT.,slide-title,Hyflo,,,0,,3950,,NEEDS_REVIEW,no size column; product from slide-title,"3,950"
+21,20,2,Fire Hoses & Reels,SINGLE JACKET 2 ½ HYFLO FIRE HOSE 50 FT.,slide-title,Hyflo,,,0,,4800,,NEEDS_REVIEW,no size column; product from slide-title,"4,800"
+21,21,2,Fire Hoses & Reels,SINGLE JACKET 2 ½ HYFLO FIRE HOSE 50 FT.,slide-title,Hyflo,,,0,,5500,,NEEDS_REVIEW,no size column; product from slide-title,"5,500"
+21,22,2,Fire Hoses & Reels,SINGLE JACKET 2 ½ HYFLO FIRE HOSE 50 FT.,slide-title,Hyflo,,,0,,6800,,NEEDS_REVIEW,no size column; product from slide-title,"6,800"
+22,1,2,Fire Alarm & Detection,UNRESOLVED-S22-T1,unresolved,,,ASENWARE FP-100 Model,1,,1890,,NEEDS_REVIEW,price column 1 (ASENWARE FP-100 Model); no size column; product from unresolved,"SMOKE | 1,890 | 1895 | 1050"
+22,1,2,Fire Alarm & Detection,UNRESOLVED-S22-T1,unresolved,,,ASENWARE FP-300 Model,2,,1895,,NEEDS_REVIEW,price column 2 (ASENWARE FP-300 Model); no size column; product from unresolved,"SMOKE | 1,890 | 1895 | 1050"
+22,1,2,Fire Alarm & Detection,UNRESOLVED-S22-T1,unresolved,,,Kennedy,3,,1050,,NEEDS_REVIEW,price column 3 (Kennedy); no size column; product from unresolved,"SMOKE | 1,890 | 1895 | 1050"
+22,1,3,Fire Alarm & Detection,UNRESOLVED-S22-T1,unresolved,,,ASENWARE FP-100 Model,1,,24800,,NEEDS_REVIEW,price column 1 (ASENWARE FP-100 Model); no size column; product from unresolved,"Annunciator | 24,800 | 25850"
+22,1,3,Fire Alarm & Detection,UNRESOLVED-S22-T1,unresolved,,,ASENWARE FP-300 Model,2,,25850,,NEEDS_REVIEW,price column 2 (ASENWARE FP-300 Model); no size column; product from unresolved,"Annunciator | 24,800 | 25850"
+22,1,4,Fire Alarm & Detection,UNRESOLVED-S22-T1,unresolved,,,ASENWARE FP-100 Model,1,,1900,,NEEDS_REVIEW,price column 1 (ASENWARE FP-100 Model); no size column; product from unresolved,"Heat Detector | 1,900 | 1950 | 1050"
+22,1,4,Fire Alarm & Detection,UNRESOLVED-S22-T1,unresolved,,,ASENWARE FP-300 Model,2,,1950,,NEEDS_REVIEW,price column 2 (ASENWARE FP-300 Model); no size column; product from unresolved,"Heat Detector | 1,900 | 1950 | 1050"
+22,1,4,Fire Alarm & Detection,UNRESOLVED-S22-T1,unresolved,,,Kennedy,3,,1050,,NEEDS_REVIEW,price column 3 (Kennedy); no size column; product from unresolved,"Heat Detector | 1,900 | 1950 | 1050"
+22,1,5,Fire Alarm & Detection,UNRESOLVED-S22-T1,unresolved,,,ASENWARE FP-100 Model,1,,2200,,NEEDS_REVIEW,price column 1 (ASENWARE FP-100 Model); no size column; product from unresolved,"Manual Call Point | 2,200 | 2150 | 1300"
+22,1,5,Fire Alarm & Detection,UNRESOLVED-S22-T1,unresolved,,,ASENWARE FP-300 Model,2,,2150,,NEEDS_REVIEW,price column 2 (ASENWARE FP-300 Model); no size column; product from unresolved,"Manual Call Point | 2,200 | 2150 | 1300"
+22,1,5,Fire Alarm & Detection,UNRESOLVED-S22-T1,unresolved,,,Kennedy,3,,1300,,NEEDS_REVIEW,price column 3 (Kennedy); no size column; product from unresolved,"Manual Call Point | 2,200 | 2150 | 1300"
+22,1,6,Fire Alarm & Detection,UNRESOLVED-S22-T1,unresolved,,,ASENWARE FP-100 Model,1,,2800,,NEEDS_REVIEW,price column 1 (ASENWARE FP-100 Model); no size column; product from unresolved,"Horn Strobe -Siren | 2,800 | 2850 | 1400"
+22,1,6,Fire Alarm & Detection,UNRESOLVED-S22-T1,unresolved,,,ASENWARE FP-300 Model,2,,2850,,NEEDS_REVIEW,price column 2 (ASENWARE FP-300 Model); no size column; product from unresolved,"Horn Strobe -Siren | 2,800 | 2850 | 1400"
+22,1,6,Fire Alarm & Detection,UNRESOLVED-S22-T1,unresolved,,,Kennedy,3,,1400,,NEEDS_REVIEW,price column 3 (Kennedy); no size column; product from unresolved,"Horn Strobe -Siren | 2,800 | 2850 | 1400"
+22,2,2,Fire Alarm & Detection,Control Panel,own-label,,,,1,,50000,,NEEDS_REVIEW,price column 1 (no header); no size column,"1- 2 loop | 50,000 | 50,000 | 35k / 45k"
+22,2,2,Fire Alarm & Detection,Control Panel,own-label,,,,2,,50000,,NEEDS_REVIEW,price column 2 (no header); no size column,"1- 2 loop | 50,000 | 50,000 | 35k / 45k"
+22,2,3,Fire Alarm & Detection,Control Panel,own-label,,,,1,,68000,,NEEDS_REVIEW,price column 1 (no header); no size column,"3 – 4 loop | 68,000 | 63,000"
+22,2,3,Fire Alarm & Detection,Control Panel,own-label,,,,2,,63000,,NEEDS_REVIEW,price column 2 (no header); no size column,"3 – 4 loop | 68,000 | 63,000"
+22,3,1,Fire Alarm & Detection,In/out module,own-label,,,,3,,1500,,NEEDS_REVIEW,"earlier numeric cell(s) ignored, not price columns: 3,200; no size column","In/out module | 3,200 | 1500"
+22,4,1,Fire Alarm & Detection,Telephone jack,own-label,,,,1,,4950,,NEEDS_REVIEW,price column 1 (no header); no size column,"Telephone jack | 4,950"
+22,4,3,Fire Alarm & Detection,Telephone jack,own-label,,,,3,,1500,,NEEDS_REVIEW,price column 3 (no header); no size column,Interface module | 1500
+22,5,1,Fire Alarm & Detection,Isolation Module,own-label,,,,3,,1400,,NEEDS_REVIEW,no size column,Isolation Module | 1400
+23,1,2,Fire Alarm & Detection,UNRESOLVED-S23-T1,unresolved,,,CHINA,2,,480,,NEEDS_REVIEW,price column 2 (CHINA); no size column; product from unresolved,SMOKE | 381 - 690 | 480 | 870
+23,1,2,Fire Alarm & Detection,UNRESOLVED-S23-T1,unresolved,,,HORINGLI,3,,870,,NEEDS_REVIEW,price column 3 (HORINGLI); no size column; product from unresolved,SMOKE | 381 - 690 | 480 | 870
+23,1,4,Fire Alarm & Detection,UNRESOLVED-S23-T1,unresolved,,,ASENWARE,1,,660,,NEEDS_REVIEW,price column 1 (ASENWARE); no size column; product from unresolved,Heat Detector | 660 | 490 | 745
+23,1,4,Fire Alarm & Detection,UNRESOLVED-S23-T1,unresolved,,,CHINA,2,,490,,NEEDS_REVIEW,price column 2 (CHINA); no size column; product from unresolved,Heat Detector | 660 | 490 | 745
+23,1,4,Fire Alarm & Detection,UNRESOLVED-S23-T1,unresolved,,,HORINGLI,3,,745,,NEEDS_REVIEW,price column 3 (HORINGLI); no size column; product from unresolved,Heat Detector | 660 | 490 | 745
+23,1,5,Fire Alarm & Detection,UNRESOLVED-S23-T1,unresolved,,,ASENWARE,1,,740,,NEEDS_REVIEW,price column 1 (ASENWARE); no size column; product from unresolved,Manual Call Point | 740 | 420 | 650
+23,1,5,Fire Alarm & Detection,UNRESOLVED-S23-T1,unresolved,,,CHINA,2,,420,,NEEDS_REVIEW,price column 2 (CHINA); no size column; product from unresolved,Manual Call Point | 740 | 420 | 650
+23,1,5,Fire Alarm & Detection,UNRESOLVED-S23-T1,unresolved,,,HORINGLI,3,,650,,NEEDS_REVIEW,price column 3 (HORINGLI); no size column; product from unresolved,Manual Call Point | 740 | 420 | 650
+23,1,6,Fire Alarm & Detection,UNRESOLVED-S23-T1,unresolved,,,ASENWARE,1,,840,,NEEDS_REVIEW,price column 1 (ASENWARE); no size column; product from unresolved,"Horn Strobe -Siren | 840 | 650 | 1,750"
+23,1,6,Fire Alarm & Detection,UNRESOLVED-S23-T1,unresolved,,,CHINA,2,,650,,NEEDS_REVIEW,price column 2 (CHINA); no size column; product from unresolved,"Horn Strobe -Siren | 840 | 650 | 1,750"
+23,1,6,Fire Alarm & Detection,UNRESOLVED-S23-T1,unresolved,,,HORINGLI,3,,1750,,NEEDS_REVIEW,price column 3 (HORINGLI); no size column; product from unresolved,"Horn Strobe -Siren | 840 | 650 | 1,750"
+23,1,7,Fire Alarm & Detection,UNRESOLVED-S23-T1,unresolved,,,ASENWARE,1,,840,,NEEDS_REVIEW,price column 1 (ASENWARE); no size column; product from unresolved,"Alarm Bell | 840 | 590 | 1,060"
+23,1,7,Fire Alarm & Detection,UNRESOLVED-S23-T1,unresolved,,,CHINA,2,,590,,NEEDS_REVIEW,price column 2 (CHINA); no size column; product from unresolved,"Alarm Bell | 840 | 590 | 1,060"
+23,1,7,Fire Alarm & Detection,UNRESOLVED-S23-T1,unresolved,,,HORINGLI,3,,1060,,NEEDS_REVIEW,price column 3 (HORINGLI); no size column; product from unresolved,"Alarm Bell | 840 | 590 | 1,060"
+23,2,1,Fire Alarm & Detection,Beam Detector,own-label,,,,1,,17500,,NEEDS_REVIEW,no size column,"Beam Detector | 17,500"
+23,3,1,Fire Alarm & Detection,Smoke & Heat,own-label,,,,2,,650,,NEEDS_REVIEW,no size column,Smoke & Heat | 650
+23,4,2,Fire Alarm & Detection,RED-CHINA,own-label,,,ASENWARE,1,,13500,,NEEDS_REVIEW,price column 1 (ASENWARE); no size column,"4 zone | 13,500 | 20,250 | 10,000"
+23,4,2,Fire Alarm & Detection,RED-CHINA,own-label,,,HORINGLI,2,,20250,,NEEDS_REVIEW,price column 2 (HORINGLI); no size column,"4 zone | 13,500 | 20,250 | 10,000"
+23,4,2,Fire Alarm & Detection,RED-CHINA,own-label,,,RED-CHINA,3,,10000,,NEEDS_REVIEW,price column 3 (RED-CHINA); no size column,"4 zone | 13,500 | 20,250 | 10,000"
+23,4,3,Fire Alarm & Detection,RED-CHINA,own-label,,,ASENWARE,1,,18500,,NEEDS_REVIEW,price column 1 (ASENWARE); no size column,"8 zone | 18,500 | 22,680 | 12,500"
+23,4,3,Fire Alarm & Detection,RED-CHINA,own-label,,,HORINGLI,2,,22680,,NEEDS_REVIEW,price column 2 (HORINGLI); no size column,"8 zone | 18,500 | 22,680 | 12,500"
+23,4,3,Fire Alarm & Detection,RED-CHINA,own-label,,,RED-CHINA,3,,12500,,NEEDS_REVIEW,price column 3 (RED-CHINA); no size column,"8 zone | 18,500 | 22,680 | 12,500"
+23,4,4,Fire Alarm & Detection,RED-CHINA,own-label,,,ASENWARE,1,,20500,,NEEDS_REVIEW,price column 1 (ASENWARE); no size column,"12 zone | 20,500 | 47,140 | 16,500"
+23,4,4,Fire Alarm & Detection,RED-CHINA,own-label,,,HORINGLI,2,,47140,,NEEDS_REVIEW,price column 2 (HORINGLI); no size column,"12 zone | 20,500 | 47,140 | 16,500"
+23,4,4,Fire Alarm & Detection,RED-CHINA,own-label,,,RED-CHINA,3,,16500,,NEEDS_REVIEW,price column 3 (RED-CHINA); no size column,"12 zone | 20,500 | 47,140 | 16,500"
+23,4,5,Fire Alarm & Detection,RED-CHINA,own-label,,,ASENWARE,1,,25000,,NEEDS_REVIEW,price column 1 (ASENWARE); no size column,"16 zone | 25,000 | 19,500"
+23,4,5,Fire Alarm & Detection,RED-CHINA,own-label,,,RED-CHINA,3,,19500,,NEEDS_REVIEW,price column 3 (RED-CHINA); no size column,"16 zone | 25,000 | 19,500"
+23,4,6,Fire Alarm & Detection,RED-CHINA,own-label,,,ASENWARE,1,,12500,,NEEDS_REVIEW,price column 1 (ASENWARE); no size column,"2 zone | 12,500 | 9,000"
+23,4,6,Fire Alarm & Detection,RED-CHINA,own-label,,,RED-CHINA,3,,9000,,NEEDS_REVIEW,price column 3 (RED-CHINA); no size column,"2 zone | 12,500 | 9,000"
+23,5,1,Fire Alarm & Detection,Manual Pull Station,own-label,,,,2,,850,,NEEDS_REVIEW,"earlier numeric cell(s) ignored, not price columns: 1,765; no size column","Manual Pull Station | 1,765 | 850"
+23,6,1,Fire Alarm & Detection,Manual Pull Station,inherited-label,,,,1,,28500,,NEEDS_REVIEW,no size column; product from inherited-label,"20 zone | 28,500"
+23,6,2,Fire Alarm & Detection,Manual Pull Station,inherited-label,,,,1,,42000,,NEEDS_REVIEW,no size column; product from inherited-label,"24 zone | 42,000"
+24,1,1,Fire Pumps & Pump Sets,JOCKEY PUMP,slide-title,,50 HP,,1,,60000,,NEEDS_REVIEW,price column 1 (no header); product from slide-title,"50 HP | 60,000 | 750,000"
+24,1,1,Fire Pumps & Pump Sets,JOCKEY PUMP,slide-title,,50 HP,,2,,750000,,NEEDS_REVIEW,price column 2 (no header); product from slide-title,"50 HP | 60,000 | 750,000"
+24,1,2,Fire Pumps & Pump Sets,JOCKEY PUMP,slide-title,,60 HP,,1,,70000,,NEEDS_REVIEW,price column 1 (no header); product from slide-title,"60 HP | 70,000 | 795,000"
+24,1,2,Fire Pumps & Pump Sets,JOCKEY PUMP,slide-title,,60 HP,,2,,795000,,NEEDS_REVIEW,price column 2 (no header); product from slide-title,"60 HP | 70,000 | 795,000"
+24,1,3,Fire Pumps & Pump Sets,JOCKEY PUMP,slide-title,,75 HP,,1,,87000,,NEEDS_REVIEW,price column 1 (no header); product from slide-title,"75 HP | 87,000 | 835,000"
+24,1,3,Fire Pumps & Pump Sets,JOCKEY PUMP,slide-title,,75 HP,,2,,835000,,NEEDS_REVIEW,price column 2 (no header); product from slide-title,"75 HP | 87,000 | 835,000"
+24,1,4,Fire Pumps & Pump Sets,JOCKEY PUMP,slide-title,,,,1,,110000,,NEEDS_REVIEW,price column 1 (no header); no size column; product from slide-title,"100 HP | 110,000 | 1,065,000"
+24,1,4,Fire Pumps & Pump Sets,JOCKEY PUMP,slide-title,,,,2,,1065000,,NEEDS_REVIEW,price column 2 (no header); no size column; product from slide-title,"100 HP | 110,000 | 1,065,000"
+24,2,2,Fire Pumps & Pump Sets,SHILIN BRAND,own-label,,FIRE PUMP 10 HP,SHILIN BRAND,1,,17500,,NEEDS_REVIEW,price column 1 (SHILIN BRAND),"FIRE PUMP 10 HP | 17,500"
+24,2,3,Fire Pumps & Pump Sets,SHILIN BRAND,own-label,,15 HP,SHILIN BRAND,1,,20000,,NEEDS_REVIEW,price column 1 (SHILIN BRAND),"15 HP | 20,000"
+24,2,4,Fire Pumps & Pump Sets,SHILIN BRAND,own-label,,20 HP,SHILIN BRAND,1,,25000,,NEEDS_REVIEW,price column 1 (SHILIN BRAND),"20 HP | 25,000 | 560,000"
+24,2,4,Fire Pumps & Pump Sets,SHILIN BRAND,own-label,,20 HP,EATON - USA UL/FM,2,,560000,,NEEDS_REVIEW,price column 2 (EATON - USA UL/FM),"20 HP | 25,000 | 560,000"
+24,2,5,Fire Pumps & Pump Sets,SHILIN BRAND,own-label,,25 HP,SHILIN BRAND,1,,30000,,NEEDS_REVIEW,price column 1 (SHILIN BRAND),"25 HP | 30,000 | 640,000"
+24,2,5,Fire Pumps & Pump Sets,SHILIN BRAND,own-label,,25 HP,EATON - USA UL/FM,2,,640000,,NEEDS_REVIEW,price column 2 (EATON - USA UL/FM),"25 HP | 30,000 | 640,000"
+24,2,6,Fire Pumps & Pump Sets,SHILIN BRAND,own-label,,30 HP,SHILIN BRAND,1,,37500,,NEEDS_REVIEW,price column 1 (SHILIN BRAND),"30 HP | 37,500 | 670,000"
+24,2,6,Fire Pumps & Pump Sets,SHILIN BRAND,own-label,,30 HP,EATON - USA UL/FM,2,,670000,,NEEDS_REVIEW,price column 2 (EATON - USA UL/FM),"30 HP | 37,500 | 670,000"
+24,2,7,Fire Pumps & Pump Sets,SHILIN BRAND,own-label,,40 HP,SHILIN BRAND,1,,50000,,NEEDS_REVIEW,price column 1 (SHILIN BRAND),"40 HP | 50,000 | 725,000"
+24,2,7,Fire Pumps & Pump Sets,SHILIN BRAND,own-label,,40 HP,EATON - USA UL/FM,2,,725000,,NEEDS_REVIEW,price column 2 (EATON - USA UL/FM),"40 HP | 50,000 | 725,000"
+24,3,2,Fire Pumps & Pump Sets,JOCKEY PUMP,own-label,,2 HP ( 1 phase ),,1,,13500,,PENDING,,"2 HP ( 1 phase ) | 13,500"
+24,3,3,Fire Pumps & Pump Sets,JOCKEY PUMP,own-label,,3 HP ( 1 phase ),,1,,13500,,PENDING,,"3 HP ( 1 phase ) | 13,500"
+24,3,4,Fire Pumps & Pump Sets,JOCKEY PUMP,own-label,,3 HP,,1,,12500,,PENDING,,"3 HP | 12,500 | 115K"
+24,3,5,Fire Pumps & Pump Sets,JOCKEY PUMP,own-label,,4 HP,,1,,13000,,PENDING,,"4 HP | 13,000 | 115K"
+24,4,1,Fire Pumps & Pump Sets,JOCKEY PUMP,inherited-label,,7.5 HP,,1,,15500,,NEEDS_REVIEW,price column 1 (no header); product from inherited-label,"7.5 HP | 15,500 | 130,000"
+24,4,1,Fire Pumps & Pump Sets,JOCKEY PUMP,inherited-label,,7.5 HP,,2,,130000,,NEEDS_REVIEW,price column 2 (no header); product from inherited-label,"7.5 HP | 15,500 | 130,000"
+24,4,2,Fire Pumps & Pump Sets,JOCKEY PUMP,inherited-label,,10 HP,,1,,18500,,NEEDS_REVIEW,price column 1 (no header); product from inherited-label,"10 HP | 18,500 | 130,000"
+24,4,2,Fire Pumps & Pump Sets,JOCKEY PUMP,inherited-label,,10 HP,,2,,130000,,NEEDS_REVIEW,price column 2 (no header); product from inherited-label,"10 HP | 18,500 | 130,000"
+24,5,2,Fire Pumps & Pump Sets,JOCKEY PUMP,inherited-label,,10 HP,,1,,35000,,NEEDS_REVIEW,product from inherited-label,"10 HP | 35,000"
+24,5,3,Fire Pumps & Pump Sets,JOCKEY PUMP,inherited-label,,15 HP,,1,,42000,,NEEDS_REVIEW,product from inherited-label,"15 HP | 42,000"
+24,5,4,Fire Pumps & Pump Sets,JOCKEY PUMP,inherited-label,,20 HP,,1,,58000,,NEEDS_REVIEW,product from inherited-label,"20 HP | 58,000"
+24,5,5,Fire Pumps & Pump Sets,JOCKEY PUMP,inherited-label,,25 HP,,1,,87500,,NEEDS_REVIEW,product from inherited-label,"25 HP | 87,500"
+24,5,6,Fire Pumps & Pump Sets,JOCKEY PUMP,inherited-label,,30 HP,,1,,110000,,NEEDS_REVIEW,product from inherited-label,"30 HP | 110,000"
+24,6,1,Fire Pumps & Pump Sets,JOCKEY PUMP,inherited-label,,40 HP,,1,,125000,,NEEDS_REVIEW,product from inherited-label,"40 HP | 125,000"
+24,6,2,Fire Pumps & Pump Sets,JOCKEY PUMP,inherited-label,,50 HP,,1,,148000,,NEEDS_REVIEW,product from inherited-label,"50 HP | 148,000"
+24,7,1,Fire Pumps & Pump Sets,JOCKEY PUMP,inherited-label,,7.5 HP,,1,,32000,,NEEDS_REVIEW,product from inherited-label,"7.5 HP | 32,000"
+25,1,2,Water Meters & Tank Fittings,FLOAT VALVE,own-label,,3/4,,1,,2070,,PENDING,,"3/4 | 2,070"
+25,1,3,Water Meters & Tank Fittings,FLOAT VALVE,own-label,,1,,1,,3200,,PENDING,,"1 | 3,200"
+25,1,4,Water Meters & Tank Fittings,FLOAT VALVE,own-label,,1 ¼,,1,,6600,,PENDING,,"1 ¼ | 6,600"
+25,1,5,Water Meters & Tank Fittings,FLOAT VALVE,own-label,,1 ½,,1,,8700,,PENDING,,"1 ½ | 8,700"
+25,1,6,Water Meters & Tank Fittings,FLOAT VALVE,own-label,,2,,1,,11200,,PENDING,,"2 | 11,200"
+25,2,3,Water Meters & Tank Fittings,Flexible Connector,own-label,,1,,1,,990,,PENDING,,1 | 990
+25,2,4,Water Meters & Tank Fittings,Flexible Connector,own-label,,1 ¼,,1,,1050,,PENDING,,"1 ¼ | 1,050"
+25,2,5,Water Meters & Tank Fittings,Flexible Connector,own-label,,1 ½,,1,,1250,,PENDING,,"1 ½ | 1,250"
+25,2,6,Water Meters & Tank Fittings,Flexible Connector,own-label,,2,,1,,1475,,PENDING,,"2 | 1,475"
+25,3,2,Water Meters & Tank Fittings,Pressure Switch,own-label,,90 psi below,Mazaki Japan,1,,2800,,NEEDS_REVIEW,price column 1 (Mazaki Japan),90 psi below | 2800 | 3800 | 1800
+25,3,2,Water Meters & Tank Fittings,Pressure Switch,own-label,,90 psi below,DANFOSS,2,,3800,,NEEDS_REVIEW,price column 2 (DANFOSS),90 psi below | 2800 | 3800 | 1800
+25,3,2,Water Meters & Tank Fittings,Pressure Switch,own-label,,90 psi below,Purity China,3,,1800,,NEEDS_REVIEW,price column 3 (Purity China),90 psi below | 2800 | 3800 | 1800
+25,3,3,Water Meters & Tank Fittings,Pressure Switch,own-label,,91 psi up,Mazaki Japan,1,,2800,,NEEDS_REVIEW,price column 1 (Mazaki Japan),91 psi up | 2800 | 3800 | 1800
+25,3,3,Water Meters & Tank Fittings,Pressure Switch,own-label,,91 psi up,DANFOSS,2,,3800,,NEEDS_REVIEW,price column 2 (DANFOSS),91 psi up | 2800 | 3800 | 1800
+25,3,3,Water Meters & Tank Fittings,Pressure Switch,own-label,,91 psi up,Purity China,3,,1800,,NEEDS_REVIEW,price column 3 (Purity China),91 psi up | 2800 | 3800 | 1800
+25,4,2,Water Meters & Tank Fittings,Waste Cone,own-label,,,,1,,15500,,NEEDS_REVIEW,no size column,"5 x 3 | 15,500"
+25,4,3,Water Meters & Tank Fittings,Waste Cone,own-label,,,,1,,18500,,NEEDS_REVIEW,no size column,"4 x 6 | 18,500"
+25,5,3,"Tools, Equipment & PPE",Craft thermometer,own-label,Craft,,,0,,1200,,NEEDS_REVIEW,no size column,"1,200"
+25,6,3,Instruments & Gauges,Winter Gauge ¼ UL/fm,own-label,Winter,,,0,,1800,,NEEDS_REVIEW,no size column,"1,800"
+25,7,1,Water Meters & Tank Fittings,Winter Gauge ¼ UL/fm,inherited-label,Winter,,,1,,14500,,NEEDS_REVIEW,no size column; product from inherited-label,"4 x 3 | 14,500"
+26,1,2,"Couplings, Nozzles & Monitors",M-FLEX FLEXIBLE,own-label,,12,DOUBLE BELO Plus 45%,2,,15650,,NEEDS_REVIEW,price column 2 (DOUBLE BELO Plus 45%),"12 | 15,650"
+26,1,3,"Couplings, Nozzles & Monitors",M-FLEX FLEXIBLE,own-label,,10,DOUBLE BELO Plus 45%,2,,12000,,NEEDS_REVIEW,price column 2 (DOUBLE BELO Plus 45%),"10 | 12,000"
+26,1,4,"Couplings, Nozzles & Monitors",M-FLEX FLEXIBLE,own-label,,8,SINGLE BELO,1,,7128,,NEEDS_REVIEW,price column 1 (SINGLE BELO),"8 | 7,128 | 8,165"
+26,1,4,"Couplings, Nozzles & Monitors",M-FLEX FLEXIBLE,own-label,,8,DOUBLE BELO Plus 45%,2,,8165,,NEEDS_REVIEW,price column 2 (DOUBLE BELO Plus 45%),"8 | 7,128 | 8,165"
+26,1,5,"Couplings, Nozzles & Monitors",M-FLEX FLEXIBLE,own-label,,6,SINGLE BELO,1,,4640,,NEEDS_REVIEW,price column 1 (SINGLE BELO),"6 | 4,640 | 5,065"
+26,1,5,"Couplings, Nozzles & Monitors",M-FLEX FLEXIBLE,own-label,,6,DOUBLE BELO Plus 45%,2,,5065,,NEEDS_REVIEW,price column 2 (DOUBLE BELO Plus 45%),"6 | 4,640 | 5,065"
+26,1,6,"Couplings, Nozzles & Monitors",M-FLEX FLEXIBLE,own-label,,5,SINGLE BELO,1,,3990,,NEEDS_REVIEW,price column 1 (SINGLE BELO),"5 | 3,990"
+26,1,7,"Couplings, Nozzles & Monitors",M-FLEX FLEXIBLE,own-label,,4,SINGLE BELO,1,,2650,,NEEDS_REVIEW,price column 1 (SINGLE BELO),"4 | 2,650 | 3,022"
+26,1,7,"Couplings, Nozzles & Monitors",M-FLEX FLEXIBLE,own-label,,4,DOUBLE BELO Plus 45%,2,,3022,,NEEDS_REVIEW,price column 2 (DOUBLE BELO Plus 45%),"4 | 2,650 | 3,022"
+26,1,8,"Couplings, Nozzles & Monitors",M-FLEX FLEXIBLE,own-label,,3,SINGLE BELO,1,,2090,,NEEDS_REVIEW,price column 1 (SINGLE BELO),"3 | 2,090 | 2,275"
+26,1,8,"Couplings, Nozzles & Monitors",M-FLEX FLEXIBLE,own-label,,3,DOUBLE BELO Plus 45%,2,,2275,,NEEDS_REVIEW,price column 2 (DOUBLE BELO Plus 45%),"3 | 2,090 | 2,275"
+26,2,1,"Couplings, Nozzles & Monitors",M-FLEX FLEXIBLE,inherited-label,,2 ½,,1,,1735,,NEEDS_REVIEW,price column 1 (no header); product from inherited-label,"2 ½ | 1,735 | 1,815"
+26,2,1,"Couplings, Nozzles & Monitors",M-FLEX FLEXIBLE,inherited-label,,2 ½,,2,,1815,,NEEDS_REVIEW,price column 2 (no header); product from inherited-label,"2 ½ | 1,735 | 1,815"
+26,2,2,"Couplings, Nozzles & Monitors",M-FLEX FLEXIBLE,inherited-label,,2,,1,,1535,,NEEDS_REVIEW,price column 1 (no header); product from inherited-label,"2 | 1,535 | 1,400"
+26,2,2,"Couplings, Nozzles & Monitors",M-FLEX FLEXIBLE,inherited-label,,2,,2,,1400,,NEEDS_REVIEW,price column 2 (no header); product from inherited-label,"2 | 1,535 | 1,400"
+26,3,2,"Couplings, Nozzles & Monitors",GLOBAL VISION,own-label,Global Vision,6'',,1,,126320,,PENDING,,"6'' | 126,320"
+26,4,2,"Couplings, Nozzles & Monitors",FLOW METER,own-label,,,FLOW METER,1,,32000,,NEEDS_REVIEW,no size column,"4''- 600 GPM | 32,000"
+26,4,3,"Couplings, Nozzles & Monitors",FLOW METER,own-label,,,FLOW METER,1,,37000,,NEEDS_REVIEW,no size column,"6'' -1400 GPM | 37,000"
+26,5,2,"Couplings, Nozzles & Monitors",Blue white,own-label,,,FLOW METER,1,,19000,,NEEDS_REVIEW,no size column,"4''- 420 GPM | 19,000"
+26,5,3,"Couplings, Nozzles & Monitors",Blue white,own-label,,,FLOW METER,1,,23500,,NEEDS_REVIEW,no size column,"6''-1000 GPM | 23,500"
+26,6,1,"Couplings, Nozzles & Monitors",Blue white,inherited-label,,8'',,1,,138600,,NEEDS_REVIEW,product from inherited-label,"8'' | 138,600"
+26,7,1,"Couplings, Nozzles & Monitors",Blue white,inherited-label,,,,1,,28500,,NEEDS_REVIEW,no size column; product from inherited-label,"3'' – 380 GPM | 28,500"
+26,7,2,"Couplings, Nozzles & Monitors",Blue white,inherited-label,,,,1,,26500,,NEEDS_REVIEW,no size column; product from inherited-label,"2 ½ – 250 GPM | 26,500"
+26,8,1,"Couplings, Nozzles & Monitors",Blue white,inherited-label,,4'',,1,,123500,,NEEDS_REVIEW,product from inherited-label,"4'' | 123,500"
+26,9,1,"Couplings, Nozzles & Monitors",Blue white,inherited-label,,,,1,,55000,,NEEDS_REVIEW,no size column; product from inherited-label,"8'' - 2100 GPM | 55,000"
+26,10,1,"Couplings, Nozzles & Monitors",Blue white,inherited-label,,,,1,,18000,,NEEDS_REVIEW,no size column; product from inherited-label,"3''- 250 GPM | 18,000"
+26,11,5,"Couplings, Nozzles & Monitors",MECH FLEXIBLE,own-label,Mech,,,0,,7800,,NEEDS_REVIEW,no size column,"7,800"
+26,12,1,"Couplings, Nozzles & Monitors",MECH FLEXIBLE,inherited-label,Mech,,,0,,4900,,NEEDS_REVIEW,no size column; product from inherited-label,"4,900"
+26,12,2,"Couplings, Nozzles & Monitors",MECH FLEXIBLE,inherited-label,Mech,,,0,,3880,,NEEDS_REVIEW,no size column; product from inherited-label,"3,880"
+26,12,3,"Couplings, Nozzles & Monitors",MECH FLEXIBLE,inherited-label,Mech,,,0,,3200,,NEEDS_REVIEW,no size column; product from inherited-label,"3,200"
+26,12,4,"Couplings, Nozzles & Monitors",MECH FLEXIBLE,inherited-label,Mech,,,0,,2750,,NEEDS_REVIEW,no size column; product from inherited-label,"2,750"
+27,1,1,Water Transfer Pumps,TRANSFER PUMP,slide-title,,3 HP (1P),,1,,26500,,NEEDS_REVIEW,product from slide-title,"3 HP (1P) | 26,500 | 30-40GPM @ 40 PSI"
+27,1,2,Water Transfer Pumps,TRANSFER PUMP,slide-title,,2 HP (1P),,1,,19500,,NEEDS_REVIEW,product from slide-title,"2 HP (1P) | 19,500 | 10-25GPM @ 35 PSI"
+27,2,2,Water Transfer Pumps,Duplex Controller,own-label,,1 Hp – 2Hp,,1,,42000,,PENDING,,"1 Hp – 2Hp | 42,000"
+27,2,3,Water Transfer Pumps,Duplex Controller,own-label,,3 Hp,,1,,48000,,PENDING,,"3 Hp | 48,000"
+27,2,4,Water Transfer Pumps,Duplex Controller,own-label,,5 Hp,,1,,52000,,PENDING,,"5 Hp | 52,000"
+27,3,2,Water Transfer Pumps,DUPLEX -CPS,own-label,,3 HP,,1,,82600,,NEEDS_REVIEW,price column 1 (no header),"3 HP | 82,600 | 148,000 | 250,000"
+27,3,2,Water Transfer Pumps,DUPLEX -CPS,own-label,,3 HP,DUPLEX -CPS,2,,148000,,NEEDS_REVIEW,price column 2 (DUPLEX -CPS),"3 HP | 82,600 | 148,000 | 250,000"
+27,3,2,Water Transfer Pumps,DUPLEX -CPS,own-label,,3 HP,TRIPLEX-CPS,3,,250000,,NEEDS_REVIEW,price column 3 (TRIPLEX-CPS),"3 HP | 82,600 | 148,000 | 250,000"
+27,3,3,Water Transfer Pumps,DUPLEX -CPS,own-label,,5.5 HP,,1,,98500,,NEEDS_REVIEW,price column 1 (no header),"5.5 HP | 98,500 | 172,000 | 292,000"
+27,3,3,Water Transfer Pumps,DUPLEX -CPS,own-label,,5.5 HP,DUPLEX -CPS,2,,172000,,NEEDS_REVIEW,price column 2 (DUPLEX -CPS),"5.5 HP | 98,500 | 172,000 | 292,000"
+27,3,3,Water Transfer Pumps,DUPLEX -CPS,own-label,,5.5 HP,TRIPLEX-CPS,3,,292000,,NEEDS_REVIEW,price column 3 (TRIPLEX-CPS),"5.5 HP | 98,500 | 172,000 | 292,000"
+27,3,4,Water Transfer Pumps,DUPLEX -CPS,own-label,,7.5HP,,1,,125400,,NEEDS_REVIEW,price column 1 (no header),"7.5HP | 125,400 | 198,000 | 338,000"
+27,3,4,Water Transfer Pumps,DUPLEX -CPS,own-label,,7.5HP,DUPLEX -CPS,2,,198000,,NEEDS_REVIEW,price column 2 (DUPLEX -CPS),"7.5HP | 125,400 | 198,000 | 338,000"
+27,3,4,Water Transfer Pumps,DUPLEX -CPS,own-label,,7.5HP,TRIPLEX-CPS,3,,338000,,NEEDS_REVIEW,price column 3 (TRIPLEX-CPS),"7.5HP | 125,400 | 198,000 | 338,000"
+27,3,5,Water Transfer Pumps,DUPLEX -CPS,own-label,,10 HP,,1,,142000,,NEEDS_REVIEW,price column 1 (no header),"10 HP | 142,000 | 245,000 | 425,000"
+27,3,5,Water Transfer Pumps,DUPLEX -CPS,own-label,,10 HP,DUPLEX -CPS,2,,245000,,NEEDS_REVIEW,price column 2 (DUPLEX -CPS),"10 HP | 142,000 | 245,000 | 425,000"
+27,3,5,Water Transfer Pumps,DUPLEX -CPS,own-label,,10 HP,TRIPLEX-CPS,3,,425000,,NEEDS_REVIEW,price column 3 (TRIPLEX-CPS),"10 HP | 142,000 | 245,000 | 425,000"
+27,5,1,Water Transfer Pumps,DUPLEX -CPS,inherited-label,,7.5 Hp,,1,,98000,,NEEDS_REVIEW,product from inherited-label,"7.5 Hp | 98,000"
+27,5,2,Water Transfer Pumps,DUPLEX -CPS,inherited-label,,10 Hp,,1,,132000,,NEEDS_REVIEW,product from inherited-label,"10 Hp | 132,000"
+27,6,1,Water Transfer Pumps,DUPLEX -CPS,inherited-label,,4 HP,,1,,34000,,NEEDS_REVIEW,multiline cell in source row; product from inherited-label,"4 HP | 34,000 | 55 – 60 GPM @ 40 PSI 30-35 GPM @ 60 PSI"
+27,6,2,Water Transfer Pumps,DUPLEX -CPS,inherited-label,,7.5 HP,,1,,49500,,NEEDS_REVIEW,product from inherited-label,"7.5 HP | 49,500 | 30-40 GPM @ 80 PSI"
+27,6,3,Water Transfer Pumps,DUPLEX -CPS,inherited-label,,10 HP,,1,,72000,,NEEDS_REVIEW,product from inherited-label,"10 HP | 72,000 | 35- 45 GPM @ 100 PSI"
+27,7,1,Water Transfer Pumps,DUPLEX -CPS,inherited-label,,1 HP (1PH),,1,,15000,,NEEDS_REVIEW,product from inherited-label,"1 HP (1PH) | 15,000"
+27,7,2,Water Transfer Pumps,DUPLEX -CPS,inherited-label,,1.5HP (1HP),,1,,17500,,NEEDS_REVIEW,product from inherited-label,"1.5HP (1HP) | 17,500"
+28,1,1,Water Transfer Pumps,GOULDS,slide-title,Goulds,3HP (1P),,1,,38300,,NEEDS_REVIEW,price column 1 (no header); product from slide-title,"3HP (1P) | 38,300 | 32,000"
+28,1,1,Water Transfer Pumps,GOULDS,slide-title,Goulds,3HP (1P),,2,,32000,,NEEDS_REVIEW,price column 2 (no header); product from slide-title,"3HP (1P) | 38,300 | 32,000"
+28,1,2,Water Transfer Pumps,GOULDS,slide-title,Goulds,2HP (1P),,1,,32720,,NEEDS_REVIEW,price column 1 (no header); product from slide-title,"2HP (1P) | 32,720 | 26,000"
+28,1,2,Water Transfer Pumps,GOULDS,slide-title,Goulds,2HP (1P),,2,,26000,,NEEDS_REVIEW,price column 2 (no header); product from slide-title,"2HP (1P) | 32,720 | 26,000"
+28,2,3,Water Transfer Pumps,GOULDS,slide-title,Goulds,,GOULDS,0,,172000,,NEEDS_REVIEW,no size column; product from slide-title,"172,000"
+28,2,4,Water Transfer Pumps,GOULDS,slide-title,Goulds,,GOULDS,0,,144500,,NEEDS_REVIEW,no size column; product from slide-title,"144,500"
+28,2,5,Water Transfer Pumps,GOULDS,slide-title,Goulds,,GOULDS,0,,105000,,NEEDS_REVIEW,no size column; product from slide-title,"105,000"
+28,2,6,Water Transfer Pumps,GOULDS,slide-title,Goulds,,GOULDS,0,,88000,,NEEDS_REVIEW,no size column; product from slide-title,"88,000"
+28,2,7,Water Transfer Pumps,GOULDS,slide-title,Goulds,,GOULDS,0,,72000,,NEEDS_REVIEW,no size column; product from slide-title,"72,000"
+28,3,1,Water Transfer Pumps,GOULDS,slide-title,Goulds,20 HP,,2,,132500,,NEEDS_REVIEW,product from slide-title,"20 HP | 132,500"
+28,4,1,Water Transfer Pumps,GOULDS,slide-title,Goulds,,,1,,73000,,NEEDS_REVIEW,no size column; product from slide-title,"5hp -380/440 | 73,000"
+28,4,2,Water Transfer Pumps,GOULDS,slide-title,Goulds,,,1,,54500,,NEEDS_REVIEW,no size column; product from slide-title,"3hp -380/440 | 54,500"
+28,5,1,Water Transfer Pumps,GOULDS,slide-title,Goulds,,,0,,75000,,NEEDS_REVIEW,no size column; product from slide-title,"75,000"
+28,5,2,Water Transfer Pumps,GOULDS,slide-title,Goulds,,,0,,51850,,NEEDS_REVIEW,no size column; product from slide-title,"51,850"
+28,6,1,Water Transfer Pumps,GOULDS,slide-title,Goulds,15 HP,,2,,198000,,NEEDS_REVIEW,product from slide-title,"15 HP | 124,000 – 132,000 | 198,000"
+29,1,1,Pumps & Motors,UNRESOLVED-S29-T1,unresolved,,25 HP,,1,,33500,,NEEDS_REVIEW,product from unresolved,"25 HP | 33,500"
+29,1,2,Pumps & Motors,UNRESOLVED-S29-T1,unresolved,,20 HP,,1,,30000,,NEEDS_REVIEW,product from unresolved,"20 HP | 30,000"
+29,1,3,Pumps & Motors,UNRESOLVED-S29-T1,unresolved,,15 HP,,1,,27500,,NEEDS_REVIEW,product from unresolved,"15 HP | 27,500"
+30,1,2,Fire Pumps & Pump Sets,HORSE POWER ELECTRIC,own-label,,10 HP - 2 HP,STREAMPLUS or EBSRAY AUSTRALIA,1,,180000,,NEEDS_REVIEW,price column 1 (STREAMPLUS or EBSRAY AUSTRALIA),"10 HP - 2 HP | 180,000 | 160,000"
+30,1,2,Fire Pumps & Pump Sets,HORSE POWER ELECTRIC,own-label,,10 HP - 2 HP,PURITY or ZJ – BETTER CHINA,2,,160000,,NEEDS_REVIEW,price column 2 (PURITY or ZJ – BETTER CHINA),"10 HP - 2 HP | 180,000 | 160,000"
+30,1,3,Fire Pumps & Pump Sets,HORSE POWER ELECTRIC,own-label,,15 HP - 2 HP,STREAMPLUS or EBSRAY AUSTRALIA,1,,200000,,NEEDS_REVIEW,price column 1 (STREAMPLUS or EBSRAY AUSTRALIA),"15 HP - 2 HP | 200,000 | 170,000"
+30,1,3,Fire Pumps & Pump Sets,HORSE POWER ELECTRIC,own-label,,15 HP - 2 HP,PURITY or ZJ – BETTER CHINA,2,,170000,,NEEDS_REVIEW,price column 2 (PURITY or ZJ – BETTER CHINA),"15 HP - 2 HP | 200,000 | 170,000"
+30,1,4,Fire Pumps & Pump Sets,HORSE POWER ELECTRIC,own-label,,20 HP - 3 HP,STREAMPLUS or EBSRAY AUSTRALIA,1,,210000,,NEEDS_REVIEW,price column 1 (STREAMPLUS or EBSRAY AUSTRALIA),"20 HP - 3 HP | 210,000 | 180,000"
+30,1,4,Fire Pumps & Pump Sets,HORSE POWER ELECTRIC,own-label,,20 HP - 3 HP,PURITY or ZJ – BETTER CHINA,2,,180000,,NEEDS_REVIEW,price column 2 (PURITY or ZJ – BETTER CHINA),"20 HP - 3 HP | 210,000 | 180,000"
+30,1,5,Fire Pumps & Pump Sets,HORSE POWER ELECTRIC,own-label,,25 HP - 3 HP,STREAMPLUS or EBSRAY AUSTRALIA,1,,225000,,NEEDS_REVIEW,price column 1 (STREAMPLUS or EBSRAY AUSTRALIA),"25 HP - 3 HP | 225,000 | 205,000"
+30,1,5,Fire Pumps & Pump Sets,HORSE POWER ELECTRIC,own-label,,25 HP - 3 HP,PURITY or ZJ – BETTER CHINA,2,,205000,,NEEDS_REVIEW,price column 2 (PURITY or ZJ – BETTER CHINA),"25 HP - 3 HP | 225,000 | 205,000"
+30,1,6,Fire Pumps & Pump Sets,HORSE POWER ELECTRIC,own-label,,30 HP - 3 HP,STREAMPLUS or EBSRAY AUSTRALIA,1,,255000,,NEEDS_REVIEW,price column 1 (STREAMPLUS or EBSRAY AUSTRALIA),"30 HP - 3 HP | 255,000 | 220,000"
+30,1,6,Fire Pumps & Pump Sets,HORSE POWER ELECTRIC,own-label,,30 HP - 3 HP,PURITY or ZJ – BETTER CHINA,2,,220000,,NEEDS_REVIEW,price column 2 (PURITY or ZJ – BETTER CHINA),"30 HP - 3 HP | 255,000 | 220,000"
+30,2,2,Fire Pumps & Pump Sets,HORSE POWER ELECTRIC,inherited-label,,60 HP - 5 HP,,1,,325000,,NEEDS_REVIEW,price column 1 (no header); product from inherited-label,"60 HP - 5 HP | 325,000 | 285,000 | 530,000 | 480,000"
+30,2,2,Fire Pumps & Pump Sets,HORSE POWER ELECTRIC,inherited-label,,60 HP - 5 HP,,2,,285000,,NEEDS_REVIEW,price column 2 (no header); product from inherited-label,"60 HP - 5 HP | 325,000 | 285,000 | 530,000 | 480,000"
+30,2,2,Fire Pumps & Pump Sets,HORSE POWER ELECTRIC,inherited-label,,60 HP - 5 HP,,3,,530000,,NEEDS_REVIEW,price column 3 (no header); product from inherited-label,"60 HP - 5 HP | 325,000 | 285,000 | 530,000 | 480,000"
+30,2,2,Fire Pumps & Pump Sets,HORSE POWER ELECTRIC,inherited-label,,60 HP - 5 HP,,4,,480000,,NEEDS_REVIEW,price column 4 (no header); product from inherited-label,"60 HP - 5 HP | 325,000 | 285,000 | 530,000 | 480,000"
+30,2,3,Fire Pumps & Pump Sets,HORSE POWER ELECTRIC,inherited-label,,75 HP - 5 HP,,1,,365000,,NEEDS_REVIEW,price column 1 (no header); product from inherited-label,"75 HP - 5 HP | 365,000 | 330,000 | 588,000 | 530,000"
+30,2,3,Fire Pumps & Pump Sets,HORSE POWER ELECTRIC,inherited-label,,75 HP - 5 HP,,2,,330000,,NEEDS_REVIEW,price column 2 (no header); product from inherited-label,"75 HP - 5 HP | 365,000 | 330,000 | 588,000 | 530,000"
+30,2,3,Fire Pumps & Pump Sets,HORSE POWER ELECTRIC,inherited-label,,75 HP - 5 HP,,3,,588000,,NEEDS_REVIEW,price column 3 (no header); product from inherited-label,"75 HP - 5 HP | 365,000 | 330,000 | 588,000 | 530,000"
+30,2,3,Fire Pumps & Pump Sets,HORSE POWER ELECTRIC,inherited-label,,75 HP - 5 HP,,4,,530000,,NEEDS_REVIEW,price column 4 (no header); product from inherited-label,"75 HP - 5 HP | 365,000 | 330,000 | 588,000 | 530,000"
+30,2,4,Fire Pumps & Pump Sets,HORSE POWER ELECTRIC,inherited-label,,,,1,,535000,,NEEDS_REVIEW,price column 1 (no header); no size column; product from inherited-label,"100 HP - 7.5 HP | 535,000 | 445,000 | 770,000 | 695,000"
+30,2,4,Fire Pumps & Pump Sets,HORSE POWER ELECTRIC,inherited-label,,,,2,,445000,,NEEDS_REVIEW,price column 2 (no header); no size column; product from inherited-label,"100 HP - 7.5 HP | 535,000 | 445,000 | 770,000 | 695,000"
+30,2,4,Fire Pumps & Pump Sets,HORSE POWER ELECTRIC,inherited-label,,,,3,,770000,,NEEDS_REVIEW,price column 3 (no header); no size column; product from inherited-label,"100 HP - 7.5 HP | 535,000 | 445,000 | 770,000 | 695,000"
+30,2,4,Fire Pumps & Pump Sets,HORSE POWER ELECTRIC,inherited-label,,,,4,,695000,,NEEDS_REVIEW,price column 4 (no header); no size column; product from inherited-label,"100 HP - 7.5 HP | 535,000 | 445,000 | 770,000 | 695,000"
+31,1,5,Fire Pumps & Pump Sets,HORSE POWER ELECTRIC,own-label,,25 HP - 3 HP,STREAMPLUS or EBSRAY AUSTRALIA,3,,395000,,NEEDS_REVIEW,price column 3 (STREAMPLUS or EBSRAY AUSTRALIA),"25 HP - 3 HP | 395,000"
+31,1,6,Fire Pumps & Pump Sets,HORSE POWER ELECTRIC,own-label,,30 HP - 3 HP,USA MOTOR USA,1,,925000,,NEEDS_REVIEW,price column 1 (USA MOTOR USA),"30 HP - 3 HP | 925,000 | 740,000 | 415,000 | 425,000"
+31,1,6,Fire Pumps & Pump Sets,HORSE POWER ELECTRIC,own-label,,30 HP - 3 HP,AMERICAN TURBINE w/ TECHTOP MOTOR,2,,740000,,NEEDS_REVIEW,price column 2 (AMERICAN TURBINE w/ TECHTOP MOTOR),"30 HP - 3 HP | 925,000 | 740,000 | 415,000 | 425,000"
+31,1,6,Fire Pumps & Pump Sets,HORSE POWER ELECTRIC,own-label,,30 HP - 3 HP,STREAMPLUS or EBSRAY AUSTRALIA,3,,415000,,NEEDS_REVIEW,price column 3 (STREAMPLUS or EBSRAY AUSTRALIA),"30 HP - 3 HP | 925,000 | 740,000 | 415,000 | 425,000"
+31,1,6,Fire Pumps & Pump Sets,HORSE POWER ELECTRIC,own-label,,30 HP - 3 HP,PURITY or ZJ – BETTER CHINA,4,,425000,,NEEDS_REVIEW,price column 4 (PURITY or ZJ – BETTER CHINA),"30 HP - 3 HP | 925,000 | 740,000 | 415,000 | 425,000"
+31,1,7,Fire Pumps & Pump Sets,HORSE POWER ELECTRIC,own-label,,40 HP - 4 HP,USA MOTOR USA,1,,1020000,,NEEDS_REVIEW,price column 1 (USA MOTOR USA),"40 HP - 4 HP | 1,020,000 | 795,000 | 460,000 | 470,000"
+31,1,7,Fire Pumps & Pump Sets,HORSE POWER ELECTRIC,own-label,,40 HP - 4 HP,AMERICAN TURBINE w/ TECHTOP MOTOR,2,,795000,,NEEDS_REVIEW,price column 2 (AMERICAN TURBINE w/ TECHTOP MOTOR),"40 HP - 4 HP | 1,020,000 | 795,000 | 460,000 | 470,000"
+31,1,7,Fire Pumps & Pump Sets,HORSE POWER ELECTRIC,own-label,,40 HP - 4 HP,STREAMPLUS or EBSRAY AUSTRALIA,3,,460000,,NEEDS_REVIEW,price column 3 (STREAMPLUS or EBSRAY AUSTRALIA),"40 HP - 4 HP | 1,020,000 | 795,000 | 460,000 | 470,000"
+31,1,7,Fire Pumps & Pump Sets,HORSE POWER ELECTRIC,own-label,,40 HP - 4 HP,PURITY or ZJ – BETTER CHINA,4,,470000,,NEEDS_REVIEW,price column 4 (PURITY or ZJ – BETTER CHINA),"40 HP - 4 HP | 1,020,000 | 795,000 | 460,000 | 470,000"
+31,1,8,Fire Pumps & Pump Sets,HORSE POWER ELECTRIC,own-label,,50 HP - 5 HP,USA MOTOR USA,1,,1295000,,NEEDS_REVIEW,price column 1 (USA MOTOR USA),"50 HP - 5 HP | 1,295,000 | 885,000 | 585,000 | 595,000"
+31,1,8,Fire Pumps & Pump Sets,HORSE POWER ELECTRIC,own-label,,50 HP - 5 HP,AMERICAN TURBINE w/ TECHTOP MOTOR,2,,885000,,NEEDS_REVIEW,price column 2 (AMERICAN TURBINE w/ TECHTOP MOTOR),"50 HP - 5 HP | 1,295,000 | 885,000 | 585,000 | 595,000"
+31,1,8,Fire Pumps & Pump Sets,HORSE POWER ELECTRIC,own-label,,50 HP - 5 HP,STREAMPLUS or EBSRAY AUSTRALIA,3,,585000,,NEEDS_REVIEW,price column 3 (STREAMPLUS or EBSRAY AUSTRALIA),"50 HP - 5 HP | 1,295,000 | 885,000 | 585,000 | 595,000"
+31,1,8,Fire Pumps & Pump Sets,HORSE POWER ELECTRIC,own-label,,50 HP - 5 HP,PURITY or ZJ – BETTER CHINA,4,,595000,,NEEDS_REVIEW,price column 4 (PURITY or ZJ – BETTER CHINA),"50 HP - 5 HP | 1,295,000 | 885,000 | 585,000 | 595,000"
+31,2,2,Fire Pumps & Pump Sets,HORSE POWER ELECTRIC,inherited-label,,60 HP - 5 HP,,1,,1460000,,NEEDS_REVIEW,price column 1 (no header); product from inherited-label,"60 HP - 5 HP | 1,460,000 | 968,000 | 675,000 | 685,000"
+31,2,2,Fire Pumps & Pump Sets,HORSE POWER ELECTRIC,inherited-label,,60 HP - 5 HP,,2,,968000,,NEEDS_REVIEW,price column 2 (no header); product from inherited-label,"60 HP - 5 HP | 1,460,000 | 968,000 | 675,000 | 685,000"
+31,2,2,Fire Pumps & Pump Sets,HORSE POWER ELECTRIC,inherited-label,,60 HP - 5 HP,,3,,675000,,NEEDS_REVIEW,price column 3 (no header); product from inherited-label,"60 HP - 5 HP | 1,460,000 | 968,000 | 675,000 | 685,000"
+31,2,2,Fire Pumps & Pump Sets,HORSE POWER ELECTRIC,inherited-label,,60 HP - 5 HP,,4,,685000,,NEEDS_REVIEW,price column 4 (no header); product from inherited-label,"60 HP - 5 HP | 1,460,000 | 968,000 | 675,000 | 685,000"
+31,2,3,Fire Pumps & Pump Sets,HORSE POWER ELECTRIC,inherited-label,,75 HP - 5 HP,,1,,1660000,,NEEDS_REVIEW,price column 1 (no header); product from inherited-label,"75 HP - 5 HP | 1,660,000 | 1,080,000 | 760,000 | 770,000"
+31,2,3,Fire Pumps & Pump Sets,HORSE POWER ELECTRIC,inherited-label,,75 HP - 5 HP,,2,,1080000,,NEEDS_REVIEW,price column 2 (no header); product from inherited-label,"75 HP - 5 HP | 1,660,000 | 1,080,000 | 760,000 | 770,000"
+31,2,3,Fire Pumps & Pump Sets,HORSE POWER ELECTRIC,inherited-label,,75 HP - 5 HP,,3,,760000,,NEEDS_REVIEW,price column 3 (no header); product from inherited-label,"75 HP - 5 HP | 1,660,000 | 1,080,000 | 760,000 | 770,000"
+31,2,3,Fire Pumps & Pump Sets,HORSE POWER ELECTRIC,inherited-label,,75 HP - 5 HP,,4,,770000,,NEEDS_REVIEW,price column 4 (no header); product from inherited-label,"75 HP - 5 HP | 1,660,000 | 1,080,000 | 760,000 | 770,000"
+31,2,4,Fire Pumps & Pump Sets,HORSE POWER ELECTRIC,inherited-label,,,,1,,1925000,,NEEDS_REVIEW,price column 1 (no header); no size column; product from inherited-label,"100 HP - 7.5 HP | 1,925,000 | 1,160,000 | 945,000 | 955,000"
+31,2,4,Fire Pumps & Pump Sets,HORSE POWER ELECTRIC,inherited-label,,,,2,,1160000,,NEEDS_REVIEW,price column 2 (no header); no size column; product from inherited-label,"100 HP - 7.5 HP | 1,925,000 | 1,160,000 | 945,000 | 955,000"
+31,2,4,Fire Pumps & Pump Sets,HORSE POWER ELECTRIC,inherited-label,,,,3,,945000,,NEEDS_REVIEW,price column 3 (no header); no size column; product from inherited-label,"100 HP - 7.5 HP | 1,925,000 | 1,160,000 | 945,000 | 955,000"
+31,2,4,Fire Pumps & Pump Sets,HORSE POWER ELECTRIC,inherited-label,,,,4,,955000,,NEEDS_REVIEW,price column 4 (no header); no size column; product from inherited-label,"100 HP - 7.5 HP | 1,925,000 | 1,160,000 | 945,000 | 955,000"
+32,1,2,Fire Pumps & Pump Sets,HORSE POWER ELECTRIC,own-label,,20 HP - 3 HP,CHINA -EIFEL UL-LISTED -ELECTRIC Usa -Controller,1,,1135000,,NEEDS_REVIEW,price column 1 (CHINA -EIFEL UL-LISTED -ELECTRIC Usa -Controller),"20 HP - 3 HP | 1,135,000"
+32,1,3,Fire Pumps & Pump Sets,HORSE POWER ELECTRIC,own-label,,25 HP - 3 HP,CHINA -EIFEL UL-LISTED -ELECTRIC Usa -Controller,1,,1160000,,NEEDS_REVIEW,price column 1 (CHINA -EIFEL UL-LISTED -ELECTRIC Usa -Controller),"25 HP - 3 HP | 1,160,000"
+32,2,2,Fire Pumps & Pump Sets,HORSE POWER ELECTRIC,inherited-label,,60 HP - 5 HP,,1,,1595000,,NEEDS_REVIEW,price column 1 (no header); product from inherited-label,"60 HP - 5 HP | 1,595,000 | 1,820,000"
+32,2,2,Fire Pumps & Pump Sets,HORSE POWER ELECTRIC,inherited-label,,60 HP - 5 HP,,3,,1820000,,NEEDS_REVIEW,price column 3 (no header); product from inherited-label,"60 HP - 5 HP | 1,595,000 | 1,820,000"
+32,2,3,Fire Pumps & Pump Sets,HORSE POWER ELECTRIC,inherited-label,,75 HP - 5 HP,,1,,1760000,,NEEDS_REVIEW,price column 1 (no header); product from inherited-label,"75 HP - 5 HP | 1,760,000 | 1,965,000"
+32,2,3,Fire Pumps & Pump Sets,HORSE POWER ELECTRIC,inherited-label,,75 HP - 5 HP,,3,,1965000,,NEEDS_REVIEW,price column 3 (no header); product from inherited-label,"75 HP - 5 HP | 1,760,000 | 1,965,000"
+32,2,4,Fire Pumps & Pump Sets,HORSE POWER ELECTRIC,inherited-label,,,,1,,1990000,,NEEDS_REVIEW,price column 1 (no header); no size column; product from inherited-label,"100 HP –7.5HP | 1,990,000 | 2,250,000"
+32,2,4,Fire Pumps & Pump Sets,HORSE POWER ELECTRIC,inherited-label,,,,3,,2250000,,NEEDS_REVIEW,price column 3 (no header); no size column; product from inherited-label,"100 HP –7.5HP | 1,990,000 | 2,250,000"
+32,4,1,Fire Pumps & Pump Sets,END SUCTION,inherited-label,,,,3,,2450000,,NEEDS_REVIEW,"earlier numeric cell(s) ignored, not price columns: 2,280,000; no size column; product from inherited-label","125 HP –10HP | 2,280,000 | 2,450,000"
+32,5,1,Fire Pumps & Pump Sets,END SUCTION,inherited-label,,,,3,,2790000,,NEEDS_REVIEW,"earlier numeric cell(s) ignored, not price columns: 2,550,000; no size column; product from inherited-label","150 HP –10HP | 2,550,000 | 2,790,000"
+33,1,2,Fire Pumps & Pump Sets,HORSE POWER ELECTRIC,own-label,,20 HP - 3 HP,AURORA UL-FM USA -ELECTRIC,1,,1380000,,NEEDS_REVIEW,price column 1 (AURORA UL-FM USA -ELECTRIC),"20 HP - 3 HP | 1,380,000"
+33,1,3,Fire Pumps & Pump Sets,HORSE POWER ELECTRIC,own-label,,25 HP - 3 HP,AURORA UL-FM USA -ELECTRIC,1,,1465000,,NEEDS_REVIEW,price column 1 (AURORA UL-FM USA -ELECTRIC),"25 HP - 3 HP | 1,465,000"
+33,1,4,Fire Pumps & Pump Sets,HORSE POWER ELECTRIC,own-label,,30 HP - 3 HP,AURORA UL-FM USA -ELECTRIC,1,,1598000,,NEEDS_REVIEW,price column 1 (AURORA UL-FM USA -ELECTRIC),"30 HP - 3 HP | 1,598,000 | 2,290,000"
+33,1,4,Fire Pumps & Pump Sets,HORSE POWER ELECTRIC,own-label,,30 HP - 3 HP,AURORA PUMP US- ELECTRIC,3,,2290000,,NEEDS_REVIEW,price column 3 (AURORA PUMP US- ELECTRIC),"30 HP - 3 HP | 1,598,000 | 2,290,000"
+33,1,5,Fire Pumps & Pump Sets,HORSE POWER ELECTRIC,own-label,,40 HP - 4 HP,AURORA UL-FM USA -ELECTRIC,1,,1780000,,NEEDS_REVIEW,price column 1 (AURORA UL-FM USA -ELECTRIC); multiline cell in source row,"40 HP - 4 HP | 1,780,000 | 400 GPM @ 100 PSI 3,750,000.00 | 2,505,000"
+33,1,5,Fire Pumps & Pump Sets,HORSE POWER ELECTRIC,own-label,,40 HP - 4 HP,AURORA PUMP US- ELECTRIC,3,,2505000,,NEEDS_REVIEW,price column 3 (AURORA PUMP US- ELECTRIC); multiline cell in source row,"40 HP - 4 HP | 1,780,000 | 400 GPM @ 100 PSI 3,750,000.00 | 2,505,000"
+33,1,6,Fire Pumps & Pump Sets,HORSE POWER ELECTRIC,own-label,,50 HP - 5 HP,AURORA UL-FM USA -ELECTRIC,1,,1995000,,NEEDS_REVIEW,price column 1 (AURORA UL-FM USA -ELECTRIC); multiline cell in source row,"50 HP - 5 HP | 1,995,000 | 500 GPM @ 100 PSI 3,750,000.00 | 2,750,000"
+33,1,6,Fire Pumps & Pump Sets,HORSE POWER ELECTRIC,own-label,,50 HP - 5 HP,AURORA PUMP US- ELECTRIC,3,,2750000,,NEEDS_REVIEW,price column 3 (AURORA PUMP US- ELECTRIC); multiline cell in source row,"50 HP - 5 HP | 1,995,000 | 500 GPM @ 100 PSI 3,750,000.00 | 2,750,000"
+33,2,1,Fire Pumps & Pump Sets,HORSE POWER ELECTRIC,inherited-label,,60 HP - 5 HP,,1,,2290000,,NEEDS_REVIEW,price column 1 (no header); product from inherited-label,"60 HP - 5 HP | 2,290,000"
+33,2,2,Fire Pumps & Pump Sets,HORSE POWER ELECTRIC,inherited-label,,75 HP - 5 HP,,1,,2500000,,NEEDS_REVIEW,price column 1 (no header); multiline cell in source row; product from inherited-label,"75 HP - 5 HP | 2,500,000 | 750 GPM @ 100 PSI 4,050,000.00 | 3,235,000"
+33,2,2,Fire Pumps & Pump Sets,HORSE POWER ELECTRIC,inherited-label,,75 HP - 5 HP,,3,,3235000,,NEEDS_REVIEW,price column 3 (no header); multiline cell in source row; product from inherited-label,"75 HP - 5 HP | 2,500,000 | 750 GPM @ 100 PSI 4,050,000.00 | 3,235,000"
+33,2,3,Fire Pumps & Pump Sets,HORSE POWER ELECTRIC,inherited-label,,,,1,,3270000,,NEEDS_REVIEW,price column 1 (no header); no size column; multiline cell in source row; product from inherited-label,"100 HP - 7.5 HP | 3,270,000 | 1000 GPM @ 100 PSI 4,252,500.00 | 4,550,000"
+33,2,3,Fire Pumps & Pump Sets,HORSE POWER ELECTRIC,inherited-label,,,,3,,4550000,,NEEDS_REVIEW,price column 3 (no header); no size column; multiline cell in source row; product from inherited-label,"100 HP - 7.5 HP | 3,270,000 | 1000 GPM @ 100 PSI 4,252,500.00 | 4,550,000"
+33,4,1,Fire Pumps & Pump Sets,HORIZONTAL SPLIT CASE,inherited-label,,,,3,,5050000,,NEEDS_REVIEW,"earlier numeric cell(s) ignored, not price columns: 3,570,000; no size column; product from inherited-label","125 HP - 7.5 HP | 3,570,000 | 5,050,000"
+33,5,1,Fire Pumps & Pump Sets,HORIZONTAL SPLIT CASE,inherited-label,,,,3,,5250000,,NEEDS_REVIEW,"earlier numeric cell(s) ignored, not price columns: 3,870,000; no size column; multiline cell in source row; product from inherited-label","150 HP - 7.5 HP | 3,870,000 | 1000 GPM @ 140 PSI 4,252,500.00 | 5,250,000"
+34,1,4,Fire Pumps & Pump Sets,HORSE POWER ELECTRIC,own-label,,30 HP - 3 HP,MISTISO UL- MOTOR UL-CONTROLLER PUMP – COPY AURORA,3,,1850000,,PENDING,,"30 HP - 3 HP | 1,850,000"
+34,1,5,Fire Pumps & Pump Sets,HORSE POWER ELECTRIC,own-label,,40 HP - 4 HP,MISTISO UL- MOTOR UL-CONTROLLER PUMP – COPY AURORA,3,,1980000,,PENDING,,"40 HP - 4 HP | 1,980,000"
+34,1,6,Fire Pumps & Pump Sets,HORSE POWER ELECTRIC,own-label,,50 HP - 5 HP,MISTISO UL- MOTOR UL-CONTROLLER PUMP – COPY AURORA,3,,2150000,,PENDING,,"50 HP - 5 HP | 2,150,000"
+34,2,1,Fire Pumps & Pump Sets,HORSE POWER ELECTRIC,inherited-label,,60 HP - 5 HP,,3,,2220000,,NEEDS_REVIEW,product from inherited-label,"60 HP - 5 HP | 2,220,000"
+34,2,2,Fire Pumps & Pump Sets,HORSE POWER ELECTRIC,inherited-label,,75 HP - 5 HP,,3,,2435000,,NEEDS_REVIEW,product from inherited-label,"75 HP - 5 HP | 2,435,000"
+34,2,3,Fire Pumps & Pump Sets,HORSE POWER ELECTRIC,inherited-label,,,,3,,2550000,,NEEDS_REVIEW,no size column; product from inherited-label,"100 HP - 7.5 HP | 2,550,000"
+34,4,1,Fire Pumps & Pump Sets,HORIZONTAL SPLIT CASE,inherited-label,,,,3,,2680000,,NEEDS_REVIEW,no size column; product from inherited-label,"125 HP - 7.5 HP | 2,680,000"
+34,5,1,Fire Pumps & Pump Sets,HORIZONTAL SPLIT CASE,inherited-label,,,,3,,2820000,,NEEDS_REVIEW,no size column; product from inherited-label,"150 HP - 7.5 HP | 2,820,000"
+35,1,1,Fire Pumps & Pump Sets,UNRESOLVED-S35-T1,unresolved,,10 hp,,3,,130000,,NEEDS_REVIEW,product from unresolved,"10 hp | 2 hp | 100GPM@100PSI | 130,000"
+35,1,2,Fire Pumps & Pump Sets,UNRESOLVED-S35-T1,unresolved,,15 hp,,3,,150000,,NEEDS_REVIEW,product from unresolved,"15 hp | 3 hp | 150GPM@100PSI | 150,000"
+35,1,3,Fire Pumps & Pump Sets,UNRESOLVED-S35-T1,unresolved,,20 hp,,3,,160000,,NEEDS_REVIEW,product from unresolved,"20 hp | 3 hp | 180GPM@100PSI | 160,000"
+35,1,4,Fire Pumps & Pump Sets,UNRESOLVED-S35-T1,unresolved,,25 hp,,3,,170000,,NEEDS_REVIEW,product from unresolved,"25 hp | 3 hp | 220GPM@100PSI | 170,000"
+35,1,5,Fire Pumps & Pump Sets,UNRESOLVED-S35-T1,unresolved,,30 hp,,3,,190000,,NEEDS_REVIEW,product from unresolved,"30 hp | 3 hp | 300GPM@100PSI | 190,000"
+35,1,6,Fire Pumps & Pump Sets,UNRESOLVED-S35-T1,unresolved,,40 hp,,3,,210000,,NEEDS_REVIEW,product from unresolved,"40 hp | 5 hp | 400GPM@100PSI | 210,000"
+35,1,7,Fire Pumps & Pump Sets,UNRESOLVED-S35-T1,unresolved,,50 hp,,3,,235000,,NEEDS_REVIEW,product from unresolved,"50 hp | 5 hp | 500GPM@100PSI | 235,000"
+35,1,8,Fire Pumps & Pump Sets,UNRESOLVED-S35-T1,unresolved,,60 hp,,3,,265000,,NEEDS_REVIEW,product from unresolved,"60 hp | 5 hp | 600GPM@100PSI | 265,000"
+35,2,1,Fire Pumps & Pump Sets,UNRESOLVED-S35-T2,unresolved,,75 hp,,3,,310000,,NEEDS_REVIEW,product from unresolved,"75 hp | 5 hp | 750 GPM@100PSI | 310,000"
+35,4,1,Fire Pumps & Pump Sets,FIRE PUMP,inherited-label,,75 hp,,3,,310000,,NEEDS_REVIEW,product from inherited-label,"75 hp | 5 hp | 500-600 @130PSI | 310,000"
+35,5,1,Fire Pumps & Pump Sets,FIRE PUMP,inherited-label,,5 hp,,3,,430000,,NEEDS_REVIEW,multiline cell in source row; product from inherited-label,"100 hp | 5 hp | 750-1000 @100-125PSI | 430,000"
+36,1,1,Fire Pumps & Pump Sets,UNRESOLVED-S36-T1,unresolved,,10 hp,,3,,95000,,NEEDS_REVIEW,product from unresolved,"10 hp | 10 hp | 100GPM@100PSI | 95,000"
+36,1,2,Fire Pumps & Pump Sets,UNRESOLVED-S36-T1,unresolved,,15 hp,,3,,105000,,NEEDS_REVIEW,product from unresolved,"15 hp | 15 hp | 150GPM@100PSI | 105,000"
+36,1,3,Fire Pumps & Pump Sets,UNRESOLVED-S36-T1,unresolved,,20 hp,,3,,125000,,NEEDS_REVIEW,product from unresolved,"20 hp | 20 hp | 180GPM@100PSI | 125,000"
+36,1,4,Fire Pumps & Pump Sets,UNRESOLVED-S36-T1,unresolved,,25 hp,,3,,135000,,NEEDS_REVIEW,product from unresolved,"25 hp | 25 hp | 220GPM@100PSI | 135,000"
+36,1,5,Fire Pumps & Pump Sets,UNRESOLVED-S36-T1,unresolved,,30 hp,,3,,150000,,NEEDS_REVIEW,product from unresolved,"30 hp | 30 hp | 300GPM@100PSI | 150,000"
+36,1,6,Fire Pumps & Pump Sets,UNRESOLVED-S36-T1,unresolved,,40 hp,,3,,165000,,NEEDS_REVIEW,product from unresolved,"40 hp | 40 hp | 400GPM@100PSI | 165,000"
+36,1,7,Fire Pumps & Pump Sets,UNRESOLVED-S36-T1,unresolved,,50 hp,,3,,180000,,NEEDS_REVIEW,product from unresolved,"50 hp | 50 hp | 500GPM@100PSI | 180,000"
+36,1,8,Fire Pumps & Pump Sets,UNRESOLVED-S36-T1,unresolved,,60 hp,,3,,205000,,NEEDS_REVIEW,product from unresolved,"60 hp | 60 hp | 600GPM@100PSI | 205,000"
+36,2,1,Fire Pumps & Pump Sets,UNRESOLVED-S36-T2,unresolved,,75 hp,,3,,245000,,NEEDS_REVIEW,product from unresolved,"75 hp | 75 hp | 750 GPM@100PSI | 245,000"
+36,4,1,Fire Pumps & Pump Sets,FIRE PUMP,inherited-label,,75 hp,,3,,245000,,NEEDS_REVIEW,product from inherited-label,"75 hp | 75 hp | 500-600 @130PSI | 245,000"
+36,5,2,Fire Pumps & Pump Sets,FIRE PUMP ONLY,own-label,,,FIRE PUMP ONLY,0,,85000,,NEEDS_REVIEW,no size column,"85,000"
+36,5,3,Fire Pumps & Pump Sets,FIRE PUMP ONLY,own-label,,,FIRE PUMP ONLY,0,,92000,,NEEDS_REVIEW,no size column,"92,000"
+36,5,4,Fire Pumps & Pump Sets,FIRE PUMP ONLY,own-label,,,FIRE PUMP ONLY,0,,110000,,NEEDS_REVIEW,no size column,"110,000"
+36,5,5,Fire Pumps & Pump Sets,FIRE PUMP ONLY,own-label,,,FIRE PUMP ONLY,0,,118000,,NEEDS_REVIEW,no size column,"118,000"
+36,5,6,Fire Pumps & Pump Sets,FIRE PUMP ONLY,own-label,,,FIRE PUMP ONLY,0,,128000,,NEEDS_REVIEW,no size column,"128,000"
+36,5,7,Fire Pumps & Pump Sets,FIRE PUMP ONLY,own-label,,,FIRE PUMP ONLY,0,,135000,,NEEDS_REVIEW,no size column,"135,000"
+36,5,8,Fire Pumps & Pump Sets,FIRE PUMP ONLY,own-label,,,FIRE PUMP ONLY,0,,145000,,NEEDS_REVIEW,no size column,"145,000"
+36,6,1,Fire Pumps & Pump Sets,FIRE PUMP ONLY,inherited-label,,,,0,,160000,,NEEDS_REVIEW,no size column; product from inherited-label,"160,000"
+36,6,2,Fire Pumps & Pump Sets,FIRE PUMP ONLY,inherited-label,,,,0,,205000,,NEEDS_REVIEW,no size column; product from inherited-label,"205,000"
+36,6,3,Fire Pumps & Pump Sets,FIRE PUMP ONLY,inherited-label,,,,0,,205000,,NEEDS_REVIEW,no size column; product from inherited-label,"205,000"
+37,2,1,Fire Pumps & Pump Sets,FIRE PUMP,inherited-label,,10 hp,,2,,125000,,NEEDS_REVIEW,product from inherited-label,"10 hp | 2 hp | 125,000"
+37,2,2,Fire Pumps & Pump Sets,FIRE PUMP,inherited-label,,15 hp,,2,,135000,,NEEDS_REVIEW,product from inherited-label,"15 hp | 2 hp | 135,000"
+37,2,3,Fire Pumps & Pump Sets,FIRE PUMP,inherited-label,,20 hp,,2,,145000,,NEEDS_REVIEW,product from inherited-label,"20 hp | 3 hp | 145,000"
+37,2,4,Fire Pumps & Pump Sets,FIRE PUMP,inherited-label,,25 hp,,2,,155000,,NEEDS_REVIEW,product from inherited-label,"25 hp | 3 hp | 155,000"
+37,2,5,Fire Pumps & Pump Sets,FIRE PUMP,inherited-label,,30 hp,,2,,170000,,NEEDS_REVIEW,product from inherited-label,"30 hp | 3 hp | 170,000"
+37,2,6,Fire Pumps & Pump Sets,FIRE PUMP,inherited-label,,40 hp,,2,,195000,,NEEDS_REVIEW,product from inherited-label,"40 hp | 5 hp | 195,000"
+37,2,7,Fire Pumps & Pump Sets,FIRE PUMP,inherited-label,,50 hp,,2,,225000,,NEEDS_REVIEW,product from inherited-label,"50 hp | 5 hp | 225,000"
+37,2,8,Fire Pumps & Pump Sets,FIRE PUMP,inherited-label,,60 hp,,2,,250000,,NEEDS_REVIEW,product from inherited-label,"60 hp | 5 hp | 250,000"
+37,3,1,Fire Pumps & Pump Sets,FIRE PUMP,inherited-label,,75 hp,,2,,295000,,NEEDS_REVIEW,product from inherited-label,"75 hp | 5 hp | 295,000"
+38,1,1,Fire Pumps & Pump Sets,UNRESOLVED-S38-T1,unresolved,,75 hp,,2,,860000,,NEEDS_REVIEW,product from unresolved,"75 hp | 5 hp | 860,000"
+38,4,1,Fire Pumps & Pump Sets,FIRE PUMP,inherited-label,,10 hp,,2,,315000,,NEEDS_REVIEW,product from inherited-label,"10 hp | 2 hp | 315,000"
+38,4,2,Fire Pumps & Pump Sets,FIRE PUMP,inherited-label,,15 hp,,2,,335000,,NEEDS_REVIEW,product from inherited-label,"15 hp | 2 hp | 335,000"
+38,4,3,Fire Pumps & Pump Sets,FIRE PUMP,inherited-label,,20 hp,,2,,355000,,NEEDS_REVIEW,product from inherited-label,"20 hp | 3 hp | 355,000"
+38,4,4,Fire Pumps & Pump Sets,FIRE PUMP,inherited-label,,25 hp,,2,,395000,,NEEDS_REVIEW,product from inherited-label,"25 hp | 3 hp | 395,000"
+38,4,5,Fire Pumps & Pump Sets,FIRE PUMP,inherited-label,,30 hp,,2,,430000,,NEEDS_REVIEW,product from inherited-label,"30 hp | 3 hp | 430,000"
+38,4,6,Fire Pumps & Pump Sets,FIRE PUMP,inherited-label,,40 hp,,2,,498000,,NEEDS_REVIEW,product from inherited-label,"40 hp | 5 hp | 498,000"
+38,4,7,Fire Pumps & Pump Sets,FIRE PUMP,inherited-label,,50 hp,,2,,570000,,NEEDS_REVIEW,product from inherited-label,"50 hp | 5 hp | 570,000"
+38,4,8,Fire Pumps & Pump Sets,FIRE PUMP,inherited-label,,60 hp,,2,,670000,,NEEDS_REVIEW,product from inherited-label,"60 hp | 5 hp | 670,000"
+38,6,1,Fire Pumps & Pump Sets,FIRE PUMP,inherited-label,,7.5 hp,,2,,895000,,NEEDS_REVIEW,product from inherited-label,"100 hp | 7.5 hp | 895,000"
+38,7,1,Fire Pumps & Pump Sets,FIRE PUMP,inherited-label,,10 hp,,2,,946000,,NEEDS_REVIEW,product from inherited-label,"125 hp | 10 hp | 946,000"
+38,8,1,Fire Pumps & Pump Sets,FIRE PUMP,inherited-label,,10 hp,,2,,1150000,,NEEDS_REVIEW,product from inherited-label,"150 hp | 10 hp | 1,150,000"
+39,1,1,Fire Pumps & Pump Sets,UNRESOLVED-S39-T1,unresolved,,5 hp,,2,,1380000,,NEEDS_REVIEW,product from unresolved,"147 hp | 5 hp | 1,380,000"
+39,4,1,Fire Pumps & Pump Sets,FIRE PUMP,inherited-label,,27 hp,,2,,670000,,NEEDS_REVIEW,product from inherited-label,"27 hp | 2 hp | 670,000"
+39,4,2,Fire Pumps & Pump Sets,FIRE PUMP,inherited-label,,32 hp,,2,,725000,,NEEDS_REVIEW,product from inherited-label,"32 hp | 2 hp | 725,000"
+39,4,3,Fire Pumps & Pump Sets,FIRE PUMP,inherited-label,,42 hp,,2,,780000,,NEEDS_REVIEW,product from inherited-label,"42 hp | 3 hp | 780,000"
+39,4,4,Fire Pumps & Pump Sets,FIRE PUMP,inherited-label,,57 hp,,2,,885000,,NEEDS_REVIEW,product from inherited-label,"57 hp | 3 hp | 885,000"
+39,4,5,Fire Pumps & Pump Sets,FIRE PUMP,inherited-label,,61 hp,,2,,870000,,NEEDS_REVIEW,product from inherited-label,"61 hp | 3 hp | 870,000"
+39,4,6,Fire Pumps & Pump Sets,FIRE PUMP,inherited-label,,75 hp,,2,,910000,,NEEDS_REVIEW,product from inherited-label,"75 hp | 5 hp | 910,000"
+39,4,7,Fire Pumps & Pump Sets,FIRE PUMP,inherited-label,,96 hp,,2,,930000,,NEEDS_REVIEW,product from inherited-label,"96 hp | 5 hp | 930,000"
+39,4,8,Fire Pumps & Pump Sets,FIRE PUMP,inherited-label,,5 hp,,2,,1110000,,NEEDS_REVIEW,product from inherited-label,"117 hp | 5 hp | 1,110,000"
+39,5,1,Fire Pumps & Pump Sets,FIRE PUMP,inherited-label,,7.5 hp,,2,,1597000,,NEEDS_REVIEW,product from inherited-label,"211 hp | 7.5 hp | 1,597,000"
+40,1,2,Fire Pumps & Pump Sets,Horizontal Split Case Fire Pump Assembly – Electric – Streamplus Brand Australia -,slide-title,Streamplus,30 HP,,1,,520000.00,,NEEDS_REVIEW,product from slide-title,"30 HP | Php 520,000.00"
+40,1,3,Fire Pumps & Pump Sets,Horizontal Split Case Fire Pump Assembly – Electric – Streamplus Brand Australia -,slide-title,Streamplus,40 HP,,1,,540000.00,,NEEDS_REVIEW,product from slide-title,"40 HP | Php 540,000.00"
+40,1,4,Fire Pumps & Pump Sets,Horizontal Split Case Fire Pump Assembly – Electric – Streamplus Brand Australia -,slide-title,Streamplus,50 HP,,1,,620000.00,,NEEDS_REVIEW,product from slide-title,"50 HP | Php 620,000.00"
+40,1,5,Fire Pumps & Pump Sets,Horizontal Split Case Fire Pump Assembly – Electric – Streamplus Brand Australia -,slide-title,Streamplus,60 HP,,1,,685000.00,,NEEDS_REVIEW,product from slide-title,"60 HP | Php 685,000.00"
+40,1,6,Fire Pumps & Pump Sets,Horizontal Split Case Fire Pump Assembly – Electric – Streamplus Brand Australia -,slide-title,Streamplus,75 HP,,1,,730000.00,,NEEDS_REVIEW,product from slide-title,"75 HP | Php 730,000.00"
+40,1,7,Fire Pumps & Pump Sets,Horizontal Split Case Fire Pump Assembly – Electric – Streamplus Brand Australia -,slide-title,Streamplus,,,1,,860000.00,,NEEDS_REVIEW,no size column; product from slide-title,"100 HP | Php 860,000.00"
+40,1,8,Fire Pumps & Pump Sets,Horizontal Split Case Fire Pump Assembly – Electric – Streamplus Brand Australia -,slide-title,Streamplus,,,1,,995000.00,,NEEDS_REVIEW,no size column; product from slide-title,"150 HP | Php 995,000.00"
+41,1,2,Fire Pumps & Pump Sets,Horizontal Split Case Fire Pump Assembly – Electric – PURITY CHINA BRAND-,slide-title,Purity,40 HP -300gpm,,1,,510000.00,,NEEDS_REVIEW,product from slide-title,"40 HP -300gpm | Php 510,000.00"
+41,1,3,Fire Pumps & Pump Sets,Horizontal Split Case Fire Pump Assembly – Electric – PURITY CHINA BRAND-,slide-title,Purity,50 HP -400gpm,,1,,590000.00,,NEEDS_REVIEW,product from slide-title,"50 HP -400gpm | Php 590,000.00"
+41,1,4,Fire Pumps & Pump Sets,Horizontal Split Case Fire Pump Assembly – Electric – PURITY CHINA BRAND-,slide-title,Purity,60 HP -500gpm,,1,,655000.00,,NEEDS_REVIEW,product from slide-title,"60 HP -500gpm | Php 655,000.00"
+41,1,5,Fire Pumps & Pump Sets,Horizontal Split Case Fire Pump Assembly – Electric – PURITY CHINA BRAND-,slide-title,Purity,75 HP -600gpm,,1,,610000.00,,NEEDS_REVIEW,product from slide-title,"75 HP -600gpm | Php 610,000.00"
+41,1,6,Fire Pumps & Pump Sets,Horizontal Split Case Fire Pump Assembly – Electric – PURITY CHINA BRAND-,slide-title,Purity,,,1,,820000.00,,NEEDS_REVIEW,no size column; product from slide-title,"100 HP -750gpm | Php 820,000.00"
+41,1,7,Fire Pumps & Pump Sets,Horizontal Split Case Fire Pump Assembly – Electric – PURITY CHINA BRAND-,slide-title,Purity,,,1,,955000.00,,NEEDS_REVIEW,no size column; product from slide-title,"150 HP -1250gpm | Php 955,000.00"
+42,1,1,Fire Pumps & Pump Sets,Horizontal End Suction Fire Pump Assembly- Electric – Streamplus Brand Australia -,slide-title,Streamplus,20 HP,,1,,305000.00,,NEEDS_REVIEW,product from slide-title,"20 HP | Php 305,000.00"
+42,1,2,Fire Pumps & Pump Sets,Horizontal End Suction Fire Pump Assembly- Electric – Streamplus Brand Australia -,slide-title,Streamplus,25 HP,,1,,325000.00,,NEEDS_REVIEW,product from slide-title,"25 HP | Php 325,000.00"
+42,1,3,Fire Pumps & Pump Sets,Horizontal End Suction Fire Pump Assembly- Electric – Streamplus Brand Australia -,slide-title,Streamplus,30 HP,,1,,335000.00,,NEEDS_REVIEW,product from slide-title,"30 HP | Php 335,000.00"
+42,1,4,Fire Pumps & Pump Sets,Horizontal End Suction Fire Pump Assembly- Electric – Streamplus Brand Australia -,slide-title,Streamplus,40 HP,,1,,370000.00,,NEEDS_REVIEW,product from slide-title,"40 HP | Php 370,000.00"
+42,1,5,Fire Pumps & Pump Sets,Horizontal End Suction Fire Pump Assembly- Electric – Streamplus Brand Australia -,slide-title,Streamplus,50 HP,,1,,405000.00,,NEEDS_REVIEW,product from slide-title,"50 HP | Php 405,000.00"
+42,1,6,Fire Pumps & Pump Sets,Horizontal End Suction Fire Pump Assembly- Electric – Streamplus Brand Australia -,slide-title,Streamplus,60 HP,,1,,435000.00,,NEEDS_REVIEW,product from slide-title,"60 HP | Php 435,000.00"
+42,1,7,Fire Pumps & Pump Sets,Horizontal End Suction Fire Pump Assembly- Electric – Streamplus Brand Australia -,slide-title,Streamplus,75 HP,,1,,485000.00,,NEEDS_REVIEW,product from slide-title,"75 HP | Php 485,000.00"
+42,1,8,Fire Pumps & Pump Sets,Horizontal End Suction Fire Pump Assembly- Electric – Streamplus Brand Australia -,slide-title,Streamplus,,,1,,650000.00,,NEEDS_REVIEW,no size column; product from slide-title,"100 HP | Php 650,000.00"
+42,2,1,Fire Pumps & Pump Sets,Horizontal End Suction Fire Pump Assembly- Electric – Streamplus Brand Australia -,slide-title,Streamplus,10 HP,,1,,240000.00,,NEEDS_REVIEW,product from slide-title,"10 HP | Php 240,000.00"
+42,2,2,Fire Pumps & Pump Sets,Horizontal End Suction Fire Pump Assembly- Electric – Streamplus Brand Australia -,slide-title,Streamplus,15 HP,,1,,270000.00,,NEEDS_REVIEW,product from slide-title,"15 HP | Php 270,000.00"
+43,1,1,Fire Pumps & Pump Sets,Horizontal End Suction and Vertical Inline Fire Pump Assembly – Electric– Purity Brand China -,slide-title,Purity,20 HP,,1,,215000,,NEEDS_REVIEW,product from slide-title,"20 HP | Php 215,000"
+43,1,2,Fire Pumps & Pump Sets,Horizontal End Suction and Vertical Inline Fire Pump Assembly – Electric– Purity Brand China -,slide-title,Purity,25 HP,,1,,228000,,NEEDS_REVIEW,product from slide-title,"25 HP | Php 228,000"
+43,1,3,Fire Pumps & Pump Sets,Horizontal End Suction and Vertical Inline Fire Pump Assembly – Electric– Purity Brand China -,slide-title,Purity,30 HP,,1,,240000,,NEEDS_REVIEW,product from slide-title,"30 HP | Php 240,000"
+43,1,4,Fire Pumps & Pump Sets,Horizontal End Suction and Vertical Inline Fire Pump Assembly – Electric– Purity Brand China -,slide-title,Purity,40 HP,,1,,270000,,NEEDS_REVIEW,product from slide-title,"40 HP | Php 270,000"
+43,1,5,Fire Pumps & Pump Sets,Horizontal End Suction and Vertical Inline Fire Pump Assembly – Electric– Purity Brand China -,slide-title,Purity,50 HP,,1,,290000,,NEEDS_REVIEW,product from slide-title,"50 HP | Php 290,000"
+43,1,6,Fire Pumps & Pump Sets,Horizontal End Suction and Vertical Inline Fire Pump Assembly – Electric– Purity Brand China -,slide-title,Purity,60 HP,,1,,318000,,NEEDS_REVIEW,product from slide-title,"60 HP | Php 318,000"
+43,1,7,Fire Pumps & Pump Sets,Horizontal End Suction and Vertical Inline Fire Pump Assembly – Electric– Purity Brand China -,slide-title,Purity,75 HP,,1,,353000,,NEEDS_REVIEW,product from slide-title,"75 HP | Php 353,000"
+43,1,8,Fire Pumps & Pump Sets,Horizontal End Suction and Vertical Inline Fire Pump Assembly – Electric– Purity Brand China -,slide-title,Purity,,,1,,517500,,NEEDS_REVIEW,no size column; product from slide-title,"100 HP | Php 517,500"
+43,2,1,Fire Pumps & Pump Sets,Horizontal End Suction and Vertical Inline Fire Pump Assembly – Electric– Purity Brand China -,slide-title,Purity,10 HP,,1,,165000,,NEEDS_REVIEW,product from slide-title,"10 HP | Php 165,000"
+43,2,2,Fire Pumps & Pump Sets,Horizontal End Suction and Vertical Inline Fire Pump Assembly – Electric– Purity Brand China -,slide-title,Purity,15 HP,,1,,175000,,NEEDS_REVIEW,product from slide-title,"15 HP | Php 175,000"
+46,1,1,Fire Pumps & Pump Sets,Horizontal End Suction and Vertical Inline Fire Pump Assembly – Electric– Purity Brand China -,slide-title,Purity,20 HP,,1,,225000,,NEEDS_REVIEW,product from slide-title,"20 HP | Php 225,000"
+46,1,2,Fire Pumps & Pump Sets,Horizontal End Suction and Vertical Inline Fire Pump Assembly – Electric– Purity Brand China -,slide-title,Purity,25 HP,,1,,240000,,NEEDS_REVIEW,product from slide-title,"25 HP | Php 240,000"
+46,1,3,Fire Pumps & Pump Sets,Horizontal End Suction and Vertical Inline Fire Pump Assembly – Electric– Purity Brand China -,slide-title,Purity,30 HP,,1,,255000,,NEEDS_REVIEW,product from slide-title,"30 HP | Php 255,000"
+46,1,4,Fire Pumps & Pump Sets,Horizontal End Suction and Vertical Inline Fire Pump Assembly – Electric– Purity Brand China -,slide-title,Purity,40 HP,,1,,290000,,NEEDS_REVIEW,product from slide-title,"40 HP | Php 290,000"
+46,1,5,Fire Pumps & Pump Sets,Horizontal End Suction and Vertical Inline Fire Pump Assembly – Electric– Purity Brand China -,slide-title,Purity,50 HP,,1,,310000,,NEEDS_REVIEW,product from slide-title,"50 HP | Php 310,000"
+46,2,1,Fire Pumps & Pump Sets,Horizontal End Suction and Vertical Inline Fire Pump Assembly – Electric– Purity Brand China -,slide-title,Purity,10 HP,,1,,170000,,NEEDS_REVIEW,product from slide-title,"10 HP | Php 170,000"
+46,2,2,Fire Pumps & Pump Sets,Horizontal End Suction and Vertical Inline Fire Pump Assembly – Electric– Purity Brand China -,slide-title,Purity,15 HP,,1,,190000,,NEEDS_REVIEW,product from slide-title,"15 HP | Php 190,000"
+47,1,1,Fire Pumps & Pump Sets,Horizontal End Suction Fire Pump Assembly – Electric – Purity Brand China -,slide-title,Purity,20 HP,,1,,260000,,NEEDS_REVIEW,product from slide-title,"20 HP | Php 260,000"
+47,1,2,Fire Pumps & Pump Sets,Horizontal End Suction Fire Pump Assembly – Electric – Purity Brand China -,slide-title,Purity,25 HP,,1,,295000,,NEEDS_REVIEW,product from slide-title,"25 HP | Php 295,000"
+47,1,3,Fire Pumps & Pump Sets,Horizontal End Suction Fire Pump Assembly – Electric – Purity Brand China -,slide-title,Purity,30 HP,,1,,305000,,NEEDS_REVIEW,product from slide-title,"30 HP | Php 305,000"
+47,1,4,Fire Pumps & Pump Sets,Horizontal End Suction Fire Pump Assembly – Electric – Purity Brand China -,slide-title,Purity,40 HP,,1,,320000,,NEEDS_REVIEW,product from slide-title,"40 HP | Php 320,000"
+47,1,5,Fire Pumps & Pump Sets,Horizontal End Suction Fire Pump Assembly – Electric – Purity Brand China -,slide-title,Purity,50 HP,,1,,360000,,NEEDS_REVIEW,product from slide-title,"50 HP | Php 360,000"
+47,1,6,Fire Pumps & Pump Sets,Horizontal End Suction Fire Pump Assembly – Electric – Purity Brand China -,slide-title,Purity,60 HP,,1,,405000,,NEEDS_REVIEW,product from slide-title,"60 HP | Php 405,000"
+47,1,7,Fire Pumps & Pump Sets,Horizontal End Suction Fire Pump Assembly – Electric – Purity Brand China -,slide-title,Purity,75 HP,,1,,455000,,NEEDS_REVIEW,product from slide-title,"75 HP | Php 455,000"
+47,1,8,Fire Pumps & Pump Sets,Horizontal End Suction Fire Pump Assembly – Electric – Purity Brand China -,slide-title,Purity,,,1,,580000,,NEEDS_REVIEW,no size column; product from slide-title,"100 HP | Php 580,000"
+47,2,1,Fire Pumps & Pump Sets,Horizontal End Suction Fire Pump Assembly – Electric – Purity Brand China -,slide-title,Purity,10 HP,,1,,220000,,NEEDS_REVIEW,product from slide-title,"10 HP | Php 220,000"
+47,2,2,Fire Pumps & Pump Sets,Horizontal End Suction Fire Pump Assembly – Electric – Purity Brand China -,slide-title,Purity,15 HP,,1,,245000,,NEEDS_REVIEW,product from slide-title,"15 HP | Php 245,000"
+48,1,2,Fire Pumps & Pump Sets,Horizontal End Suction Fire Pump Assembly- Diesel Engine Driven – Streamplus Brand Australia -,slide-title,Streamplus,,,1,,480000.00,,NEEDS_REVIEW,no size column; product from slide-title,"25 HP – 200 GPM | Php 480,000.00"
+48,1,3,Fire Pumps & Pump Sets,Horizontal End Suction Fire Pump Assembly- Diesel Engine Driven – Streamplus Brand Australia -,slide-title,Streamplus,,,1,,498000.00,,NEEDS_REVIEW,no size column; product from slide-title,"30 HP – 250 GPM | Php 498,000.00"
+48,1,4,Fire Pumps & Pump Sets,Horizontal End Suction Fire Pump Assembly- Diesel Engine Driven – Streamplus Brand Australia -,slide-title,Streamplus,,,1,,532000.00,,NEEDS_REVIEW,no size column; product from slide-title,"40 HP -300 GPM | Php 532,000.00"
+48,1,5,Fire Pumps & Pump Sets,Horizontal End Suction Fire Pump Assembly- Diesel Engine Driven – Streamplus Brand Australia -,slide-title,Streamplus,,,1,,660000.00,,NEEDS_REVIEW,no size column; product from slide-title,"50 HP – 500 GPM | Php 660,000.00"
+48,1,6,Fire Pumps & Pump Sets,Horizontal End Suction Fire Pump Assembly- Diesel Engine Driven – Streamplus Brand Australia -,slide-title,Streamplus,,,1,,740000.00,,NEEDS_REVIEW,no size column; product from slide-title,"60 HP - 600 GPM | Php 740,000.00"
+48,1,7,Fire Pumps & Pump Sets,Horizontal End Suction Fire Pump Assembly- Diesel Engine Driven – Streamplus Brand Australia -,slide-title,Streamplus,75 HP,,1,,820000.00,,NEEDS_REVIEW,product from slide-title,"75 HP | Php 820,000.00"
+48,1,8,Fire Pumps & Pump Sets,Horizontal End Suction Fire Pump Assembly- Diesel Engine Driven – Streamplus Brand Australia -,slide-title,Streamplus,,,1,,940000.00,,NEEDS_REVIEW,no size column; product from slide-title,"100 HP | Php 940,000.00"
+48,2,1,Fire Pumps & Pump Sets,Horizontal End Suction Fire Pump Assembly- Diesel Engine Driven – Streamplus Brand Australia -,slide-title,Streamplus,,,1,,532000.00,,NEEDS_REVIEW,no size column; product from slide-title,"40 HP -300 GPM | Php 532,000.00"
+49,1,2,Fire Pumps & Pump Sets,SET WITH JOCKEY ONLY,own-label,,,SET WITH JOCKEY ONLY,1,,750000.00,,NEEDS_REVIEW,no size column,"59 BHP -400 GPM | Php 750,000.00"
+49,1,3,Fire Pumps & Pump Sets,SET WITH JOCKEY ONLY,own-label,,,SET WITH JOCKEY ONLY,1,,800000.00,,NEEDS_REVIEW,no size column,"60 BHP –500 GPM | Php 800,000.00"
+49,1,4,Fire Pumps & Pump Sets,SET WITH JOCKEY ONLY,own-label,,,SET WITH JOCKEY ONLY,1,,900000.00,,NEEDS_REVIEW,no size column,"80 BHP - 750 GPM | Php 900,000.00"
+49,2,2,Fire Pumps & Pump Sets,SET WITH JOCKEY ONLY,inherited-label,,,ASSEMBLY,1,,880000.00,,NEEDS_REVIEW,no size column; product from inherited-label,"59 BHP -400 GPM | Php 880,000.00"
+49,2,3,Fire Pumps & Pump Sets,SET WITH JOCKEY ONLY,inherited-label,,,ASSEMBLY,1,,940000.00,,NEEDS_REVIEW,no size column; product from inherited-label,"61 BHP –500 GPM | Php 940,000.00"
+49,2,4,Fire Pumps & Pump Sets,SET WITH JOCKEY ONLY,inherited-label,,,ASSEMBLY,1,,1050000.00,,NEEDS_REVIEW,no size column; product from inherited-label,"80 BHP - 750 GPM | Php 1,050,000.00"
+50,1,2,Fire Pumps & Pump Sets,Horizontal End Suction Fire Pump Assembly- Diesel Driven – PURITY Brand China -,slide-title,Purity,,,1,,430000.00,,NEEDS_REVIEW,no size column; product from slide-title,"25 HP – 200 GPM | Php 430,000.00"
+50,1,3,Fire Pumps & Pump Sets,Horizontal End Suction Fire Pump Assembly- Diesel Driven – PURITY Brand China -,slide-title,Purity,,,1,,448000.00,,NEEDS_REVIEW,no size column; product from slide-title,"30 HP – 250 GPM | Php 448,000.00"
+50,1,4,Fire Pumps & Pump Sets,Horizontal End Suction Fire Pump Assembly- Diesel Driven – PURITY Brand China -,slide-title,Purity,,,1,,477000.00,,NEEDS_REVIEW,no size column; product from slide-title,"38 HP -300 GPM | Php 477,000.00"
+50,1,5,Fire Pumps & Pump Sets,Horizontal End Suction Fire Pump Assembly- Diesel Driven – PURITY Brand China -,slide-title,Purity,,,1,,590000.00,,NEEDS_REVIEW,no size column; product from slide-title,"48 HP – 400 GPM | Php 590,000.00"
+50,1,6,Fire Pumps & Pump Sets,Horizontal End Suction Fire Pump Assembly- Diesel Driven – PURITY Brand China -,slide-title,Purity,,,1,,665000.00,,NEEDS_REVIEW,no size column; product from slide-title,"58 HP - 500 GPM | Php 665,000.00"
+50,1,7,Fire Pumps & Pump Sets,Horizontal End Suction Fire Pump Assembly- Diesel Driven – PURITY Brand China -,slide-title,Purity,,,1,,735000.00,,NEEDS_REVIEW,no size column; product from slide-title,"68 HP - 600 GPM | Php 735,000.00"
+50,1,8,Fire Pumps & Pump Sets,Horizontal End Suction Fire Pump Assembly- Diesel Driven – PURITY Brand China -,slide-title,Purity,,,1,,800000.00,,NEEDS_REVIEW,no size column; product from slide-title,"88 HP -750 GPM | Php 800,000.00"
+51,1,2,Hardware & Fasteners,LOOP HANGER,own-label,,3/4,,1,,13.00,,PENDING,,3/4 | 13.00
+51,1,3,Hardware & Fasteners,LOOP HANGER,own-label,,1,,1,,17.00,,PENDING,,1 | 17.00
+51,1,4,Hardware & Fasteners,LOOP HANGER,own-label,,1 ¼,,1,,21.25,,PENDING,,1 ¼ | 21.25
+51,1,5,Hardware & Fasteners,LOOP HANGER,own-label,,1 ½,,1,,27.00,,PENDING,,1 ½ | 27.00
+51,1,6,Hardware & Fasteners,LOOP HANGER,own-label,,2,,1,,31.90,,PENDING,,2 | 31.90
+51,1,7,Hardware & Fasteners,LOOP HANGER,own-label,,2 ½,,1,,38.25,,PENDING,,2 ½ | 38.25
+51,1,8,Hardware & Fasteners,LOOP HANGER,own-label,,3,,1,,48.50,,PENDING,,3 | 48.50
+51,1,9,Hardware & Fasteners,LOOP HANGER,own-label,,4,,1,,58.20,,PENDING,,4 | 58.20
+51,1,10,Hardware & Fasteners,LOOP HANGER,own-label,,6,,1,,90.00,,PENDING,,6 | 90.00
+51,2,1,Hardware & Fasteners,LOOP HANGER,inherited-label,,2 ½,,1,,70.00,,NEEDS_REVIEW,product from inherited-label,2 ½ | 70.00
+51,2,2,Hardware & Fasteners,LOOP HANGER,inherited-label,,3,,1,,105,,NEEDS_REVIEW,product from inherited-label,3 | 105
+51,2,3,Hardware & Fasteners,LOOP HANGER,inherited-label,,4,,1,,143,,NEEDS_REVIEW,product from inherited-label,4 | 143
+51,2,4,Hardware & Fasteners,LOOP HANGER,inherited-label,,6,,1,,215,,NEEDS_REVIEW,product from inherited-label,6 | 215
+51,2,5,Hardware & Fasteners,LOOP HANGER,inherited-label,,8',,1,,430,,NEEDS_REVIEW,product from inherited-label,8' | 430
+51,4,2,Hardware & Fasteners,CLEVIS HANGER,inherited-label,,,,1,,20.00,,NEEDS_REVIEW,no size column; product from inherited-label,1/8 x 1 | 20.00
+51,4,3,Hardware & Fasteners,CLEVIS HANGER,inherited-label,,,,1,,24.75,,NEEDS_REVIEW,no size column; product from inherited-label,1/8 x 1 ¼ | 24.75
+51,4,4,Hardware & Fasteners,CLEVIS HANGER,inherited-label,,,,1,,29.50,,NEEDS_REVIEW,no size column; product from inherited-label,1/8 x 1 ½ | 29.50
+51,4,5,Hardware & Fasteners,CLEVIS HANGER,inherited-label,,,,1,,34.00,,NEEDS_REVIEW,no size column; product from inherited-label,3/8 x 2 | 34.00
+51,4,6,Hardware & Fasteners,CLEVIS HANGER,inherited-label,,,,1,,38.00,,NEEDS_REVIEW,no size column; product from inherited-label,3/8 x 2 ½ | 38.00
+51,4,7,Hardware & Fasteners,CLEVIS HANGER,inherited-label,,,,1,,42.50,,NEEDS_REVIEW,no size column; product from inherited-label,3/8 x 3 | 42.50
+51,5,1,Hardware & Fasteners,CLEVIS HANGER,inherited-label,,,,1,,77.40,,NEEDS_REVIEW,no size column; product from inherited-label,3/8 x 6 | 77.40
+51,5,2,Hardware & Fasteners,CLEVIS HANGER,inherited-label,,,,1,,128.00,,NEEDS_REVIEW,no size column; product from inherited-label,3/8 x 8 | 128.00
+51,5,3,Hardware & Fasteners,CLEVIS HANGER,inherited-label,,,,1,,149.00,,NEEDS_REVIEW,no size column; product from inherited-label,1/2 x 2 ½ | 149.00
+51,5,4,Hardware & Fasteners,CLEVIS HANGER,inherited-label,,,,1,,178.00,,NEEDS_REVIEW,no size column; product from inherited-label,1/ 2 x 3 | 178.00
+51,5,5,Hardware & Fasteners,CLEVIS HANGER,inherited-label,,,,1,,201.00,,NEEDS_REVIEW,no size column; product from inherited-label,1/2 x 4 | 201.00
+51,5,6,Hardware & Fasteners,CLEVIS HANGER,inherited-label,,,,1,,224.00,,NEEDS_REVIEW,no size column; product from inherited-label,1/2 x 6 | 224.00
+51,5,7,Hardware & Fasteners,CLEVIS HANGER,inherited-label,,,,1,,265.00,,NEEDS_REVIEW,no size column; product from inherited-label,1/2 x 8 | 265.00
+51,6,2,Hardware & Fasteners,GRIP ANCHOR,own-label,,3/8,,1,,6.50,,PENDING,,3/8 | 6.50
+51,6,3,Hardware & Fasteners,GRIP ANCHOR,own-label,,1/2,,1,,12.00,,PENDING,,1/2 | 12.00
+51,6,4,Hardware & Fasteners,GRIP ANCHOR,own-label,,5/8,,1,,21.00,,PENDING,,5/8 | 21.00
+51,7,2,Hardware & Fasteners,DYNA BOLT,own-label,,3/8,,1,,42.00,,PENDING,,3/8 | 42.00
+51,7,3,Hardware & Fasteners,DYNA BOLT,own-label,,1/2,,1,,49.00,,PENDING,,1/2 | 49.00
+51,7,4,Hardware & Fasteners,DYNA BOLT,own-label,,5/8,,1,,3.00,,PENDING,,5/8 | 3.00
+52,1,2,Hardware & Fasteners,BOLT NUT WASHER,own-label,,,,1,,6.10,,NEEDS_REVIEW,no size column,3/8 x 1 | 6.10
+52,1,3,Hardware & Fasteners,BOLT NUT WASHER,own-label,,,,1,,9.50,,NEEDS_REVIEW,no size column,3/8 x 1 ½ | 9.50
+52,1,4,Hardware & Fasteners,BOLT NUT WASHER,own-label,,,,1,,13.50,,NEEDS_REVIEW,no size column,3/8 x 2 | 13.50
+52,1,5,Hardware & Fasteners,BOLT NUT WASHER,own-label,,,,1,,20.00,,NEEDS_REVIEW,no size column,1/2 x 2 | 20.00
+52,1,6,Hardware & Fasteners,BOLT NUT WASHER,own-label,,,,1,,23.00,,NEEDS_REVIEW,no size column,1/2 x 2 ½ | 23.00
+52,1,7,Hardware & Fasteners,BOLT NUT WASHER,own-label,,,,1,,25.00,,NEEDS_REVIEW,no size column,1/2 x 3 | 25.00
+52,1,8,Hardware & Fasteners,BOLT NUT WASHER,own-label,,,,1,,32.00,,NEEDS_REVIEW,no size column,1/2 x 4 | 32.00
+52,2,1,Hardware & Fasteners,BOLT NUT WASHER,inherited-label,,,,1,,40.00,,NEEDS_REVIEW,no size column; product from inherited-label,1/2 x 6 | 40.00
+52,2,2,Hardware & Fasteners,BOLT NUT WASHER,inherited-label,,,,1,,28.00,,NEEDS_REVIEW,no size column; product from inherited-label,5/8 x 2 | 28.00
+52,2,3,Hardware & Fasteners,BOLT NUT WASHER,inherited-label,,,,1,,32.00,,NEEDS_REVIEW,no size column; product from inherited-label,5/8 x 2 1/2 | 32.00
+52,2,4,Hardware & Fasteners,BOLT NUT WASHER,inherited-label,,,,1,,38.00,,NEEDS_REVIEW,no size column; product from inherited-label,5/8 x 3 | 38.00
+52,2,5,Hardware & Fasteners,BOLT NUT WASHER,inherited-label,,,,1,,44.00,,NEEDS_REVIEW,no size column; product from inherited-label,5/8 x 4 | 44.00
+52,2,6,Hardware & Fasteners,BOLT NUT WASHER,inherited-label,,,,1,,55.00,,NEEDS_REVIEW,no size column; product from inherited-label,5/8 x 6 | 55.00
+52,2,7,Hardware & Fasteners,BOLT NUT WASHER,inherited-label,,,,1,,65.00,,NEEDS_REVIEW,no size column; product from inherited-label,5/8 x 8 | 65.00
+52,3,1,Hardware & Fasteners,BOLT NUT WASHER,inherited-label,,,,1,,55.00,,NEEDS_REVIEW,no size column; product from inherited-label,3/4 x 3 | 55.00
+52,3,2,Hardware & Fasteners,BOLT NUT WASHER,inherited-label,,,,1,,69.00,,NEEDS_REVIEW,no size column; product from inherited-label,3/4 x 4 | 69.00
+52,3,3,Hardware & Fasteners,BOLT NUT WASHER,inherited-label,,,,1,,88.00,,NEEDS_REVIEW,no size column; product from inherited-label,3/4 x 6 | 88.00
+52,3,4,Hardware & Fasteners,BOLT NUT WASHER,inherited-label,,,,1,,112.00,,NEEDS_REVIEW,no size column; product from inherited-label,3/4 x 8 | 112.00
+52,4,2,Hardware & Fasteners,BOLT NUT WASHER,inherited-label,,3/8,NUT,1,,3.00,,NEEDS_REVIEW,price column 1 (NUT); product from inherited-label,3/8 | 3.00 | 2.50
+52,4,2,Hardware & Fasteners,BOLT NUT WASHER,inherited-label,,3/8,WASHER,2,,2.50,,NEEDS_REVIEW,price column 2 (WASHER); product from inherited-label,3/8 | 3.00 | 2.50
+52,4,3,Hardware & Fasteners,BOLT NUT WASHER,inherited-label,,1/2,NUT,1,,5.00,,NEEDS_REVIEW,price column 1 (NUT); product from inherited-label,1/2 | 5.00 | 4.00
+52,4,3,Hardware & Fasteners,BOLT NUT WASHER,inherited-label,,1/2,WASHER,2,,4.00,,NEEDS_REVIEW,price column 2 (WASHER); product from inherited-label,1/2 | 5.00 | 4.00
+52,4,4,Hardware & Fasteners,BOLT NUT WASHER,inherited-label,,5/8,NUT,1,,8.00,,NEEDS_REVIEW,price column 1 (NUT); product from inherited-label,5/8 | 8.00 | 7.00
+52,4,4,Hardware & Fasteners,BOLT NUT WASHER,inherited-label,,5/8,WASHER,2,,7.00,,NEEDS_REVIEW,price column 2 (WASHER); product from inherited-label,5/8 | 8.00 | 7.00
+52,4,5,Hardware & Fasteners,BOLT NUT WASHER,inherited-label,,3/4,NUT,1,,12.00,,NEEDS_REVIEW,price column 1 (NUT); product from inherited-label,3/4 | 12.00 | 8.00
+52,4,5,Hardware & Fasteners,BOLT NUT WASHER,inherited-label,,3/4,WASHER,2,,8.00,,NEEDS_REVIEW,price column 2 (WASHER); product from inherited-label,3/4 | 12.00 | 8.00
+52,5,1,Hardware & Fasteners,BOLT NUT WASHER,inherited-label,,1 x 1'',,1,,12.00,,NEEDS_REVIEW,product from inherited-label,1 x 1'' | 12.00
+52,5,2,Hardware & Fasteners,BOLT NUT WASHER,inherited-label,,,,1,,14.75,,NEEDS_REVIEW,no size column; product from inherited-label,1 ¼ x 1 | 14.75
+52,5,3,Hardware & Fasteners,BOLT NUT WASHER,inherited-label,,,,1,,21.25,,NEEDS_REVIEW,no size column; product from inherited-label,1 ½ x 1 | 21.25
+52,5,4,Hardware & Fasteners,BOLT NUT WASHER,inherited-label,,,,1,,30.00,,NEEDS_REVIEW,no size column; product from inherited-label,2 x 1 | 30.00
+52,5,5,Hardware & Fasteners,BOLT NUT WASHER,inherited-label,,,,1,,55.00,,NEEDS_REVIEW,no size column; product from inherited-label,2 ½ x 1 | 55.00
+52,5,6,Hardware & Fasteners,BOLT NUT WASHER,inherited-label,,,,1,,75.00,,NEEDS_REVIEW,no size column; product from inherited-label,3 x 1 | 75.00
+52,5,7,Hardware & Fasteners,BOLT NUT WASHER,inherited-label,,,,1,,106.00,,NEEDS_REVIEW,no size column; product from inherited-label,4 x 1 | 106.00
+52,5,8,Hardware & Fasteners,BOLT NUT WASHER,inherited-label,,,,1,,145.00,,NEEDS_REVIEW,no size column; product from inherited-label,6 x 1 | 145.00
+52,6,1,Hardware & Fasteners,BOLT NUT WASHER,inherited-label,,,,1,,680.00,,NEEDS_REVIEW,no size column; product from inherited-label,1 x 3 /16 | 680.00
+52,6,2,Hardware & Fasteners,BOLT NUT WASHER,inherited-label,,1 x ¼ (cm),,1,,790.00,,NEEDS_REVIEW,product from inherited-label,1 x ¼ (cm) | 790.00
+52,6,3,Hardware & Fasteners,BOLT NUT WASHER,inherited-label,,,,1,,880.00,,NEEDS_REVIEW,no size column; product from inherited-label,1 ½ x 3/16 | 880.00
+52,6,4,Hardware & Fasteners,BOLT NUT WASHER,inherited-label,,1 ½ x ¼ (cm),,1,,1100.00,,NEEDS_REVIEW,product from inherited-label,"1 ½ x ¼ (cm) | 1,100.00"
+52,6,5,Hardware & Fasteners,BOLT NUT WASHER,inherited-label,,,,1,,1140.00,,NEEDS_REVIEW,no size column; product from inherited-label,"2 x 3/16 | 1,140.00"
+52,6,6,Hardware & Fasteners,BOLT NUT WASHER,inherited-label,,2 x ¼ (cm),,1,,1480.00,,NEEDS_REVIEW,product from inherited-label,"2 x ¼ (cm) | 1,480.00"
+52,6,7,Hardware & Fasteners,BOLT NUT WASHER,inherited-label,,,,1,,1457.00,,NEEDS_REVIEW,no size column; product from inherited-label,"2 ½ x 3/16 | 1,457.00"
+52,6,8,Hardware & Fasteners,BOLT NUT WASHER,inherited-label,,2 ½ x ¼ (cm),,1,,1884.00,,NEEDS_REVIEW,product from inherited-label,"2 ½ x ¼ (cm) | 1,884.00"
+53,1,2,Electrical,EMT 1 hole Clamp,own-label,,½,,1,,15.00,,PENDING,,½ | 15.00
+53,1,3,Electrical,EMT 1 hole Clamp,own-label,,¾,,1,,20.00,,PENDING,,¾ | 20.00
+53,1,4,Electrical,EMT 1 hole Clamp,own-label,,1,,1,,25.00,,PENDING,,1 | 25.00
+53,2,2,Electrical,EMT 2 holes Clamp,own-label,,½,,1,,17.00,,PENDING,,½ | 17.00
+53,2,3,Electrical,EMT 2 holes Clamp,own-label,,¾,,1,,22.00,,PENDING,,¾ | 22.00
+53,2,4,Electrical,EMT 2 holes Clamp,own-label,,1,,1,,28.00,,PENDING,,1 | 28.00
+53,3,2,Electrical,FULL THREAD,own-label,,3/8,ROD,1,,120.00,,PENDING,,3/8 | 120.00
+53,3,3,Electrical,FULL THREAD,own-label,,1/2,ROD,1,,138.00,,PENDING,,1/2 | 138.00
+53,3,4,Electrical,FULL THREAD,own-label,,5/8,ROD,1,,190.00,,PENDING,,5/8 | 190.00
+53,4,2,Electrical,EMT PIPE,own-label,,1/2'',ROD,1,,105.00,,PENDING,,1/2'' | 105.00
+53,4,3,Electrical,EMT PIPE,own-label,,¾'',ROD,1,,137.00,,PENDING,,¾'' | 137.00
+53,4,4,Electrical,EMT PIPE,own-label,,1'',ROD,1,,225.00,,PENDING,,1'' | 225.00
+53,5,1,Electrical,EMT PIPE,inherited-label,,1 ¼,,1,,360.00,,NEEDS_REVIEW,product from inherited-label,1 ¼ | 360.00
+53,5,2,Electrical,EMT PIPE,inherited-label,,1 ½,,1,,410.00,,NEEDS_REVIEW,product from inherited-label,1 ½ | 410.00
+53,5,3,Electrical,EMT PIPE,inherited-label,,2'',,1,,555.00,,NEEDS_REVIEW,product from inherited-label,2'' | 555.00
+53,6,2,Electrical,UTILITY BOX w/ cover,own-label,,,,0,,65.00,,NEEDS_REVIEW,no size column,65.00
+53,7,2,Electrical,SQUARE BOX 4 X 4,own-label,,,,0,,85.00,,NEEDS_REVIEW,no size column,85.00
+53,8,2,Electrical,FLEXIBLE HOSE,own-label,,,,1,,650.00,,NEEDS_REVIEW,no size column,1/2 30 Meters | 650.00
+53,8,3,Electrical,FLEXIBLE HOSE,own-label,,3/4,,1,,875.00,,PENDING,,3/4 | 875.00
+53,8,4,Electrical,FLEXIBLE HOSE,own-label,,1,,1,,1400.00,,PENDING,,"1 | 1,400.00"
+53,11,2,Electrical,FLEXIBLE HOSE,inherited-label,,1,COUPLING,1,,25.00,,NEEDS_REVIEW,product from inherited-label,1 | 25.00
+53,11,3,Electrical,FLEXIBLE HOSE,inherited-label,,1/2,COUPLING,1,,15.00,,NEEDS_REVIEW,product from inherited-label,1/2 | 15.00
+53,11,4,Electrical,FLEXIBLE HOSE,inherited-label,,3/4,COUPLING,1,,20.00,,NEEDS_REVIEW,product from inherited-label,3/4 | 20.00
+53,12,1,Electrical,FLEXIBLE HOSE,inherited-label,,1 1/4,,1,,75.00,,NEEDS_REVIEW,product from inherited-label,1 1/4 | 75.00
+53,12,2,Electrical,FLEXIBLE HOSE,inherited-label,,1 1/2,,1,,102.00,,NEEDS_REVIEW,product from inherited-label,1 1/2 | 102.00
+53,12,3,Electrical,FLEXIBLE HOSE,inherited-label,,2,,1,,140.00,,NEEDS_REVIEW,product from inherited-label,2 | 140.00
+53,14,2,Electrical,FLEXIBLE HOSE,inherited-label,,1,CONNECTOR,1,,35.00,,NEEDS_REVIEW,product from inherited-label,1 | 35.00
+53,14,3,Electrical,FLEXIBLE HOSE,inherited-label,,1/2,CONNECTOR,1,,20.00,,NEEDS_REVIEW,product from inherited-label,1/2 | 20.00
+53,14,4,Electrical,FLEXIBLE HOSE,inherited-label,,3/4,CONNECTOR,1,,28.00,,NEEDS_REVIEW,product from inherited-label,3/4 | 28.00
+53,15,2,Electrical,JUNCTION BOX,own-label,,,,0,,55.00,,NEEDS_REVIEW,no size column,55.00
+54,2,2,Electrical,TF WIRE SINGLE,own-label,,,TF WIRE SINGLE,0,,1780,,NEEDS_REVIEW,no size column,"1,780"
+54,2,3,Electrical,TF WIRE SINGLE,own-label,,,TF WIRE SINGLE,0,,2200,,NEEDS_REVIEW,no size column,"2,200"
+54,4,1,Hardware & Fasteners,PRIMER PAINT 1 gal.,own-label,,,,1,,650.00,,NEEDS_REVIEW,no size column,PRIMER PAINT 1 gal. | 650.00
+54,4,2,Hardware & Fasteners,PRIMER PAINT 1 gal.,own-label,,,,1,,190.00,,NEEDS_REVIEW,no size column,1 liter. | 190.00
+54,4,3,Hardware & Fasteners,PRIMER PAINT 1 gal.,own-label,,,,1,,1100.00,,NEEDS_REVIEW,no size column,"INTERNATIONAL 1 gal. | 1,100.00"
+54,4,4,Hardware & Fasteners,PRIMER PAINT 1 gal.,own-label,,,,1,,285.00,,NEEDS_REVIEW,no size column,1 liter | 285.00
+54,4,5,Hardware & Fasteners,PRIMER PAINT 1 gal.,own-label,,,,1,,705.00,,NEEDS_REVIEW,no size column,PAINT THINNER 1 gal. | 705.00
+54,4,6,Hardware & Fasteners,PRIMER PAINT 1 gal.,own-label,,,,1,,115.00,,NEEDS_REVIEW,no size column,1 bottle | 115.00
+54,5,2,Hardware & Fasteners,PRIMER PAINT 1 gal.,inherited-label,,8'',SBR,1,,135.00,,NEEDS_REVIEW,product from inherited-label,8'' | 135.00
+54,5,3,Hardware & Fasteners,PRIMER PAINT 1 gal.,inherited-label,,6'',SBR,1,,105.00,,NEEDS_REVIEW,product from inherited-label,6'' | 105.00
+54,5,4,Hardware & Fasteners,PRIMER PAINT 1 gal.,inherited-label,,4'',SBR,1,,85.00,,NEEDS_REVIEW,product from inherited-label,4'' | 85.00
+54,5,5,Hardware & Fasteners,PRIMER PAINT 1 gal.,inherited-label,,3'',SBR,1,,75.00,,NEEDS_REVIEW,product from inherited-label,3'' | 75.00
+54,5,6,Hardware & Fasteners,PRIMER PAINT 1 gal.,inherited-label,,2 ½'',SBR,1,,60.00,,NEEDS_REVIEW,product from inherited-label,2 ½'' | 60.00
+54,5,7,Hardware & Fasteners,PRIMER PAINT 1 gal.,inherited-label,,2'',SBR,1,,50.00,,NEEDS_REVIEW,product from inherited-label,2'' | 50.00
+54,5,8,Hardware & Fasteners,PRIMER PAINT 1 gal.,inherited-label,,1 ½ - 1'',SBR,1,,45.00,,NEEDS_REVIEW,product from inherited-label,1 ½ - 1'' | 45.00
+55,1,2,"Tools, Equipment & PPE",WELDING GLOVES,own-label,,,,0,,240.00,,NEEDS_REVIEW,no size column,240.00
+55,2,2,"Tools, Equipment & PPE",WELDING GLOVES,inherited-label,,,,0,,38.00,,NEEDS_REVIEW,no size column; product from inherited-label,38.00
+55,3,2,"Tools, Equipment & PPE",WELDING GOWN,own-label,,,,0,,1240.00,,NEEDS_REVIEW,no size column,"1,240.00"
+55,4,2,"Tools, Equipment & PPE",WELDING GOWN,inherited-label,,,,0,,1040.00,,NEEDS_REVIEW,no size column; product from inherited-label,1040.00
+55,5,2,"Tools, Equipment & PPE",SAFETY SHOES,own-label,,,,0,,480.00,,NEEDS_REVIEW,no size column,480.00
+55,6,2,"Tools, Equipment & PPE",DARK GLASS,own-label,,,,0,,20.00,,NEEDS_REVIEW,no size column,20.00
+55,7,2,"Tools, Equipment & PPE",CLEAR GLASS,own-label,,,,0,,18.00,,NEEDS_REVIEW,no size column,18.00
+55,8,2,"Tools, Equipment & PPE",WELDING MASK,own-label,,,,0,,180.00,,NEEDS_REVIEW,no size column,180.00
+55,9,1,"Tools, Equipment & PPE",PAINT BRUSH 2 ½,own-label,,,,1,,39.00,,NEEDS_REVIEW,no size column,PAINT BRUSH 2 ½ | 39.00
+55,9,2,"Tools, Equipment & PPE",PAINT BRUSH 2 ½,own-label,,2'',,1,,37.00,,PENDING,,2'' | 37.00
+55,9,3,"Tools, Equipment & PPE",PAINT BRUSH 2 ½,own-label,,3'',,1,,65.00,,PENDING,,3'' | 65.00
+55,9,4,"Tools, Equipment & PPE",PAINT BRUSH 2 ½,own-label,,4'',,1,,78.00,,PENDING,,4'' | 78.00
+55,10,2,"Tools, Equipment & PPE",WELDING HOLDER,own-label,,,,0,,385.00,,NEEDS_REVIEW,no size column,385.00
+57,1,3,Pipes & Fittings,Black Iron - Bell Reducer - Welded,slide-title,,,CONCENTRIC,1,,748.00,,NEEDS_REVIEW,price column 1 (CONCENTRIC); no size column; product from slide-title,3 x 1 | 748.00
+57,1,4,Pipes & Fittings,Black Iron - Bell Reducer - Welded,slide-title,,"1"" x ¾",CONCENTRIC,1,,90.00,,NEEDS_REVIEW,price column 1 (CONCENTRIC); product from slide-title,"1"" x ¾ | 90.00 | 130.00"
+57,1,4,Pipes & Fittings,Black Iron - Bell Reducer - Welded,slide-title,,"1"" x ¾",ECCENTRIC,2,,130.00,,NEEDS_REVIEW,price column 2 (ECCENTRIC); product from slide-title,"1"" x ¾ | 90.00 | 130.00"
+57,1,5,Pipes & Fittings,Black Iron - Bell Reducer - Welded,slide-title,,"1 ¼"" x 1""",CONCENTRIC,1,,95.00,,NEEDS_REVIEW,price column 1 (CONCENTRIC); product from slide-title,"1 ¼"" x 1"" | 95.00 | 137.00"
+57,1,5,Pipes & Fittings,Black Iron - Bell Reducer - Welded,slide-title,,"1 ¼"" x 1""",ECCENTRIC,2,,137.00,,NEEDS_REVIEW,price column 2 (ECCENTRIC); product from slide-title,"1 ¼"" x 1"" | 95.00 | 137.00"
+57,1,6,Pipes & Fittings,Black Iron - Bell Reducer - Welded,slide-title,,,CONCENTRIC,1,,96.00,,NEEDS_REVIEW,price column 1 (CONCENTRIC); no size column; product from slide-title,1 ½ x 1 ¼ | 96.00 | 149.00
+57,1,6,Pipes & Fittings,Black Iron - Bell Reducer - Welded,slide-title,,,ECCENTRIC,2,,149.00,,NEEDS_REVIEW,price column 2 (ECCENTRIC); no size column; product from slide-title,1 ½ x 1 ¼ | 96.00 | 149.00
+57,1,7,Pipes & Fittings,Black Iron - Bell Reducer - Welded,slide-title,,,CONCENTRIC,1,,98.00,,NEEDS_REVIEW,price column 1 (CONCENTRIC); no size column; product from slide-title,1 ½ x 1 | 98.00 | 149.00
+57,1,7,Pipes & Fittings,Black Iron - Bell Reducer - Welded,slide-title,,,ECCENTRIC,2,,149.00,,NEEDS_REVIEW,price column 2 (ECCENTRIC); no size column; product from slide-title,1 ½ x 1 | 98.00 | 149.00
+57,1,8,Pipes & Fittings,Black Iron - Bell Reducer - Welded,slide-title,,"2"" x 1 ½",CONCENTRIC,1,,106.00,,NEEDS_REVIEW,price column 1 (CONCENTRIC); product from slide-title,"2"" x 1 ½ | 106.00 | 161.00"
+57,1,8,Pipes & Fittings,Black Iron - Bell Reducer - Welded,slide-title,,"2"" x 1 ½",ECCENTRIC,2,,161.00,,NEEDS_REVIEW,price column 2 (ECCENTRIC); product from slide-title,"2"" x 1 ½ | 106.00 | 161.00"
+57,1,9,Pipes & Fittings,Black Iron - Bell Reducer - Welded,slide-title,,"2"" x 1 ¼""",CONCENTRIC,1,,120.00,,NEEDS_REVIEW,price column 1 (CONCENTRIC); product from slide-title,"2"" x 1 ¼"" | 120.00 | 185.00"
+57,1,9,Pipes & Fittings,Black Iron - Bell Reducer - Welded,slide-title,,"2"" x 1 ¼""",ECCENTRIC,2,,185.00,,NEEDS_REVIEW,price column 2 (ECCENTRIC); product from slide-title,"2"" x 1 ¼"" | 120.00 | 185.00"
+57,1,10,Pipes & Fittings,Black Iron - Bell Reducer - Welded,slide-title,,"2"" x 1""",CONCENTRIC,1,,132.00,,NEEDS_REVIEW,price column 1 (CONCENTRIC); product from slide-title,"2"" x 1"" | 132.00 | 204.00"
+57,1,10,Pipes & Fittings,Black Iron - Bell Reducer - Welded,slide-title,,"2"" x 1""",ECCENTRIC,2,,204.00,,NEEDS_REVIEW,price column 2 (ECCENTRIC); product from slide-title,"2"" x 1"" | 132.00 | 204.00"
+57,1,11,Pipes & Fittings,Black Iron - Bell Reducer - Welded,slide-title,,"2 ½"" x 2""",CONCENTRIC,1,,132.00,,NEEDS_REVIEW,price column 1 (CONCENTRIC); product from slide-title,"2 ½"" x 2"" | 132.00 | 272.00"
+57,1,11,Pipes & Fittings,Black Iron - Bell Reducer - Welded,slide-title,,"2 ½"" x 2""",ECCENTRIC,2,,272.00,,NEEDS_REVIEW,price column 2 (ECCENTRIC); product from slide-title,"2 ½"" x 2"" | 132.00 | 272.00"
+57,1,12,Pipes & Fittings,Black Iron - Bell Reducer - Welded,slide-title,,"2 ½"" x 1 ½""",CONCENTRIC,1,,143.00,,NEEDS_REVIEW,price column 1 (CONCENTRIC); product from slide-title,"2 ½"" x 1 ½"" | 143.00 | 284.00"
+57,1,12,Pipes & Fittings,Black Iron - Bell Reducer - Welded,slide-title,,"2 ½"" x 1 ½""",ECCENTRIC,2,,284.00,,NEEDS_REVIEW,price column 2 (ECCENTRIC); product from slide-title,"2 ½"" x 1 ½"" | 143.00 | 284.00"
+57,1,13,Pipes & Fittings,Black Iron - Bell Reducer - Welded,slide-title,,"2 ½"" x 1 ¼""",CONCENTRIC,1,,160.00,,NEEDS_REVIEW,price column 1 (CONCENTRIC); product from slide-title,"2 ½"" x 1 ¼"" | 160.00 | 303.00"
+57,1,13,Pipes & Fittings,Black Iron - Bell Reducer - Welded,slide-title,,"2 ½"" x 1 ¼""",ECCENTRIC,2,,303.00,,NEEDS_REVIEW,price column 2 (ECCENTRIC); product from slide-title,"2 ½"" x 1 ¼"" | 160.00 | 303.00"
+57,1,14,Pipes & Fittings,Black Iron - Bell Reducer - Welded,slide-title,,"3"" x 2 ½""",CONCENTRIC,1,,182.00,,NEEDS_REVIEW,price column 1 (CONCENTRIC); product from slide-title,"3"" x 2 ½"" | 182.00 | 346.00"
+57,1,14,Pipes & Fittings,Black Iron - Bell Reducer - Welded,slide-title,,"3"" x 2 ½""",ECCENTRIC,2,,346.00,,NEEDS_REVIEW,price column 2 (ECCENTRIC); product from slide-title,"3"" x 2 ½"" | 182.00 | 346.00"
+57,1,15,Pipes & Fittings,Black Iron - Bell Reducer - Welded,slide-title,,"3"" x 2""",CONCENTRIC,1,,182.00,,NEEDS_REVIEW,price column 1 (CONCENTRIC); product from slide-title,"3"" x 2"" | 182.00 | 358.00"
+57,1,15,Pipes & Fittings,Black Iron - Bell Reducer - Welded,slide-title,,"3"" x 2""",ECCENTRIC,2,,358.00,,NEEDS_REVIEW,price column 2 (ECCENTRIC); product from slide-title,"3"" x 2"" | 182.00 | 358.00"
+57,1,16,Pipes & Fittings,Black Iron - Bell Reducer - Welded,slide-title,,"3"" x 1 ½""",CONCENTRIC,1,,748.00,,NEEDS_REVIEW,price column 1 (CONCENTRIC); product from slide-title,"3"" x 1 ½"" | 748.00 | 382.00"
+57,1,16,Pipes & Fittings,Black Iron - Bell Reducer - Welded,slide-title,,"3"" x 1 ½""",ECCENTRIC,2,,382.00,,NEEDS_REVIEW,price column 2 (ECCENTRIC); product from slide-title,"3"" x 1 ½"" | 748.00 | 382.00"
+57,1,17,Pipes & Fittings,Black Iron - Bell Reducer - Welded,slide-title,,"4"" x 3""",CONCENTRIC,1,,264.00,,NEEDS_REVIEW,price column 1 (CONCENTRIC); product from slide-title,"4"" x 3"" | 264.00 | 407.00"
+57,1,17,Pipes & Fittings,Black Iron - Bell Reducer - Welded,slide-title,,"4"" x 3""",ECCENTRIC,2,,407.00,,NEEDS_REVIEW,price column 2 (ECCENTRIC); product from slide-title,"4"" x 3"" | 264.00 | 407.00"
+57,1,18,Pipes & Fittings,Black Iron - Bell Reducer - Welded,slide-title,,"4"" x 2 ½""",CONCENTRIC,1,,281.00,,NEEDS_REVIEW,price column 1 (CONCENTRIC); product from slide-title,"4"" x 2 ½"" | 281.00 | 432.00"
+57,1,18,Pipes & Fittings,Black Iron - Bell Reducer - Welded,slide-title,,"4"" x 2 ½""",ECCENTRIC,2,,432.00,,NEEDS_REVIEW,price column 2 (ECCENTRIC); product from slide-title,"4"" x 2 ½"" | 281.00 | 432.00"
+57,1,19,Pipes & Fittings,Black Iron - Bell Reducer - Welded,slide-title,,"4"" x 2""",CONCENTRIC,1,,303.00,,NEEDS_REVIEW,price column 1 (CONCENTRIC); product from slide-title,"4"" x 2"" | 303.00 | 457.00"
+57,1,19,Pipes & Fittings,Black Iron - Bell Reducer - Welded,slide-title,,"4"" x 2""",ECCENTRIC,2,,457.00,,NEEDS_REVIEW,price column 2 (ECCENTRIC); product from slide-title,"4"" x 2"" | 303.00 | 457.00"
+57,1,20,Pipes & Fittings,Black Iron - Bell Reducer - Welded,slide-title,,"5"" x 4""",CONCENTRIC,1,,523.00,,NEEDS_REVIEW,price column 1 (CONCENTRIC); product from slide-title,"5"" x 4"" | 523.00 | 555.00"
+57,1,20,Pipes & Fittings,Black Iron - Bell Reducer - Welded,slide-title,,"5"" x 4""",ECCENTRIC,2,,555.00,,NEEDS_REVIEW,price column 2 (ECCENTRIC); product from slide-title,"5"" x 4"" | 523.00 | 555.00"
+57,1,21,Pipes & Fittings,Black Iron - Bell Reducer - Welded,slide-title,,"5"" x 3""",CONCENTRIC,1,,556.00,,NEEDS_REVIEW,price column 1 (CONCENTRIC); product from slide-title,"5"" x 3"" | 556.00 | 604.00"
+57,1,21,Pipes & Fittings,Black Iron - Bell Reducer - Welded,slide-title,,"5"" x 3""",ECCENTRIC,2,,604.00,,NEEDS_REVIEW,price column 2 (ECCENTRIC); product from slide-title,"5"" x 3"" | 556.00 | 604.00"
+57,1,22,Pipes & Fittings,Black Iron - Bell Reducer - Welded,slide-title,,"5"" x 2 ½""",CONCENTRIC,1,,589.00,,NEEDS_REVIEW,price column 1 (CONCENTRIC); product from slide-title,"5"" x 2 ½"" | 589.00 | 678.00"
+57,1,22,Pipes & Fittings,Black Iron - Bell Reducer - Welded,slide-title,,"5"" x 2 ½""",ECCENTRIC,2,,678.00,,NEEDS_REVIEW,price column 2 (ECCENTRIC); product from slide-title,"5"" x 2 ½"" | 589.00 | 678.00"
+57,1,23,Pipes & Fittings,Black Iron - Bell Reducer - Welded,slide-title,,"5"" x 2""",CONCENTRIC,1,,616.00,,NEEDS_REVIEW,price column 1 (CONCENTRIC); product from slide-title,"5"" x 2"" | 616.00 | 740.00"
+57,1,23,Pipes & Fittings,Black Iron - Bell Reducer - Welded,slide-title,,"5"" x 2""",ECCENTRIC,2,,740.00,,NEEDS_REVIEW,price column 2 (ECCENTRIC); product from slide-title,"5"" x 2"" | 616.00 | 740.00"
+57,1,24,Pipes & Fittings,Black Iron - Bell Reducer - Welded,slide-title,,4 x 1 ½ ‘',CONCENTRIC,1,,975.00,,NEEDS_REVIEW,price column 1 (CONCENTRIC); product from slide-title,4 x 1 ½ ‘' | 975.00
+57,2,3,Pipes & Fittings,Black Iron - Bell Reducer - Welded,slide-title,,"6"" x 5""",CONCENTRIC,1,,689.00,,NEEDS_REVIEW,price column 1 (CONCENTRIC); product from slide-title,"6"" x 5"" | 689.00 | 1,188.00"
+57,2,3,Pipes & Fittings,Black Iron - Bell Reducer - Welded,slide-title,,"6"" x 5""",ECCENTRIC,2,,1188.00,,NEEDS_REVIEW,price column 2 (ECCENTRIC); product from slide-title,"6"" x 5"" | 689.00 | 1,188.00"
+57,2,4,Pipes & Fittings,Black Iron - Bell Reducer - Welded,slide-title,,"6"" x 4""",CONCENTRIC,1,,719.00,,NEEDS_REVIEW,price column 1 (CONCENTRIC); product from slide-title,"6"" x 4"" | 719.00 | 1,254.00"
+57,2,4,Pipes & Fittings,Black Iron - Bell Reducer - Welded,slide-title,,"6"" x 4""",ECCENTRIC,2,,1254.00,,NEEDS_REVIEW,price column 2 (ECCENTRIC); product from slide-title,"6"" x 4"" | 719.00 | 1,254.00"
+57,2,5,Pipes & Fittings,Black Iron - Bell Reducer - Welded,slide-title,,"6"" x 3""",CONCENTRIC,1,,749.00,,NEEDS_REVIEW,price column 1 (CONCENTRIC); product from slide-title,"6"" x 3"" | 749.00 | 1,294.00"
+57,2,5,Pipes & Fittings,Black Iron - Bell Reducer - Welded,slide-title,,"6"" x 3""",ECCENTRIC,2,,1294.00,,NEEDS_REVIEW,price column 2 (ECCENTRIC); product from slide-title,"6"" x 3"" | 749.00 | 1,294.00"
+57,2,6,Pipes & Fittings,Black Iron - Bell Reducer - Welded,slide-title,,"6"" x 2 ½""",CONCENTRIC,1,,1223.00,,NEEDS_REVIEW,price column 1 (CONCENTRIC); product from slide-title,"6"" x 2 ½"" | 1,223.00 | 1,529.00"
+57,2,6,Pipes & Fittings,Black Iron - Bell Reducer - Welded,slide-title,,"6"" x 2 ½""",ECCENTRIC,2,,1529.00,,NEEDS_REVIEW,price column 2 (ECCENTRIC); product from slide-title,"6"" x 2 ½"" | 1,223.00 | 1,529.00"
+57,2,7,Pipes & Fittings,Black Iron - Bell Reducer - Welded,slide-title,,"6"" x 2""",CONCENTRIC,1,,1855.00,,NEEDS_REVIEW,price column 1 (CONCENTRIC); product from slide-title,"6"" x 2"" | 1,855.00 | 1,634.00"
+57,2,7,Pipes & Fittings,Black Iron - Bell Reducer - Welded,slide-title,,"6"" x 2""",ECCENTRIC,2,,1634.00,,NEEDS_REVIEW,price column 2 (ECCENTRIC); product from slide-title,"6"" x 2"" | 1,855.00 | 1,634.00"
+57,2,8,Pipes & Fittings,Black Iron - Bell Reducer - Welded,slide-title,,"8"" x 6""",CONCENTRIC,1,,1136.00,,NEEDS_REVIEW,price column 1 (CONCENTRIC); product from slide-title,"8"" x 6"" | 1,136.00 | 1,708.00"
+57,2,8,Pipes & Fittings,Black Iron - Bell Reducer - Welded,slide-title,,"8"" x 6""",ECCENTRIC,2,,1708.00,,NEEDS_REVIEW,price column 2 (ECCENTRIC); product from slide-title,"8"" x 6"" | 1,136.00 | 1,708.00"
+57,2,9,Pipes & Fittings,Black Iron - Bell Reducer - Welded,slide-title,,"8"" x 5""",CONCENTRIC,1,,1144.00,,NEEDS_REVIEW,price column 1 (CONCENTRIC); product from slide-title,"8"" x 5"" | 1,144.00 | 1,782.00"
+57,2,9,Pipes & Fittings,Black Iron - Bell Reducer - Welded,slide-title,,"8"" x 5""",ECCENTRIC,2,,1782.00,,NEEDS_REVIEW,price column 2 (ECCENTRIC); product from slide-title,"8"" x 5"" | 1,144.00 | 1,782.00"
+57,2,10,Pipes & Fittings,Black Iron - Bell Reducer - Welded,slide-title,,"8"" x 4""",CONCENTRIC,1,,1202.00,,NEEDS_REVIEW,price column 1 (CONCENTRIC); product from slide-title,"8"" x 4"" | 1,202.00 | 1,857.00"
+57,2,10,Pipes & Fittings,Black Iron - Bell Reducer - Welded,slide-title,,"8"" x 4""",ECCENTRIC,2,,1857.00,,NEEDS_REVIEW,price column 2 (ECCENTRIC); product from slide-title,"8"" x 4"" | 1,202.00 | 1,857.00"
+57,2,11,Pipes & Fittings,Black Iron - Bell Reducer - Welded,slide-title,,"8"" x 3""",CONCENTRIC,1,,1258.00,,NEEDS_REVIEW,price column 1 (CONCENTRIC); product from slide-title,"8"" x 3"" | 1,258.00 | 2,008.00"
+57,2,11,Pipes & Fittings,Black Iron - Bell Reducer - Welded,slide-title,,"8"" x 3""",ECCENTRIC,2,,2008.00,,NEEDS_REVIEW,price column 2 (ECCENTRIC); product from slide-title,"8"" x 3"" | 1,258.00 | 2,008.00"
+57,2,12,Pipes & Fittings,Black Iron - Bell Reducer - Welded,slide-title,,"10"" x 8""",CONCENTRIC,1,,1697.00,,NEEDS_REVIEW,price column 1 (CONCENTRIC); product from slide-title,"10"" x 8"" | 1,697.00 | 3,432.00"
+57,2,12,Pipes & Fittings,Black Iron - Bell Reducer - Welded,slide-title,,"10"" x 8""",ECCENTRIC,2,,3432.00,,NEEDS_REVIEW,price column 2 (ECCENTRIC); product from slide-title,"10"" x 8"" | 1,697.00 | 3,432.00"
+57,2,13,Pipes & Fittings,Black Iron - Bell Reducer - Welded,slide-title,,"10"" x 6""",CONCENTRIC,1,,1717.00,,NEEDS_REVIEW,price column 1 (CONCENTRIC); product from slide-title,"10"" x 6"" | 1,717.00 | 3,518.00"
+57,2,13,Pipes & Fittings,Black Iron - Bell Reducer - Welded,slide-title,,"10"" x 6""",ECCENTRIC,2,,3518.00,,NEEDS_REVIEW,price column 2 (ECCENTRIC); product from slide-title,"10"" x 6"" | 1,717.00 | 3,518.00"
+57,2,14,Pipes & Fittings,Black Iron - Bell Reducer - Welded,slide-title,,"10"" x 5""",CONCENTRIC,1,,1755.00,,NEEDS_REVIEW,price column 1 (CONCENTRIC); product from slide-title,"10"" x 5"" | 1,755.00 | 3,604.00"
+57,2,14,Pipes & Fittings,Black Iron - Bell Reducer - Welded,slide-title,,"10"" x 5""",ECCENTRIC,2,,3604.00,,NEEDS_REVIEW,price column 2 (ECCENTRIC); product from slide-title,"10"" x 5"" | 1,755.00 | 3,604.00"
+57,2,15,Pipes & Fittings,Black Iron - Bell Reducer - Welded,slide-title,,"10"" x 4""",CONCENTRIC,1,,1812.00,,NEEDS_REVIEW,price column 1 (CONCENTRIC); product from slide-title,"10"" x 4"" | 1,812.00 | 3,776.00"
+57,2,15,Pipes & Fittings,Black Iron - Bell Reducer - Welded,slide-title,,"10"" x 4""",ECCENTRIC,2,,3776.00,,NEEDS_REVIEW,price column 2 (ECCENTRIC); product from slide-title,"10"" x 4"" | 1,812.00 | 3,776.00"
+57,2,16,Pipes & Fittings,Black Iron - Bell Reducer - Welded,slide-title,,"12"" x 10""",CONCENTRIC,1,,2832.00,,NEEDS_REVIEW,price column 1 (CONCENTRIC); product from slide-title,"12"" x 10"" | 2,832.00 | 4,689.00"
+57,2,16,Pipes & Fittings,Black Iron - Bell Reducer - Welded,slide-title,,"12"" x 10""",ECCENTRIC,2,,4689.00,,NEEDS_REVIEW,price column 2 (ECCENTRIC); product from slide-title,"12"" x 10"" | 2,832.00 | 4,689.00"
+57,2,17,Pipes & Fittings,Black Iron - Bell Reducer - Welded,slide-title,,"12"" x 8""",CONCENTRIC,1,,3013.00,,NEEDS_REVIEW,price column 1 (CONCENTRIC); product from slide-title,"12"" x 8"" | 3,013.00 | 5,492.00"
+57,2,17,Pipes & Fittings,Black Iron - Bell Reducer - Welded,slide-title,,"12"" x 8""",ECCENTRIC,2,,5492.00,,NEEDS_REVIEW,price column 2 (ECCENTRIC); product from slide-title,"12"" x 8"" | 3,013.00 | 5,492.00"
+57,2,18,Pipes & Fittings,Black Iron - Bell Reducer - Welded,slide-title,,"12"" x 6""",CONCENTRIC,1,,3052.00,,NEEDS_REVIEW,price column 1 (CONCENTRIC); product from slide-title,"12"" x 6"" | 3,052.00 | 5,492.00"
+57,2,18,Pipes & Fittings,Black Iron - Bell Reducer - Welded,slide-title,,"12"" x 6""",ECCENTRIC,2,,5492.00,,NEEDS_REVIEW,price column 2 (ECCENTRIC); product from slide-title,"12"" x 6"" | 3,052.00 | 5,492.00"
+57,2,19,Pipes & Fittings,Black Iron - Bell Reducer - Welded,slide-title,,"12"" x 4""",CONCENTRIC,1,,3243.00,,NEEDS_REVIEW,price column 1 (CONCENTRIC); product from slide-title,"12"" x 4"" | 3,243.00 | 5,723.00"
+57,2,19,Pipes & Fittings,Black Iron - Bell Reducer - Welded,slide-title,,"12"" x 4""",ECCENTRIC,2,,5723.00,,NEEDS_REVIEW,price column 2 (ECCENTRIC); product from slide-title,"12"" x 4"" | 3,243.00 | 5,723.00"
+57,2,20,Pipes & Fittings,Black Iron - Bell Reducer - Welded,slide-title,,"14"" x 12""",CONCENTRIC,1,,8070.00,,NEEDS_REVIEW,price column 1 (CONCENTRIC); product from slide-title,"14"" x 12"" | 8,070.00"
+57,2,21,Pipes & Fittings,Black Iron - Bell Reducer - Welded,slide-title,,"14"" x 10""",CONCENTRIC,1,,8803.00,,NEEDS_REVIEW,price column 1 (CONCENTRIC); product from slide-title,"14"" x 10"" | 8,803.00"
+57,2,22,Pipes & Fittings,Black Iron - Bell Reducer - Welded,slide-title,,"14"" x 8""",CONCENTRIC,1,,9537.00,,NEEDS_REVIEW,price column 1 (CONCENTRIC); product from slide-title,"14"" x 8"" | 9,537.00"
+57,2,23,Pipes & Fittings,Black Iron - Bell Reducer - Welded,slide-title,,,CONCENTRIC,1,,504.00,,NEEDS_REVIEW,price column 1 (CONCENTRIC); no size column; product from slide-title,2 ½ x 1 | 504.00
+57,3,2,Water Meters & Tank Fittings,BLADDER TANK,own-label,,,,1,,375400,,NEEDS_REVIEW,no size column,"2000 liters | 375,400"
+57,3,3,Water Meters & Tank Fittings,BLADDER TANK,own-label,,,,1,,219600,,NEEDS_REVIEW,no size column,"1500 liters | 219,600"
+57,3,4,Water Meters & Tank Fittings,BLADDER TANK,own-label,,,,1,,129700,,NEEDS_REVIEW,no size column,"1000 liters | 129,700"
+57,3,5,Water Meters & Tank Fittings,BLADDER TANK,own-label,,,,1,,111900,,NEEDS_REVIEW,no size column,"850 liters | 111,900"
+57,3,6,Water Meters & Tank Fittings,BLADDER TANK,own-label,,,,1,,100700,,NEEDS_REVIEW,no size column,"700 liters | 100,700"
+57,3,7,Water Meters & Tank Fittings,BLADDER TANK,own-label,,,,1,,55300,,NEEDS_REVIEW,no size column,"500 liters | 55,300"
+57,4,1,Water Meters & Tank Fittings,BLADDER TANK,inherited-label,,,,1,,34000,,NEEDS_REVIEW,no size column; product from inherited-label,"300 liters | 34,000"
+57,4,2,Water Meters & Tank Fittings,BLADDER TANK,inherited-label,,,,1,,28800,,NEEDS_REVIEW,no size column; product from inherited-label,"200 liters | 28,800"
+57,4,3,Water Meters & Tank Fittings,BLADDER TANK,inherited-label,,,,1,,23500,,NEEDS_REVIEW,no size column; product from inherited-label,"150 liters | 23,500"
+57,4,4,Water Meters & Tank Fittings,BLADDER TANK,inherited-label,,,,1,,15000,,NEEDS_REVIEW,no size column; product from inherited-label,"100 liters | 15,000"
+57,4,5,Water Meters & Tank Fittings,BLADDER TANK,inherited-label,,,,1,,12500,,NEEDS_REVIEW,no size column; product from inherited-label,"80 liters | 12,500"
+57,4,6,Water Meters & Tank Fittings,BLADDER TANK,inherited-label,,,,1,,8500,,NEEDS_REVIEW,no size column; product from inherited-label,"60 liters | 8,500"
+58,1,2,Water Meters & Tank Fittings,STAINLESS TANK,own-label,,,,1,,185000,,NEEDS_REVIEW,no size column,"10000 liters | 185,000"
+58,1,3,Water Meters & Tank Fittings,STAINLESS TANK,own-label,,,,1,,98000,,NEEDS_REVIEW,no size column,"6500 liters | 98,000"
+58,1,4,Water Meters & Tank Fittings,STAINLESS TANK,own-label,,,,1,,83000,,NEEDS_REVIEW,no size column,"5000 liters | 83,000"
+58,1,5,Water Meters & Tank Fittings,STAINLESS TANK,own-label,,,,1,,68500,,NEEDS_REVIEW,no size column,"3500 liters | 68,500"
+58,1,6,Water Meters & Tank Fittings,STAINLESS TANK,own-label,,,,1,,39500,,NEEDS_REVIEW,no size column,"2000 liters | 39,500"
+58,1,7,Water Meters & Tank Fittings,STAINLESS TANK,own-label,,,,1,,17500,,NEEDS_REVIEW,no size column,"1000 liters | 17,500"
+59,1,2,"Tools, Equipment & PPE",THREADING MACHINE,own-label,,½'' - 2'',,1,,37500,,PENDING,,"½'' - 2'' | 37,500"
+59,1,3,"Tools, Equipment & PPE",THREADING MACHINE,own-label,,½'' – 4'',,1,,60000,,PENDING,,"½'' – 4'' | 60,000"
+59,2,2,"Tools, Equipment & PPE",GROOVING MACHINE,own-label,,2- 6'',,1,,78000,,PENDING,,"2- 6'' | 78,000"
+59,3,2,"Tools, Equipment & PPE",GROOVING MACHINE,inherited-label,,½ - ¾,DIES,1,,3500,,NEEDS_REVIEW,product from inherited-label,"½ - ¾ | 3,500"
+59,3,3,"Tools, Equipment & PPE",GROOVING MACHINE,inherited-label,,1-2,DIES,1,,3800,,NEEDS_REVIEW,product from inherited-label,"1-2 | 3,800"
+59,3,4,"Tools, Equipment & PPE",GROOVING MACHINE,inherited-label,,2 ½ - 4,DIES,1,,4800,,NEEDS_REVIEW,product from inherited-label,"2 ½ - 4 | 4,800"
+59,4,1,"Tools, Equipment & PPE",GROOVING MACHINE,inherited-label,,2- 12'',,1,,95000,,NEEDS_REVIEW,product from inherited-label,"2- 12'' | 95,000"
+59,5,2,"Tools, Equipment & PPE",PIPE WRENCH,own-label,,14'',,1,,580.00,,PENDING,,14'' | 580.00
+59,5,3,"Tools, Equipment & PPE",PIPE WRENCH,own-label,,18'',,1,,720.00,,PENDING,,18'' | 720.00
+59,6,2,"Tools, Equipment & PPE",PIPE WRENCH,inherited-label,,,,0,,3500,,NEEDS_REVIEW,no size column; product from inherited-label,"3,500"
+59,7,2,"Tools, Equipment & PPE",PIPE WRENCH,inherited-label,,,,0,,2800,,NEEDS_REVIEW,no size column; product from inherited-label,"2,800"
+59,9,2,"Tools, Equipment & PPE",CUT-OFF,own-label,,,,0,,8500,,NEEDS_REVIEW,no size column,"8,500"
+59,10,2,"Tools, Equipment & PPE",PIPE HOLE SAW MACHINE,own-label,,,,0,,30000,,NEEDS_REVIEW,no size column,"30,000"
+59,11,1,"Tools, Equipment & PPE",PIPE HOLE SAW MACHINE,inherited-label,,20'',,1,,980.00,,NEEDS_REVIEW,product from inherited-label,20'' | 980.00
+59,11,2,"Tools, Equipment & PPE",PIPE HOLE SAW MACHINE,inherited-label,,24'',,1,,1450.00,,NEEDS_REVIEW,product from inherited-label,"24'' | 1,450.00"

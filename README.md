@@ -5,7 +5,7 @@ A minimal prototype web app for centralizing fire protection product information
 ## Features (Prototype)
 
 - Public product catalog with search, category and availability filters, sorting
-- Product detail pages with availability (prominently shown as Local / In Stock / Indent), specs
+- Product detail pages with availability (prominently shown as Local / In Stock / Indent), specs, and an active-variants table (size / series / unit / price)
 - Category browsing
 - Guest enquiry flow: optional "add to enquiry" selection that persists across pages, submitted to a durable `Inquiry` row with an `FLQ-YYYYMMDD-XXXXXX` reference
 - Privacy Policy page with a versioned consent record on every enquiry
@@ -95,6 +95,7 @@ App: http://localhost:3000
 - Soft-deletes: products/categories use `active` (false = archived)
 - Server-side RBAC enforced; UI hiding is not sufficient
 - Prototype scope: information + inventory visibility only (no payments/checkout/shipping)
+- Variant rows are admin-managed: added and archived from the product form; only `active` variants appear publicly (ADR-020)
 - Enquiries are captured, not transacted — there is no cart, quote, or order
 - An enquiry is durable once written; a failed sales email never fails the submission (see `docs/DECISIONS.md` ADR-010)
 - Product selection sends IDs only; names, SKUs, and availability are resolved server-side (ADR-011)

@@ -7,6 +7,7 @@ import { AvailabilityBadge } from "@/components/ui/badge";
 import { buttonLinkClass } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
 import { availabilityDescriptions } from "@/lib/availability";
+import { formatPrice } from "@/lib/format";
 import { prisma } from "@/lib/prisma";
 
 type Props = { params: Promise<{ slug: string }> };
@@ -32,6 +33,10 @@ export default async function ProductPage({ params }: Props) {
       category: true,
       images: { orderBy: { displayOrder: "asc" } },
       specifications: { orderBy: { displayOrder: "asc" } },
+      variants: {
+        where: { active: true },
+        orderBy: [{ size: "asc" }, { series: "asc" }],
+      },
     },
   });
   if (!product) notFound();
@@ -121,6 +126,57 @@ export default async function ProductPage({ params }: Props) {
             <p className="leading-relaxed text-neutral-700">
               {product.description}
             </p>
+          ) : null}
+
+          {product.variants.length > 0 ? (
+            <div>
+              <h2 className="text-lg font-semibold text-neutral-900">
+                Variants
+              </h2>
+              <table className="mt-2 w-full border-collapse text-sm">
+                <thead>
+                  <tr className="border-b border-neutral-200 text-left text-neutral-500">
+                    <th scope="col" className="py-2 pr-4 font-medium">
+                      Size
+                    </th>
+                    <th scope="col" className="py-2 pr-4 font-medium">
+                      Series
+                    </th>
+                    <th scope="col" className="py-2 pr-4 font-medium">
+                      Unit
+                    </th>
+                    <th scope="col" className="py-2 font-medium">
+                      Price
+                    </th>
+                  </tr>
+                </thead>
+                <tbody>
+                  {product.variants.map((variant) => (
+                    <tr
+                      key={variant.id}
+                      className="border-b border-neutral-200 last:border-b-0"
+                    >
+                      <td className="py-2 pr-4 text-neutral-800">
+                        {variant.size || "—"}
+                      </td>
+                      <td className="py-2 pr-4 text-neutral-800">
+                        {variant.series || "—"}
+                      </td>
+                      <td className="py-2 pr-4 text-neutral-800">
+                        {variant.unit ?? "—"}
+                      </td>
+                      <td className="py-2 text-neutral-800">
+                        {variant.unitPrice
+                          ? variant.priceHigh
+                            ? `${formatPrice(variant.unitPrice.toString())} – ${formatPrice(variant.priceHigh.toString())}`
+                            : formatPrice(variant.unitPrice.toString())
+                          : "—"}
+                      </td>
+                    </tr>
+                  ))}
+                </tbody>
+              </table>
+            </div>
           ) : null}
 
           <div className="rounded-xl border border-brand-mist bg-brand-paper p-4 shadow-[0_18px_45px_-32px_rgba(15,23,42,0.55)]">

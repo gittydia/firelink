@@ -39,6 +39,30 @@ Refresh the public catalog into a calm, operational inventory surface. The clien
 - Interactive color and shadow changes use a 200ms ease-out transition.
 - Product imagery may scale subtly on hover only; `prefers-reduced-motion` removes transforms.
 
-## 7. Accepted Debt
+## 7. Homepage
 
-- Existing catalog imagery remains sourced from product records; no third-party stock images are introduced until licensed assets are provided.
+The public homepage is a marketing surface and is the only place the `home` palette applies. Catalog and admin surfaces stay on `brand`.
+
+- Header, footer, and the stats band use `home.navy` (`#0D172B`); the hero overlay grades from `home.navyDeep` (`#0A1122`) toward transparent.
+- Headings use `home.text` (`#101A2D`); supporting copy on light grounds uses `home.muted` (`#5D6D82`). On navy, supporting copy uses `home.cta` — no single value clears 4.5:1 against both light and dark grounds.
+- Primary homepage actions use `home.cta` (`#91A4BD`) filling to `home.ctaHover` (`#778DA8`), with `home.ctaPale` (`#D5E0EC`) for label and navigation text on navy.
+- Icon wells and the brand-partner chips use `home.supply` (`#CAD5E3`).
+- Availability states reuse the existing three-label contract (`LOCAL`, `IN_STOCK`, `INDENT`) and add a paired soft/base/deep ramp — `statusGreen`, `statusBlue`, `statusYellow` — for the homepage supply cards. Badge text on a `soft` fill uses the ramp's `onSoft` step, which is darker than `deep`; `deep` stays for icons on the `home.supply` icon well. The text label always carries the state; color stays supplementary, per §4.
+- The homepage opts into edge-to-edge bands with a breakout that escapes the layout's `max-w-6xl` `main` wrapper. The wrapper itself stays constrained so the other public pages keep their reading width.
+- The bands size themselves with `w-screen`, and `100vw` includes the classic vertical scrollbar that desktop browsers reserve layout space for. The public layout root therefore sets `overflow-x-clip` so the breakout can reach both edges without adding a horizontal scrollbar. `clip` rather than `hidden` on purpose: `hidden` would create a scroll container and break sticky positioning and scroll anchoring.
+- The category rail is CSS scroll-snap with a horizontally scrollable overflow region and no added dependency. Category images are admin-supplied and may point at arbitrary hosts, so they render unoptimized rather than being added to `images.remotePatterns`.
+- The hero image is `priority` and fixed; the about image is not.
+
+### Image Provenance
+
+| Asset | Source | License | Dimensions |
+| --- | --- | --- | --- |
+| `public/images/hero-pipeline-valves.jpg` | Pexels photo `29248902` | Pexels License (free for commercial use, attribution not required) | 1920x1440 |
+| `public/images/about-pump-room.jpg` | Pexels photo `2569842` | Pexels License (free for commercial use, attribution not required) | 1920x1280 |
+
+These are placeholders pending client-supplied photography. Unsplash was attempted first and returned `401`; iStock required a paid license. Swap the files in place — the paths and `next/image` dimensions stay as documented.
+
+## 8. Accepted Debt
+
+- Existing catalog imagery remains sourced from product records.
+- The homepage's hero and about images are licensed third-party placeholders (see §7), not client-supplied photography, and should be replaced once real assets exist.

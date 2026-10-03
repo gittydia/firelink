@@ -10,6 +10,7 @@
 - `src/services/` - Domain services (products, categories, inventory)
 - `src/types/` - Shared TypeScript types
 - `prisma/` - Schema, migrations, seed
+- `scripts/pricelist/` - Pricelist staging pipeline (Python; extraction + size/price floor measurement). Not app runtime - not imported by `src/`
 - `docs/` - Domain model, auth, testing, decisions, TODOs
 - `public/uploads/`, `public/documents/` - Uploaded assets (local prototype)
 

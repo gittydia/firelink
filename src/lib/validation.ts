@@ -83,6 +83,44 @@ export const productUpdateSchema = productBaseSchema.partial().extend({
 
 export type ProductUpdateInput = z.infer<typeof productUpdateSchema>;
 
+// ---------- Product variant ----------
+
+// Prices arrive as free text in the admin add-variant form and are mapped to
+// null when blank; the 2-decimal ceiling mirrors DECIMAL(12,2).
+const variantPriceSchema = z
+  .string()
+  .trim()
+  .max(20, "Price is too long")
+  .refine(
+    (value) => value === "" || /^\d{1,10}(\.\d{1,2})?$/.test(value),
+    "Enter a valid price (up to 2 decimal places)",
+  );
+
+export const productVariantCreateSchema = z
+  .object({
+    // Blank size/series are stored as "" (the schema default), matching the
+    // importer and the @@unique([productId, size, series]) constraint.
+    size: z.string().trim().max(100, "Size is too long").default(""),
+    series: z.string().trim().max(100, "Series is too long").default(""),
+    unit: z.string().trim().max(50).optional().nullable(),
+    unitPrice: variantPriceSchema.default(""),
+    priceHigh: variantPriceSchema.default(""),
+    active: z.boolean().default(true),
+  })
+  .superRefine((values, ctx) => {
+    if (values.size === "" && values.series === "") {
+      ctx.addIssue({
+        code: z.ZodIssueCode.custom,
+        message: "Enter a size or a series (or both)",
+        path: ["size"],
+      });
+    }
+  });
+
+export type ProductVariantCreateInput = z.infer<
+  typeof productVariantCreateSchema
+>;
+
 // ---------- Inventory ----------
 
 export const inventoryUpdateSchema = z.object({

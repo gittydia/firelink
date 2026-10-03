@@ -1,0 +1,116 @@
+{
+  "stats": {
+    "slides_seen": 59,
+    "tables_seen": 351,
+    "cells_seen": 3015,
+    "entries_emitted": 1207,
+    "rows_skipped_header": 218,
+    "rows_skipped_non_product": 60,
+    "quarantined": 60,
+    "slides_without_tables": [
+      44,
+      45
+    ],
+    "slides_skipped_non_product": [
+      56
+    ],
+    "unclassified_tables": [],
+    "product_label_defects": [],
+    "multi_price_tables": [
+      "S1-T1",
+      "S2-T1",
+      "S2-T2",
+      "S2-T3",
+      "S3-T1",
+      "S3-T2",
+      "S3-T3",
+      "S11-T2",
+      "S11-T3",
+      "S11-T4",
+      "S11-T5",
+      "S13-T1",
+      "S13-T2",
+      "S13-T3",
+      "S13-T5",
+      "S13-T6",
+      "S14-T1",
+      "S15-T1",
+      "S15-T3",
+      "S19-T2",
+      "S22-T1",
+      "S22-T2",
+      "S22-T4",
+      "S23-T1",
+      "S23-T4",
+      "S24-T1",
+      "S24-T2",
+      "S24-T4",
+      "S25-T3",
+      "S26-T1",
+      "S26-T2",
+      "S27-T3",
+      "S28-T1",
+      "S30-T1",
+      "S30-T2",
+      "S31-T1",
+      "S31-T2",
+      "S32-T1",
+      "S32-T2",
+      "S33-T1",
+      "S33-T2",
+      "S52-T4",
+      "S57-T1",
+      "S57-T2"
+    ],
+    "repeated_series_tables": [
+      "S30-T1",
+      "S32-T1"
+    ],
+    "entries_by_category": {
+      "Pipes & Fittings": 123,
+      "Valves": 255,
+      "Fire Alarm & Detection": 59,
+      "Fire Extinguishers & Agents": 16,
+      "Fire Hydrants": 9,
+      "Instruments & Gauges": 5,
+      "Water Meters & Tank Fittings": 50,
+      "Couplings, Nozzles & Monitors": 105,
+      "Fire Hoses & Reels": 52,
+      "Sprinkler Heads & Nozzles": 94,
+      "Tools, Equipment & PPE": 30,
+      "Fire Pumps & Pump Sets": 247,
+      "Water Transfer Pumps": 39,
+      "Pumps & Motors": 3,
+      "Hardware & Fasteners": 88,
+      "Electrical": 32
+    },
+    "entries_by_status": {
+      "NEEDS_REVIEW": 1056,
+      "PENDING": 151
+    },
+    "entries_by_product_source": {
+      "own-label": 501,
+      "inherited-label": 293,
+      "slide-title": 351,
+      "unresolved": 62
+    },
+    "quarantine_by_reason": {
+      "size-without-price": 53,
+      "price-pair-ambiguous": 1,
+      "unassigned-money-cell": 1,
+      "ambiguous-price-columns": 5
+    }
+  },
+  "invariants": [
+    "Slide titles are NOT trusted for grouping; the table label is preferred and the title is only a last resort, recorded in product_source.",
+    "No product label is invented. A table with no descriptive cell returns an empty own-label so the slide's nearest real label is inherited; unresolved tables are emitted as UNRESOLVED-S<slide>-T<table> for review.",
+    "A table's price columns are found by counting money per column: a column holding money in at least PRICE_COLUMN_MIN_ROWS (2) rows is a price column. On a single-price table this reproduces the old right-edge rule, so those tables are unchanged. On a multi-price table one source row yields one entry per price column, each carrying its header label in series and its 0-based source_column.",
+    "A money cell in a multi-price row that falls outside every detected price column is quarantined as unassigned-money-cell rather than assigned to a guessed column.",
+    "A price column whose header label repeats an earlier column's label is stacked data: slide 30 prints the same series twice. Rows carrying money in the repeated block are quarantined as ambiguous-price-columns; the first block's entries are emitted as usual. Two generic (unlabeled) price columns are not a repetition.",
+    "Prices are recorded exactly as printed. No currency conversion, recalculation, or availability inference is performed.",
+    "price_high is never inferred. A second monetary cell in a row is left null for a human to judge, because the deck has no reliable price-range marker.",
+    "Slide 56 (terms & conditions) is skipped entirely: PCS/CTN, CTNS and QTY/pcs are carton packing data, not warehouse stock. Its rows are counted in rows_skipped_non_product, not rows_skipped_header.",
+    "U+FFFD in a row's own data (size or price) is quarantined rather than guessed. U+FFFD in a product label is kept as NEEDS_REVIEW with an explicit note, and the affected tables are listed in stats.product_label_defects.",
+    "Nothing is classified by stock, lead time, or availability."
+  ]
+}

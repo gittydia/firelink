@@ -1,0 +1,61 @@
+slide,table_index,row,reason,raw_text,context
+3,3,2,size-without-price,8'',KENNEDY NON/UL
+3,3,7,size-without-price,2'',KENNEDY NON/UL
+7,2,1,size-without-price,6'',Butterfly Valve with Tamper Switch
+7,2,2,size-without-price,4'',Butterfly Valve with Tamper Switch
+7,2,3,size-without-price,3'',Butterfly Valve with Tamper Switch
+8,4,2,size-without-price,8'',AIR GUAGE
+8,4,3,size-without-price,6'',AIR GUAGE
+8,5,5,size-without-price,"3'' 2'' | 18,000 15,840",WATER METER
+12,1,4,size-without-price,50 LBS,Empty Tank
+12,2,4,size-without-price,50 LBS,Empty Tank
+12,3,2,size-without-price,10 LBS,Empty Tank
+12,3,3,size-without-price,20 LBS,Empty Tank
+13,2,1,size-without-price,Green 5mm | Standard | 155 F,PENDENT GLOBE
+13,8,1,size-without-price,Red Bulb - 5mm | K -11.2 | VICTUALIC | VIKING,PENDENT TYCO
+14,2,2,size-without-price,8'',CLINTON Non- UL
+14,4,2,size-without-price,8'',CRAFT Non- UL
+14,5,2,size-without-price,8'',CLINTON / SMITH
+16,9,3,price-pair-ambiguous,1 | 650/ 495,UL/FM GIACOMINI
+18,13,1,size-without-price,Giacomini INSPECTOR TEST VALVE 1'',Giacomini Restricting ANGLE VALVE 1 1/2
+20,1,1,size-without-price,50ft. Single Jacket Non – UL | 100ft. Single Jacket Non – UL | 50ft. Single Jacket UL FM | 100ft. Single Jacket UL FM,FIRE HOSE- PUSH LOCK -CABINET 50 FT.
+20,1,2,size-without-price,1 ½ | 1 ½ | 1 ½ | 1 ½,FIRE HOSE- PUSH LOCK -CABINET 50 FT.
+20,2,1,size-without-price,2 ½ | 2 ½ | 2 ½ | 2 ½,FIRE HOSE- PUSH LOCK -CABINET 50 FT.
+20,3,1,size-without-price,50ft. Double Jacket Non – UL | 100ft. Double Jacket Non – UL | 50ft. Double Jacket UL FM | 100ft. Double Jacket UL FM,FIRE HOSE- PUSH LOCK -CABINET 50 FT.
+20,3,2,size-without-price,1 ½ | 1 ½ | 1 ½ | 1 ½,FIRE HOSE- PUSH LOCK -CABINET 50 FT.
+20,4,1,size-without-price,2 ½ | 2 ½ | 2 ½ | 2 ½,FIRE HOSE- PUSH LOCK -CABINET 50 FT.
+20,6,1,size-without-price,FIRE HOSE- KEY CABINET 50 FT.,FIRE HOSE- PUSH LOCK -CABINET 50 FT.
+20,7,1,size-without-price,FIRE HOSE RACK 11/2 - 50 FT.,FIRE HOSE- PUSH LOCK -CABINET 50 FT.
+20,10,1,size-without-price,FIRE HOSE- PUSH LOCK -CABINET 50 FT.,FIRE HOSE- PUSH LOCK -CABINET 50 FT.
+21,1,1,size-without-price,SINGLE JACKET 1 1/2 NON-UL FIRE HOSE 50 FT.,SINGLE JACKET 2 ½ HYFLO FIRE HOSE 50 FT.
+21,3,1,size-without-price,DOUBLE JACKET 1 1/2 NON-UL FIRE HOSE 50 FT.,SINGLE JACKET 2 ½ HYFLO FIRE HOSE 50 FT.
+21,5,1,size-without-price,SINGLE JACKET 1 1/2 UL FM- HAISHEN FIRE HOSE 50 FT.,SINGLE JACKET 2 ½ HYFLO FIRE HOSE 50 FT.
+21,7,1,size-without-price,DOUBLE JACKET 1 1/2 UL FM- HAISHEN FIRE HOSE 50 FT.,SINGLE JACKET 2 ½ HYFLO FIRE HOSE 50 FT.
+21,12,1,size-without-price,DOUBLE JACKET 2 1/2 NON-UL FIRE HOSE 50 FT.,SINGLE JACKET 2 ½ HYFLO FIRE HOSE 50 FT.
+21,13,1,size-without-price,SINGLE JACKET 2 1/2 NON-UL FIRE HOSE 50 FT.,SINGLE JACKET 2 ½ HYFLO FIRE HOSE 50 FT.
+21,15,1,size-without-price,SINGLE JACKET 1 ½ HYFLO FIRE HOSE 50 FT.,SINGLE JACKET 2 ½ HYFLO FIRE HOSE 50 FT.
+21,17,1,size-without-price,DOUBLE JACKET 1 ½ HYFLO FIRE HOSE 50 FT.,SINGLE JACKET 2 ½ HYFLO FIRE HOSE 50 FT.
+21,19,1,size-without-price,SINGLE JACKET 2 ½ HYFLO FIRE HOSE 50 FT.,SINGLE JACKET 2 ½ HYFLO FIRE HOSE 50 FT.
+21,21,1,size-without-price,DOUBLE JACKET 2 ½ HYFLO FIRE HOSE 50 FT.,SINGLE JACKET 2 ½ HYFLO FIRE HOSE 50 FT.
+22,4,2,unassigned-money-cell,"Programmer | 8,000 | 7500 | 4500",Telephone jack
+24,3,6,size-without-price,"5 HP 5 Hp ( 3 ph- 1ph) | 13,500 15,500 | 115K",JOCKEY PUMP
+25,2,2,size-without-price,3/4,Flexible Connector
+30,1,7,ambiguous-price-columns,"40 HP - 4 HP | 270,000 | 235,000 | 415,000 | 358,000",HORSE POWER ELECTRIC
+30,1,8,ambiguous-price-columns,"50 HP - 5 HP | 310,000 | 270,000 | 490,000 | 425,000",HORSE POWER ELECTRIC
+31,1,2,size-without-price,10 HP - 2 HP,HORSE POWER ELECTRIC
+31,1,3,size-without-price,15 HP - 2 HP,HORSE POWER ELECTRIC
+31,1,4,size-without-price,20 HP - 3 HP,HORSE POWER ELECTRIC
+32,1,4,ambiguous-price-columns,"30 HP - 3 HP | 1,285,000 | 1,410,000",HORSE POWER ELECTRIC
+32,1,5,ambiguous-price-columns,"40 HP - 4 HP | 1,430,000 | 1,655,000",HORSE POWER ELECTRIC
+32,1,6,ambiguous-price-columns,"50 HP - 5 HP | 1,485,000 | 1,780,000",HORSE POWER ELECTRIC
+34,1,2,size-without-price,20 HP - 3 HP,HORSE POWER ELECTRIC
+34,1,3,size-without-price,25 HP - 3 HP,HORSE POWER ELECTRIC
+53,8,5,size-without-price,1 1/4,FLEXIBLE HOSE
+53,8,6,size-without-price,1 1/2,FLEXIBLE HOSE
+53,9,1,size-without-price,2,FLEXIBLE HOSE
+53,10,2,size-without-price,1,FLEXIBLE HOSE
+53,10,3,size-without-price,1/2,FLEXIBLE HOSE
+53,10,4,size-without-price,3/4,FLEXIBLE HOSE
+53,13,1,size-without-price,1 1/4,FLEXIBLE HOSE
+53,13,2,size-without-price,1 1/2,FLEXIBLE HOSE
+53,13,3,size-without-price,2,FLEXIBLE HOSE

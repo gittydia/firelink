@@ -83,3 +83,38 @@ Leads convert instead of only phoning. Still no cart or checkout: an enquiry is 
 - No guaranteed delivery. Needs an outbox plus retry job before production.
 - The four UI checkboxes above are closed on build/typecheck/lint/unit-test **and** browser evidence. A headless Chromium pass over `/contact` at 1440x900 and 390x844 confirmed: no horizontal overflow at either width, all five enquiry controls expose a real `<label>` and now a native `required`, every focusable element has a visible focus ring, the honeypot stays out of the tab order and the accessibility tree, and the add-to-enquiry selection survives navigation to `/contact` (`productInquirySelection`, 1 line rendered). Hero body/heading contrast measured 12.02:1 and 17.85:1 on `bg-brand-ink`. Scripts live outside the repo; this is a one-time manual pass, not a CI gate.
 - [x] [ui] Enquiry error text is locally consistent: `Input`/`Textarea` accept an optional `errorClassName` (default `text-red-600`, so login/admin are unchanged) and `contact-form.tsx` passes `text-ember-dark`, so all five enquiry error messages render ember-dark at 7.31:1 on white. Invalid-field borders stay red; the mix was reviewed at both viewports and reads clearly. `Select` and other shared components were deliberately left alone to keep the ember CTA-only contract in `tailwind.config.ts`.
+
+## Phase 7 - Variant sizes & pricing (Sep 2026)
+
+Per-product variants: staff add/archive rows from the admin form, active rows render on the public product page (ADR-020).
+
+- [x] [lib/prc-sku] `buildVariantSku(productName, size, series)` — importer-exact `PRC-…` derivation
+- [x] [lib/format] `formatPrice` — PHP, 2dp, `₱` prefix, thousands grouping
+- [x] [lib/validation] `productVariantCreateSchema` — prices as strings (mirrors `DECIMAL(12,2)`), size/series alternatives, `active` default
+- [x] [app/admin/products/actions] `createVariant` / `toggleVariantActive` — role-gated, no redirect, revalidates admin + public catalog paths
+- [x] [app/admin/products/product-form] Variants section — add form + per-row archive/restore + `ActiveBadge`, no nested forms
+- [x] [app/admin/products/[id]/edit] Loads variants server-side, ordered by size then series
+- [x] [app/(public)/products/[slug]] Active-variants table (size, series, unit, price; range when `priceHigh` present)
+- [x] [docs] DECISIONS ADR-020; DOMAIN-MODEL variant entity + enum + DB counts; README feature line
+- [x] [typecheck/lint/build] Run checks, fix diagnostics until clean
+
+## Phase 8 - Pricelist image attach (Sep 2026)
+
+Sold-sheet photos from the supplier deck attach to pricelist products as local files under `public/pricelist-images/` (ADR-021). Pure data + script: the PDP gallery already renders `imageUrl` via `next/image`, so no app code changed.
+
+- [x] [scripts/pricelist/attach_pricelist_images.ts] Dry-run default; `--apply` copies files and inserts rows; refuses products that already have images (idempotent, safe to re-run)
+- [x] [public/pricelist-images + ProductImage] `--apply` copied 62 files and created 62 rows across 16 products (72 `ProductImage` rows total incl. 10 seeded demo images) — DB + disk verified
+- [x] [docs] DECISIONS ADR-021; DOMAIN-MODEL ProductImage two-source note (admin http(s) URL vs script-attached local path, incl. the admin re-save drop limitation)
+- [x] [typecheck/lint/build] Run checks, fix diagnostics until clean
+
+> **Note:** at the end of this milestone all 16 attached products were still `active = false` (pre-existing import state under the review workflow, ADR-019). Publicly activating those products was a separate, owner-approved step — completed in Phase 9 (ADR-022).
+
+## Phase 9 - Pricelist product activation (Sep 2026)
+
+The 16 image-attached pricelist products (Phase 8) and all 187 of their variants are promoted to the public catalog by `scripts/pricelist/activate_attached.ts` (ADR-022). Pure data + script: it flips product `active` and variant `active` flags only — `reviewStatus` and `availabilityStatus` are untouched, so the variants remain `NEEDS_REVIEW` with their workbook provenance intact.
+
+- [x] [scripts/pricelist/activate_attached.ts] Array-form `$transaction([...ops])` batch seeding the exact locked product-name → slug map from Phase 8; dry-run default that refuses `--apply` on missing-image drift
+- [x] [DB] Applied: 16 products + 187 variants activated. Verified totals: 147 products → 65 active / 82 archived; 779 variants → 324 active / 455 archived; the 187 activated variants remain `NEEDS_REVIEW` with 0 `PENDING`
+- [x] [public] Smoke test on `pnpm start` — all 4 pages PASS (`/products/empty-tank`, `/products/fire-pump`, `/products/fire-hose-push-lock-cabinet-50-ft`, `/products`), each PDP showing gallery + priced variants
+- [x] [checks] `pnpm typecheck` + `pnpm build` clean
+- [x] [docs] DECISIONS ADR-022; DOMAIN-MODEL verified catalog counts updated

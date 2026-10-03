@@ -50,6 +50,17 @@ prisma/dev.db-journal
 *.db
 *.db-journal
 
+# Python
+__pycache__/
+*.py[cod]
+
+# Pricelist staging: regenerable views of the source deck
+# ppt/PRICELIST-JANUARY-2026.ppt stays tracked — it is the source of record
+# (docs/DECISIONS.md ADR-018). Renders and extracted images are derived and
+# reproducible from it, so they are not versioned.
+/pricelist_cleaned/slide_renders/
+/pricelist_cleaned/extracted_images/
+
 # Uploads / generated assets
 /public/uploads/*
 !/public/uploads/.gitkeep

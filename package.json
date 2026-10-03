@@ -16,7 +16,8 @@
     "db:migrate": "prisma migrate dev",
     "db:deploy": "prisma migrate deploy",
     "db:studio": "prisma studio",
-    "db:seed": "tsx prisma/seed.ts"
+    "db:seed": "tsx prisma/seed.ts",
+    "db:import": "tsx scripts/pricelist/import_pricelist.ts"
   },
   "dependencies": {
     "@hookform/resolvers": "^3.9.1",
