@@ -1,5 +1,5 @@
 import { z } from "zod";
-import { AvailabilityStatus } from "@prisma/client";
+import { AvailabilityStatus, ProductOrigin } from "@prisma/client";
 import { MAX_LINE_QUANTITY, MAX_SELECTION_LINES } from "@/lib/inquiry";
 import { classifyImageUrl } from "@/lib/product-image";
 
@@ -15,6 +15,7 @@ export type LoginInput = z.infer<typeof loginSchema>;
 // ---------- Availability ----------
 
 export const availabilityStatusSchema = z.nativeEnum(AvailabilityStatus);
+export const productOriginSchema = z.nativeEnum(ProductOrigin);
 
 // ---------- Product ----------
 
@@ -60,10 +61,12 @@ const productBaseSchema = z.object({
     ),
   brand: z.string().trim().min(1, "Brand is required").max(100),
   modelNumber: z.string().trim().max(100).optional().nullable(),
+  color: z.string().trim().max(50).optional().nullable(),
   categoryId: z.string().min(1, "Category is required"),
   shortDescription: z.string().trim().max(500).optional().nullable(),
   description: z.string().optional().nullable(),
   availabilityStatus: availabilityStatusSchema,
+  origin: productOriginSchema,
   active: z.boolean().default(true),
 });
 
@@ -77,11 +80,18 @@ export const productCreateSchema = productBaseSchema.extend({
 export type ProductCreateInput = z.infer<typeof productCreateSchema>;
 
 export const productUpdateSchema = productBaseSchema.partial().extend({
+  origin: productOriginSchema,
   images: z.array(productImageInputSchema).max(4).optional(),
   specifications: z.array(productSpecificationInputSchema).max(10).optional(),
 });
 
 export type ProductUpdateInput = z.infer<typeof productUpdateSchema>;
+
+// Form initial/default values only: lets a legacy product with a NULL origin load
+// with an empty selector. Submission is re-validated into the strict types above.
+export type ProductFormValues = Omit<ProductCreateInput, "origin"> & {
+  readonly origin?: ProductOrigin;
+};
 
 // ---------- Product variant ----------
 

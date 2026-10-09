@@ -1,6 +1,10 @@
 import { describe, expect, it } from "vitest";
 import { UNSUPPORTED_IMAGE_MESSAGE } from "./product-image";
-import { productImageInputSchema } from "./validation";
+import {
+  productCreateSchema,
+  productImageInputSchema,
+  productUpdateSchema,
+} from "./validation";
 
 // Verbatim from prisma/seed.ts so the seeded catalog can never be locked out by
 // a stricter rule: the path carries no extension and the format lives in "fm".
@@ -67,5 +71,55 @@ describe("productImageInputSchema", () => {
       expect(result.data.displayOrder).toBe(2);
       expect(result.data.altText).toBe("Red hose reel");
     }
+  });
+});
+
+const validProductInput = {
+  sku: "EXT-ABC-050",
+  name: "ABC Fire Extinguisher",
+  slug: "abc-fire-extinguisher",
+  brand: "FireGuard",
+  categoryId: "category-1",
+  availabilityStatus: "LOCAL",
+  active: true,
+  images: [],
+  specifications: [],
+};
+
+describe("product origin validation", () => {
+  it("rejects a product create when origin is omitted", () => {
+    const result = productCreateSchema.safeParse(validProductInput);
+
+    expect(result.success).toBe(false);
+  });
+
+  it("rejects a product update when origin is omitted", () => {
+    const result = productUpdateSchema.safeParse({ name: "Updated name" });
+
+    expect(result.success).toBe(false);
+  });
+
+  it.each(["LOCAL", "INTERNATIONAL"])(
+    "accepts %s as a product origin",
+    (origin) => {
+      const result = productCreateSchema.safeParse({
+        ...validProductInput,
+        origin,
+      });
+
+      expect(result.success).toBe(true);
+      if (result.success) {
+        expect(result.data.origin).toBe(origin);
+      }
+    },
+  );
+
+  it("rejects availability-only values as a product origin", () => {
+    const result = productCreateSchema.safeParse({
+      ...validProductInput,
+      origin: "IN_STOCK",
+    });
+
+    expect(result.success).toBe(false);
   });
 });

@@ -23,6 +23,7 @@ function matchesSearch(product: ProductCardData, query: string): boolean {
     product.name,
     product.brand,
     product.modelNumber,
+    product.color,
     product.shortDescription,
   ];
 

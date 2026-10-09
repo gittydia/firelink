@@ -1,5 +1,6 @@
-import type { AvailabilityStatus } from "@prisma/client";
+import type { AvailabilityStatus, ProductOrigin } from "@prisma/client";
 import { availabilityLabels } from "@/lib/availability";
+import { productOriginLabels } from "@/lib/product-origin";
 import { staffStatusLabel } from "@/lib/staff";
 import { cn } from "@/lib/utils";
 
@@ -25,6 +26,31 @@ export function AvailabilityBadge({
       )}
     >
       {availabilityLabels[status]}
+    </span>
+  );
+}
+
+export function ProductOriginBadge({
+  origin,
+  className,
+}: {
+  origin: ProductOrigin;
+  className?: string;
+}) {
+  const tone: Record<ProductOrigin, string> = {
+    LOCAL: "bg-brand-canvas text-brand-ink",
+    INTERNATIONAL: "bg-violet-100 text-violet-800",
+  };
+
+  return (
+    <span
+      className={cn(
+        "inline-flex items-center rounded-full px-2.5 py-0.5 text-xs font-medium",
+        tone[origin],
+        className,
+      )}
+    >
+      {productOriginLabels[origin]}
     </span>
   );
 }

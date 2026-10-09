@@ -118,3 +118,13 @@ The 16 image-attached pricelist products (Phase 8) and all 187 of their variants
 - [x] [public] Smoke test on `pnpm start` — all 4 pages PASS (`/products/empty-tank`, `/products/fire-pump`, `/products/fire-hose-push-lock-cabinet-50-ft`, `/products`), each PDP showing gallery + priced variants
 - [x] [checks] `pnpm typecheck` + `pnpm build` clean
 - [x] [docs] DECISIONS ADR-022; DOMAIN-MODEL verified catalog counts updated
+
+## Phase 10 - Product colour & catalog "From ₱X" (Oct 2026)
+
+Closes two catalog gaps found in the capstone/PRD audit. `Product.color` (`String?`) is a product-level display field (ADR-023); the public product grid now shows a "From ₱X" hint — the minimum `unitPrice` across a product's active variants, omitted when there are none.
+
+- [x] [prisma/schema.prisma + migration] `color String?` on `Product`; migration `20261009000000_add_product_color` applied
+- [x] [admin] `Color` input on the product form, persisted on create + update (`color: data.color ?? null`)
+- [x] [public] PDP shows colour; catalog cards show "From ₱X" (min active-variant price)
+- [x] [validation] `color` added to `productBaseSchema` (Zod)
+- [x] [checks] `pnpm typecheck` + `pnpm lint` clean; `next build` clean

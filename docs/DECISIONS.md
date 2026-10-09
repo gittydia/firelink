@@ -147,3 +147,17 @@ The write path is the array form of Prisma's `$transaction([...ops])`. The inter
 `reviewStatus` stays untouched by design. The 187 newly-active lock-set variants remain `NEEDS_REVIEW` (verified: 187 `NEEDS_REVIEW`, 0 `PENDING` among them), keeping their workbook provenance intact and queryable in `/admin` — promoting a row and resolving its review are separate axes, per ADR-020's "visibility is gated by `active` alone".
 
 Verified catalog totals after apply: 147 products — 65 active (49 already-active outside the locked set plus the 16 lock-set products) and 82 archived — and 779 variants — 324 active (137 `PENDING`, cleared at import or typed in admin, plus 187 lock-set `NEEDS_REVIEW`) and 455 archived. The public catalog shows a newly-active variant only where the source provided a price; the "never infer" boundary (ADR-017) is unchanged.
+
+## ADR-023: Product colour is a product-level display field, and catalog cards carry a "From ₱X" hint
+
+A capstone/PRD audit surfaced two catalog gaps, closed here. Colour is modelled as a single nullable `Product.color` (`String?`), not a `ProductVariant` attribute and not a `ProductSpecification` row: the catalog's variant axis is size/series, so per-variant colour would over-model a display concern. It is entered on the admin product form and shown on the product detail page and (when present) on the catalog card subtitle.
+
+Because the public catalog lists products rather than variants, each card shows a "From ₱X" hint equal to the minimum `unitPrice` across that product's active variants. The hint is derived at read time from active variants and omitted when there are none; nothing is stored on `Product`. Listing a bare product price would misrepresent multi-variant products, and listing every variant would defeat the grid.
+
+Persistence follows the existing convention: `color: data.color ?? null` means an empty input is stored as `""`, exactly as `modelNumber` already behaves — not a new quirk. `color` is validated in `productBaseSchema` (Zod) alongside the other product fields. See TODO-PROTOTYPE Phase 10 for the applied result.
+
+## ADR-024: Product origin is separate from availability and remains unclassified until staff confirms it
+
+`Product.origin` is a nullable `ProductOrigin` enum: `LOCAL` means sourced locally in the Philippines and `INTERNATIONAL` means imported or sourced from abroad. It is separate from `AvailabilityStatus` (`LOCAL` / `IN_STOCK` / `INDENT`): origin answers where a product is sourced, while availability answers whether and how it can currently be supplied. A product can therefore be international and in stock locally, or local and available only on an indent basis.
+
+The migration deliberately leaves all existing origins `NULL` and does not default them to `LOCAL`; the catalog and pricelist records do not contain sufficient provenance to make that claim. Public cards and detail pages omit an origin badge until classification is known. The protected create and edit form requires a staff member to choose an origin before saving, while the pricelist importer preserves the honest unclassified state instead of inferring it. This supersedes only the former implication in the availability description that `LOCAL` means locally sourced; ADR-004's requirement that availability is text-visible and ADR-019's product-level availability ownership remain unchanged.

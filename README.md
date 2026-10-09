@@ -5,6 +5,7 @@ A minimal prototype web app for centralizing fire protection product information
 ## Features (Prototype)
 
 - Public product catalog with search, category and availability filters, sorting
+- Catalog cards show a "From ₱X" hint (lowest active-variant price); product colour is shown per product
 - Product detail pages with availability (prominently shown as Local / In Stock / Indent), specs, and an active-variants table (size / series / unit / price)
 - Category browsing
 - Guest enquiry flow: optional "add to enquiry" selection that persists across pages, submitted to a durable `Inquiry` row with an `FLQ-YYYYMMDD-XXXXXX` reference

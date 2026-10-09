@@ -1,9 +1,10 @@
 import Image from "next/image";
 import Link from "next/link";
-import type { AvailabilityStatus } from "@prisma/client";
+import type { AvailabilityStatus, ProductOrigin } from "@prisma/client";
 import { EnquiryAddButton } from "@/components/enquiry-add-button";
-import { AvailabilityBadge } from "@/components/ui/badge";
+import { AvailabilityBadge, ProductOriginBadge } from "@/components/ui/badge";
 import { Card } from "@/components/ui/card";
+import { formatPrice } from "@/lib/format";
 
 export interface ProductCardData {
   id: string;
@@ -12,9 +13,12 @@ export interface ProductCardData {
   name: string;
   brand: string;
   modelNumber: string | null;
+  color: string | null;
   shortDescription: string | null;
   availabilityStatus: AvailabilityStatus;
+  origin: ProductOrigin | null;
   images: { imageUrl: string; altText: string | null }[];
+  priceFrom: number | null;
 }
 
 export function ProductCard({ product }: { product: ProductCardData }) {
@@ -38,19 +42,27 @@ export function ProductCard({ product }: { product: ProductCardData }) {
           )}
         </div>
         <div className="flex flex-col gap-1.5 p-4">
-          <div className="flex items-start justify-between gap-3">
-            <h3 className="font-semibold leading-snug text-brand-ink group-hover:text-ember-dark">
+          <div className="flex flex-col items-start gap-2 sm:flex-row sm:flex-wrap sm:justify-between sm:gap-3">
+            <h3 className="min-w-0 font-semibold leading-snug text-brand-ink group-hover:text-ember-dark">
               {product.name}
             </h3>
-            <AvailabilityBadge
-              status={product.availabilityStatus}
-              className="shrink-0"
-            />
+            <div className="flex w-full flex-wrap gap-1.5 sm:w-auto sm:min-w-0">
+              <AvailabilityBadge status={product.availabilityStatus} />
+              {product.origin ? (
+                <ProductOriginBadge origin={product.origin} />
+              ) : null}
+            </div>
           </div>
           <p className="text-xs font-medium text-brand-slate">
             {product.brand}
             {product.modelNumber ? ` · ${product.modelNumber}` : ""}
+            {product.color ? ` · ${product.color}` : ""}
           </p>
+          {product.priceFrom !== null ? (
+            <p className="mt-0.5 text-sm font-semibold text-brand-ink">
+              From {formatPrice(product.priceFrom)}
+            </p>
+          ) : null}
           {product.shortDescription ? (
             <p className="mt-1 line-clamp-2 text-sm leading-6 text-brand-slate">
               {product.shortDescription}

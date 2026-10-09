@@ -14,14 +14,24 @@ import { Select, type SelectOption } from "@/components/ui/select";
 import { Textarea } from "@/components/ui/textarea";
 import { availabilityLabels } from "@/lib/availability";
 import { formatPrice } from "@/lib/format";
+import { productOriginLabels } from "@/lib/product-origin";
 import { isUsableImageUrl, resolveImageAlt } from "@/lib/product-image";
 import { slugify } from "@/lib/utils";
-import { productCreateSchema, type ProductCreateInput } from "@/lib/validation";
+import {
+  productCreateSchema,
+  type ProductCreateInput,
+  type ProductFormValues,
+} from "@/lib/validation";
 import { createProduct, createVariant, toggleVariantActive, updateProduct } from "./actions";
 
 const availabilityOptions: SelectOption[] = (
   Object.keys(availabilityLabels) as AvailabilityStatus[]
 ).map((value) => ({ value, label: availabilityLabels[value] }));
+
+const productOriginOptions: SelectOption[] = [
+  { value: "LOCAL", label: productOriginLabels.LOCAL },
+  { value: "INTERNATIONAL", label: productOriginLabels.INTERNATIONAL },
+];
 
 export interface ProductVariantFormRow {
   id: string;
@@ -40,17 +50,18 @@ export interface ProductVariantFormRow {
 interface ProductFormProps {
   categories: SelectOption[];
   productId?: string;
-  initial?: ProductCreateInput;
+  initial?: ProductFormValues;
   variants?: ProductVariantFormRow[];
 }
 
-function emptyProduct(): ProductCreateInput {
+function emptyProduct(): ProductFormValues {
   return {
     sku: "",
     name: "",
     slug: "",
     brand: "",
     modelNumber: "",
+    color: "",
     categoryId: "",
     shortDescription: "",
     description: "",
@@ -281,6 +292,11 @@ export function ProductForm({
             {...register("modelNumber")}
             error={errors.modelNumber?.message}
           />
+          <Input
+            label="Color"
+            {...register("color")}
+            error={errors.color?.message}
+          />
           <Select
             label="Category"
             placeholder="Select a category"
@@ -311,6 +327,13 @@ export function ProductForm({
             options={availabilityOptions}
             {...register("availabilityStatus")}
             error={errors.availabilityStatus?.message}
+          />
+          <Select
+            label="Product origin"
+            placeholder="Select product origin"
+            options={productOriginOptions}
+            {...register("origin")}
+            error={errors.origin?.message}
           />
           <label className="flex h-full items-center gap-2 text-sm font-medium text-neutral-700">
             <input

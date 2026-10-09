@@ -69,10 +69,12 @@ export async function createProduct(input: ProductCreateInput) {
         slug,
         brand: data.brand,
         modelNumber: data.modelNumber ?? null,
+        color: data.color ?? null,
         categoryId: data.categoryId,
         shortDescription: data.shortDescription ?? null,
         description: data.description ?? null,
         availabilityStatus: data.availabilityStatus,
+        origin: data.origin,
         active: data.active ?? true,
         images: {
           create: data.images.map((image, index) => ({
@@ -120,10 +122,12 @@ export async function updateProduct(id: string, input: ProductUpdateInput) {
     slug: data.slug,
     brand: data.brand,
     modelNumber: data.modelNumber ?? null,
+    color: data.color ?? null,
     categoryId: data.categoryId,
     shortDescription: data.shortDescription ?? null,
     description: data.description ?? null,
     availabilityStatus: data.availabilityStatus,
+    origin: data.origin,
     active: data.active,
   };
 

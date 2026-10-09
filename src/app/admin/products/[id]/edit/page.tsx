@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import { prisma } from "@/lib/prisma";
 import { requireRole } from "@/lib/permissions";
-import type { ProductCreateInput } from "@/lib/validation";
+import type { ProductFormValues } from "@/lib/validation";
 import { ProductForm } from "../../product-form";
 
 export const metadata: Metadata = { title: "Edit product" };
@@ -23,16 +23,18 @@ export default async function EditProductPage({ params }: Props) {
   });
   if (!product) notFound();
 
-  const initial: ProductCreateInput = {
+  const initial: ProductFormValues = {
     sku: product.sku,
     name: product.name,
     slug: product.slug,
     brand: product.brand,
     modelNumber: product.modelNumber ?? undefined,
+    color: product.color ?? undefined,
     categoryId: product.categoryId,
     shortDescription: product.shortDescription ?? undefined,
     description: product.description ?? undefined,
     availabilityStatus: product.availabilityStatus,
+    ...(product.origin === null ? {} : { origin: product.origin }),
     active: product.active,
     images: product.images.map((image) => ({
       imageUrl: image.imageUrl,

@@ -3,11 +3,12 @@ import Image from "next/image";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import { EnquiryAddButton } from "@/components/enquiry-add-button";
-import { AvailabilityBadge } from "@/components/ui/badge";
+import { AvailabilityBadge, ProductOriginBadge } from "@/components/ui/badge";
 import { buttonLinkClass } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
 import { availabilityDescriptions } from "@/lib/availability";
 import { formatPrice } from "@/lib/format";
+import { productOriginDescriptions } from "@/lib/product-origin";
 import { prisma } from "@/lib/prisma";
 
 type Props = { params: Promise<{ slug: string }> };
@@ -106,19 +107,35 @@ export default async function ProductPage({ params }: Props) {
               {product.brand}
               {product.modelNumber ? ` · Model ${product.modelNumber}` : ""} ·
               SKU {product.sku}
+              {product.color ? ` · Color ${product.color}` : ""}
             </p>
             <h1 className="mt-1 text-3xl font-bold tracking-tight text-neutral-900">
               {product.name}
             </h1>
           </div>
 
-          {/* Availability — text always shown, color is extra */}
           <Card className="border-l-4 border-l-fire p-4">
-            <div className="flex flex-wrap items-center gap-3">
-              <AvailabilityBadge status={product.availabilityStatus} />
-              <p className="text-sm text-neutral-600">
-                {availabilityDescriptions[product.availabilityStatus]}
-              </p>
+            <div className="space-y-3">
+              <div className="flex flex-wrap items-center gap-3">
+                <p className="text-sm font-semibold text-neutral-700">
+                  Availability
+                </p>
+                <AvailabilityBadge status={product.availabilityStatus} />
+                <p className="text-sm text-neutral-600">
+                  {availabilityDescriptions[product.availabilityStatus]}
+                </p>
+              </div>
+              {product.origin ? (
+                <div className="flex flex-wrap items-center gap-3 border-t border-neutral-200 pt-3">
+                  <p className="text-sm font-semibold text-neutral-700">
+                    Product origin
+                  </p>
+                  <ProductOriginBadge origin={product.origin} />
+                  <p className="text-sm text-neutral-600">
+                    {productOriginDescriptions[product.origin]}
+                  </p>
+                </div>
+              ) : null}
             </div>
           </Card>
 

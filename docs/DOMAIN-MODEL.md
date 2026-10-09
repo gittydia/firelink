@@ -6,14 +6,22 @@
 | --------------------------- | -------------------------------------- | --------------------------------------------- |
 | `UserRole`                  | `ADMIN`, `SALES`                       | Role-based access control                     |
 | `AvailabilityStatus`        | `LOCAL`, `IN_STOCK`, `INDENT`          | Product availability classification           |
+| `ProductOrigin`             | `LOCAL`, `INTERNATIONAL`               | Product sourcing origin                       |
 | `InquiryNotificationStatus` | `PENDING`, `SENT`, `FAILED`, `SKIPPED` | Outcome of the best-effort sales notification |
 | `VariantReviewStatus`       | `PENDING`, `NEEDS_REVIEW`             | Whether a row cleared the catalog (who stamped it) |
 
 ### Availability semantics
 
-- `LOCAL` - locally available / locally sourced
+- `LOCAL` - available locally
 - `IN_STOCK` - currently has available inventory
 - `INDENT` - must be specially ordered / sourced before delivery
+
+### Product origin semantics
+
+- `LOCAL` - sourced locally in the Philippines
+- `INTERNATIONAL` - imported or sourced from abroad
+
+Origin is separate from availability: an international product can still be in stock locally, while a local product can be available on an indent basis. `Product.origin` is nullable during the transition because existing and imported records have no verified origin evidence. Public pages omit the origin badge for unclassified products; the admin create/edit flow requires staff to classify a product before saving. The pricelist importer does not infer origin.
 
 ## Entities
 
@@ -30,6 +38,12 @@ Catalog grouping (e.g., Fire Extinguishers). `name` unique. `active` = soft deac
 ### Product
 
 Core catalog entity. `sku` and `slug` unique. `availabilityStatus` is one of the enum values. `active` = soft archive (inactive products are hidden from public catalog).
+
+`origin` is a nullable product-level `ProductOrigin`, independent from `availabilityStatus`. When present, it appears as a separate Local Product or International / Imported badge on public cards and the product detail page.
+
+`color` (nullable string) is a product-level, display-only attribute — a single value per product, not part of a variant's identity and not a `ProductSpecification` row. It appears on the product detail page and, when present, on the public catalog card subtitle. It does not affect which variants exist or how they are keyed.
+
+The public catalog lists products, not variants, so each card shows a "From ₱X" price hint: the minimum `unitPrice` across that product's active variants. The hint is derived at read time and is omitted when the product has no priced active variants. It is not stored on `Product`.
 
 #### Inventory audit
 

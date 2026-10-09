@@ -20,6 +20,7 @@ type SeedProduct = {
   name: string;
   brand: string;
   modelNumber?: string;
+  color?: string;
   category: string;
   shortDescription: string;
   description: string;
@@ -61,6 +62,7 @@ const products: SeedProduct[] = [
     name: "ABC Dry Chemical Fire Extinguisher 5kg",
     brand: "FireGuard",
     modelNumber: "FG-ABC5",
+    color: "Red",
     category: "Fire Extinguishers",
     shortDescription:
       "5kg multipurpose dry chemical extinguisher for general-use fire points.",
@@ -84,6 +86,7 @@ const products: SeedProduct[] = [
     name: "ABC Dry Chemical Fire Extinguisher 9kg",
     brand: "FireGuard",
     modelNumber: "FG-ABC9",
+    color: "Red",
     category: "Fire Extinguishers",
     shortDescription: "9kg dry chemical extinguisher for larger hazard areas.",
     description:
@@ -106,6 +109,7 @@ const products: SeedProduct[] = [
     name: "CO2 Fire Extinguisher 5kg",
     brand: "FireGuard",
     modelNumber: "FG-CO25",
+    color: "Red",
     category: "Fire Extinguishers",
     shortDescription:
       "5kg carbon dioxide extinguisher for electrical and Class B risks.",
@@ -129,6 +133,7 @@ const products: SeedProduct[] = [
     name: "Water Fire Extinguisher 9L",
     brand: "FireGuard",
     modelNumber: "FG-WTR9",
+    color: "Red",
     category: "Fire Extinguishers",
     shortDescription: "9L water extinguisher for Class A combustible solids.",
     description:
@@ -151,6 +156,7 @@ const products: SeedProduct[] = [
     name: "Fire Hose Reel 25m",
     brand: "AquaFlow",
     modelNumber: "AF-HR25",
+    color: "Red",
     category: "Fire Hoses & Reels",
     shortDescription:
       "Wall-mounted 25m semi-rigid hose reel for interior water supply.",
@@ -174,6 +180,7 @@ const products: SeedProduct[] = [
     name: "Fire Hose 1.5in x 15m",
     brand: "AquaFlow",
     modelNumber: "AF-H150",
+    color: "Red",
     category: "Fire Hoses & Reels",
     shortDescription:
       "15m delivery hose with couplings for hydrant connections.",
@@ -197,6 +204,7 @@ const products: SeedProduct[] = [
     name: "Photoelectric Smoke Detector",
     brand: "Sentinel",
     modelNumber: "SN-DET-PE",
+    color: "White",
     category: "Fire Alarms & Detectors",
     shortDescription: "Photoelectric smoke detector for ceiling mounting.",
     description:
@@ -219,6 +227,7 @@ const products: SeedProduct[] = [
     name: "Fire Alarm Control Panel 8-Zone",
     brand: "Sentinel",
     modelNumber: "SN-PNL8",
+    color: "White",
     category: "Fire Alarms & Detectors",
     shortDescription: "Conventional 8-zone fire alarm control panel.",
     description:
@@ -241,6 +250,7 @@ const products: SeedProduct[] = [
     name: "LED Emergency Exit Sign",
     brand: "LumaSafe",
     modelNumber: "LS-EXIT",
+    color: "Green",
     category: "Emergency Lighting",
     shortDescription: "Self-contained LED exit sign with battery backup.",
     description:
@@ -263,6 +273,7 @@ const products: SeedProduct[] = [
     name: "Fire Blanket 1.2m x 1.8m",
     brand: "LumaSafe",
     modelNumber: "LS-FB12",
+    color: "White",
     category: "Fire Blankets",
     shortDescription: "Wall-mounted fire blanket for kitchen and workshop use.",
     description:
@@ -333,6 +344,7 @@ async function main() {
       slug: slugify(p.name),
       brand: p.brand,
       modelNumber: p.modelNumber ?? null,
+      color: p.color ?? null,
       categoryId: category.id,
       shortDescription: p.shortDescription,
       description: p.description,
@@ -346,6 +358,7 @@ async function main() {
         name: p.name,
         brand: p.brand,
         modelNumber: p.modelNumber ?? null,
+        color: p.color ?? null,
         categoryId: category.id,
         shortDescription: p.shortDescription,
         description: p.description,
