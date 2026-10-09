@@ -1,6 +1,7 @@
 # Quotation & RFQ Document Generation — Proposed Design and Implementation Gap
 
 **Status:** Proposal. Nothing described under "Proposed design" is implemented in the codebase today.
+**Governance update:** See `QUOTATION-GOVERNANCE.md` for the implemented policy-readiness foundation. All four decisions remain unresolved and issuance is disabled. Its snapshot requirement supersedes this proposal's live-price alternative; no quotation records or renderers have been added.
 **Scope:** Non-transactional lead handling only. No cart, checkout, payment, or order capture.
 
 This note has two jobs, deliberately kept separate:
@@ -121,7 +122,7 @@ Every row below is grounded in `path:line` read directly from the repository. Ab
 
 | Paper claim / proposed capability | Current state | Evidence |
 |---|---|---|
-| "generation of quotations" (`:193`) | Not implemented. Zero `Quotation`, `RFQ`, or `RequestForQuotation` symbols exist in `src/` or `prisma/`. No quotation model in the schema. | `prisma/schema.prisma:171–212` (only `Inquiry` + `InquiryProduct`); exhaustive search returned no quotation symbols |
+| "generation of quotations" (`:193`) | Not implemented. Policy-readiness helpers exist, but no quotation model or generation workflow exists. | `prisma/schema.prisma:171–212` (only `Inquiry` + `InquiryProduct`); `src/lib/quotation-policy.ts` keeps issuance disabled |
 | "quote generator" via Gmail (`:211`, `:217`) | Not implemented. Delivery is a Resend HTTP `POST`, not Gmail automation. | `src/lib/email.ts:22`, `src/lib/email.ts:98–112` |
 | Catalog as authoritative line-item source | Exists and is server-resolved. Only product IDs cross the browser boundary; name, SKU and availability are re-read from the catalog on submit. | `src/app/(public)/contact/actions.ts:59–68`, `src/app/(public)/contact/actions.ts:74–86` |
 | Durable enquiry reference `FLQ-…` | Exists. `buildInquiryReference` formats `FLQ-YYYYMMDD-XXXXXX` from a UTC date plus a 6-char suffix. The alphabet deliberately omits `0/O/1/I` because sales reads references aloud. | `src/lib/inquiry.ts:5–6`, `src/lib/inquiry.ts:14–31` |
@@ -195,7 +196,7 @@ Item 2 is the one that matters most here, because it is the same conceptual erro
 
 These are unresolved and should be settled before implementation:
 
-1. **Pricing snapshot or live pricing?** Determines whether an issued quotation is immutable, so it must be answered first. If pricing is modelled as a single static unit price, snapshotting the value is straightforward. If it is modelled as *price conditions* per Kelkar et al. (2002), then the conditions — validity period, quantity break, customer class — are what must be snapshotted, and the data model changes shape.
+1. **Unit-price snapshot or full price-condition snapshot?** Issued quotations must not use live catalog pricing. The unresolved choice is the scope of the snapshot, including applicable conditions, not whether historical quotations may change after issue. See `QUOTATION-GOVERNANCE.md`.
 2. **PDF only, or PDF plus HTML view?** An HTML view is materially more accessible and easier to make responsive.
 3. **Who prices a quotation — automated or staff-reviewed?** If prices vary by customer or need approval, "generate on submit" is the wrong trigger and the send-after-commit pattern in ADR-010 needs rethinking. Flechsig et al. (2022) is the reason to assume governance gaps rather than absence of them.
 4. **Retention period** for issued quotation documents, and whether an expired price reopens the record. IEEE (2019) treats retention and disposition of artifacts as a controlled lifecycle decision rather than an afterthought; the same reasoning applies to a priced commercial document, which is exactly the kind of record a dispute may require years later.

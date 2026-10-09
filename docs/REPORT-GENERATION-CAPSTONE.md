@@ -39,6 +39,11 @@ However, the current implementation does not contain a quotation or RFQ data mod
 
 ## 5. Limitations and Future Work
 
+The implemented governance foundation is documented in `QUOTATION-GOVERNANCE.md`.
+It represents all four policies as unresolved and keeps issuance disabled, even
+if configuration is later completed, until the approved behavior is implemented.
+It does not create quotation drafts, pricing, documents, approvals, or sends.
+
 The proposed capability should be implemented only after the following decisions are made:
 
 1. **Pricing model:** determine whether quotations snapshot a unit price or a complete set of price conditions.

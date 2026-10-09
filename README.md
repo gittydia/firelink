@@ -97,6 +97,7 @@ App: http://localhost:3000
 - Prototype scope: information + inventory visibility only (no payments/checkout/shipping)
 - Variant rows are admin-managed: added and archived from the product form; only `active` variants appear publicly (ADR-020)
 - Enquiries are captured, not transacted — there is no cart, quote, or order
+- Quotation governance groundwork is documented in `docs/QUOTATION-GOVERNANCE.md`; all four policies remain unresolved and issuance is disabled. No quotation drafts or documents are persisted yet.
 - An enquiry is durable once written; a failed sales email never fails the submission (see `docs/DECISIONS.md` ADR-010)
 - Product selection sends IDs only; names, SKUs, and availability are resolved server-side (ADR-011)
 - Spam defence is a honeypot field only — no rate limiting yet
