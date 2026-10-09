@@ -11,7 +11,7 @@ import {
 export const metadata: Metadata = {
   title: "About",
   description:
-    "Learn how Fire Protection Equipment makes equipment information and availability easier to understand.",
+    "Learn how Fire Guard Solutions makes equipment information and availability easier to understand.",
 };
 
 const equipmentLines = [
@@ -54,7 +54,7 @@ export default function AboutPage() {
               Equipment information you can rely on.
             </h1>
             <p className="mt-5 max-w-xl text-base leading-relaxed text-home-ctaPale sm:text-lg">
-              Fire Protection Equipment brings product details, equipment categories, and real
+              Fire Guard Solutions brings product details, equipment categories, and real
               availability into one dependable source for facilities and projects.
             </p>
           </div>
@@ -64,7 +64,7 @@ export default function AboutPage() {
       <section className="mx-auto grid max-w-5xl gap-10 lg:grid-cols-[0.9fr_1.1fr] lg:items-start">
         <div>
           <p className="text-xs font-bold tracking-[0.22em] text-home-muted">
-            ABOUT FIRE PROTECTION EQUIPMENT
+            ABOUT FIRE GUARD SOLUTIONS
           </p>
           <h2 className="mt-3 text-3xl font-bold tracking-tight text-home-text sm:text-4xl">
             Reliable product information for essential safety systems.
@@ -72,7 +72,7 @@ export default function AboutPage() {
         </div>
         <div className="space-y-5 text-base leading-relaxed text-home-muted">
           <p>
-            Fire Protection Equipment is a product information and inventory visibility platform
+            Fire Guard Solutions is a product information and inventory visibility platform
             for fire protection equipment. It centralizes specifications,
             categories, and availability for equipment supplied to projects and
             facilities.

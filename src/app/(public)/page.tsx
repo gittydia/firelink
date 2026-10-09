@@ -1,4 +1,5 @@
 import Image from "next/image";
+import type { Metadata } from "next";
 import Link from "next/link";
 import type { AvailabilityStatus } from "@prisma/client";
 import { buttonLinkClass } from "@/components/ui/button";
@@ -7,8 +8,8 @@ import { CategoryRail } from "@/components/product/category-rail";
 import { availabilityLabels } from "@/lib/availability";
 import { prisma } from "@/lib/prisma";
 
-export const metadata = {
-  title: "Fire Protection Equipment & Supplies",
+export const metadata: Metadata = {
+  title: "Fire Guard Solutions & Supplies",
   description:
     "Browse fire extinguishers, hoses, alarms, emergency lighting, and more — with real availability status.",
 };
@@ -266,7 +267,7 @@ export default async function HomePage() {
             About Brand
           </h2>
           <p className="text-sm leading-relaxed text-home-muted">
-            Fire Protection Equipment is a Philippine fire protection supplier focused on
+            Fire Guard Solutions is a Philippine fire protection supplier focused on
             dependable availability. We stock the equipment facilities actually
             need, keep inventory visibility honest, and quote lead times plainly
             so specification decisions are never guesswork.

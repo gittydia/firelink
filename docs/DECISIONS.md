@@ -1,4 +1,4 @@
-# Fire Protection Equipment - Decisions
+# Fire Guard Solutions - Decisions
 
 ## ADR-001: Single-package repository (no pnpm workspaces)
 

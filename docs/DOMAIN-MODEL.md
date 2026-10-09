@@ -1,4 +1,4 @@
-# Fire Protection Equipment - Domain Model
+# Fire Guard Solutions - Domain Model
 
 ## Enums
 

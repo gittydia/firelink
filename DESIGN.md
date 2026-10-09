@@ -1,4 +1,4 @@
-# Fire Protection Equipment Design System
+# Fire Guard Solutions Design System
 
 ## 1. Brief
 

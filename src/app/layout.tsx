@@ -4,8 +4,8 @@ import "./globals.css";
 
 export const metadata: Metadata = {
   title: {
-    default: "Fire Protection Equipment",
-    template: "%s | Fire Protection Equipment",
+    default: "Fire Guard Solutions",
+    template: "%s | Fire Guard Solutions",
   },
   description:
     "Fire protection equipment product information and inventory visibility — availability shown as Available Locally, In Stock, or Indent / Order Basis.",

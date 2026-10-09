@@ -1,4 +1,4 @@
-# Fire Protection Equipment - Authentication & Authorization
+# Fire Guard Solutions - Authentication & Authorization
 
 ## Authentication
 

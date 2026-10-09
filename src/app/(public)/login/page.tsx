@@ -34,7 +34,7 @@ export default async function LoginPage() {
       <div className="relative mx-auto grid w-full max-w-5xl gap-10 px-4 lg:grid-cols-[1fr_420px] lg:items-center">
         <div className="max-w-xl text-white">
           <p className="text-xs font-bold tracking-[0.22em] text-home-ctaPale">
-            FIRE PROTECTION EQUIPMENT STAFF PORTAL
+            FIRE GUARD SOLUTIONS STAFF PORTAL
           </p>
           <h1 className="mt-4 text-4xl font-bold tracking-tight sm:text-5xl">
             Keep critical equipment information ready.

@@ -42,7 +42,7 @@ export default async function PublicLayout({
             href="/"
             className="inline-flex items-center py-2.5 text-lg font-bold tracking-tight text-white"
           >
-            Fire Protection Equipment
+            Fire Guard Solutions
           </Link>
 
           <nav
@@ -108,7 +108,7 @@ export default async function PublicLayout({
         <div className="mx-auto grid max-w-6xl gap-10 px-4 py-12 sm:grid-cols-2 lg:grid-cols-3">
           <div>
             <p className="text-lg font-bold text-white">
-              Fire Protection Equipment
+              Fire Guard Solutions
             </p>
             <p className="mt-3 max-w-xs text-sm leading-relaxed text-home-cta">
               Fire protection equipment and supplies with real availability
@@ -139,7 +139,7 @@ export default async function PublicLayout({
 
         <div className="border-t border-white/10">
           <div className="mx-auto max-w-6xl px-4 py-5 text-sm text-home-cta">
-            &copy; {new Date().getFullYear()} Fire Protection Equipment. Product information
+            &copy; {new Date().getFullYear()} Fire Guard Solutions. Product information
             &amp; inventory visibility for fire protection equipment.
           </div>
         </div>

@@ -1,4 +1,4 @@
-// Fire Protection Equipment - Prisma schema
+// Fire Guard Solutions - Prisma schema
 // PostgreSQL. Local dev via Docker (docker-compose.yml); production via hosted Postgres (Vercel/Neon/Supabase).
 
 generator client {

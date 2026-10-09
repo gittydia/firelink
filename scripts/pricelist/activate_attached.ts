@@ -1,5 +1,5 @@
 /**
- * Fire Protection Equipment pricelist product activation (owner decision, Sep 2026).
+ * Fire Guard Solutions pricelist product activation (owner decision, Sep 2026).
  *
  * Activates the 16 products that received attached sold-sheet images
  * (scripts/pricelist/attach_pricelist_images.ts) plus ALL their variants.
