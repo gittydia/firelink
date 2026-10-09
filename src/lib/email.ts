@@ -71,7 +71,7 @@ function buildHtmlBody(inquiry: InquiryNotification): string {
       : "<p><em>No products selected (general enquiry)</em></p>";
 
   return [
-    "<p><strong>New FireLink enquiry</strong></p>",
+    "<p><strong>New Fire Protection Equipment enquiry</strong></p>",
     `<p>Reference: <strong>${escapeHtml(inquiry.reference)}</strong></p>`,
     `<p>Name: ${escapeHtml(inquiry.name)}<br />Company: ${escapeHtml(inquiry.company)}` +
       `<br />Email: ${escapeHtml(inquiry.email)}</p>`,
@@ -105,7 +105,7 @@ export async function notifySalesOfInquiry(
         from,
         to: [to],
         reply_to: inquiry.email,
-        subject: `FireLink enquiry ${inquiry.reference} - ${inquiry.company}`,
+        subject: `Fire Protection Equipment enquiry ${inquiry.reference} - ${inquiry.company}`,
         html: buildHtmlBody(inquiry),
         text: buildTextBody(inquiry),
       }),

@@ -4,8 +4,8 @@ import "./globals.css";
 
 export const metadata: Metadata = {
   title: {
-    default: "FireLink | Fire Protection Equipment",
-    template: "%s | FireLink",
+    default: "Fire Protection Equipment",
+    template: "%s | Fire Protection Equipment",
   },
   description:
     "Fire protection equipment product information and inventory visibility — availability shown as Available Locally, In Stock, or Indent / Order Basis.",

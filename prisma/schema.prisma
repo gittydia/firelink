@@ -1,4 +1,4 @@
-// FireLink - Prisma schema
+// Fire Protection Equipment - Prisma schema
 // PostgreSQL. Local dev via Docker (docker-compose.yml); production via hosted Postgres (Vercel/Neon/Supabase).
 
 generator client {

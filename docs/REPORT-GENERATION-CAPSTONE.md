@@ -2,7 +2,7 @@
 
 ## 1. Scope and Context
 
-FireLink is an information and inventory-visibility prototype. Its current customer workflow captures product enquiries; it does not provide cart, checkout, payment, order capture, or quotation-document generation. This chapter proposes a non-transactional quotation and request-for-quotation (RFQ) capability that can be introduced in a future phase.
+Fire Protection Equipment is an information and inventory-visibility prototype. Its current customer workflow captures product enquiries; it does not provide cart, checkout, payment, order capture, or quotation-document generation. This chapter proposes a non-transactional quotation and request-for-quotation (RFQ) capability that can be introduced in a future phase.
 
 The proposed capability distinguishes an enquiry from a quotation. An enquiry records customer intent and is answered by sales. A quotation is a dated commercial document that identifies the requested items, records the applicable commercial terms, and can be retrieved after it has been issued. Maintaining this distinction prevents customer-facing language from overstating the behavior of the implemented system.
 
@@ -23,7 +23,7 @@ Standardized output also supports future interoperability. Andersen et al. (2025
 
 ## 3. Standards and Document Rendering
 
-Universal Business Language (UBL) 2.3 defines both the `RequestForQuotation` and `Quotation` document types (OASIS, 2021). UBL adoption is not required for the prototype, but its data model provides a future path to interoperable document exchange instead of a FireLink-specific format.
+Universal Business Language (UBL) 2.3 defines both the `RequestForQuotation` and `Quotation` document types (OASIS, 2021). UBL adoption is not required for the prototype, but its data model provides a future path to interoperable document exchange instead of a Fire Protection Equipment-specific format.
 
 Quotation PDFs can be generated server-side with `@react-pdf/renderer` or `pdf-lib`. A declarative renderer is the preferred option because it fits the existing React application model without requiring a headless browser. The rendering approach should be validated during implementation, particularly where accessible tagged-PDF output is required.
 

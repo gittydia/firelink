@@ -1,5 +1,5 @@
 /**
- * FireLink pricelist import — materializes the normalized pricelist contract
+ * Fire Protection Equipment pricelist import — materializes the normalized pricelist contract
  * as catalog rows per ADR-019 (docs/DECISIONS.md).
  *
  * Source contract: pricelist_cleaned/normalized/pricelist_entries.csv (1,207 rows).

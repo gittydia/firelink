@@ -6,7 +6,7 @@
 This note has two jobs, deliberately kept separate:
 
 1. Describe a **proposed** quotation/RFQ document-generation capability, grounded in external literature and standards.
-2. Record the **gap** between that proposal, the capstone paper's claims, and what FireLink actually implements.
+2. Record the **gap** between that proposal, the capstone paper's claims, and what Fire Protection Equipment actually implements.
 
 These are different things. Mixing them is how a prototype becomes misread as a product. Sections 1–4 are the proposal. Section 5 is the gap. Section 6 documents defects found in the paper's own reference list.
 
@@ -53,7 +53,7 @@ UBL 2.3 defines both document types this proposal needs:
 - `RequestForQuotation` — namespace `urn:oasis:names:specification:ubl:schema:xsd:RequestForQuotation-2`
 - `Quotation` — namespace `urn:oasis:names:specification:ubl:schema:xsd:Quotation-2`
 
-UBL 2.3 is an OASIS Standard released on 15 June 2021 (OASIS, 2021), edited by G. Ken Holman, implemented as an extension of the UN/CEFACT CCTS 2.01 model. The distinction that matters for scoping: `RequestForQuotation` is the customer's outbound request; `Quotation` is the supplier's priced response. FireLink's flow maps onto the latter.
+UBL 2.3 is an OASIS Standard released on 15 June 2021 (OASIS, 2021), edited by G. Ken Holman, implemented as an extension of the UN/CEFACT CCTS 2.01 model. The distinction that matters for scoping: `RequestForQuotation` is the customer's outbound request; `Quotation` is the supplier's priced response. Fire Protection Equipment's flow maps onto the latter.
 
 Adopting UBL is **not** a prototype requirement. It is cited here to establish that the proposed data shape is a well-specified, industry-standard one, so a future phase can emit interoperable XML rather than a bespoke format.
 
@@ -61,9 +61,9 @@ Adopting UBL is **not** a prototype requirement. It is cited here to establish t
 
 ## 3. Document rendering options
 
-Quotation PDFs can be generated server-side without a headless browser. This matters because FireLink runs Next.js on the Node.js runtime, so no browser engine needs to be added to the deployment.
+Quotation PDFs can be generated server-side without a headless browser. This matters because Fire Protection Equipment runs Next.js on the Node.js runtime, so no browser engine needs to be added to the deployment.
 
-| Approach | Browser required | Fit for FireLink |
+| Approach | Browser required | Fit for Fire Protection Equipment |
 |---|---|---|
 | `@react-pdf/renderer` | No | Recommended. Declarative layout in React; fits the existing component model and Tailwind-adjacent conventions. |
 | `pdf-lib` | No | Reasonable. Lower-level; no layout engine, so you hand-build positioning. |
@@ -100,7 +100,7 @@ One caveat to carry into implementation: tagged-PDF output support differs acros
 
 ## 4. Delivery
 
-FireLink already sends transactional email through Resend. Quotations fit that channel.
+Fire Protection Equipment already sends transactional email through Resend. Quotations fit that channel.
 
 Verified constraints on the Resend send API:
 

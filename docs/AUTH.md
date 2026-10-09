@@ -1,4 +1,4 @@
-# FireLink - Authentication & Authorization
+# Fire Protection Equipment - Authentication & Authorization
 
 ## Authentication
 

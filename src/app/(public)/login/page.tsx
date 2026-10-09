@@ -1,3 +1,4 @@
+import Image from "next/image";
 import type { Metadata } from "next";
 import { redirect } from "next/navigation";
 import { Card } from "@/components/ui/card";
@@ -17,18 +18,47 @@ export default async function LoginPage() {
   if (account?.active) redirect("/admin");
 
   return (
-    <div className="mx-auto max-w-md space-y-4">
-      <div className="text-center">
-        <h1 className="text-2xl font-bold tracking-tight text-neutral-900">
-          Sign in
-        </h1>
-        <p className="mt-1 text-sm text-neutral-600">
-          Staff access for product and inventory management.
-        </p>
+    <section className="relative -mx-4 -my-8 flex min-h-[560px] items-center overflow-hidden bg-home-navyDeep py-12 sm:min-h-[620px] sm:py-16">
+      <Image
+        src="/images/hero-pipeline-valves.jpg"
+        alt=""
+        fill
+        priority
+        sizes="100vw"
+        className="object-cover"
+      />
+      <div
+        aria-hidden="true"
+        className="absolute inset-0 bg-gradient-to-br from-home-navyDeep/95 via-home-navy/90 to-home-navyDeep/75"
+      />
+      <div className="relative mx-auto grid w-full max-w-5xl gap-10 px-4 lg:grid-cols-[1fr_420px] lg:items-center">
+        <div className="max-w-xl text-white">
+          <p className="text-xs font-bold tracking-[0.22em] text-home-ctaPale">
+            FIRE PROTECTION EQUIPMENT STAFF PORTAL
+          </p>
+          <h1 className="mt-4 text-4xl font-bold tracking-tight sm:text-5xl">
+            Keep critical equipment information ready.
+          </h1>
+          <p className="mt-5 max-w-lg text-base leading-relaxed text-home-ctaPale sm:text-lg">
+            Secure staff access for maintaining product details and dependable
+            inventory visibility.
+          </p>
+        </div>
+
+        <div>
+          <div className="mb-5 text-center lg:text-left">
+            <h2 className="text-2xl font-bold tracking-tight text-white">
+              Sign in
+            </h2>
+            <p className="mt-1 text-sm text-home-ctaPale">
+              Use your staff account to continue.
+            </p>
+          </div>
+          <Card className="border-white/20 bg-brand-paper p-6 shadow-lg">
+            <LoginForm />
+          </Card>
+        </div>
       </div>
-      <Card className="p-6">
-        <LoginForm />
-      </Card>
-    </div>
+    </section>
   );
 }

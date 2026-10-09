@@ -1,4 +1,4 @@
-# FireLink - Prototype TODO (Trimmed)
+# Fire Protection Equipment - Prototype TODO (Trimmed)
 
 > **Status: complete.** All phases below are implemented and verified (`pnpm typecheck`, `pnpm lint`, `pnpm build` all pass). Availability is shown as text (Local / In Stock / Indent), auth uses NextAuth v5 Credentials + bcrypt, and RBAC is enforced server-side only.
 

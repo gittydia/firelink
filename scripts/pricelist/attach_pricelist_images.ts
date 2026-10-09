@@ -1,5 +1,5 @@
 /**
- * FireLink pricelist image attach — writes the LOCKED slide→product image
+ * Fire Protection Equipment pricelist image attach — writes the LOCKED slide→product image
  * attachments (image-attachment milestone) as ProductImage rows.
  *
  * The ATTACH table below is the locked decision from the image-matching

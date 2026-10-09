@@ -135,7 +135,7 @@ export function CategoryRail({ categories }: { categories: CategoryCardData[] })
                     aria-hidden="true"
                     className="flex h-full w-full items-center justify-center px-4 text-center text-xs font-bold uppercase tracking-[0.15em] text-home-navy/70"
                   >
-                    FireLink
+                    Fire Protection Equipment
                   </span>
                 )}
               </div>

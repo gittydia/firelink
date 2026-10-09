@@ -1,4 +1,4 @@
-# FireLink - AI Agent Guide
+# Fire Protection Equipment - AI Agent Guide
 
 **Stack:** Next.js (App Router), TypeScript, Tailwind CSS, Prisma, PostgreSQL, Zod, React Hook Form, NextAuth v5 (Auth.js).
 

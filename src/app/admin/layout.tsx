@@ -25,7 +25,7 @@ export default async function AdminLayout({
               href="/admin"
               className="text-lg font-bold tracking-tight text-fire"
             >
-              FireLink
+              Fire Protection Equipment
             </Link>
             <span className="rounded-md bg-neutral-100 px-2 py-0.5 text-xs font-medium text-neutral-600">
               Admin

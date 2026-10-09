@@ -1,4 +1,4 @@
-# FireLink - Decisions
+# Fire Protection Equipment - Decisions
 
 ## ADR-001: Single-package repository (no pnpm workspaces)
 

@@ -1,4 +1,4 @@
-# FireLink Design System
+# Fire Protection Equipment Design System
 
 ## 1. Brief
 

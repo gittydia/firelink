@@ -1,4 +1,4 @@
-# FireLink - Fire Protection Equipment Product Information & Inventory System
+# Fire Protection Equipment Product Information & Inventory System
 
 A minimal prototype web app for centralizing fire protection product information and inventory visibility (Local / In Stock / Indent). Designed as an information + inventory visibility platform, not a full e-commerce system.
 

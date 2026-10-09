@@ -1,4 +1,4 @@
-# FireLink - Domain Model
+# Fire Protection Equipment - Domain Model
 
 ## Enums
 

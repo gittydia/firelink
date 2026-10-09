@@ -9,7 +9,7 @@ const sections = [
     heading: "What this site is",
     body: (
       <>
-        FireLink is a product information and inventory prototype. It shows fire
+        Fire Protection Equipment is a product information and inventory prototype. It shows fire
         protection equipment, its category, and whether an item is available
         locally, in stock, or on indent order. It does not sell anything: there
         is no basket, no checkout, no payment, and no order processing. An
